@@ -2,16 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>com.typemytype.Doodle.curvePalet.bvMax</key>
-	<real>0.75</real>
-	<key>com.typemytype.Doodle.curvePalet.bvMin</key>
-	<real>0.5</real>
-	<key>com.typemytype.Doodle.curvePalet.tvMax</key>
-	<real>0.8</real>
-	<key>com.typemytype.Doodle.curvePalet.tvMin</key>
-	<real>0.5</real>
-	<key>com.typemytype.robofont.Source Sans Pro Regular.layerShow</key>
+	<key>com.typemytype.robofont.Reference.layerShowCoordinates</key>
+	<false/>
+	<key>com.typemytype.robofont.Reference.layerShowFill</key>
 	<true/>
+	<key>com.typemytype.robofont.Reference.layerShowPoints</key>
+	<false/>
+	<key>com.typemytype.robofont.Reference.layerShowStroke</key>
+	<false/>
+	<key>com.typemytype.robofont.Reference.layerStrokeColor</key>
+	<array>
+		<real>0.1703</real>
+		<real>0.1992</real>
+		<real>0.286</real>
+		<real>0.05</real>
+	</array>
+	<key>com.typemytype.robofont.Source Sans Pro Regular.layerShow</key>
+	<false/>
 	<key>com.typemytype.robofont.Source Sans Pro Regular.layerShowCoordinates</key>
 	<false/>
 	<key>com.typemytype.robofont.Source Sans Pro Regular.layerShowFill</key>
@@ -67,9 +74,9 @@
 			<key>showMeasurements</key>
 			<integer>1</integer>
 			<key>x</key>
-			<integer>0</integer>
+			<integer>-5</integer>
 			<key>y</key>
-			<integer>236</integer>
+			<integer>583</integer>
 		</dict>
 		<dict>
 			<key>angle</key>
@@ -81,9 +88,9 @@
 			<key>name</key>
 			<string>math symbols</string>
 			<key>x</key>
-			<integer>0</integer>
+			<integer>305</integer>
 			<key>y</key>
-			<integer>330</integer>
+			<integer>822</integer>
 		</dict>
 		<dict>
 			<key>angle</key>
@@ -125,9 +132,9 @@
 			<key>showMeasurements</key>
 			<integer>1</integer>
 			<key>x</key>
-			<integer>174</integer>
+			<integer>175</integer>
 			<key>y</key>
-			<integer>631</integer>
+			<integer>832</integer>
 		</dict>
 		<dict>
 			<key>angle</key>
@@ -137,13 +144,13 @@
 			<key>magnetic</key>
 			<integer>5</integer>
 			<key>name</key>
-			<string></string>
+			<string>math middle</string>
 			<key>showMeasurements</key>
 			<integer>1</integer>
 			<key>x</key>
-			<integer>303</integer>
+			<integer>0</integer>
 			<key>y</key>
-			<integer>451</integer>
+			<integer>330</integer>
 		</dict>
 	</array>
 	<key>com.typemytype.robofont.italicSlantOffset</key>
@@ -153,6 +160,7 @@
 		<string>background</string>
 		<string>other</string>
 		<string>Source Sans Pro Regular</string>
+		<string>Reference</string>
 	</array>
 	<key>com.typemytype.robofont.other.layerShowCoordinates</key>
 	<false/>
@@ -723,6 +731,8 @@
 				<string>commabelowcmb</string>
 				<string>cedillacmb</string>
 				<string>ogonekcmb</string>
+				<string>Lcommaaccent</string>
+				<string>lcommaaccent</string>
 			</array>
 			<key>type</key>
 			<string>glyphList</string>
@@ -2096,41 +2106,6 @@
 			<real>0.2</real>
 		</array>
 	</dict>
-	<key>de.frgr.ScrewPalette</key>
-	<dict>
-		<key>drawSelection</key>
-		<integer>0</integer>
-		<key>innerRadius</key>
-		<integer>20</integer>
-		<key>maxScrews</key>
-		<integer>5</integer>
-		<key>offset</key>
-		<integer>4</integer>
-		<key>outline</key>
-		<integer>10</integer>
-		<key>reverseCheck</key>
-		<integer>0</integer>
-		<key>rotation</key>
-		<integer>0</integer>
-		<key>rotationCheck</key>
-		<integer>0</integer>
-		<key>roundStraight</key>
-		<integer>0</integer>
-		<key>screwMenuIndex</key>
-		<integer>0</integer>
-		<key>screwType</key>
-		<string>Slotted</string>
-		<key>size</key>
-		<integer>100</integer>
-		<key>slotWidth</key>
-		<integer>10</integer>
-		<key>socketSize</key>
-		<integer>100</integer>
-		<key>tips</key>
-		<integer>4</integer>
-		<key>wiggle</key>
-		<integer>20</integer>
-	</dict>
 	<key>public.glyphOrder</key>
 	<array>
 		<string>.notdef</string>
@@ -2678,6 +2653,8 @@
 		<string>commabelowcmb</string>
 		<string>cedillacmb</string>
 		<string>ogonekcmb</string>
+		<string>Lcommaaccent</string>
+		<string>lcommaaccent</string>
 	</array>
 </dict>
 </plist>

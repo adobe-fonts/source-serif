@@ -1,7 +1,7 @@
 #!/bin/sh
 
 family=SourceSerifPro
-weights='Bold Regular Semibold'
+weights='ExtraLight Light Regular Semibold Bold Black'
 
 # clean existing build artifacts
 rm -rf target/

@@ -1,0 +1,108 @@
+IsBoldStyle false
+IsItalicStyle false
+PreferOS/2TypoMetrics	false		# Must be 'false' for vertical layout cross-platform consistency
+IsOS/2WidthWeigthSlopeOnly	false	# Must be 'false' for OS/2 table version 3
+IsOS/2OBLIQUE	false
+UseOldNameID4	false
+LicenseCode	ADOBE
+
+
+begin FDDict LOWERCASE
+    BaselineYCoord 0
+    BaselineOvershoot -20
+    LcHeight 468
+    LcOvershoot 18
+    AscenderHeight 735
+    AscenderOvershoot 20
+    DescenderHeight -243
+    DescenderOvershoot -10
+    DominantV [49]
+    DominantH [28]
+    FlexOK false
+end FDDict LOWERCASE
+
+
+begin FDDict UPPERCASE
+    BaselineYCoord 0
+    BaselineOvershoot -20
+    CapHeight 674
+    CapOvershoot 20
+    DominantV [49]
+    DominantH [28]
+    FlexOK false
+end FDDict UPPERCASE
+
+
+begin FDDict FIGURES
+    BaselineYCoord 0
+    BaselineOvershoot -20
+    FigHeight 649
+    FigOvershoot 15
+    DominantV [49]
+    DominantH [28]
+    FlexOK false
+end FDDict FIGURES
+
+
+begin FDDict TEXT_FIGURES
+    BaselineYCoord 0
+    BaselineOvershoot -20
+    FigHeight 529
+    FigOvershoot 15
+    DominantV [49]
+    DominantH [28]
+    FlexOK false
+end FDDict TEXT_FIGURES
+
+
+#------------------------------------------------------
+
+begin GlyphSet UPPERCASE
+    #Latin
+        ^[A-Z][A-Z]?(macron|breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke)?(above|below|dotaccent)?$
+    #Punctuation
+        ^(exclam|question)(down\.cap)?$
+        ^(trademark|registered|servicemark)$
+        ^(ampersand|section|paragraph)$
+        ^(sound)?(copyright)$
+    #Math
+        ^(Delta|Omega)\.math$
+        ^(summation|product)$
+        ^(at)(\.cap)?$
+end GlyphSet UPPERCASE
+
+
+begin GlyphSet LOWERCASE
+    #Latin
+        ^(dotless|germandbl|schw|long)?[a-z](macron|breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe)?(above|below|dotaccent)?(\.)?(alt|d|trk)?(sups)?$
+        ^[ao][e]$
+        ^(f)_[ftil]$
+    #Punctuation and symbols
+        ^(exclam|question)down$
+        ^(dagger|daggerdbl|litre|asterisk|eighthnote)$
+        ^(pi|mu)(\.math)?$
+        ^(period|comma|colon|semicolon|ellipsis)$
+        ^(quote)(single?|dbl)?(right|left|base)?$
+        ^(paren)(right|left)?$
+        ^(broken)?(bar)$
+        ^(dbl)?(prime)$
+        ^(bracket|brace)(left|right)(.cap)$
+        ^(commaturned|apostrophe)(mod)$
+        ^(ord)(feminine|masculine)$
+end GlyphSet LOWERCASE
+
+
+begin GlyphSet FIGURES
+        ^(zero|one|two|three|four|five|six|seven|eight|nine)(\.)?(lf)?(slash)?(dnom|numr)$
+        ^(dollar|cent|sterling|yen|Euro|florin|colonmonetary|lira|naira|peseta|dong|peso|guarani|cedi|rupeeindian|currency)(turkish)?$
+        ^(percent|perthousand|numbersign|degree|partialdiff|estimated)$
+        ^(one|two|three|five|seven)(half|quarter|third|eighth)(s)?$
+        ^\.notdef$
+end GlyphSet FIGURES
+
+
+begin GlyphSet TEXT_FIGURES
+        ^(zero|one|two|three|four|five|six|seven|eight|nine)\.t?(osf)$
+end GlyphSet TEXT_FIGURES
+
+
