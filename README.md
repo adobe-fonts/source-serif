@@ -15,4 +15,4 @@ Send suggestions for changes to the Source Serif OpenType font project maintaine
 
 ## Further information
 
-For information about the design and background of Source Serif, please refer to the [official font readme file](http://htmlpreview.github.io/?https://github.com/adobe-fonts/source-serif-pro/blob/master/SourceSerifProReadMe.html).
+For information about the design and background of Source Serif, please refer to the [official font readme file](https://rawgit.com/adobe-fonts/source-serif-pro/master/SourceSerifProReadMe.html).
