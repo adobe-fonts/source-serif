@@ -10,8 +10,10 @@ In addition to a functional OpenType font, this open source project provides all
 * [Linux/Unix-based systems](https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116)
 * Bower<br/>
 	`bower install git://github.com/adobe-fonts/source-serif-pro.git#release`
-* npm<br/>
+* npm 2.x<br/>
 	`npm install --fetch-only git://github.com/adobe-fonts/source-serif-pro.git#release`
+* npm 3.x<br/>
+	`npm install git://github.com/adobe-fonts/source-serif-pro.git#release`
 
 ## Getting Involved
 
