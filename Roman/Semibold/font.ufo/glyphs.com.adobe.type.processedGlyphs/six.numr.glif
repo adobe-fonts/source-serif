@@ -3,8 +3,29 @@
   <advance width="371" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="curve" x="197" y="273" />
-      <point x="157" y="273" />
+      <point name="hintSet0000" type="curve" x="197" y="240" />
+      <point x="275" y="240" />
+      <point x="338" y="285" />
+      <point type="curve" x="338" y="374" />
+      <point x="338" y="449" />
+      <point x="293" y="493" />
+      <point type="curve" x="219" y="493" />
+      <point x="186" y="493" />
+      <point x="158" y="484" />
+      <point type="curve" x="135" y="463" />
+      <point name="hintSet0004" x="147" y="538" />
+      <point x="203" y="602" />
+      <point type="curve" x="307" y="624" />
+      <point type="line" x="303" y="654" />
+      <point x="140" y="644" />
+      <point x="42" y="528" />
+      <point type="curve" x="42" y="407" />
+      <point name="hintSet0007" x="42" y="305" />
+      <point x="101" y="240" />
+    </contour>
+    <contour>
+      <point type="curve" x="197" y="273" />
+      <point x="158" y="273" />
       <point x="133" y="315" />
       <point type="curve" x="132" y="426" />
       <point x="151" y="443" />
@@ -16,41 +37,53 @@
       <point x="253" y="299" />
       <point x="230" y="273" />
     </contour>
-    <contour>
-      <point type="line" x="303" y="654" />
-      <point x="140" y="644" />
-      <point x="42" y="528" />
-      <point type="curve" x="42" y="407" />
-      <point x="42" y="305" />
-      <point x="101" y="240" />
-      <point type="curve" x="197" y="240" />
-      <point x="275" y="240" />
-      <point x="338" y="285" />
-      <point type="curve" x="338" y="374" />
-      <point x="338" y="449" />
-      <point x="293" y="493" />
-      <point type="curve" x="219" y="493" />
-      <point x="186" y="493" />
-      <point x="158" y="484" />
-      <point type="curve" x="135" y="463" />
-      <point x="147" y="538" />
-      <point x="203" y="602" />
-      <point type="curve" x="307" y="624" />
-    </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="019209a6477ed17dcb50bc58a998be97c811de26a107ecd37e2f0cbd7a768ed5364ecb08f23a5b4ab8a00c497c13498d00f3ffcd7f6ba19f6bd05a09858d779a">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="240" width="33" />
-            <hstem pos="450" width="43" />
-            <vstem pos="42" width="90" />
-            <vstem pos="253" width="85" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>1d8db7640bfdeaa5ab7d67933fe4ab666e40ce91bf5a65c03de49067beb88c068976d11a868afeb1439be1c0993dc8d9fb47b7b50d273865d3dc877de5fb439e</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 240 33</string>
+              <string>hstem 450 43</string>
+              <string>hstem 654 -20</string>
+              <string>vstem 42 90</string>
+              <string>vstem 253 85</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0004</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 240 33</string>
+              <string>hstem 450 43</string>
+              <string>hstem 624 30</string>
+              <string>vstem 42 90</string>
+              <string>vstem 253 85</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0007</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 240 33</string>
+              <string>hstem 450 43</string>
+              <string>hstem 654 -20</string>
+              <string>vstem 42 90</string>
+              <string>vstem 253 85</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

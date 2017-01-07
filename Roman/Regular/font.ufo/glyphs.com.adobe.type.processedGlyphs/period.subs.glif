@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="period.subs">
-  <advance width="232" />
+	<advance width="232" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="116" y="-221" />
@@ -19,15 +19,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="232116-221c143-221o165-198o165-170c165-143o143-119o116-119c89-119o67-143o67-170c67-198o89-221o">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-221" width="102" />
-            <vstem pos="67" width="98" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w232c116-221143-221165-198c165-170165-143143-119c116-11989-11967-143c67-17067-19889-221</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -221 102</string>
+              <string>vstem 67 98</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

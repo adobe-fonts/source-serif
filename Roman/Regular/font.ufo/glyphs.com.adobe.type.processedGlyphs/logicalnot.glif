@@ -4,25 +4,33 @@
   <unicode hex="00AC" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="24" y="400" />
-      <point type="line" x="24" y="343" />
+      <point name="hintSet0000" type="line" x="24" y="343" />
       <point type="line" x="435" y="343" />
       <point type="line" x="435" y="159" />
       <point type="line" x="497" y="159" />
       <point type="line" x="497" y="400" />
+      <point type="line" x="24" y="400" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="53124400l24343l435343l435159l497159l497400l">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="343" width="57" />
-            <vstem pos="435" width="62" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w531l24343l435343l435159l497159l497400l24400</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 343 57</string>
+              <string>vstem 435 62</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

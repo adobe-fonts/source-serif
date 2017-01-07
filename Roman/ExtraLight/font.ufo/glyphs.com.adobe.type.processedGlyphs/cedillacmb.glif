@@ -1,12 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="cedillacmb">
-  <advance width="0" />
   <unicode hex="0327" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="12" y="0" />
-      <point type="line" x="-8" y="0" />
-      <point type="line" x="-21" y="-77" />
+      <point name="hintSet0000" type="line" x="-21" y="-77" />
       <point x="45" y="-77" />
       <point x="68" y="-102" />
       <point type="curve" x="68" y="-138" />
@@ -26,20 +23,30 @@
       <point x="98" y="-95" />
       <point x="63" y="-63" />
       <point type="curve" x="4" y="-59" />
+      <point type="line" x="12" y="0" />
+      <point type="line" x="-8" y="0" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="b68a55d84179f5831e52bff5dc1c2f6bca41881f4a6bb422979a32d11dfaf1a96b644d3573c3c39330d02a00bf7e050c2f7ea0a6f8743001116e438940655f73">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-214" width="19" />
-            <hstem pos="-77" width="18" />
-            <vstem pos="68" width="30" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>3d2c598a85bcba8d9aa296dc384701df4fbb61930aa91fe3d31dd8920c01bb45d203e68ea336447a9fa74a91f05a3e9ea01228bee093bdbb4a31dd6a394041b3</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -214 19</string>
+              <string>hstem -77 18</string>
+              <string>vstem 68 30</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

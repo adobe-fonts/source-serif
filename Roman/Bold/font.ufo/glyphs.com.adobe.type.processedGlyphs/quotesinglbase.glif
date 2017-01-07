@@ -4,14 +4,7 @@
   <unicode hex="201A" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="110" y="-22" />
-      <point x="86" y="-63" />
-      <point x="51" y="-95" />
-      <point type="curve" x="19" y="-114" />
-      <point type="line" x="37" y="-152" />
-      <point name="hintSet0003" x="128" y="-113" />
-      <point x="192" y="-38" />
-      <point type="curve" x="192" y="49" />
+      <point name="hintSet0000" type="curve" x="192" y="49" />
       <point x="192" y="78" />
       <point x="185" y="107" />
       <point type="curve" x="170" y="132" />
@@ -24,23 +17,34 @@
       <point x="27" y="56" />
       <point x="36" y="32" />
       <point type="curve" x="66" y="9" />
+      <point type="line" x="110" y="-22" />
+      <point x="86" y="-63" />
+      <point x="51" y="-95" />
+      <point type="curve" x="19" y="-114" />
+      <point type="line" x="37" y="-152" />
+      <point x="128" y="-113" />
+      <point x="192" y="-38" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="0d4504a95c2cd5e144f1967d0bf95c42b55a64b320df726d13fca02ef839b5f89e4b2d06a86faba12c9cb3144ff581366fb9600bea801f0c652fc3d5ef4a8e42">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-152" width="311" />
-            <vstem pos="19" width="173" />
-          </hintset>
-          <hintset pointTag="hintSet0003">
-            <hstem pos="-152" width="311" />
-            <vstem pos="27" width="165" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w216c1924919278185107c170132154145133159c1041596315927128c278327563632c669l110-2286-6351-95c19-114l37-152128-113192-38</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -152 311</string>
+              <string>vstem 27 165</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>
