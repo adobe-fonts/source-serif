@@ -1,26 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="backslash">
+	<unicode hex="005C" />
   <advance width="357" />
-  <unicode hex="005C" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="84" y="710" />
+      <point name="hintSet0000" type="line" x="352" y="-160" />
+      <point type="line" x="85" y="710" />
       <point type="line" x="5" y="710" />
       <point type="line" x="272" y="-160" />
-      <point type="line" x="351" y="-160" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="35784710l5710l272-160l351-160l">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-160" width="870" />
-            <vstem pos="5" width="346" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w357l352-160l85710l5710l272-160</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -160 870</string>
+              <string>vstem 5 347</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

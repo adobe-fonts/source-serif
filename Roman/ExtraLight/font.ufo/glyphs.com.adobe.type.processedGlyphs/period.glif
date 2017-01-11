@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="period">
+	<unicode hex="002E" />
   <advance width="300" />
-  <unicode hex="002E" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="150" y="-10" />
@@ -20,15 +20,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="300150-10c169-10o1815o18120c18137o16950o15050c13150o11937o11920c1195o131-10o">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-10" width="60" />
-            <vstem pos="119" width="62" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w300c150-10169-101815c181201813716950c150501315011937c119201195131-10</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -10 60</string>
+              <string>vstem 119 62</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

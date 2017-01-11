@@ -4,17 +4,7 @@
   <unicode hex="0055" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="690" y="674" />
-      <point type="line" x="453" y="674" />
-      <point type="line" x="453" y="646" />
-      <point type="line" x="567" y="637" />
-      <point type="line" x="567" y="283" />
-      <point x="567" y="99" />
-      <point x="508" y="29" />
-      <point type="curve" x="375" y="29" />
-      <point x="265" y="29" />
-      <point x="193" y="91" />
-      <point type="curve" x="193" y="265" />
+      <point name="hintSet0000" type="curve" x="193" y="266" />
       <point type="line" x="193" y="361" />
       <point x="193" y="454" />
       <point x="193" y="546" />
@@ -22,35 +12,75 @@
       <point type="line" x="301" y="646" />
       <point type="line" x="301" y="674" />
       <point type="line" x="46" y="674" />
-      <point type="line" x="46" y="646" />
+      <point name="hintSet0006" type="line" x="46" y="646" />
       <point type="line" x="137" y="638" />
       <point x="139" y="547" />
       <point x="139" y="453" />
       <point type="curve" x="139" y="361" />
-      <point type="line" x="139" y="249" />
-      <point x="139" y="62" />
-      <point x="230" y="-15" />
-      <point type="curve" x="369" y="-15" />
-      <point x="518" y="-15" />
-      <point x="601" y="73" />
-      <point type="curve" x="601" y="257" />
-      <point type="line" x="601" y="637" />
+      <point type="line" x="139" y="250" />
+      <point x="139" y="63" />
+      <point x="230" y="-14" />
+      <point type="curve" x="369" y="-14" />
+      <point x="518" y="-14" />
+      <point x="601" y="74" />
+      <point type="curve" x="601" y="258" />
+      <point name="hintSet0012" type="line" x="601" y="637" />
       <point type="line" x="690" y="646" />
+      <point type="line" x="690" y="674" />
+      <point type="line" x="453" y="674" />
+      <point type="line" x="453" y="646" />
+      <point type="line" x="567" y="637" />
+      <point type="line" x="567" y="284" />
+      <point x="567" y="100" />
+      <point x="508" y="30" />
+      <point type="curve" x="375" y="30" />
+      <point x="265" y="30" />
+      <point x="193" y="92" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="d30593ec9d37a937bd531eec0c6c9cceb49dd9f3ea280a5cb0ab9fb74aab4083203606f5d94571ca81c74846929808b0bd68666f5c93441af02032982732f0a9">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-15" width="44" />
-            <hstem pos="641.5" width="32.5" />
-            <vstem pos="139" width="54" />
-            <vstem pos="567" width="34" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>1cefd5330f61f49a133a863680ff2c18c5ecc986fdbb01c6386d75797ca2ab82a751c3d1372b46c1748343e9dcdf8b3851fa0abc59dfbffe9ff16903128c6a14</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -14 44</string>
+              <string>hstem 641.5 32.5</string>
+              <string>vstem 139 54</string>
+              <string>vstem 567 34</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0006</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -14 44</string>
+              <string>hstem 642 32</string>
+              <string>vstem 139 54</string>
+              <string>vstem 567 34</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0012</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -14 44</string>
+              <string>hstem 641.5 32.5</string>
+              <string>vstem 139 54</string>
+              <string>vstem 567 34</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

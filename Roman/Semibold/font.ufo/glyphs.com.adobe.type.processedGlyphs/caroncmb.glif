@@ -1,29 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="caroncmb">
-  <advance width="0" />
   <unicode hex="030C" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="119" y="752" />
-      <point type="line" x="0" y="648" />
-      <point type="line" x="-119" y="752" />
+      <point name="hintSet0000" type="line" x="-119" y="752" />
       <point type="line" x="-150" y="727" />
       <point type="line" x="-40" y="568" />
       <point type="line" x="40" y="568" />
       <point type="line" x="150" y="727" />
+      <point type="line" x="119" y="752" />
+      <point type="line" x="0" y="648" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="0119752l0648l-119752l-150727l-40568l40568l150727l">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="568" width="184" />
-            <vstem pos="-150" width="300" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w1000l-119752l-150727l-40568l40568l150727l119752l0648</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 568 184</string>
+              <string>vstem -150 300</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

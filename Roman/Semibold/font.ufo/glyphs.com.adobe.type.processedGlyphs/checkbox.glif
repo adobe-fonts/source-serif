@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="checkbox">
+	<unicode hex="2610" />
   <advance width="800" />
-  <unicode hex="2610" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="122" y="24" />
@@ -18,17 +18,25 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="80012224l122576l678576l67824l55-37l745-37l745637l55637l">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-37" width="61" />
-            <hstem pos="576" width="61" />
-            <vstem pos="55" width="67" />
-            <vstem pos="678" width="67" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w800l12224l122576l678576l67824l55-37l745-37l745637l55637</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -37 61</string>
+              <string>hstem 576 61</string>
+              <string>vstem 55 67</string>
+              <string>vstem 678 67</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>
