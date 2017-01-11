@@ -1,0 +1,13 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt; # Latin default
+
+languagesystem latn AZE; # Azeri
+languagesystem latn CRT; # Crimean Tatar
+languagesystem latn TRK; # Turkish
+
+
+feature liga {
+    sub f i by f_i;
+    sub f l by f_l;
+    sub f t by f_t;
+} liga;

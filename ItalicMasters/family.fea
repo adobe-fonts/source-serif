@@ -1,0 +1,84 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+languagesystem latn AZE; # Azeri
+languagesystem latn CRT; # Crimean Tatar
+languagesystem latn TRK; # Turkish
+
+
+@FIGURES_LINING_TABULAR    =  [  zero       one       two       three       four       five       six       seven       eight       nine       ];
+@FIGURES_OLDSTYLE_TABULAR  =  [  zero.tosf  one.tosf  two.tosf  three.tosf  four.tosf  five.tosf  six.tosf  seven.tosf  eight.tosf  nine.tosf  ];
+@FIGURES_LINING            =  [  zero.lf    one.lf    two.lf    three.lf    four.lf    five.lf    six.lf    seven.lf    eight.lf    nine.lf    ];
+@FIGURES_OLDSTYLE          =  [  zero.osf   one.osf   two.osf   three.osf   four.osf   five.osf   six.osf   seven.osf   eight.osf   nine.osf   ];
+
+#--------------------------------------
+feature aalt { # Access All Alternates
+    feature locl;
+    feature pnum;
+} aalt;
+
+
+#--------------------------------------
+feature locl { # Localized Forms
+
+    script latn;
+        language TRK exclude_dflt;
+            lookup I_DOT {
+                sub i by i.trk;
+            } I_DOT;
+
+        language AZE exclude_dflt;
+            lookup I_DOT;
+
+        language CRT exclude_dflt;
+            lookup I_DOT;
+} locl;
+
+
+# #--------------------------------------
+# feature tnum { # Tabular Figures
+#     sub @FIGURES_LINING by @FIGURES_LINING_TABULAR;
+#     sub @FIGURES_OLDSTYLE by @FIGURES_OLDSTYLE_TABULAR;
+# } tnum;
+
+
+# #--------------------------------------
+# feature onum { # Oldstyle Figures
+#     sub @FIGURES_LINING by @FIGURES_OLDSTYLE;
+#     sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
+# } onum;
+
+
+#--------------------------------------
+feature pnum { # Proportional Figures
+    sub @FIGURES_LINING_TABULAR by @FIGURES_LINING;
+    sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_OLDSTYLE;
+} pnum;
+
+
+#--------------------------------------
+feature lnum { # Lining Figures
+    sub @FIGURES_OLDSTYLE by @FIGURES_LINING;
+    sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_LINING_TABULAR;
+} lnum;
+
+
+#--------------------------------------
+feature zero {
+	sub zero by zero.slash;
+	sub zero.lf by zero.lfslash;
+} zero;
+
+
+#--------------------------------------
+feature liga {
+    sub f i by f_i;
+    sub f l by f_l;
+    sub f t by f_t;
+} liga;
+
+
+#-------------------------------------------
+feature size {
+	parameters 10.0 0; # design size, subfamily
+} size;
