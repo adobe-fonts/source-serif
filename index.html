@@ -10,11 +10,7 @@
         body {
             font-family: 'Source Serif Pro', sans;
             overflow-x: hidden;
-            -moz-font-feature-settings: "kern", "liga";
-            -ms-font-feature-settings: "kern","liga";
-            -o-font-feature-settings: "kern","liga";
-            -webkit-font-feature-settings: "kern","liga";
-            font-feature-settings: "kern","liga";
+            font-feature-settings: "kern" 1,"liga" 1;
             font-size: 100%;
         }
         article {
@@ -31,13 +27,21 @@
             margin-top: 0.75em;
             margin-bottom: 0;
         }
-        p {
+        div {
             font-size: 40px;
-            padding: 0.75em 1em;
+            padding: 0.5em 0.75em;
             margin: 0;
+            outline: 0px solid transparent;
+            autocorrect: "off";
+            overflow: hidden;
+            hyphens: off;
         }
-        p:hover
-        { 
+        p {
+            margin: 0;
+            padding-bottom: .5em;
+        }
+        div:hover
+        {
             background-color: #EEE;
         }
         .ribbon {
@@ -58,8 +62,26 @@
             transform: translate(50%, -50%) rotate(45deg) translateY(72px);
             white-space: nowrap;
         }
+        .smcp {
+            font-feature-settings: "smcp" 1;
+        }
 
+        .onum {
+            font-feature-settings: "onum" 1;
+        }
 
+        .pnum {
+            font-feature-settings: "pnum" 1;
+        }
+
+        .sups {
+            font-feature-settings: "sups" 1;
+        }
+
+/*        :lang(sr)   {
+            font-feature-settings: "locl" 1;
+            }
+*/
         @media (max-width: 720px) {
             h1 {
                 font-size: 36px;
@@ -67,7 +89,7 @@
             h2 {
                 font-size: 18px;
             }
-            p {
+            div {
                 padding: 0;
                 font-size: 18px;
             }
@@ -80,8 +102,8 @@
             h2 {
                 font-size: 32px;
             }
-            p {
-                font-size: 60px;
+            div {
+                font-size: 50px;
             }
             article {
                 max-width: 1100px;
@@ -91,82 +113,323 @@
     </style>
   </head>
   <body>
-    <article>
+    <article spellcheck="false">
         <h1>Source Serif Pro</h1>
+        <hr>
+
+        <h2 style="font-weight: 200;">ExtraLight</h2>
+        <div contenteditable style="font-weight: 200;">
+        <p>
+            Svo hölt, yxna kýr þegði jú um<br>
+            dóp í fé á bæ. Muzicologă în bej<br>
+            vând whisky și tequila, preț fix.
+        </p>
+        <p>
+            Που έτσι κι αλλιώς δεν ξέρει από<br>
+            χιόνια. Άγιο Στέφανο, Στα βόρεια<br>
+            3 με 5 βαθμούς χαμηλότερη.</p>
+        <p>
+            Также было установлено, эта<br>
+            разница в 10 раз меньше, в<br>
+            предгорьях и горах.
+        </p>
+        <p>
+            abcdefghijklmnopqrstuvwxyz<br>
+            àbçđéfğḥıĵĸłṃñổœřßṯűvẅxỹẓ<br>
+            <span class="onum">1234567890</span> &
+            <span class="smcp">abcdefghijkl<br>
+            mnopqrstuvwxyz 1234567890</span><br>
+            ABCDEFGHIJKLMNOPQRSTU<br>VWXYZ & (1234567890) .,:;…!?
+        </p>
+
+        <p>
+            αβγδεζηθικλμνξοπρσςτυφχψω<br>
+            άέήίϊόύϋώΐΰϗϙϛϝϡ <span class="smcp">αβγδεζηθι<br>
+            κλμνξοπρσςτυφχψω</span> ΑΒΓΔΕ<br>
+            ΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ;<br>
+        </p>
+        <p>
+            абвгґдђѓеёєжнњопрстћќуўuф<br>
+            хцчџшщъыьэюя – ѐёђѓєѕіїјљњ<br>
+            ћќѝўџѣѳѵґғҗҙқҡңҫүұҳҷӂӏӑӕӗ<br>
+            әӣөӳ <span class="smcp">абвгґдђѓеёєжнњопрс<br>
+            тћќуўuфхцчџшщъыьэюя</span> <br>
+            АБВГҐДЂЃЕЁЄЖНЊОПРСТЋЌ<br>
+            УЎUФХЦЧЏШЩЪЫЬЭЮЯ №
+        </p>
+
+            <!-- В чащах юга жил бы цитрус?<br>Да, но фальшивый экземпляр!<br> -->
+            <!-- Чуєш їх, доцю, га? Кумедна ж ти, прощайся без ґольфів!<br> -->
+            <!-- Жебракують філософи при ґанку церкви в Гадячі, ще й шатро їхнє п’яне знаємо.<br> -->
+            <!-- Љубазни фењерџија чађавог лица хоће да ми покаже штос.<br> -->
+            <!-- Ѕидарски пејзаж: шугав билмез со чудење џвака ќофте и кељ на туѓ цех.<br> -->
+            <!-- Љубазни фењерџија чађавог лица хоће да ми покаже штос.<br> -->
+            <!-- <span lang="sr"> Љубазни </span> фењерџија чађавог лица хоће да ми покаже штос.<br> -->
+            <!-- фатэлем ляжаць нейкія гаючыя зёлкі.<br> -->
+        <p>
+            '" ‘’ “” ‚„′″ ‹› «» (•)[·]{-}/|\ * †‡ § @ ¶<br>
+            $ ¢ £ ¥ ₤ ₧ ₩ ₫ € ₮ ₱ ₲ ₴ ₵ ₹ ₺ ₸ ₽ ₿<br>
+            # %‰ ¼ ½ ¾ ⅓ ⅔ ⅛ ⅜ ⅝ ∂ ∫ √<br>
+            + − × ÷ ∙ = < > ≤ ≥ ± ^ ≠ ~ ≈ ¬ ∞ <br>
+            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☐☑✓ ♪
+        </p>
+        </div>
+        <hr>
+
+        <h2 style="font-weight: 300;">Light</h2>
+        <div contenteditable style="font-weight: 300;">
+        <p>
+            Bâchez la queue du wagon-taxi<br>
+            avec les pyjamas du fakir. Příliš<br>
+            žluťoučký kůň úpěl ďábelské ódy.
+        </p>
+        <p>
+            Αγίου Βλασίου, Νεφώσεις κατά<br>
+            περιόδους αυξημένες με τοπικές<br>
+            χιονοπτώσεις, Θεσσαλία.
+        </p>
+        <p>
+            Либо самку этого подвида.<br>
+            Самца называют кот, а также<br>
+            феромоны и движения тела.
+        </p>
+        <p>
+            abcdefghijklmnopqrstuvwxyz<br>
+            àbçđéfğḥıĵĸłṃñổœřßṯűvẅxỹẓ<br>
+            <span class="onum">1234567890</span> &
+            <span class="smcp">abcdefghijkl<br>
+            mnopqrstuvwxyz 1234567890</span><br>
+            ABCDEFGHIJKLMNOPQRSTU<br>VWXYZ & (1234567890) .,:;…!?
+        </p>
+
+        <p>
+            αβγδεζηθικλμνξοπρσςτυφχψω<br>
+            άέήίϊόύϋώΐΰϗϙϛϝϡ <span class="smcp">αβγδεζηθι<br>
+            κλμνξοπρσςτυφχψω</span> ΑΒΓΔΕ<br>
+            ΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ;<br>
+        </p>
+        <p>
+            абвгґдђѓеёєжнњопрстћќуўuф<br>
+            хцчџшщъыьэюя – ѐёђѓєѕіїјљњ<br>
+            ћќѝўџѣѳѵґғҗҙқҡңҫүұҳҷӂӏӑӕӗ<br>
+            әӣөӳ <span class="smcp">абвгґдђѓеёєжнњопрс<br>
+            тћќуўuфхцчџшщъыьэюя</span> <br>
+            АБВГҐДЂЃЕЁЄЖНЊОПРСТЋЌ<br>
+            УЎUФХЦЧЏШЩЪЫЬЭЮЯ №
+        </p>
+
+            '" ‘’ “” ‚„′″ ‹› «» (•)[·]{-}/|\ * †‡ § @ ¶<br>
+            $ ¢ £ ¥ ₤ ₧ ₩ ₫ € ₮ ₱ ₲ ₴ ₵ ₹ ₺ ₸ ₽ ₿<br>
+            # %‰ ¼ ½ ¾ ⅓ ⅔ ⅛ ⅜ ⅝ ∂ ∫ √<br>
+            + − × ÷ ∙ = < > ≤ ≥ ± ^ ≠ ~ ≈ ¬ ∞ <br>
+            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☐☑✓ ♪
+        </div>
 
         <hr>
-        <h2 style="font-weight: 200;">ExtraLight</h2>
-        <p contenteditable style="font-weight: 200;">
-            Frozen buyer just quickly keyed<br>shocking weaver’s complexion.<br>
-            abcdefghijklmnopqrstuvwxyz<br>
-            ABCDEFGHIJKLMNOPQRSTU<br>
-            VWXYZ 1234567890 & .,:;… ¡!¿?<br>
-            '" ‘’ “” ‚„′″ ‹› «» ()[]{}/|\ * †‡ § @ ¶<br>
-            $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝<br>
-            +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√<br>
-            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☑✓ ♪
-        </p>
-        <hr>
-        <h2 style="font-weight: 300;">Light</h2>
-        <p contenteditable style="font-weight: 300;">
-            Astronaut Quincy B. Zack defies<br>gravity with six jet fuel pumps.<br>
-            abcdefghijklmnopqrstuvwxyz<br>
-            ABCDEFGHIJKLMNOPQRSTU<br>
-            VWXYZ 1234567890 & .,:;… ¡!¿?<br>
-            '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶<br>
-            $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝<br>
-            +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√<br>
-            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☑✓ ♪
-        </p>
-        <hr>
         <h2 style="font-weight: 400;">Regular</h2>
-        <p contenteditable style="font-weight: 400;">
-            Weekly magazines request help<br>for and by junior executives.<br>
-            abcdefghijklmnopqrstuvwxyz<br>
-            ABCDEFGHIJKLMNOPQRSTU<br>
-            VWXYZ 1234567890 & .,:;… ¡!¿?<br>
-            '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶<br>
-            $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝<br>
-            +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√<br>
-            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☑✓ ♪
+        <div contenteditable style="font-weight: 400;">
+        <p>
+            Eble ĉiu kvazaŭ-deca fuŝĥoraĵo<br>
+            ĝojigos homtipon. Quel fez<br>
+            sghembo copre davanti.
         </p>
+
+        <p>
+            Αφορά τα σχολεία σε Άνοιξη,<br>
+            Στον δήμο Μεσολογγίου,<br>
+            Θερμοκρασία: από -5 έως 4<br>
+            βαθμούς κελσίου.
+        </p>
+        <p>
+            Обозначающих кошку, либо<br>
+            самку этого подвида. которое<br>
+            датируется 7500 годом до н.</p>
+        <p>
+            abcdefghijklmnopqrstuvwxyz<br>
+            àbçđéfğḥıĵĸłṃñổœřßṯűvẅxỹẓ<br>
+            <span class="onum">1234567890</span> &
+            <span class="smcp">abcdefghijkl<br>
+            mnopqrstuvwxyz 1234567890</span><br>
+            ABCDEFGHIJKLMNOPQRSTU<br>VWXYZ & (1234567890) .,:;…!?
+        </p>
+
+        <p>
+            αβγδεζηθικλμνξοπρσςτυφχψω<br>
+            άέήίϊόύϋώΐΰϗϙϛϝϡ <span class="smcp">αβγδεζηθι<br>
+            κλμνξοπρσςτυφχψω</span> ΑΒΓΔΕ<br>
+            ΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ;<br>
+        </p>
+        <p>
+            абвгґдђѓеёєжнњопрстћќуўuф<br>
+            хцчџшщъыьэюя – ѐёђѓєѕіїјљњ<br>
+            ћќѝўџѣѳѵґғҗҙқҡңҫүұҳҷӂӏӑӕӗ<br>
+            әӣөӳ <span class="smcp">абвгґдђѓеёєжнњопрс<br>
+            тћќуўuфхцчџшщъыьэюя</span> <br>
+            АБВГҐДЂЃЕЁЄЖНЊОПРСТЋЌ<br>
+            УЎUФХЦЧЏШЩЪЫЬЭЮЯ №
+        </p>
+
+            '" ‘’ “” ‚„′″ ‹› «» (•)[·]{-}/|\ * †‡ § @<br>
+            $ ¢ £ ¥ ₤ ₧ ₩ ₫ € ₮ ₱ ₲ ₴ ₵ ₹ ₺ ₸ ₽ ₿<br>
+            # %‰ ¼ ½ ¾ ⅓ ⅔ ⅛ ⅜ ⅝ ∂ ∫ √<br>
+            + − × ÷ ∙ = < > ≤ ≥ ± ^ ≠ ~ ≈ ¬ ∞ ¶<br>
+            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☐☑✓ ♪
+        </div>
         <hr>
+
         <h2 style="font-weight: 600;">Semibold</h2>
-        <p contenteditable style="font-weight: 600;">
-            The xylophone orchestra vowed<br>to imbibe jugs of kumquat fizz.<br>
-            abcdefghijklmnopqrstuvwxyz<br>
-            ABCDEFGHIJKLMNOPQRSTU<br>
-            VWXYZ 1234567890 & .,:;… ¡!¿?<br>
-            '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶<br>
-            $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝<br>
-            +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√<br>
-            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☑✓ ♪
+        <div contenteditable style="font-weight: 600;">
+        <p>
+            Voyez le brick géant que<br>
+            j’examine près du wharf.<br>
+            Whisky bueno: ¡excitad mi<br>
+            frágil pequeña vejez!
         </p>
+        <p>
+            Αγίου Βλασίου, Νεφώσεις κατά<br>
+            περιόδους αυξημένες με τοπικές<br>
+            χιονοπτώσεις, να ακρωτηριάζη.
+        </p>
+        <p>
+            Звукоподражательными,<br>
+            чтобы питаться грызунами,<br>
+            эта разница в 10 раз меньше.
+        </p>
+        <p>
+            abcdefghijklmnopqrstuvwxyz<br>
+            àbçđéfğḥıĵĸłṃñổœřßṯűvẅxỹẓ<br>
+            <span class="onum">1234567890</span> &
+            <span class="smcp">abcdefghijkl<br>
+            mnopqrstuvwxyz 1234567890</span><br>
+            ABCDEFGHIJKLMNOPQRSTU<br>VWXYZ & (1234567890) .,:;…!?
+        </p>
+
+        <p>
+            αβγδεζηθικλμνξοπρσςτυφχψω<br>
+            άέήίϊόύϋώΐΰϗϙϛϝϡ <span class="smcp">αβγδεζηθι<br>
+            κλμνξοπρσςτυφχψω</span> ΑΒΓΔΕ<br>
+            ΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ;<br>
+        </p>
+        <p>
+            абвгґдђѓеёєжнњопрстћќуўuф<br>
+            хцчџшщъыьэюя – ѐёђѓєѕіїјљњ<br>
+            ћќѝўџѣѳѵґғҗҙқҡңҫүұҳҷӂӏӑӕ<br>
+            ӗәӣөӳ <span class="smcp">абвгґдђѓеёєжнњопр<br>
+            стћќуўuфхцчџшщъыьэюя</span> <br>
+            АБВГҐДЂЃЕЁЄЖНЊОПРСТЋЌ<br>
+            УЎUФХЦЧЏШЩЪЫЬЭЮЯ №
+        </p>
+        <p>
+            '" ‘’ “” ‚„′″ ‹› «» (•)[·]{-}/|\ * †‡ § @<br>
+            $ ¢ £ ¥ ₤ ₧ ₩ ₫ € ₮ ₱ ₲ ₴ ₵ ₹ ₺ ₸ ₽ ₿<br>
+            # %‰ ¼ ½ ¾ ⅓ ⅔ ⅛ ⅜ ⅝ ∂ ∫ √<br>
+            + − × ÷ ∙ = < > ≤ ≥ ± ^ ≠ ~ ≈ ¬ ∞ ¶<br>
+            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☐☑✓ ♪
+        </p>
+        </div>
         <hr>
+
         <h2 style="font-weight: 700;">Bold</h2>
-        <p contenteditable style="font-weight: 700;">
-            Lazy movers quit hard-packing<br>of papier-mache jewelry boxes.<br>
-            abcdefghijklmnopqrstuvwxyz<br>
-            ABCDEFGHIJKLMNOPQRSTUV<br>
-            WXYZ 1234567890 & .,:;… ¡!¿?<br>
-            '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶<br>
-            $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝<br>
-            +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√<br>
-            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☑✓ ♪
+        <div contenteditable style="font-weight: 700;">
+        <p>
+            Một câu có chứa tất cả chữ cái<br>
+            trong bảng chữ cái. Go, lazy fat<br>
+            vixen; be shrewd, jump quick.
         </p>
+        <p>
+            Επίσης, Έχει μέγεθος μικρού<br>
+            σκύλου, Οι Έλληνες δώσαμε<br>
+            στην ιταμή αυτή αξίωσι της<br>
+            φασιστικής βίας.
+        </p>
+        <p>
+            Звукоподражательными,<br>
+            обозначающих кошку, а сама<br>
+            могла прийти к человеку.
+        </p>
+        <p>
+            abcdefghijklmnopqrstuvwxyz<br>
+            àbçđéfğḥıĵĸłṃñổœřßṯűvẅxỹẓ<br>
+            <span class="onum">1234567890</span> &
+            <span class="smcp">abcdefghijkl<br>
+            mnopqrstuvwxyz 12345678</span><br>
+            ABCDEFGHIJKLMNOPQRSTU<br>VWXYZ & (1234567890) .,:;!?
+        </p>
+        <p>
+            αβγδεζηθικλμνξοπρσςτυφχψω<br>
+            άέήίϊόύϋώΐΰϗϙϛϝϡ <span class="smcp">αβγδεζηθι<br>
+            κλμνξοπρσςτυφχψω</span> ΑΒΓΔΕ<br>
+            ΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ;<br>
+        </p>
+        <p>
+            абвгґдђѓеёєжнњопрстћќуўu<br>
+            фхцчџшщъыьэюя – ѐёђѓєѕіїј<br>
+            љњћќѝўџѣѳѵґғҗҙқҡңҫүұҳҷӂӏӑӕӗәӣөӳ <span class="smcp">абвгґдђѓеёєжн<br>
+            њопрстћќуўuфхцчџщъы<br>
+            ьэюя</span>
+            АБВГҐДЂЃЕЁЄЖНЊОП<br>
+            РСЋЌЎUФЦЧЏЩЪЫЬЭЮЯ №<br>
+
+        </p>
+        <p>
+            '" ‘’ “” ‚„′″ ‹› «» (•)[·]{-}/|\ * †‡ § @<br>
+            $ ¢ £ ¥ ₤ ₧ ₩ ₫ € ₮ ₱ ₲ ₴ ₵ ₹ ₺ ₸ ₽<br>
+            # %‰ ¼ ½ ¾ ⅓ ⅔ ⅛ ⅜ ⅝ ∂ ∫ √<br>
+            + − × ÷ ∙ = < > ≤ ≥ ± ^ ≠ ~ ≈ ¬ ∞ ¶<br>
+            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☐☑✓ ♪
+        </p>
+        </div>
         <hr>
+
         <h2 style="font-weight: 900;">Black</h2>
-        <p contenteditable style="font-weight: 900;">
-            How vexing a fumble to drop a<br>jolly zucchini in the quicksand.<br>
-            abcdefghijklmnopqrstuvwxyz<br>
-            ABCDEFGHIJKLMNOPQRSTUV<br>
-            WXYZ 1234567890 & .,:;… ¡!¿?<br>
-            '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶<br>
-            $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝<br>
-            +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√<br>
-            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☑✓ ♪
+        <div contenteditable style="font-weight: 900;">
+        <p>
+            Vår sære Zulu fra badeøya<br>
+            spilte jo whist og quickstep i<br>
+            min taxi. Šerif bo za vajo spet<br>
+            kuhal domače žgance.
         </p>
-        
+        <p>
+            Οι άνεμοι θα πνέουν βόρειοι<br>
+            βορειοδυτικοί 5 με 7 μποφόρ.<br>
+            Ξέγνοιαστες, Ελληνοχωρίου.
+        </p>
+        <p>
+            Обозначающих кошку, подтверждается тем, а сама могла прийти к человеку.
+        </p>
+        <p>
+            abcdefghijklmnopqrstuvwxyz<br>
+            àbçđéfğḥıĵĸłṃñổœřßṯűvẅxỹẓ<br>
+            <span class="onum">1234567890</span> &
+            <span class="smcp">abcdefghijkl<br>
+            mnopqrstuvwxyz 12345678</span><br>
+            ABCDEFGHIJKLMNOPQRSTU<br>VWXYZ & (1234567890) .,:;!?
+        </p>
+        <p>
+            αβγδεζηθικλμνξοπρσςτυφχψω<br>
+            άέήίϊόύϋώΐΰϗϙϛϝϡ <span class="smcp">αβγδεζηθι<br>
+            κλμνξοπρσςτυφχψω</span> ΑΒΓΔΕ<br>
+            ΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ;<br>
+        </p>
+        <p>
+            абвгґдђѓеёєжнњопрстћќуўu<br>
+            фхцчџшщъыьэюя – ѐёђѓєѕіїј<br>
+            љњћќѝўџѣѳѵґғҗҙқҡңҫүұҳҷӂӏӑӕӗәӣөӳ <span class="smcp">абвгґдђѓеёєжн<br>
+            њопрстћќуўuфхцчџщъы<br>
+            ьэюя</span>
+            АБВГҐДЂЃЕЁЄЖНЊОП<br>
+            РСЋЌЎUФЦЧЏЩЪЫЬЭЮЯ №<br>
+
+        </p>
+        <p>
+            '" ‘’ “” ‚„′″ ‹› «» (•)[·]{-}/|\ * †‡ § @<br>
+            $ ¢ £ ¥ ₤ ₧ ₩ ₫ € ₮ ₱ ₲ ₴ ₵ ₹ ₺ ₸ ₽<br>
+            # %‰ ¼ ½ ¾ ⅓ ⅔ ⅛ ⅜ ⅝ ∂ ∫ √<br>
+            + − × ÷ ∙ = < > ≤ ≥ ± ^ ≠ ~ ≈ ¬ ∞ ¶<br>
+            ←↖↑↗→↘↓↙ ▲▶▼◀△▷▽◁ ☐☑✓ ♪
+        </p>
+        </div>
+
         <a class="ribbon" href="https://github.com/adobe-fonts/source-serif-pro">Fork me on GitHub</a>
 
     </article>
