@@ -1,64 +1,69 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
+    <axes>
+        <axis default="0.0" maximum="1000.0" minimum="0.0" name="weight" tag="wght">
+            <labelname xml:lang="en">Weight</labelname>
+        </axis>
+    </axes>
     <sources>
-        <source filename="SourceSerifPro_0.ufo" name="master.Source Serif Pro Master.0.0">
-            <location>
-                <dimension name="weight" xvalue="0.000000" />
-            </location>
-        </source>
-        <source filename="SourceSerifPro_1.ufo" name="master.Source Serif Pro Master.1.1">
+        <source filename="master_0/master.ufo" name="master_0">
             <lib copy="1" />
             <groups copy="1" />
             <info copy="1" />
             <location>
-                <dimension name="weight" xvalue="1000.000000" />
+                <dimension name="weight" xvalue="0" />
             </location>
         </source>
-        <source filename="SourceSerifPro_2.ufo" name="master.Source Serif Pro Master.2.2">
+        <source filename="master_1/master.ufo" name="master_1">
             <location>
-                <dimension name="weight" xvalue="2000.000000" />
+                <dimension name="weight" xvalue="368" />
+            </location>
+        </source>
+        <source filename="master_2/master.ufo" name="master_2">
+            <location>
+                <dimension name="weight" xvalue="1000" />
             </location>
         </source>
     </sources>
     <instances>
         <instance familyname="Source Serif Pro" filename="../Roman/ExtraLight/font.ufo" postscriptfontname="SourceSerifPro-ExtraLight" stylename="ExtraLight">
             <location>
-                <dimension name="weight" xvalue="0.000000" />
+                <dimension name="weight" xvalue="0" />
             </location>
             <kerning />
             <info />
         </instance>
         <instance familyname="Source Serif Pro" filename="../Roman/Light/font.ufo" postscriptfontname="SourceSerifPro-Light" stylename="Light">
             <location>
-                <dimension name="weight" xvalue="408.000000" />
+                <dimension name="weight" xvalue="150" />
             </location>
             <kerning />
             <info />
         </instance>
         <instance familyname="Source Serif Pro" filename="../Roman/Regular/font.ufo" postscriptfontname="SourceSerifPro-Regular" stylename="Regular">
             <location>
-                <dimension name="weight" xvalue="1041.000000" />
+                <dimension name="weight" xvalue="394" />
             </location>
             <kerning />
             <info />
         </instance>
         <instance familyname="Source Serif Pro" filename="../Roman/Semibold/font.ufo" postscriptfontname="SourceSerifPro-Semibold" stylename="Semibold">
             <location>
-                <dimension name="weight" xvalue="1367.000000" />
+                <dimension name="weight" xvalue="600" />
             </location>
             <kerning />
             <info />
         </instance>
         <instance familyname="Source Serif Pro" filename="../Roman/Bold/font.ufo" postscriptfontname="SourceSerifPro-Bold" stylename="Bold">
             <location>
-                <dimension name="weight" xvalue="1722.000000" />
+                <dimension name="weight" xvalue="824" />
             </location>
             <kerning />
             <info />
         </instance>
         <instance familyname="Source Serif Pro" filename="../Roman/Black/font.ufo" postscriptfontname="SourceSerifPro-Black" stylename="Black">
             <location>
-                <dimension name="weight" xvalue="2000.000000" />
+                <dimension name="weight" xvalue="1000" />
             </location>
             <kerning />
             <info />
