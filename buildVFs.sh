@@ -1,0 +1,2 @@
+buildMasterOTFs RomanMasters/SourceSerifPro.designspace
+buildCFF2VF RomanMasters/SourceSerifPro.designspace  SourceSerifPro-Variable.otf
