@@ -10,7 +10,7 @@ In addition to functional OpenType fonts, this open source repository provides a
 
 ## Font installation instructions
 
-* [Mac OS X](http://support.apple.com/kb/HT2509)
+* [macOS](http://support.apple.com/kb/HT2509)
 * [Windows](https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx)
 * [Linux/Unix-based systems](https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116)
 * Bower<br/>
