@@ -30,7 +30,7 @@ To build the binary font files from source, you need to have the [Adobe Font Dev
 
 The key to building OTF or TTF fonts is `makeotf`, which is part of the AFDKO toolset. Information and usage instructions can be found by executing `makeotf -h`.
 
-In this repository, all necessary files are in place for building the OTF and TTF fonts.  
+In this repository, all necessary files are in place for building the OTF and TTF fonts.
 For example, build a binary OTF font for the Regular style like this:
 
 ```sh
@@ -40,7 +40,7 @@ $ makeotf -r
 
 ### Building all fonts
 
-For convenience, a shell script named `build.sh` is provided in the root directory.  
+For convenience, a shell script named `build.sh` is provided in the root directory.
 It builds all OTFs and TTFs, and can be executed by typing:
 
 ```sh
@@ -49,9 +49,9 @@ $ ./build.sh
 
 ## Getting Involved
 
-Send suggestions for changes to the Source Serif OpenType font project maintainer, [Frank Grießhammer](mailto:opensourcefonts@adobe.com?subject=[GitHub] Source Serif Pro), for consideration.
+Send suggestions for changes to the Source Serif OpenType font project maintainer, [Frank Grießhammer](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Serif%20Pro), for consideration.
 
 ## Further information
 
-For information about the design and background of Source Serif, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-serif-pro-readme.html).  
+For information about the design and background of Source Serif, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-serif-pro-readme.html).
 For a quick glance at the design of Source Serif, see the [editable web specimen](http://adobe-fonts.github.io/source-serif-pro/).
