@@ -17,9 +17,9 @@ In addition to functional OpenType fonts, this open source repository provides a
 
 ## Getting Involved
 
-Send suggestions for changes to the Source Serif OpenType font project maintainer, [Frank Grießhammer](mailto:opensourcefonts@adobe.com?subject=[GitHub] Source Serif Pro), for consideration.
+Send suggestions for changes to the Source Serif OpenType font project maintainer, [Frank Grießhammer](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Serif%20Pro), for consideration.
 
 ## Further information
 
-For information about the design and background of Source Serif, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-serif-pro-readme.html).  
+For information about the design and background of Source Serif, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-serif-pro-readme.html).
 For a quick glance at the design of Source Serif, see the [editable web specimen](http://adobe-fonts.github.io/source-serif-pro/).
