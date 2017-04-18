@@ -5,6 +5,11 @@ target/*
 Source*.otf
 Source*.ttf
 
+# ignore processed glyphs & hashmap in Italics:
+Italic/*/*/glyphs.com.adobe.type.processedGlyphs/
+Italic/*/*/data/com.adobe.type.processedHashMap
+Italic/*/*/layercontents.plist
+
 # ignore processed glyphs & hashmap in masters:
 *Masters/*/glyphs.com.adobe.type.processedGlyphs/
 *Masters/*/data/com.adobe.type.processedHashMap
@@ -12,3 +17,4 @@ Source*.ttf
 
 # various:
 *.log
+_Versions/*
