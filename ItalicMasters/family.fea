@@ -35,18 +35,18 @@ feature locl { # Localized Forms
 } locl;
 
 
-# #--------------------------------------
-# feature tnum { # Tabular Figures
-#     sub @FIGURES_LINING by @FIGURES_LINING_TABULAR;
-#     sub @FIGURES_OLDSTYLE by @FIGURES_OLDSTYLE_TABULAR;
-# } tnum;
+#--------------------------------------
+feature tnum { # Tabular Figures
+    sub @FIGURES_LINING by @FIGURES_LINING_TABULAR;
+    sub @FIGURES_OLDSTYLE by @FIGURES_OLDSTYLE_TABULAR;
+} tnum;
 
 
-# #--------------------------------------
-# feature onum { # Oldstyle Figures
-#     sub @FIGURES_LINING by @FIGURES_OLDSTYLE;
-#     sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
-# } onum;
+#--------------------------------------
+feature onum { # Oldstyle Figures
+    sub @FIGURES_LINING by @FIGURES_OLDSTYLE;
+    sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
+} onum;
 
 
 #--------------------------------------
