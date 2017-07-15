@@ -1,6 +1,6 @@
 #!/bin/env sh
 
-rom=RomanMasters
+rom=Roman/Masters
 
 # build variable OTFs
 buildMasterOTFs $rom/SourceSerifVariable-Roman.designspace
@@ -24,5 +24,5 @@ sfntedit -x cmap=$rom/.tb_cmap,GDEF=$rom/.tb_GDEF,GPOS=$rom/.tb_GPOS,GSUB=$rom/.
 sfntedit -a cmap=$rom/.tb_cmap,GDEF=$rom/.tb_GDEF,GPOS=$rom/.tb_GPOS,GSUB=$rom/.tb_GSUB $rom/SourceSerifVariable-Roman.otf
 
 # delete build artifacts
-rm $rom/master_*/master.*tf
-rm $rom/.tb_*
+rm */Masters/master_*/master.*tf
+rm */Masters/.tb_*
