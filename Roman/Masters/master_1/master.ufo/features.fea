@@ -1,11 +1,11 @@
-include (../../../familyTables.fea);
+include (../../../../familyTables.fea);
 
 table OS/2 {
-	include (../../../Roman/Regular/os2.fea);
-	include (../../../familyOS2.fea);
+	include (../../../Instances/Regular/os2.fea);
+	include (../../../../familyOS2.fea);
 } OS/2;
 
-include (../../../familyGSUB.fea);
+include (../../../../familyGSUB.fea);
 
 # GPOS -----------------------------------
 feature mark {
