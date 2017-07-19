@@ -1,16 +1,9 @@
-include (../../../../familyTables.fea);
+include (../../../../featuresVar.fea);
 
 table OS/2 {
 	include (../../../Instances/Regular/os2.fea);
 	include (../../../../familyOS2.fea);
 } OS/2;
-
-table name {
-	include (../../nameIDs.fea);
-	include (../../../../familynameIDs.fea);
-} name;
-
-include (../../../../familyGSUB.fea);
 
 # GPOS -----------------------------------
 feature mark {
