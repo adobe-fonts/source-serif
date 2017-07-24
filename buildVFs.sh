@@ -26,5 +26,5 @@ sfntedit -x cmap=$rom/.tb_cmap,GDEF=$rom/.tb_GDEF,GPOS=$rom/.tb_GPOS,GSUB=$rom/.
 sfntedit -a cmap=$rom/.tb_cmap,GDEF=$rom/.tb_GDEF,GPOS=$rom/.tb_GPOS,GSUB=$rom/.tb_GSUB $rom/$ro_name.otf
 
 # delete build artifacts
-rm */Masters/master_*/master.*tf
 rm */Masters/.tb_*
+rm */Masters/master_*/*.*tf
