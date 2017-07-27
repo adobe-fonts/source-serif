@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="equal" format="1">
 	<unicode hex="003D"/>
-	<advance width="509"/>
+	<advance width="530"/>
 	<outline>
-		<component base="minus" yOffset="70"/>
-		<component base="minus" yOffset="-70"/>
+		<component base="minus" yOffset="-100"/>
+		<component base="minus" yOffset="100"/>
 	</outline>
 	<lib>
 		<dict>
@@ -120,7 +120,55 @@
 					<array>
 					</array>
 					<key>width</key>
-					<integer>509</integer>
+					<integer>530</integer>
+				</dict>
+				<key>background</key>
+				<dict>
+					<key>anchors</key>
+					<array>
+					</array>
+					<key>components</key>
+					<array>
+						<dict>
+							<key>baseGlyph</key>
+							<string>minus</string>
+							<key>transformation</key>
+							<array>
+								<integer>1</integer>
+								<integer>0</integer>
+								<integer>0</integer>
+								<integer>1</integer>
+								<integer>0</integer>
+								<integer>70</integer>
+							</array>
+						</dict>
+						<dict>
+							<key>baseGlyph</key>
+							<string>minus</string>
+							<key>transformation</key>
+							<array>
+								<integer>1</integer>
+								<integer>0</integer>
+								<integer>0</integer>
+								<integer>1</integer>
+								<integer>0</integer>
+								<integer>-70</integer>
+							</array>
+						</dict>
+					</array>
+					<key>contours</key>
+					<array>
+					</array>
+					<key>lib</key>
+					<dict>
+					</dict>
+					<key>name</key>
+					<string>equal</string>
+					<key>unicodes</key>
+					<array>
+					</array>
+					<key>width</key>
+					<integer>530</integer>
 				</dict>
 				<key>other</key>
 				<dict>
@@ -232,7 +280,7 @@
 					<array>
 					</array>
 					<key>width</key>
-					<integer>509</integer>
+					<integer>530</integer>
 				</dict>
 			</dict>
 			<key>com.typemytype.robofont.mark</key>

@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="greaterequal" format="1">
 	<unicode hex="2265"/>
-	<advance width="512"/>
+	<advance width="530"/>
 	<outline>
-		<component base="lessequal" xScale="-1" xOffset="526"/>
+		<contour>
+			<point x="29" y="0" type="line"/>
+			<point x="501" y="0" type="line"/>
+			<point x="501" y="56" type="line"/>
+			<point x="29" y="56" type="line"/>
+		</contour>
+		<contour>
+			<point x="485" y="307" type="line"/>
+			<point x="485" y="353" type="line"/>
+			<point x="88" y="559" type="line"/>
+			<point x="58" y="507" type="line"/>
+			<point x="426" y="323" type="line"/>
+			<point x="426" y="337" type="line"/>
+			<point x="58" y="153" type="line"/>
+			<point x="88" y="101" type="line"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
@@ -179,7 +194,42 @@
 					<array>
 					</array>
 					<key>width</key>
-					<integer>512</integer>
+					<integer>530</integer>
+				</dict>
+				<key>background</key>
+				<dict>
+					<key>anchors</key>
+					<array>
+					</array>
+					<key>components</key>
+					<array>
+						<dict>
+							<key>baseGlyph</key>
+							<string>lessequal</string>
+							<key>transformation</key>
+							<array>
+								<integer>-1</integer>
+								<integer>0</integer>
+								<integer>0</integer>
+								<integer>1</integer>
+								<integer>526</integer>
+								<integer>0</integer>
+							</array>
+						</dict>
+					</array>
+					<key>contours</key>
+					<array>
+					</array>
+					<key>lib</key>
+					<dict>
+					</dict>
+					<key>name</key>
+					<string>greaterequal</string>
+					<key>unicodes</key>
+					<array>
+					</array>
+					<key>width</key>
+					<integer>530</integer>
 				</dict>
 			</dict>
 			<key>com.typemytype.robofont.mark</key>
