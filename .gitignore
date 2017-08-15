@@ -1,12 +1,11 @@
 # ignore build folder:
-target/*
+target
 
 # ignore font binaries in master branch:
 Source*.otf
 Source*.ttf
 
 # ignore processed glyphs & hashmap in masters:
-*Masters/*/glyphs.com.adobe.type.processedGlyphs/
-*Masters/*/data/com.adobe.type.processedHashMap
-*Masters/*/layercontents.plist
-
+*/*/*/master.ufo/glyphs.com.adobe.type.processedGlyphs
+*/*/*/master.ufo/data/com.adobe.type.processedHashMap
+*/*/*/master.ufo/layercontents.plist
