@@ -2,21 +2,21 @@ table head {
 	FontRevision 2.000;
 } head;
 
-include (../../family.fea)
+include (../../family.fea);
 
 feature mark {
-    include (mark.fea)
+    include (mark.fea);
 } mark;
 
 feature mkmk {
-    include (mkmk.fea)
+    include (mkmk.fea);
 } mkmk;
 
 feature kern {
-	include (kern.fea)
+	include (kern.fea);
 } kern;
 
-include (../../tables.fea)
+include (../../tables.fea);
 
 table OS/2 {
     Panose 2 4 3 3 5 4 5 2 2 4;
