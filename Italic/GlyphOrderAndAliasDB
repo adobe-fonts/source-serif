@@ -1,6 +1,4 @@
 .notdef	.notdef
-NULL	NULL	uni0000
-CR	CR	uni000D
 space	space
 A	A
 B	B
@@ -189,12 +187,12 @@ oe	oe
 racute	racute
 uni0157	rcommaaccent
 rcaron	rcaron
-germandbls	germandbls
-longs	longs
 sacute	sacute
 scaron	scaron
 uni015F	scedilla
 uni0219	scommaaccent
+longs	longs
+germandbls	germandbls
 tcaron	tcaron
 uni0163	tcedilla
 uni021B	tcommaaccent
@@ -216,8 +214,6 @@ thorn	thorn
 f_i	f_i	uniFB01
 f_l	f_l	uniFB02
 f_t	f_t
-f_f	f_f
-f_f_i	f_f_i
 ampersand	ampersand
 zero	zero
 one	one
@@ -391,44 +387,14 @@ parenleft.numr	parenleft.numr
 parenright.numr	parenright.numr
 period.numr	period.numr
 comma.numr	comma.numr
-ordfeminine	ordfeminine
-ordmasculine	ordmasculine
-a.sups	a.sups	uni1D43
-b.sups	b.sups	uni1D47
-c.sups	c.sups	uni1D9C
-d.sups	d.sups	uni1D48
-e.sups	e.sups	uni1D49
-f.sups	f.sups	uni1DA0
-g.sups	g.sups	uni1D4D
-h.sups	h.sups	uni02B0
-i.sups	i.sups	uni2071
-j.sups	j.sups	uni02B2
-k.sups	k.sups	uni1D4F
-l.sups	l.sups	uni02E1
-m.sups	m.sups	uni1D50
-n.sups	n.sups	uni207F
-o.sups	o.sups	uni1D52
-p.sups	p.sups	uni1D56
-q.sups	q.sups
-r.sups	r.sups	uni02B3
-s.sups	s.sups	uni02E2
-t.sups	t.sups	uni1D57
-u.sups	u.sups	uni1D58
-v.sups	v.sups	uni1D5B
-w.sups	w.sups	uni02B7
-x.sups	x.sups	uni02E3
-y.sups	y.sups	uni02B8
-z.sups	z.sups	uni1DBB
-egrave.sups	egrave.sups
-eacute.sups	eacute.sups
 degree	degree
 currency	currency
 dollar	dollar
+cent	cent
 sterling	sterling
 yen	yen
-Euro	Euro
-cent	cent
 uni0192	florin
+Euro	Euro
 uni20B9	rupeeindian
 uni20BA	liraturkish
 fraction	fraction
@@ -465,7 +431,6 @@ notequal	notequal
 asciitilde	asciitilde
 approxequal	approxequal
 logicalnot	logicalnot
-pi	pi
 infinity	infinity
 uni00B5	mu.math
 partialdiff	partialdiff
@@ -477,42 +442,18 @@ summation	summation
 product	product
 uni2113	litre
 estimated	estimated
-uni2190	arrowleft
-uni2196	arrowupleft
-arrowup	arrowup
-uni2197	arrowupright
-uni2192	arrowright
-uni2198	arrowdownright
-arrowdown	arrowdown
-uni2199	arrowdownleft
-uni25A0	squareblack
-uni25C6	diamondblack
-uni25C9	fisheye
-uni2752	squareshadow
-triagup	triangleblackup
-uni25B3	trianglewhiteup
-uni25B6	triangleblackright
-uni25B7	trianglewhiteright
-triagdn	triangleblackdown
-uni25BD	trianglewhitedown
-uni25C0	triangleblackleft
-uni25C1	trianglewhiteleft
-uni2610	checkbox
-uni2611	checkedbox
-uni2713	check
-musicalnote	eighthnote
 lozenge	lozenge
 uni2032	prime
 uni2033	dblprime
 uni02BB	commaturnedmod
 uni02BC	apostrophemod
+uni02C9	macronmod
+uni02CA	acutemod
+uni02CB	gravemod
 grave	grave
 acute	acute
 circumflex	circumflex
 caron	caron
-uni02C9	macronmod
-uni02CA	acutemod
-uni02CB	gravemod
 tilde	tilde
 dieresis	dieresis
 macron	macron
@@ -549,161 +490,4 @@ caroncmb.cap	caroncmb.cap
 uni0326	commabelowcmb
 uni0327	cedillacmb
 uni0328	ogonekcmb
-uni0410	Acyr
-uni0411	Be
-uni0412	Ve
-uni0413	Ghe
-uni0414	De
-uni0415	Ie
-uni0416	Zhe
-uni0417	Ze
-uni0418	Icyr
-uni0419	Ishort
-uni041A	Ka
-uni041B	El
-uni041C	Em
-uni041D	En
-uni041E	Ocyr
-uni041F	Pe
-uni0420	Er
-uni0421	Es
-uni0422	Te
-uni0423	Ucyr
-uni0424	Ef
-uni0425	Ha
-uni0426	Tse
-uni0427	Che
-uni0428	Sha
-uni0429	Shcha
-uni042A	Hard
-uni042B	Yeru
-uni042C	Soft
-uni042D	Ecyr
-uni042E	Yu
-uni042F	Ya
-uni0400	Iegrave
-uni0401	Io
-uni0402	Dje
-uni0403	Gje
-uni0404	Ieukran
-uni0405	Dze
-uni0406	Iukran
-uni0407	Yi
-uni0408	Je
-uni0409	Lje
-uni040A	Nje
-uni040B	Tshe
-uni040C	Kje
-uni040D	Igravecyr
-uni040E	Ushort
-uni040F	Dzhe
-uni0462	Yat
-uni0472	Fita
-uni0474	Izhitsa
-uni0490	Gheup
-uni0492	Ghestroke
-uni0496	Zhedescender
-uni0498	Zedescender
-uni049A	Kadescender
-uni04A0	Kabashkir
-uni04A2	Endescender
-uni04AA	Esdescender
-uni04AE	Ustraight
-uni04B0	Ustraightstroke
-uni04B2	Hadescender
-uni04B6	Chedescender
-uni04BA	Shha
-uni04C0	Palochka
-uni04C1	Zhebreve
-uni04D0	Abrevecyr
-uni04D4	Aie
-uni04D6	Iebreve
-uni04D8	Schwacyr
-uni04E2	Imacroncyr
-uni04E6	Odieresiscyr
-uni04E8	Obarcyr
-uni04EE	Umacroncyr
-uni04F2	Uacutedblcyr
-uni0430	acyr
-uni0431	be
-uni0432	ve
-uni0433	ghe
-uni0434	de
-uni0435	ie
-uni0436	zhe
-uni0437	ze
-uni0438	icyr
-uni0439	ishort
-uni043A	ka
-uni043B	el
-uni043C	em
-uni043D	en
-uni043E	ocyr
-uni043F	pe
-uni0440	er
-uni0441	es
-uni0442	te
-uni0443	ucyr
-uni0444	ef
-uni0445	ha
-uni0446	tse
-uni0447	che
-uni0448	sha
-uni0449	shcha
-uni044A	hard
-uni044B	yeru
-uni044C	soft
-uni044D	ecyr
-uni044E	yu
-uni044F	ya
-uni0450	iegrave
-uni0451	io
-uni0452	dje
-uni0453	gje
-uni0454	ieukran
-uni0455	dze
-uni0456	iukran
-uni0457	yi
-uni0458	je
-uni0459	lje
-uni045A	nje
-uni045B	tshe
-uni045C	kje
-uni045D	igravecyr
-uni045E	ushort
-uni045F	dzhe
-uni0463	yat
-uni0473	fita
-uni0475	izhitsa
-uni0491	gheup
-uni0493	ghestroke
-uni0497	zhedescender
-uni0499	zedescender
-uni049B	kadescender
-uni04A1	kabashkir
-uni04A3	endescender
-uni04AB	esdescender
-uni04AF	ustraight
-uni04B1	ustraightstroke
-uni04B3	hadescender
-uni04B7	chedescender
-uni04BB	shha
-uni04C2	zhebreve
-uni04CF	palochka
-uni04D1	abrevecyr
-uni04D5	aie
-uni04D7	iebreve
-uni04D9	schwacyr
-uni04E3	imacroncyr
-uni04E7	odieresiscyr
-uni04E9	obarcyr
-uni04EF	umacroncyr
-uni04F3	uacutedblcyr
-uni0431.srb	be.srb
-uni0433.srb	ghe.srb
-uni0434.srb	de.srb
-uni043F.srb	pe.srb
-uni0442.srb	te.srb
-uni2116	numero
-brevecmb.cyr	brevecmb.cyr
-brevecmb.cyrcap	brevecmb.cyrcap
+pi	pi
