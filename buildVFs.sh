@@ -5,8 +5,8 @@ rom=Roman/Masters
 ro_name=SourceSerifVariable-Roman
 
 # build variable OTFs
-buildMasterOTFs $rom/$ro_name.designspace
-buildCFF2VF -p $rom/$ro_name.designspace
+buildmasterotfs $rom/$ro_name.designspace
+buildcff2vf -p $rom/$ro_name.designspace
 
 # extract and subroutinize the CFF2 table
 echo 'Subroutinizing' $rom/$ro_name.otf
