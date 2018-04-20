@@ -1,4 +1,4 @@
-# Created: Tue Nov 15 17:24:28 2016
+# Created: Wed Jul 26 18:55:55 2017
 # PS Name: SourceSerifPro-Black
 # MM Inst: None
 # exported from Defcon
@@ -138,6 +138,8 @@ lookup MARK_BASE_aboveUC {
 	pos base Ka.sc <anchor 366 560> mark @MC_aboveUC;
 	pos base L <anchor 202 682> mark @MC_aboveUC;
 	pos base L.sc <anchor 199 560> mark @MC_aboveUC;
+	pos base M <anchor 441 682> mark @MC_aboveUC;
+	pos base M.sc <anchor 412 560> mark @MC_aboveUC;
 	pos base N <anchor 358 682> mark @MC_aboveUC;
 	pos base OE <anchor 511 682> mark @MC_aboveUC;
 	pos base OE.sc <anchor 483 560> mark @MC_aboveUC;
@@ -187,6 +189,7 @@ lookup MARK_BASE_baseLC {
 lookup MARK_BASE_belowLC {
 	@bGC_A_belowLC = [A X];
 	@bGC_D_belowLC = [D n];
+	@bGC_M.sc_belowLC = [M.sc R.sc];
 	@bGC_O_belowLC = [O Ohorn];
 	@bGC_U.sc_belowLC = [U.sc Uhorn.sc];
 	@bGC_U_belowLC = [U Uhorn];
@@ -198,6 +201,7 @@ lookup MARK_BASE_belowLC {
 	@bGC_u_belowLC = [u uhorn];
 	pos base @bGC_A_belowLC <anchor 300 -22> mark @MC_belowLC;
 	pos base @bGC_D_belowLC <anchor 320 -22> mark @MC_belowLC;
+	pos base @bGC_M.sc_belowLC <anchor 368 -18> mark @MC_belowLC;
 	pos base @bGC_O_belowLC <anchor 350 -22> mark @MC_belowLC;
 	pos base @bGC_U.sc_belowLC <anchor 367 -18> mark @MC_belowLC;
 	pos base @bGC_U_belowLC <anchor 386 -22> mark @MC_belowLC;
@@ -229,13 +233,13 @@ lookup MARK_BASE_belowLC {
 	pos base K.sc <anchor 359 -18> mark @MC_belowLC;
 	pos base L <anchor 304 -22> mark @MC_belowLC;
 	pos base L.sc <anchor 293 -18> mark @MC_belowLC;
+	pos base M <anchor 392 -22> mark @MC_belowLC;
 	pos base N <anchor 381 -22> mark @MC_belowLC;
 	pos base N.sc <anchor 362 -18> mark @MC_belowLC;
 	pos base O.sc <anchor 335 -18> mark @MC_belowLC;
 	pos base P <anchor 205 -22> mark @MC_belowLC;
 	pos base P.sc <anchor 201 -18> mark @MC_belowLC;
 	pos base R <anchor 387 -22> mark @MC_belowLC;
-	pos base R.sc <anchor 368 -18> mark @MC_belowLC;
 	pos base S <anchor 266 -22> mark @MC_belowLC;
 	pos base S.sc <anchor 257 -18> mark @MC_belowLC;
 	pos base Schwa <anchor 341 -22> mark @MC_belowLC;

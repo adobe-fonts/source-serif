@@ -1,15 +1,17 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 family=SourceSerifPro
-weights='ExtraLight Light Regular Semibold Bold Black'
+romanWeights='ExtraLight Light Regular Semibold Bold Black'
 
 # clean existing build artifacts
 rm -rf target/
-mkdir target/ target/OTF/ target/TTF/
+otfDir="target/OTF"
+ttfDir="target/TTF"
+mkdir -p $otfDir $ttfDir
 
-for w in $weights
+for w in $romanWeights
 do
-  makeotf -f Roman/$w/font.ufo -r -o target/OTF/$family-$w.otf
-  makeotf -f Roman/$w/font.ttf -r -o target/TTF/$family-$w.ttf
-  rm Roman/$w/current.fpr # remove default options file from the source tree after building
+  font_path=Roman/Instances/$w/font
+  makeotf -f $font_path.ufo -r -o $otfDir/$family-$w.otf
+  makeotf -f $font_path.ttf -r -o $ttfDir/$family-$w.ttf -ff $font_path.ufo/features.fea
 done
