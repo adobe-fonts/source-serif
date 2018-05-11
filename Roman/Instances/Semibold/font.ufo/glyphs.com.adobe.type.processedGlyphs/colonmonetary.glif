@@ -4,15 +4,12 @@
   <unicode hex="20A1" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="curve" x="133" y="307" />
-      <point x="133" y="424" />
-      <point x="171" y="519" />
-      <point type="curve" x="238" y="568" />
-      <point type="line" x="182" y="114" />
-      <point x="152" y="162" />
-      <point x="133" y="228" />
-    </contour>
-    <contour>
+      <point name="hintSet0000" type="line" x="154" y="-115" />
+      <point type="line" x="195" y="-115" />
+      <point type="line" x="208" y="-5" />
+      <point x="227" y="-10" />
+      <point x="246" y="-13" />
+      <point type="curve" x="265" y="-14" />
       <point name="hintSet0004" type="line" x="253" y="-115" />
       <point type="line" x="294" y="-115" />
       <point name="hintSet0006" type="line" x="307" y="-13" />
@@ -61,22 +58,25 @@
       <point x="18" y="162" />
       <point x="76" y="55" />
       <point type="curve" x="169" y="10" />
-      <point type="line" x="154" y="-115" />
-      <point type="line" x="195" y="-115" />
-      <point type="line" x="208" y="-5" />
-      <point x="227" y="-10" />
-      <point x="246" y="-13" />
-      <point type="curve" x="265" y="-14" />
     </contour>
     <contour>
-      <point type="line" x="272" y="41" />
-      <point x="253" y="46" />
-      <point x="234" y="57" />
+      <point type="curve" x="133" y="307" />
+      <point x="133" y="424" />
+      <point x="171" y="519" />
+      <point type="curve" x="238" y="568" />
+      <point type="line" x="182" y="114" />
+      <point x="152" y="162" />
+      <point x="133" y="228" />
+    </contour>
+    <contour>
       <point type="curve" x="218" y="72" />
-      <point name="hintSet0034" type="line" x="282" y="592" />
+      <point name="hintSet0033" type="line" x="282" y="592" />
       <point x="300" y="599" />
       <point x="320" y="603" />
       <point type="curve" x="341" y="604" />
+      <point type="line" x="272" y="41" />
+      <point name="hintSet0036" x="253" y="46" />
+      <point x="234" y="57" />
     </contour>
   </outline>
   <lib>
@@ -84,7 +84,7 @@
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>f9ef28f5c6a481fcdb874a74b548b8dd8523c509773f9848279ff71196d8426b7157548500a18470bf33ec933ed83b9e75fa2b604ca46d74f9e3ec508761d7c4</string>
+        <string>afa9262a32c3bcddf9190856684d40c0f0f05c3718d27107693caa7ce7182a131b0023e00237ec5b01e02ce837205a69bf9a299765b2025b8cf8ac994d34e258</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -149,11 +149,23 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0034</string>
+            <string>hintSet0033</string>
             <key>stems</key>
             <array>
               <string>hstem 16 -21</string>
               <string>hstem 604 49</string>
+              <string>vstem 18 115</string>
+              <string>vstem 253 41.5</string>
+              <string>vstem 352.5 41.5</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0036</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 16 -21</string>
+              <string>hstem 644 -20</string>
               <string>vstem 18 115</string>
               <string>vstem 253 41.5</string>
               <string>vstem 352.5 41.5</string>

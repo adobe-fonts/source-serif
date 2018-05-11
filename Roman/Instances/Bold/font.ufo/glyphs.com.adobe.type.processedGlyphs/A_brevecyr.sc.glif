@@ -3,25 +3,30 @@
   <advance width="622" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="9" y="0" />
-      <point name="hintSet0001" type="line" x="209" y="0" />
-      <point name="hintSet0002" type="line" x="209" y="51" />
-      <point name="hintSet0003" type="line" x="141" y="60" />
+      <point name="hintSet0000" type="line" x="270" y="407" />
+      <point type="line" x="340" y="208" />
+      <point type="line" x="196" y="208" />
+    </contour>
+    <contour>
+      <point name="hintSet0003" type="line" x="9" y="0" />
+      <point type="line" x="209" y="0" />
+      <point name="hintSet0005" type="line" x="209" y="51" />
+      <point name="hintSet0006" type="line" x="141" y="60" />
       <point type="line" x="176" y="153" />
       <point type="line" x="360" y="153" />
-      <point name="hintSet0006" type="line" x="394" y="57" />
+      <point name="hintSet0009" type="line" x="394" y="57" />
       <point type="line" x="324" y="48" />
-      <point name="hintSet0008" type="line" x="324" y="0" />
+      <point name="hintSet0011" type="line" x="324" y="0" />
       <point type="line" x="603" y="0" />
-      <point name="hintSet0010" type="line" x="603" y="48" />
+      <point name="hintSet0013" type="line" x="603" y="48" />
       <point type="line" x="550" y="54" />
       <point type="line" x="366" y="541" />
       <point type="line" x="271" y="541" />
-      <point name="hintSet0014" type="line" x="85" y="60" />
-      <point name="hintSet0015" type="line" x="9" y="51" />
+      <point name="hintSet0017" type="line" x="85" y="60" />
+      <point name="hintSet0018" type="line" x="9" y="51" />
     </contour>
     <contour>
-      <point name="hintSet0016" type="curve" x="312" y="595" />
+      <point name="hintSet0019" type="curve" x="312" y="595" />
       <point x="416" y="595" />
       <point x="499" y="644" />
       <point type="curve" x="499" y="740" />
@@ -52,18 +57,13 @@
       <point x="125" y="644" />
       <point x="208" y="595" />
     </contour>
-    <contour>
-      <point type="line" x="340" y="208" />
-      <point type="line" x="196" y="208" />
-      <point type="line" x="270" y="407" />
-    </contour>
   </outline>
   <lib>
     <dict>
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>0c361954c0b77556c4fca03ce16bd59abd6bc3ff117096f8acdcd32c38d5801f90c531b505c439bac16212968aa3c91c95e9cc5ca68edf491ab5c743534592d7</string>
+        <string>255aaf0e01e084d77008f9c06d44265e67772334a7e27f85c162d5189e1958aa4ff9940c30b018f5886c11a3b2a09b44801b3b7c4ccf3019bcd169e2fb31f91a</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -75,30 +75,6 @@
               <string>hstem 153 55</string>
               <string>hstem 595 51</string>
               <string>vstem 125 114</string>
-              <string>vstem 385 114</string>
-            </array>
-          </dict>
-          <dict>
-            <key>pointTag</key>
-            <string>hintSet0001</string>
-            <key>stems</key>
-            <array>
-              <string>hstem 0 55.5</string>
-              <string>hstem 153 55</string>
-              <string>hstem 595 51</string>
-              <string>vstem 9 200</string>
-              <string>vstem 385 114</string>
-            </array>
-          </dict>
-          <dict>
-            <key>pointTag</key>
-            <string>hintSet0002</string>
-            <key>stems</key>
-            <array>
-              <string>hstem 0 51</string>
-              <string>hstem 153 55</string>
-              <string>hstem 595 51</string>
-              <string>vstem 9 200</string>
               <string>vstem 385 114</string>
             </array>
           </dict>
@@ -116,7 +92,31 @@
           </dict>
           <dict>
             <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 51</string>
+              <string>hstem 153 55</string>
+              <string>hstem 595 51</string>
+              <string>vstem 9 200</string>
+              <string>vstem 385 114</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
             <string>hintSet0006</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 55.5</string>
+              <string>hstem 153 55</string>
+              <string>hstem 595 51</string>
+              <string>vstem 9 200</string>
+              <string>vstem 385 114</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0009</string>
             <key>stems</key>
             <array>
               <string>hstem 0 52.5</string>
@@ -128,7 +128,7 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0008</string>
+            <string>hintSet0011</string>
             <key>stems</key>
             <array>
               <string>hstem 0 55.5</string>
@@ -140,7 +140,7 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0010</string>
+            <string>hintSet0013</string>
             <key>stems</key>
             <array>
               <string>hstem 0 51</string>
@@ -152,7 +152,7 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0014</string>
+            <string>hintSet0017</string>
             <key>stems</key>
             <array>
               <string>hstem 0 55.5</string>
@@ -164,7 +164,7 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0015</string>
+            <string>hintSet0018</string>
             <key>stems</key>
             <array>
               <string>hstem 0 51</string>
@@ -176,7 +176,7 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0016</string>
+            <string>hintSet0019</string>
             <key>stems</key>
             <array>
               <string>hstem 0 55.5</string>

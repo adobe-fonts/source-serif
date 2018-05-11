@@ -4,7 +4,20 @@
   <unicode hex="041B" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="curve" x="9" y="62" />
+      <point name="hintSet0000" type="line" x="155" y="628" />
+      <point type="line" x="243" y="615" />
+      <point x="234" y="442" />
+      <point x="219" y="316" />
+      <point type="curve" x="192" y="209" />
+      <point name="hintSet0003" x="177" y="153" />
+      <point x="157" y="108" />
+      <point type="curve" x="135" y="75" />
+      <point x="115" y="90" />
+      <point x="96" y="98" />
+      <point type="curve" x="71" y="98" />
+      <point x="41" y="98" />
+      <point x="21" y="89" />
+      <point type="curve" x="9" y="62" />
       <point x="9" y="7" />
       <point x="41" y="-15" />
       <point type="curve" x="83" y="-15" />
@@ -19,7 +32,7 @@
       <point x="458" y="447" />
       <point type="curve" x="458" y="359" />
       <point type="line" x="458" y="310" />
-      <point name="hintSet0007" x="458" y="224" />
+      <point name="hintSet0012" x="458" y="224" />
       <point x="458" y="138" />
       <point type="curve" x="456" y="52" />
       <point type="line" x="364" y="41" />
@@ -35,21 +48,8 @@
       <point x="553" y="531" />
       <point type="curve" x="555" y="617" />
       <point type="line" x="647" y="628" />
-      <point name="hintSet0017" type="line" x="647" y="669" />
+      <point name="hintSet0022" type="line" x="647" y="669" />
       <point type="line" x="155" y="669" />
-      <point type="line" x="155" y="628" />
-      <point type="line" x="243" y="615" />
-      <point x="234" y="442" />
-      <point x="219" y="316" />
-      <point type="curve" x="192" y="209" />
-      <point x="177" y="153" />
-      <point x="157" y="108" />
-      <point type="curve" x="135" y="75" />
-      <point x="115" y="90" />
-      <point x="96" y="98" />
-      <point type="curve" x="71" y="98" />
-      <point name="hintSet0024" x="41" y="98" />
-      <point x="21" y="89" />
     </contour>
   </outline>
   <lib>
@@ -57,12 +57,23 @@
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>8968b0140f28e60076f3b01036f4a88ccb45dc30e3511503bbe4f61eb5b09094873faf7e4142284e2d67b61d280e55b758136ae5f181358ba7710ab6518758af</string>
+        <string>a267cf4f95a8a13471429e503734cfb5e5cd9ff5eaaf883ba33b939ec01f56ac15e085b77e7fa15ba47303dde81d9cca0950fd217d7ed0f5521763130db2ec9d</string>
         <key>hintSetList</key>
         <array>
           <dict>
             <key>pointTag</key>
             <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 46.5</string>
+              <string>hstem 628 41</string>
+              <string>vstem 243 51</string>
+              <string>vstem 458 95</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0003</string>
             <key>stems</key>
             <array>
               <string>hstem -15 113</string>
@@ -73,7 +84,7 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0007</string>
+            <string>hintSet0012</string>
             <key>stems</key>
             <array>
               <string>hstem 0 46.5</string>
@@ -84,22 +95,11 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0017</string>
+            <string>hintSet0022</string>
             <key>stems</key>
             <array>
-              <string>hstem -15 113</string>
+              <string>hstem 0 46.5</string>
               <string>hstem 628 41</string>
-              <string>vstem 243 51</string>
-              <string>vstem 458 95</string>
-            </array>
-          </dict>
-          <dict>
-            <key>pointTag</key>
-            <string>hintSet0024</string>
-            <key>stems</key>
-            <array>
-              <string>hstem -15 113</string>
-              <string>hstem 619 50</string>
               <string>vstem 243 51</string>
               <string>vstem 458 95</string>
             </array>

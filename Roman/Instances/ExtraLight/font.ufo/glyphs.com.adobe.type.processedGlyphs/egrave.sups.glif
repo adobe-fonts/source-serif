@@ -17,7 +17,19 @@
       <point type="line" x="188" y="811" />
     </contour>
     <contour>
-      <point type="curve" x="179" y="427" />
+      <point name="hintSet0006" type="curve" x="175" y="740" />
+      <point x="235" y="740" />
+      <point x="269" y="693" />
+      <point type="curve" x="269" y="643" />
+      <point x="269" y="624" />
+      <point x="264" y="615" />
+      <point type="curve" x="250" y="615" />
+      <point type="line" x="65" y="615" />
+      <point x="71" y="691" />
+      <point x="117" y="740" />
+    </contour>
+    <contour>
+      <point name="hintSet0011" type="curve" x="179" y="427" />
       <point x="226" y="427" />
       <point x="267" y="449" />
       <point type="curve" x="293" y="486" />
@@ -41,25 +53,13 @@
       <point x="35" y="481" />
       <point x="104" y="427" />
     </contour>
-    <contour>
-      <point name="hintSet0016" type="curve" x="175" y="740" />
-      <point x="235" y="740" />
-      <point x="269" y="693" />
-      <point type="curve" x="269" y="643" />
-      <point x="269" y="624" />
-      <point x="264" y="615" />
-      <point type="curve" x="250" y="615" />
-      <point type="line" x="65" y="615" />
-      <point x="71" y="691" />
-      <point x="117" y="740" />
-    </contour>
   </outline>
   <lib>
     <dict>
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>4a875539478b9420f0ebe1f5f76a8c07ee4391b37eca91d9c6062618f7320aab39c9fcfc30c3419d372afc83af061b53d5fd5a93f8268b71b9b066833f962714</string>
+        <string>1b561d527228549d8889a0331c09611dcd40fbd0cda03cecb1216eac50bff070b9c19c154bbb23a9b99c18a54569f85dd98d125a2031df09508db01db8e85837</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -76,13 +76,25 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0016</string>
+            <string>hintSet0006</string>
             <key>stems</key>
             <array>
               <string>hstem 427 24</string>
               <string>hstem 597 18</string>
               <string>hstem 740 18</string>
               <string>vstem 35 30</string>
+              <string>vstem 269 27</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0011</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 427 24</string>
+              <string>hstem 597 18</string>
+              <string>hstem 740 18</string>
+              <string>vstem 35 29</string>
               <string>vstem 269 27</string>
             </array>
           </dict>
