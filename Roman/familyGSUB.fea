@@ -6,6 +6,7 @@ languagesystem grek dflt; # Greek default
 languagesystem latn AZE; # Azeri
 languagesystem latn CRT; # Crimean Tatar
 languagesystem latn TRK; # Turkish
+languagesystem latn NLD; # Dutch
 
 languagesystem cyrl SRB; # Serbian
 
@@ -147,6 +148,12 @@ feature locl { # Localized Forms
 
 
 #--------------------------------------
+lookup locl_NLD_ijacute {
+    sub j by dotlessj acutecmb;
+    # sub j by x;
+    # sub J by J acutecmb.cap;
+} locl_NLD_ijacute;
+
 feature ccmp {
 
     lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {
@@ -166,6 +173,7 @@ feature ccmp {
         sub u ogonekcmb by uogonek;
         sub U ogonekcmb by Uogonek;
         sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
+
     } GLYPH_COMPOSITION_LAT_NONCONTEXTUAL;
 
 
@@ -174,6 +182,14 @@ feature ccmp {
         sub [ @UC_ALL @SC_ALL ] @MARKS_CMB' by @MARKS_CMB_CASE;
         sub @MARKS_CMB_CASE @MARKS_CMB' by @MARKS_CMB_CASE;
     } CASE_ACCENTS_CMB_CONTEXT;
+
+    # lookup IJ_ACUTE {
+    #     script latn;
+    #     language NLD exclude_dflt;
+    #     sub Iacute J' lookup locl_NLD_ijacute;
+    #     sub iacute j' lookup locl_NLD_ijacute;
+
+    # } IJ_ACUTE;
 
 } ccmp;
 
