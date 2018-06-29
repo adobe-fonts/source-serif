@@ -1,4 +1,4 @@
-# Created: Tue Nov 15 17:24:03 2016
+# Created: Thu Jun 28 20:40:15 2018
 # PS Name: SourceSerifPro-Bold
 # MinKern: +/- 3 inclusive
 # exported from Defcon
@@ -122,7 +122,7 @@
 @MMK_L_equal = [equal notequal approxequal logicalnot];
 @MMK_L_guilsinglleft = [guillemotleft guillemotleft.cap guilsinglleft guilsinglleft.cap];
 @MMK_L_guilsinglright = [guillemotright guillemotright.cap guilsinglright guilsinglright.cap];
-@MMK_L_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash hyphentwo threeemdash twoemdash];
+@MMK_L_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash threeemdash twoemdash];
 @MMK_L_less = [less multiply];
 @MMK_L_parenleft = [braceleft braceleft.cap bracketleft bracketleft.cap parenleft parenleft.cap];
 @MMK_L_parenright = [braceright braceright.cap bracketright bracketright.cap parenright parenright.cap];
@@ -231,7 +231,7 @@
 @MMK_R_greater = [greater multiply];
 @MMK_R_guilsinglleft = [guillemotleft guillemotleft.cap guilsinglleft guilsinglleft.cap];
 @MMK_R_guilsinglright = [guillemotright guillemotright.cap guilsinglright guilsinglright.cap];
-@MMK_R_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash hyphentwo threeemdash twoemdash];
+@MMK_R_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash threeemdash twoemdash];
 @MMK_R_parenleft = [braceleft braceleft.cap bracketleft bracketleft.cap parenleft parenleft.cap];
 @MMK_R_parenright = [braceright braceright.cap bracketright bracketright.cap parenright parenright.cap];
 @MMK_R_periodcentered = [bulletoperator periodcentered];
@@ -455,6 +455,7 @@ pos Kappa zeta -7;
 pos Kappa.sc Phi.sc -69;
 pos Kappa.sc Tau.sc -7;
 pos Kappa.sc Zeta.sc 13;
+pos Lcaron backslash -17;
 pos Nu Chi -17;
 pos Nu Zeta -14;
 pos Nu ampersand -36;
@@ -1458,33 +1459,35 @@ pos zeta zero.osf -29;
 pos zeta zeta -7;
 
 # glyph, glyph exceptions:
-pos F icircumflex -14;
-pos Je yi 4;
+pos F icircumflex -9;
+pos Je yi -17;
 pos Lcaron V -2;
 pos V adieresis -53;
-pos V atilde -14;
-pos V icircumflex -7;
-pos V idieresis 8;
+pos V atilde -72;
+pos V icircumflex -4;
+pos V idieresis 16;
+pos V igrave -37;
 pos X idieresis 14;
 pos q comma -3;
 pos q semicolon 40;
-pos tcaron V 51;
+pos tcaron V 39;
 pos yi yi 14;
 
 # glyph, group exceptions:
 enum pos Lcaron @MMK_R_LAT_T -10;
+enum pos Lcaron @MMK_R_LAT_U -14;
 enum pos Lcaron @MMK_R_LAT_W -2;
 enum pos Lcaron @MMK_R_LAT_Y -2;
 enum pos Lcaron @MMK_R_quotedbl -27;
-enum pos Lcaron @MMK_R_quoteleft 7;
-enum pos Lcaron @MMK_R_quoteright 14;
+enum pos Lcaron @MMK_R_quoteleft -15;
+enum pos Lcaron @MMK_R_quoteright -5;
 enum pos Lcaron @MMK_R_registered -17;
 enum pos Lcaron @MMK_R_sups_corner -17;
 enum pos Lcaron @MMK_R_sups_desc -9;
 enum pos Lcaron @MMK_R_sups_diag 8;
 enum pos Lcaron @MMK_R_sups_figures -19;
 enum pos Lcaron @MMK_R_sups_round -6;
-enum pos Lcaron @MMK_R_trademark -14;
+enum pos Lcaron @MMK_R_trademark -31;
 enum pos Nu @MMK_R_GRK_Alpha -54;
 enum pos Nu @MMK_R_GRK_Beta -10;
 enum pos Nu @MMK_R_GRK_Theta -20;
@@ -1501,51 +1504,54 @@ enum pos Nu @MMK_R_parenleft -14;
 enum pos Nu @MMK_R_periodcentered -17;
 enum pos Nu @MMK_R_six.lf -34;
 enum pos Nu @MMK_R_subs_figures -69;
+enum pos Nu @MMK_R_sups_figures 0;
 enum pos Nu @MMK_R_sups_j 30;
-enum pos Nu @MMK_R_zero.lf -18;
-enum pos lslash @MMK_R_LAT_v 14;
+enum pos Nu @MMK_R_zero.lf -21;
+enum pos lslash @MMK_R_LAT_v 12;
 enum pos tcaron @MMK_R_LAT_E 29;
-enum pos tcaron @MMK_R_LAT_J 25;
+enum pos tcaron @MMK_R_LAT_J 22;
 enum pos tcaron @MMK_R_LAT_M 29;
 enum pos tcaron @MMK_R_LAT_T 36;
-enum pos tcaron @MMK_R_LAT_U 36;
-enum pos tcaron @MMK_R_LAT_W 51;
-enum pos tcaron @MMK_R_LAT_Y 51;
-enum pos tcaron @MMK_R_LAT_Z 29;
+enum pos tcaron @MMK_R_LAT_U 33;
+enum pos tcaron @MMK_R_LAT_W 42;
+enum pos tcaron @MMK_R_LAT_Y 39;
+enum pos tcaron @MMK_R_LAT_Z 32;
 enum pos tcaron @MMK_R_LAT_h 44;
 enum pos tcaron @MMK_R_parenright 44;
 enum pos tcaron @MMK_R_quotedbl 44;
 enum pos tcaron @MMK_R_quoteleft 42;
-enum pos tcaron @MMK_R_quoteright 43;
+enum pos tcaron @MMK_R_quoteright 49;
 enum pos tcaron @MMK_R_trademark 36;
 enum pos yi @MMK_R_quotedbl 36;
-enum pos yi @MMK_R_quoteleft 36;
+enum pos yi @MMK_R_quoteleft 39;
 
 # group, glyph exceptions:
 enum pos @MMK_L_CYR_En yi 24;
 enum pos @MMK_L_CYR_Ghe yi 22;
 enum pos @MMK_L_CYR_Ka yi 6;
-enum pos @MMK_L_CYR_Ucyr yi 17;
+enum pos @MMK_L_CYR_Ucyr yi 9;
 enum pos @MMK_L_CYR_Ustraight yi 16;
-enum pos @MMK_L_LAT_H icircumflex -7;
+enum pos @MMK_L_LAT_H icircumflex -4;
+enum pos @MMK_L_LAT_K icircumflex 0;
 enum pos @MMK_L_LAT_N icircumflex -14;
-enum pos @MMK_L_LAT_T icircumflex -7;
-enum pos @MMK_L_LAT_U icircumflex -7;
-enum pos @MMK_L_LAT_W adieresis -43;
-enum pos @MMK_L_LAT_W atilde -14;
+enum pos @MMK_L_LAT_T icircumflex 1;
+enum pos @MMK_L_LAT_U icircumflex -4;
+enum pos @MMK_L_LAT_W adieresis -63;
+enum pos @MMK_L_LAT_W atilde -79;
 enum pos @MMK_L_LAT_W icircumflex 4;
 enum pos @MMK_L_LAT_W idieresis 40;
+enum pos @MMK_L_LAT_W igrave -34;
 enum pos @MMK_L_LAT_W imacron 22;
-enum pos @MMK_L_LAT_Y adieresis -36;
-enum pos @MMK_L_LAT_Y atilde -17;
-enum pos @MMK_L_LAT_Y icircumflex -6;
-enum pos @MMK_L_LAT_Y igrave -6;
+enum pos @MMK_L_LAT_Y adieresis -58;
+enum pos @MMK_L_LAT_Y atilde -74;
+enum pos @MMK_L_LAT_Y icircumflex 2;
+enum pos @MMK_L_LAT_Y igrave -34;
 enum pos @MMK_L_LAT_f adieresis 32;
-enum pos @MMK_L_LAT_f edieresis 29;
-enum pos @MMK_L_LAT_f icircumflex 14;
-enum pos @MMK_L_LAT_f idieresis 25;
+enum pos @MMK_L_LAT_f edieresis 25;
+enum pos @MMK_L_LAT_f icircumflex 31;
+enum pos @MMK_L_LAT_f idieresis 21;
 enum pos @MMK_L_LAT_f igrave 67;
-enum pos @MMK_L_LAT_f odieresis 22;
+enum pos @MMK_L_LAT_f odieresis 17;
 enum pos @MMK_L_quotedbl yi 33;
 
 # glyph, group:

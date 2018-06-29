@@ -1,4 +1,4 @@
-# Created: Tue Nov 15 17:24:05 2016
+# Created: Thu Jun 28 20:40:16 2018
 # PS Name: SourceSerifPro-ExtraLight
 # MinKern: +/- 3 inclusive
 # exported from Defcon
@@ -119,7 +119,7 @@
 @MMK_L_equal = [equal notequal approxequal logicalnot];
 @MMK_L_guilsinglleft = [guillemotleft guillemotleft.cap guilsinglleft guilsinglleft.cap];
 @MMK_L_guilsinglright = [guillemotright guillemotright.cap guilsinglright guilsinglright.cap];
-@MMK_L_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash hyphentwo threeemdash twoemdash];
+@MMK_L_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash threeemdash twoemdash];
 @MMK_L_less = [less multiply];
 @MMK_L_parenleft = [braceleft braceleft.cap bracketleft bracketleft.cap parenleft parenleft.cap];
 @MMK_L_parenright = [braceright braceright.cap bracketright bracketright.cap parenright parenright.cap];
@@ -227,7 +227,7 @@
 @MMK_R_greater = [greater multiply];
 @MMK_R_guilsinglleft = [guillemotleft guillemotleft.cap guilsinglleft guilsinglleft.cap];
 @MMK_R_guilsinglright = [guillemotright guillemotright.cap guilsinglright guilsinglright.cap];
-@MMK_R_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash hyphentwo threeemdash twoemdash];
+@MMK_R_hyphen = [emdash endash hyphen horizontalbar emdash.cap endash.cap horizontalbar.cap hyphen.cap figuredash threeemdash twoemdash];
 @MMK_R_parenleft = [braceleft braceleft.cap bracketleft bracketleft.cap parenleft parenleft.cap];
 @MMK_R_parenright = [braceright braceright.cap bracketright bracketright.cap parenright parenright.cap];
 @MMK_R_periodcentered = [bulletoperator periodcentered];
@@ -1230,6 +1230,7 @@ enum pos Nu @MMK_R_sups_j 30;
 enum pos Nu @MMK_R_zero.lf -10;
 
 # group, glyph exceptions:
+enum pos @MMK_L_CYR_Ustraight yi 0;
 enum pos @MMK_L_LAT_W atilde -50;
 enum pos @MMK_L_LAT_W icircumflex -20;
 enum pos @MMK_L_LAT_W igrave -10;
