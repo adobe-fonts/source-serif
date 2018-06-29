@@ -17,6 +17,9 @@ languagesystem latn TRK; # Turkish
 
 @LAT_LC_BASIC    = [ a b c d e f g h i j k l m n o p q r s t u v w x y z ];
 @LAT_UC_BASIC    = [ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ];
+@LAT_UC_ACCENTED = [ Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Aring Aogonek Ccedilla Cacute Ccaron Dcaron Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Edotaccent Eogonek Gbreve Gdotaccent Gcommaaccent Igrave Iacute Icircumflex Idieresis Imacron Idotaccent Iogonek Kcommaaccent Lacute Lcaron Lcommaaccent Ldot Nacute Ncaron Ntilde Ncommaaccent Ndotaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Ohungarumlaut Racute Rcaron Rcommaaccent Sacute Scaron Scedilla Scommaaccent Tcaron Tcedilla Tcommaaccent Ugrave Uacute Ucircumflex Udieresis Umacron Uring Uhungarumlaut Uogonek Yacute Ydieresis Zacute Zcaron Zdotaccent ];
+@LAT_UC_ADDL     = [ AE Dcroat Lslash Oslash OE Eth Thorn ];
+@LAT_UC_ALL = [ @LAT_UC_BASIC @LAT_UC_ACCENTED @LAT_UC_ADDL ];
 
 @PUNCT_SMALL_SOURCE = [ parenleft      parenright      period      comma      ];
 @PUNCT_NUMR         = [ parenleft.numr parenright.numr period.numr comma.numr ];
@@ -27,11 +30,28 @@ languagesystem latn TRK; # Turkish
 @LAT_LCSUPS_BASIC = [ a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups ];
 # @LAT_UCSUPS_BASIC = [ A.sups B.sups C.sups D.sups E.sups F.sups G.sups H.sups I.sups J.sups K.sups L.sups M.sups N.sups O.sups P.sups Q.sups R.sups S.sups T.sups U.sups V.sups W.sups X.sups Y.sups Z.sups ];
 
+@CASE_SOURCE  =  [  at      braceleft      braceright      bracketleft      bracketright      emdash      endash      exclamdown      guillemotleft      guillemotright      guilsinglleft      guilsinglright      horizontalbar      hyphen      parenleft      parenright      questiondown      ];
+@CASE_TARGET  =  [  at.cap  braceleft.cap  braceright.cap  bracketleft.cap  bracketright.cap  emdash.cap  endash.cap  exclamdown.cap  guillemotleft.cap  guillemotright.cap  guilsinglleft.cap  guilsinglright.cap  horizontalbar.cap  hyphen.cap  parenleft.cap  parenright.cap  questiondown.cap  ];
+
+@MARKS_CMB      = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb ringcmb hungarumlautcmb caroncmb ];
+@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap ];
 
 #--------------------------------------
 feature aalt { # Access All Alternates
     feature locl;
     feature pnum;
+    feature onum;
+    feature tnum;
+    feature lnum;
+    feature zero;
+    feature ss01;
+    feature case;
+    feature numr;
+    feature dnom;
+    feature ordn;
+    feature sups;
+    feature subs;
+    feature sinf;
 } aalt;
 
 
@@ -50,6 +70,45 @@ feature locl { # Localized Forms
         language CRT exclude_dflt;
             lookup I_DOT;
 } locl;
+
+
+#--------------------------------------
+feature ccmp {
+
+    lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {
+        sub d caroncmb by dcaron;
+        sub l caroncmb by lcaron;
+        sub t caroncmb by tcaron;
+        # sub g tildecmb by gtilde;
+        # sub G tildecmb by Gtilde;
+        sub a ogonekcmb by aogonek;
+        sub A ogonekcmb by Aogonek;
+        sub e ogonekcmb by eogonek;
+        sub E ogonekcmb by Eogonek;
+        sub i ogonekcmb by iogonek;
+        sub I ogonekcmb by Iogonek;
+        # sub o ogonekcmb by oogonek;
+        # sub O ogonekcmb by Oogonek;
+        sub u ogonekcmb by uogonek;
+        sub U ogonekcmb by Uogonek;
+        sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
+    } GLYPH_COMPOSITION_LAT_NONCONTEXTUAL;
+
+
+    lookup CASE_ACCENTS_CMB_CONTEXT {
+        # substitutes combining marks for minuscules with forms for uppercase
+        sub [ @LAT_UC_ALL ] @MARKS_CMB' by @MARKS_CMB_CASE;
+        sub @MARKS_CMB_CASE @MARKS_CMB' by @MARKS_CMB_CASE;
+    } CASE_ACCENTS_CMB_CONTEXT;
+
+} ccmp;
+
+
+
+#--------------------------------------
+feature case {
+    sub @CASE_SOURCE by @CASE_TARGET;
+} case;
 
 
 #--------------------------------------
@@ -106,9 +165,6 @@ feature subs { # Subscript
 feature sinf { # Scientific Inferiors
     lookup INFERIOR;
 } sinf;
-
-
-
 
 
 #--------------------------------------
