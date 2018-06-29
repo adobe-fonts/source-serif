@@ -90,8 +90,8 @@ languagesystem cyrl SRB; # Serbian
 @PUNCT_SC_SRC = [ ampersand    exclam    exclamdown    question    questiondown    quotesingle    quotedbl    quoteleft    quoteright    quotedblleft    quotedblright    hyphen    endash    emdash    parenleft    parenright    bracketleft    bracketright    braceleft    braceright    ];
 @PUNCT_SC     = [ ampersand.sc exclam.sc exclamdown.sc question.sc questiondown.sc quotesingle.sc quotedbl.sc quoteleft.sc quoteright.sc quotedblleft.sc quotedblright.sc hyphen.sc endash.sc emdash.sc parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc ];
 
-@CASE_SOURCE  =  [  at      braceleft      braceright      bracketleft      bracketright      emdash      endash      exclamdown      guillemotleft      guillemotright      guilsinglleft      guilsinglright      horizontalbar      hyphen      parenleft      parenright      questiondown      sfthyphen      ];
-@CASE_TARGET  =  [  at.cap  braceleft.cap  braceright.cap  bracketleft.cap  bracketright.cap  emdash.cap  endash.cap  exclamdown.cap  guillemotleft.cap  guillemotright.cap  guilsinglleft.cap  guilsinglright.cap  horizontalbar.cap  hyphen.cap  parenleft.cap  parenright.cap  questiondown.cap  sfthyphen.cap  ];
+@CASE_SOURCE  =  [  at      braceleft      braceright      bracketleft      bracketright      emdash      endash      exclamdown      guillemotleft      guillemotright      guilsinglleft      guilsinglright      horizontalbar      hyphen      parenleft      parenright      questiondown      ];
+@CASE_TARGET  =  [  at.cap  braceleft.cap  braceright.cap  bracketleft.cap  bracketright.cap  emdash.cap  endash.cap  exclamdown.cap  guillemotleft.cap  guillemotright.cap  guilsinglleft.cap  guilsinglright.cap  horizontalbar.cap  hyphen.cap  parenleft.cap  parenright.cap  questiondown.cap  ];
 
 @MARKS_CMB      = [ acutecmb brevecmb caroncmb circumflexcmb dieresiscmb dotaccentcmb gravecmb hungarumlautcmb macroncmb ringcmb tildecmb ];
 @MARKS_CMB_CASE = [ acutecmb.cap brevecmb.cap caroncmb.cap circumflexcmb.cap dieresiscmb.cap dotaccentcmb.cap gravecmb.cap hungarumlautcmb.cap macroncmb.cap ringcmb.cap tildecmb.cap ];
@@ -265,16 +265,14 @@ feature dnom { # Denominators
 
 #--------------------------------------
 feature frac { # Fractions
-    @SPACE_DEFAULT = [ space nbspace ];
-    @SPACE_FRAC = [ space.frac nbspace.frac ];
     @SLASH = [ slash.frac fraction divisionslash ];
 
     lookup NUMR;
     sub slash by slash.frac;
-    sub @FIG_NUMR @SPACE_DEFAULT' by @SPACE_FRAC;
+    sub @FIG_NUMR space' by space.frac;
 
     sub [ fraction divisionslash slash.frac @FIG_DNOM @PUNCT_DNOM ] [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
-    sub @FIG_DNOM @SPACE_FRAC [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
+    sub @FIG_DNOM space.frac [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
 } frac;
 
 

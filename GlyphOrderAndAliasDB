@@ -1,5 +1,5 @@
 .notdef	.notdef
-space	space
+space	space	uni0020,uni00A0
 A	A
 B	B
 C	C
@@ -484,8 +484,8 @@ questiondown	questiondown
 questiondown.cap	questiondown.cap
 quotesingle	quotesingle
 quotedbl	quotedbl
-quoteleft	quoteleft
-quoteright	quoteright
+quoteleft	quoteleft	uni2018,uni02BB
+quoteright	quoteright	uni2019,uni02BC
 quotedblleft	quotedblleft
 quotedblright	quotedblright
 quotesinglbase	quotesinglbase
@@ -494,9 +494,7 @@ guilsinglleft	guilsinglleft
 guilsinglright	guilsinglright
 guillemotleft	guillemotleft
 guillemotright	guillemotright
-hyphen	hyphen
-uni00AD	sfthyphen
-uni2010	hyphentwo
+hyphen	hyphen	uni002D,uni00AD,uni2010
 endash	endash
 emdash	emdash
 figuredash	figuredash
@@ -693,10 +691,8 @@ uni20BF	bitcoin
 fraction	fraction
 uni2215	divisionslash
 slash.frac	slash.frac
-uni00A0	nbspace
 uni2007	figurespace
 space.frac	space.frac
-uni00A0.frac	nbspace.frac
 percent	percent
 perthousand	perthousand
 onequarter	onequarter
@@ -725,12 +721,9 @@ asciitilde	asciitilde
 approxequal	approxequal
 logicalnot	logicalnot
 infinity	infinity
-uni00B5	mu.math
 partialdiff	partialdiff
 integral	integral
 radical	radical
-uni2206	Delta.math
-uni2126	Omega.math
 summation	summation
 product	product
 uni2113	litre
@@ -762,22 +755,17 @@ musicalnote	eighthnote
 lozenge	lozenge
 uni2032	prime
 uni2033	dblprime
-uni02BB	commaturnedmod
-uni02BC	apostrophemod
 uni02BF	ringhalfleftmod
 uni02BE	ringhalfrightmod
 uni02C8	verticallinemod
-uni02C9	macronmod
-uni02CA	acutemod
-uni02CB	gravemod
 uni02CC	verticallinelowmod
-grave	grave
-acute	acute
+grave	grave	uni0060,uni02CB
+acute	acute	uni00B4,uni02CA
 circumflex	circumflex
 caron	caron
 tilde	tilde
 dieresis	dieresis
-macron	macron
+macron	macron	uni00AF,uni02C9
 breve	breve
 ring	ring
 hungarumlaut	hungarumlaut
@@ -846,7 +834,7 @@ uni03060303.cap	brevetilde.cap
 Alpha	Alpha
 Beta	Beta
 Gamma	Gamma
-uni0394	Delta
+Delta	Delta	uni0394,uni2206
 Epsilon	Epsilon
 Zeta	Zeta
 Eta	Eta
@@ -866,7 +854,7 @@ Upsilon	Upsilon
 Phi	Phi
 Chi	Chi
 Psi	Psi
-uni03A9	Omega
+Omega	Omega	uni03A9,uni2126
 Alphatonos	Alphatonos
 Epsilontonos	Epsilontonos
 Etatonos	Etatonos
@@ -887,7 +875,7 @@ theta	theta
 iota	iota
 kappa	kappa
 lambda	lambda
-uni03BC	mu
+mu	mu	uni03BC,uni00B5
 nu	nu
 xi	xi
 omicron	omicron
