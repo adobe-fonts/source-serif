@@ -36,6 +36,13 @@ languagesystem latn TRK; # Turkish
 @MARKS_CMB      = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb ringcmb hungarumlautcmb caroncmb ];
 @MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap ];
 
+
+lookup locl_NLD_ijacute {
+    sub j by dotlessj acutecmb;
+    sub J by J acutecmb.cap;
+} locl_NLD_ijacute;
+
+
 #--------------------------------------
 feature aalt { # Access All Alternates
     feature locl;
@@ -100,6 +107,15 @@ feature ccmp {
         sub [ @LAT_UC_ALL ] @MARKS_CMB' by @MARKS_CMB_CASE;
         sub @MARKS_CMB_CASE @MARKS_CMB' by @MARKS_CMB_CASE;
     } CASE_ACCENTS_CMB_CONTEXT;
+
+
+    lookup IJ_ACUTE {
+        script latn;
+        language NLD exclude_dflt;
+            sub Iacute J' lookup locl_NLD_ijacute;
+            sub iacute j' lookup locl_NLD_ijacute;
+
+    } IJ_ACUTE;
 
 } ccmp;
 

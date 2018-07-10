@@ -1,4 +1,4 @@
-# Created: Thu Jun 28 20:49:29 2018
+# Created: Tue Jul 10 15:28:15 2018
 # PS Name: SourceSerifPro-BlackIt
 # MM Inst: None
 # exported from Defcon
@@ -26,6 +26,7 @@ lookup MARK_BASE_above {
 	@bGC_O_above = [O Oslash];
 	@bGC_U_above = [U Uogonek];
 	@bGC_a_above = [a aogonek];
+	@bGC_dotlessi_above = [dotlessi dotlessj];
 	@bGC_e_above = [e eogonek];
 	@bGC_h_above = [h k l thorn];
 	@bGC_i_above = [i j];
@@ -41,6 +42,7 @@ lookup MARK_BASE_above {
 	pos base @bGC_O_above <anchor 425 682> mark @MC_above;
 	pos base @bGC_U_above <anchor 481 682> mark @MC_above;
 	pos base @bGC_a_above <anchor 396 520> mark @MC_above;
+	pos base @bGC_dotlessi_above <anchor 226 520> mark @MC_above;
 	pos base @bGC_e_above <anchor 373 520> mark @MC_above;
 	pos base @bGC_h_above <anchor 262 711> mark @MC_above;
 	pos base @bGC_i_above <anchor 272 738> mark @MC_above;
@@ -70,7 +72,6 @@ lookup MARK_BASE_above {
 	pos base b <anchor 261 710> mark @MC_above;
 	pos base c <anchor 375 520> mark @MC_above;
 	pos base d <anchor 541 710> mark @MC_above;
-	pos base dotlessi <anchor 226 520> mark @MC_above;
 	pos base f <anchor 377 740> mark @MC_above;
 	pos base g <anchor 312 520> mark @MC_above;
 	pos base n <anchor 364 520> mark @MC_above;

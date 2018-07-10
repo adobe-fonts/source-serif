@@ -1,4 +1,4 @@
-# Created: Thu Jun 28 20:49:30 2018
+# Created: Tue Jul 10 15:28:16 2018
 # PS Name: SourceSerifPro-BoldIt
 # MM Inst: None
 # exported from Defcon
@@ -25,9 +25,10 @@ lookup MARK_BASE_above {
 	@bGC_C_above = [C V];
 	@bGC_E_above = [E Eogonek];
 	@bGC_I_above = [I Iogonek];
-	@bGC_O_above = [O Y Oslash];
+	@bGC_Y_above = [Y Oslash];
 	@bGC_a_above = [a aogonek];
 	@bGC_c_above = [c e eogonek];
+	@bGC_dotlessi_above = [dotlessi dotlessj];
 	@bGC_i_above = [i j];
 	@bGC_o_above = [o oslash];
 	@bGC_u_above = [u uogonek];
@@ -36,9 +37,10 @@ lookup MARK_BASE_above {
 	pos base @bGC_C_above <anchor 432 685> mark @MC_above;
 	pos base @bGC_E_above <anchor 386 685> mark @MC_above;
 	pos base @bGC_I_above <anchor 273 685> mark @MC_above;
-	pos base @bGC_O_above <anchor 423 685> mark @MC_above;
+	pos base @bGC_Y_above <anchor 423 685> mark @MC_above;
 	pos base @bGC_a_above <anchor 384 516> mark @MC_above;
 	pos base @bGC_c_above <anchor 358 516> mark @MC_above;
+	pos base @bGC_dotlessi_above <anchor 223 516> mark @MC_above;
 	pos base @bGC_i_above <anchor 263 737> mark @MC_above;
 	pos base @bGC_o_above <anchor 343 516> mark @MC_above;
 	pos base @bGC_u_above <anchor 362 516> mark @MC_above;
@@ -52,6 +54,7 @@ lookup MARK_BASE_above {
 	pos base L <anchor 277 685> mark @MC_above;
 	pos base M <anchor 533 676> mark @MC_above;
 	pos base N <anchor 421 685> mark @MC_above;
+	pos base O <anchor 423 684> mark @MC_above;
 	pos base OE <anchor 588 685> mark @MC_above;
 	pos base Q <anchor 412 685> mark @MC_above;
 	pos base R <anchor 380 685> mark @MC_above;
@@ -65,7 +68,6 @@ lookup MARK_BASE_above {
 	pos base ae <anchor 496 516> mark @MC_above;
 	pos base b <anchor 253 718> mark @MC_above;
 	pos base d <anchor 519 718> mark @MC_above;
-	pos base dotlessi <anchor 223 516> mark @MC_above;
 	pos base f <anchor 375 743> mark @MC_above;
 	pos base g <anchor 308 516> mark @MC_above;
 	pos base h <anchor 259 719> mark @MC_above;

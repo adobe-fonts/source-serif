@@ -97,6 +97,12 @@ languagesystem cyrl SRB; # Serbian
 @MARKS_CMB_CASE = [ acutecmb.cap brevecmb.cap caroncmb.cap circumflexcmb.cap dieresiscmb.cap dotaccentcmb.cap gravecmb.cap hungarumlautcmb.cap macroncmb.cap ringcmb.cap tildecmb.cap ];
 
 
+lookup locl_NLD_ijacute {
+    sub j by dotlessj acutecmb;
+    sub J by J acutecmb.cap;
+} locl_NLD_ijacute;
+
+
 #--------------------------------------
 feature aalt { # Access All Alternates
     feature locl;
@@ -147,13 +153,7 @@ feature locl { # Localized Forms
 } locl;
 
 
-#--------------------------------------
-# lookup locl_NLD_ijacute {
-#     sub j by dotlessj acutecmb;
-#     # sub j by x;
-#     # sub J by J acutecmb.cap;
-# } locl_NLD_ijacute;
-
+# --------------------------------------
 feature ccmp {
 
     lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {
@@ -183,13 +183,13 @@ feature ccmp {
         sub @MARKS_CMB_CASE @MARKS_CMB' by @MARKS_CMB_CASE;
     } CASE_ACCENTS_CMB_CONTEXT;
 
-    # lookup IJ_ACUTE {
-    #     script latn;
-    #     language NLD exclude_dflt;
-    #     sub Iacute J' lookup locl_NLD_ijacute;
-    #     sub iacute j' lookup locl_NLD_ijacute;
+    lookup IJ_ACUTE {
+        script latn;
+        language NLD exclude_dflt;
+            sub Iacute J' lookup locl_NLD_ijacute;
+            sub iacute j' lookup locl_NLD_ijacute;
 
-    # } IJ_ACUTE;
+    } IJ_ACUTE;
 
 } ccmp;
 

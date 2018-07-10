@@ -1,4 +1,4 @@
-# Created: Thu Jun 28 20:49:32 2018
+# Created: Tue Jul 10 15:28:18 2018
 # PS Name: SourceSerifPro-SemiboldIt
 # MM Inst: None
 # exported from Defcon
@@ -24,8 +24,8 @@ lookup MARK_BASE_above {
 	@bGC_C_above = [C G];
 	@bGC_E_above = [E Eogonek];
 	@bGC_I_above = [I Iogonek];
-	@bGC_O_above = [O Oslash];
 	@bGC_a_above = [a aogonek];
+	@bGC_dotlessi_above = [dotlessi dotlessj];
 	@bGC_e_above = [e eogonek];
 	@bGC_i_above = [i j];
 	@bGC_o_above = [o oslash];
@@ -34,8 +34,8 @@ lookup MARK_BASE_above {
 	pos base @bGC_C_above <anchor 435 688> mark @MC_above;
 	pos base @bGC_E_above <anchor 391 688> mark @MC_above;
 	pos base @bGC_I_above <anchor 270 688> mark @MC_above;
-	pos base @bGC_O_above <anchor 420 688> mark @MC_above;
 	pos base @bGC_a_above <anchor 368 511> mark @MC_above;
+	pos base @bGC_dotlessi_above <anchor 219 511> mark @MC_above;
 	pos base @bGC_e_above <anchor 338 511> mark @MC_above;
 	pos base @bGC_i_above <anchor 252 737> mark @MC_above;
 	pos base @bGC_o_above <anchor 330 511> mark @MC_above;
@@ -50,7 +50,9 @@ lookup MARK_BASE_above {
 	pos base L <anchor 268 688> mark @MC_above;
 	pos base M <anchor 536 669> mark @MC_above;
 	pos base N <anchor 426 688> mark @MC_above;
+	pos base O <anchor 420 687> mark @MC_above;
 	pos base OE <anchor 579 688> mark @MC_above;
+	pos base Oslash <anchor 420 688> mark @MC_above;
 	pos base P <anchor 371 688> mark @MC_above;
 	pos base Q <anchor 412 688> mark @MC_above;
 	pos base R <anchor 379 688> mark @MC_above;
@@ -67,7 +69,6 @@ lookup MARK_BASE_above {
 	pos base b <anchor 242 728> mark @MC_above;
 	pos base c <anchor 336 511> mark @MC_above;
 	pos base d <anchor 491 728> mark @MC_above;
-	pos base dotlessi <anchor 219 511> mark @MC_above;
 	pos base f <anchor 373 746> mark @MC_above;
 	pos base g <anchor 304 511> mark @MC_above;
 	pos base h <anchor 254 729> mark @MC_above;
@@ -121,7 +122,7 @@ lookup MARK_BASE_below {
 	pos base L <anchor 281 -22> mark @MC_below;
 	pos base M <anchor 386 -22> mark @MC_below;
 	pos base N <anchor 348 -22> mark @MC_below;
-	pos base O <anchor 302 -22> mark @MC_below;
+	pos base O <anchor 302 -21> mark @MC_below;
 	pos base P <anchor 154 -22> mark @MC_below;
 	pos base R <anchor 369 -22> mark @MC_below;
 	pos base S <anchor 216 -22> mark @MC_below;
@@ -164,7 +165,7 @@ lookup MARK_BASE_ogonek {
 	pos base A <anchor 529 0> mark @MC_ogonek;
 	pos base E <anchor 425 0> mark @MC_ogonek;
 	pos base I <anchor 190 0> mark @MC_ogonek;
-	pos base O <anchor 400 0> mark @MC_ogonek;
+	pos base O <anchor 400 -1> mark @MC_ogonek;
 	pos base U <anchor 423 0> mark @MC_ogonek;
 	pos base a <anchor 428 0> mark @MC_ogonek;
 	pos base e <anchor 265 0> mark @MC_ogonek;

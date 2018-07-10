@@ -1,4 +1,4 @@
-# Created: Thu Jun 28 20:49:32 2018
+# Created: Tue Jul 10 15:28:18 2018
 # PS Name: SourceSerifPro-LightIt
 # MM Inst: None
 # exported from Defcon
@@ -25,10 +25,10 @@ lookup MARK_BASE_above {
 	@bGC_E_above = [E Q Eogonek];
 	@bGC_F_above = [F V];
 	@bGC_I_above = [I Iogonek];
-	@bGC_O_above = [O Oslash];
 	@bGC_R_above = [R S];
 	@bGC_a_above = [a aogonek];
 	@bGC_c_above = [c e eogonek];
+	@bGC_dotlessi_above = [dotlessi dotlessj];
 	@bGC_i_above = [i j];
 	@bGC_o_above = [o oslash];
 	@bGC_u_above = [u uogonek];
@@ -37,10 +37,10 @@ lookup MARK_BASE_above {
 	pos base @bGC_E_above <anchor 401 686> mark @MC_above;
 	pos base @bGC_F_above <anchor 402 686> mark @MC_above;
 	pos base @bGC_I_above <anchor 259 686> mark @MC_above;
-	pos base @bGC_O_above <anchor 406 686> mark @MC_above;
 	pos base @bGC_R_above <anchor 358 686> mark @MC_above;
 	pos base @bGC_a_above <anchor 347 502> mark @MC_above;
 	pos base @bGC_c_above <anchor 323 502> mark @MC_above;
+	pos base @bGC_dotlessi_above <anchor 210 502> mark @MC_above;
 	pos base @bGC_i_above <anchor 238 717> mark @MC_above;
 	pos base @bGC_o_above <anchor 308 502> mark @MC_above;
 	pos base @bGC_u_above <anchor 338 502> mark @MC_above;
@@ -53,7 +53,9 @@ lookup MARK_BASE_above {
 	pos base L <anchor 255 686> mark @MC_above;
 	pos base M <anchor 535 656> mark @MC_above;
 	pos base N <anchor 436 680> mark @MC_above;
+	pos base O <anchor 406 685> mark @MC_above;
 	pos base OE <anchor 562 686> mark @MC_above;
+	pos base Oslash <anchor 406 686> mark @MC_above;
 	pos base P <anchor 353 686> mark @MC_above;
 	pos base T <anchor 390 686> mark @MC_above;
 	pos base U <anchor 453 686> mark @MC_above;
@@ -65,7 +67,6 @@ lookup MARK_BASE_above {
 	pos base ae <anchor 471 502> mark @MC_above;
 	pos base b <anchor 224 734> mark @MC_above;
 	pos base d <anchor 470 734> mark @MC_above;
-	pos base dotlessi <anchor 210 502> mark @MC_above;
 	pos base f <anchor 379 744> mark @MC_above;
 	pos base g <anchor 291 502> mark @MC_above;
 	pos base h <anchor 230 734> mark @MC_above;
