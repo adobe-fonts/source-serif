@@ -97,6 +97,7 @@ languagesystem cyrl SRB; # Serbian
 @MARKS_CMB_CASE = [ acutecmb.cap brevecmb.cap caroncmb.cap circumflexcmb.cap dieresiscmb.cap dotaccentcmb.cap gravecmb.cap hungarumlautcmb.cap macroncmb.cap ringcmb.cap tildecmb.cap ];
 
 
+# lookup for handling the Dutch double-accented IJ:
 lookup locl_NLD_ijacute {
     sub j by dotlessj acutecmb;
     sub J by J acutecmb.cap;
@@ -116,6 +117,8 @@ feature aalt { # Access All Alternates
     feature sinf;
     feature pnum;
     feature onum;
+    feature tnum;
+    feature lnum;
     feature case;
     feature zero;
 } aalt;
@@ -153,7 +156,7 @@ feature locl { # Localized Forms
 } locl;
 
 
-# --------------------------------------
+#--------------------------------------
 feature ccmp {
 
     lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {

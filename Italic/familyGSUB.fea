@@ -1,19 +1,25 @@
 languagesystem DFLT dflt;
-languagesystem latn dflt;
+languagesystem latn dflt; # Latin default
 
 languagesystem latn AZE; # Azeri
 languagesystem latn CRT; # Crimean Tatar
 languagesystem latn TRK; # Turkish
+languagesystem latn NLD; # Dutch
 
 
-@FIGURES_LINING_TABULAR    =  [  zero       one       two       three       four       five       six       seven       eight       nine       ];
-@FIGURES_OLDSTYLE_TABULAR  =  [  zero.tosf  one.tosf  two.tosf  three.tosf  four.tosf  five.tosf  six.tosf  seven.tosf  eight.tosf  nine.tosf  ];
-@FIGURES_LINING            =  [  zero.lf    one.lf    two.lf    three.lf    four.lf    five.lf    six.lf    seven.lf    eight.lf    nine.lf    ];
-@FIGURES_OLDSTYLE          =  [  zero.osf   one.osf   two.osf   three.osf   four.osf   five.osf   six.osf   seven.osf   eight.osf   nine.osf   ];
-@FIGURES_NUMR          =  [  zero.numr  one.numr  two.numr  three.numr  four.numr  five.numr  six.numr  seven.numr  eight.numr  nine.numr  ];
-@FIGURES_DNOM          =  [  zero.dnom  one.dnom  two.dnom  three.dnom  four.dnom  five.dnom  six.dnom  seven.dnom  eight.dnom  nine.dnom  ];
-@FIGURES_SUPS          =  [  zero.sups  one.sups  two.sups  three.sups  four.sups  five.sups  six.sups  seven.sups  eight.sups  nine.sups  ];
-@FIGURES_INF           =  [  zero.subs  one.subs  two.subs  three.subs  four.subs  five.subs  six.subs  seven.subs  eight.subs  nine.subs  ];
+# Figures:
+
+@FIG_LINING_TAB    =  [  zero       one       two       three       four       five       six       seven       eight       nine       ];
+@FIG_OLDSTYLE_TAB  =  [  zero.tosf  one.tosf  two.tosf  three.tosf  four.tosf  five.tosf  six.tosf  seven.tosf  eight.tosf  nine.tosf  ];
+@FIG_LINING        =  [  zero.lf    one.lf    two.lf    three.lf    four.lf    five.lf    six.lf    seven.lf    eight.lf    nine.lf    ];
+@FIG_OLDSTYLE      =  [  zero.osf   one.osf   two.osf   three.osf   four.osf   five.osf   six.osf   seven.osf   eight.osf   nine.osf   ];
+@FIG_NUMR          =  [  zero.numr  one.numr  two.numr  three.numr  four.numr  five.numr  six.numr  seven.numr  eight.numr  nine.numr  ];
+@FIG_DNOM          =  [  zero.dnom  one.dnom  two.dnom  three.dnom  four.dnom  five.dnom  six.dnom  seven.dnom  eight.dnom  nine.dnom  ];
+@FIG_SUPS          =  [  zero.sups  one.sups  two.sups  three.sups  four.sups  five.sups  six.sups  seven.sups  eight.sups  nine.sups  ];
+@FIG_INF           =  [  zero.subs  one.subs  two.subs  three.subs  four.subs  five.subs  six.subs  seven.subs  eight.subs  nine.subs  ];
+
+
+# Latin:
 
 @LAT_LC_BASIC    = [ a b c d e f g h i j k l m n o p q r s t u v w x y z ];
 @LAT_UC_BASIC    = [ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ];
@@ -21,11 +27,14 @@ languagesystem latn TRK; # Turkish
 @LAT_UC_ADDL     = [ AE Dcroat Lslash Oslash OE Eth Thorn ];
 @LAT_UC_ALL = [ @LAT_UC_BASIC @LAT_UC_ACCENTED @LAT_UC_ADDL ];
 
-@PUNCT_SMALL_SOURCE = [ parenleft      parenright      period      comma      ];
-@PUNCT_NUMR         = [ parenleft.numr parenright.numr period.numr comma.numr ];
-@PUNCT_DNOM         = [ parenleft.dnom parenright.dnom period.dnom comma.dnom ];
-@PUNCT_SUPS         = [ parenleft.sups parenright.sups period.sups comma.sups ];
-@PUNCT_SUBS         = [ parenleft.subs parenright.subs period.subs comma.subs ];
+
+# Punctuation etc.:
+
+@PUNCT_SMALL_FIG    = [ bracketleft      bracketright      parenleft      parenright      period      comma      ];
+@PUNCT_NUMR         = [ bracketleft.numr bracketright.numr parenleft.numr parenright.numr period.numr comma.numr ];
+@PUNCT_DNOM         = [ bracketleft.dnom bracketright.dnom parenleft.dnom parenright.dnom period.dnom comma.dnom ];
+@PUNCT_SUPS         = [ bracketleft.sups bracketright.sups parenleft.sups parenright.sups period.sups comma.sups ];
+@PUNCT_SUBS         = [ bracketleft.subs bracketright.subs parenleft.subs parenright.subs period.subs comma.subs ];
 
 @LAT_LCSUPS_BASIC = [ a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups ];
 # @LAT_UCSUPS_BASIC = [ A.sups B.sups C.sups D.sups E.sups F.sups G.sups H.sups I.sups J.sups K.sups L.sups M.sups N.sups O.sups P.sups Q.sups R.sups S.sups T.sups U.sups V.sups W.sups X.sups Y.sups Z.sups ];
@@ -33,10 +42,11 @@ languagesystem latn TRK; # Turkish
 @CASE_SOURCE  =  [  at      braceleft      braceright      bracketleft      bracketright      emdash      endash      exclamdown      guillemotleft      guillemotright      guilsinglleft      guilsinglright      horizontalbar      hyphen      parenleft      parenright      questiondown      ];
 @CASE_TARGET  =  [  at.cap  braceleft.cap  braceright.cap  bracketleft.cap  bracketright.cap  emdash.cap  endash.cap  exclamdown.cap  guillemotleft.cap  guillemotright.cap  guilsinglleft.cap  guilsinglright.cap  horizontalbar.cap  hyphen.cap  parenleft.cap  parenright.cap  questiondown.cap  ];
 
-@MARKS_CMB      = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb ringcmb hungarumlautcmb caroncmb ];
-@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap ];
+@MARKS_CMB      = [ acutecmb brevecmb caroncmb circumflexcmb dieresiscmb dotaccentcmb gravecmb hungarumlautcmb macroncmb ringcmb tildecmb ];
+@MARKS_CMB_CASE = [ acutecmb.cap brevecmb.cap caroncmb.cap circumflexcmb.cap dieresiscmb.cap dotaccentcmb.cap gravecmb.cap hungarumlautcmb.cap macroncmb.cap ringcmb.cap tildecmb.cap ];
 
 
+# lookup for handling the Dutch double-accented IJ:
 lookup locl_NLD_ijacute {
     sub j by dotlessj acutecmb;
     sub J by J acutecmb.cap;
@@ -46,19 +56,19 @@ lookup locl_NLD_ijacute {
 #--------------------------------------
 feature aalt { # Access All Alternates
     feature locl;
-    feature pnum;
-    feature onum;
-    feature tnum;
-    feature lnum;
-    feature zero;
-    feature ss01;
-    feature case;
     feature numr;
     feature dnom;
     feature ordn;
     feature sups;
     feature subs;
     feature sinf;
+    feature pnum;
+    feature onum;
+    feature tnum;
+    feature lnum;
+    feature ss01;
+    feature case;
+    feature zero;
 } aalt;
 
 
@@ -99,6 +109,7 @@ feature ccmp {
         sub u ogonekcmb by uogonek;
         sub U ogonekcmb by Uogonek;
         sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
+
     } GLYPH_COMPOSITION_LAT_NONCONTEXTUAL;
 
 
@@ -107,7 +118,6 @@ feature ccmp {
         sub [ @LAT_UC_ALL ] @MARKS_CMB' by @MARKS_CMB_CASE;
         sub @MARKS_CMB_CASE @MARKS_CMB' by @MARKS_CMB_CASE;
     } CASE_ACCENTS_CMB_CONTEXT;
-
 
     lookup IJ_ACUTE {
         script latn;
@@ -120,7 +130,6 @@ feature ccmp {
 } ccmp;
 
 
-
 #--------------------------------------
 feature case {
     sub @CASE_SOURCE by @CASE_TARGET;
@@ -130,17 +139,30 @@ feature case {
 #--------------------------------------
 feature numr { # Numerators
     lookup NUMR {
-        sub @FIGURES_LINING_TABULAR by @FIGURES_NUMR;
-        sub @PUNCT_SMALL_SOURCE by @PUNCT_NUMR;
+        sub @FIG_LINING_TAB by @FIG_NUMR;
+        sub @PUNCT_SMALL_FIG by @PUNCT_NUMR;
     } NUMR;
 } numr;
 
 
 #--------------------------------------
 feature dnom { # Denominators
-    sub @FIGURES_LINING_TABULAR by @FIGURES_DNOM;
-    sub @PUNCT_SMALL_SOURCE by @PUNCT_DNOM;
+    sub @FIG_LINING_TAB by @FIG_DNOM;
+    sub @PUNCT_SMALL_FIG by @PUNCT_DNOM;
 } dnom;
+
+
+#--------------------------------------
+feature frac { # Fractions
+    @SLASH = [ slash.frac fraction divisionslash ];
+
+    lookup NUMR;
+    sub slash by slash.frac;
+    sub @FIG_NUMR space' by space.frac;
+
+    sub [ fraction divisionslash slash.frac @FIG_DNOM @PUNCT_DNOM ] [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
+    sub @FIG_DNOM space.frac [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
+} frac;
 
 
 #--------------------------------------
@@ -157,8 +179,8 @@ feature sups { # Superscript
     lookup SUPERIOR_MINUSCULE;
 
     lookup SUPERIOR_NUMERALS_SORTS {
-        sub @FIGURES_LINING_TABULAR by @FIGURES_SUPS;
-        sub @PUNCT_SMALL_SOURCE by @PUNCT_SUPS;
+        sub @FIG_LINING_TAB by @FIG_SUPS;
+        sub @PUNCT_SMALL_FIG by @PUNCT_SUPS;
     } SUPERIOR_NUMERALS_SORTS;
 
     lookup SUPERIOR_SORTS {
@@ -171,8 +193,8 @@ feature sups { # Superscript
 #--------------------------------------
 feature subs { # Subscript
     lookup INFERIOR {
-        sub @FIGURES_LINING_TABULAR by @FIGURES_INF;
-        sub @PUNCT_SMALL_SOURCE by @PUNCT_SUBS;
+        sub @FIG_LINING_TAB by @FIG_INF;
+        sub @PUNCT_SMALL_FIG by @PUNCT_SUBS;
     } INFERIOR;
 } subs;
 
@@ -185,29 +207,29 @@ feature sinf { # Scientific Inferiors
 
 #--------------------------------------
 feature tnum { # Tabular Figures
-    sub @FIGURES_LINING by @FIGURES_LINING_TABULAR;
-    sub @FIGURES_OLDSTYLE by @FIGURES_OLDSTYLE_TABULAR;
+    sub @FIG_LINING by @FIG_LINING_TAB;
+    sub @FIG_OLDSTYLE by @FIG_OLDSTYLE_TAB;
 } tnum;
 
 
 #--------------------------------------
 feature onum { # Oldstyle Figures
-    sub @FIGURES_LINING by @FIGURES_OLDSTYLE;
-    sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
+    sub @FIG_LINING by @FIG_OLDSTYLE;
+    sub @FIG_LINING_TAB by @FIG_OLDSTYLE_TAB;
 } onum;
 
 
 #--------------------------------------
 feature pnum { # Proportional Figures
-    sub @FIGURES_LINING_TABULAR by @FIGURES_LINING;
-    sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_OLDSTYLE;
+    sub @FIG_LINING_TAB by @FIG_LINING;
+    sub @FIG_OLDSTYLE_TAB by @FIG_OLDSTYLE;
 } pnum;
 
 
 #--------------------------------------
 feature lnum { # Lining Figures
-    sub @FIGURES_OLDSTYLE by @FIGURES_LINING;
-    sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_LINING_TABULAR;
+    sub @FIG_OLDSTYLE by @FIG_LINING;
+    sub @FIG_OLDSTYLE_TAB by @FIG_LINING_TAB;
 } lnum;
 
 
