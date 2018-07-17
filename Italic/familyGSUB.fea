@@ -109,9 +109,7 @@ feature ccmp {
         sub u ogonekcmb by uogonek;
         sub U ogonekcmb by Uogonek;
         sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
-
     } GLYPH_COMPOSITION_LAT_NONCONTEXTUAL;
-
 
     lookup CASE_ACCENTS_CMB_CONTEXT {
         # substitutes combining marks for minuscules with forms for uppercase
@@ -124,7 +122,6 @@ feature ccmp {
         language NLD exclude_dflt;
             sub Iacute J' lookup locl_NLD_ijacute;
             sub iacute j' lookup locl_NLD_ijacute;
-
     } IJ_ACUTE;
 
 } ccmp;
