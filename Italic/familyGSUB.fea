@@ -17,6 +17,7 @@ languagesystem latn NLD; # Dutch
 @FIG_DNOM          =  [  zero.dnom  one.dnom  two.dnom  three.dnom  four.dnom  five.dnom  six.dnom  seven.dnom  eight.dnom  nine.dnom  ];
 @FIG_SUPS          =  [  zero.sups  one.sups  two.sups  three.sups  four.sups  five.sups  six.sups  seven.sups  eight.sups  nine.sups  ];
 @FIG_INF           =  [  zero.subs  one.subs  two.subs  three.subs  four.subs  five.subs  six.subs  seven.subs  eight.subs  nine.subs  ];
+@FIG_CASE          =  [  zero.cap   one.cap   two.cap   three.cap   four.cap   five.cap   six.cap   seven.cap   eight.cap   nine.cap   ];
 
 
 # Latin:
@@ -130,6 +131,7 @@ feature ccmp {
 #--------------------------------------
 feature case {
     sub @CASE_SOURCE by @CASE_TARGET;
+    sub @FIG_LINING_TAB by @FIG_CASE;
 } case;
 
 
