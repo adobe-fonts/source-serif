@@ -1,1 +1,19 @@
-include(../../../family.fea);
+include (../../../../featuresVar.fea);
+
+table OS/2 {
+	include (../../../Instances/BlackIt/os2.fea);
+	include (../../../../familyOS2.fea);
+} OS/2;
+
+# GPOS -----------------------------------
+feature mark {
+	include (../../../Instances/BlackIt/mark.fea);
+} mark;
+
+feature mkmk {
+	include (../../../Instances/BlackIt/mkmk.fea);
+} mkmk;
+
+feature kern {
+	include (../../../Instances/BlackIt/kern.fea);
+} kern;
