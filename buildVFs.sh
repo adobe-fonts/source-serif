@@ -6,6 +6,8 @@ itm=Italic/Masters
 ro_name=SourceSerifVariable-Roman
 it_name=SourceSerifVariable-Italic
 
+target_dir="target/VAR"
+
 # build variable OTFs
 buildmasterotfs $rom/$ro_name.designspace
 buildcff2vf -p $rom/$ro_name.designspace
@@ -41,5 +43,11 @@ sfntedit -a cmap=$itm/.tb_cmap,GDEF=$itm/.tb_GDEF,GPOS=$itm/.tb_GPOS,GSUB=$itm/.
 # delete build artifacts
 rm */Masters/.tb_*
 rm */Masters/master_*/*.*tf
+
+# move VFs to target directory
+rm -rf $target_dir
+mkdir -p $target_dir
+mv $rom/$ro_name.*tf $target_dir/
+mv $itm/$it_name.*tf $target_dir/
 
 echo "Done"
