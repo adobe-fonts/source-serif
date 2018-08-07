@@ -20,7 +20,8 @@ if ! $script_found; then
 fi
 
 # clean existing build artifacts
-rm -rf target/
+rm -rf target/OTF
+rm -rf target/TTF
 otf_dir="target/OTF"
 ttf_dir="target/TTF"
 mkdir -p $otf_dir $ttf_dir
