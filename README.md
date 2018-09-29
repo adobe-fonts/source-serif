@@ -3,7 +3,7 @@
 Source Serif Pro is a set of OpenType fonts to complement the [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) family.
 In addition to functional OpenType fonts, this open source repository provides all of the source files that were used to build them using the [Adobe Font Development Kit for OpenType](http://www.adobe.com/devnet/opentype/afdko.html) (AFDKO).
 
-## Download the fonts (OTF, TTF, WOFF, EOT)
+## Download the fonts (OTF, TTF, WOFF, WOFF2)
 
 * [Latest release](../../releases/latest)
 * [All releases](../../releases)
