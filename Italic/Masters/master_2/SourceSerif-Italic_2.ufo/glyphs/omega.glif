@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="omega" format="1">
+<glyph name="omega" format="2">
 	<unicode hex="03C9"/>
 	<advance width="784"/>
 	<outline>
@@ -51,22 +51,13 @@
 			<point x="41" y="327"/>
 			<point x="41" y="166" type="curve" smooth="yes"/>
 		</contour>
-		<contour>
-			<point name="aboveLC" x="445" y="520" type="move"/>
-		</contour>
-		<contour>
-			<point name="belowLC" x="382" y="-22" type="move"/>
-		</contour>
 	</outline>
+	<anchor name="aboveLC" x="445" y="520"/>
+	<anchor name="belowLC" x="382" y="-22"/>
 	<lib>
 		<dict>
-			<key>com.typemytype.robofont.mark</key>
-			<array>
-				<real>0.502</real>
-				<integer>0</integer>
-				<integer>1</integer>
-				<integer>1</integer>
-			</array>
+			<key>public.markColor</key>
+			<string>0.502,0,1,1</string>
 		</dict>
 	</lib>
 </glyph>

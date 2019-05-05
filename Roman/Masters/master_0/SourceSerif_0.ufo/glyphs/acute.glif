@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="acute" format="1">
+<glyph name="acute" format="2">
 	<unicode hex="00B4"/>
 	<unicode hex="02CA"/>
 	<advance width="400"/>
 	<outline>
 		<component base="acutecmb" xOffset="200"/>
-		<contour>
-			<point name="_aboveLC" x="200" y="500" type="move"/>
-		</contour>
 	</outline>
+	<anchor name="_aboveLC" x="200" y="500"/>
 	<lib>
 		<dict>
-			<key>com.typemytype.robofont.mark</key>
-			<array>
-				<integer>0</integer>
-				<real>0.5</real>
-				<integer>1</integer>
-				<integer>1</integer>
-			</array>
+			<key>public.markColor</key>
+			<string>0,0.5,1,1</string>
 		</dict>
 	</lib>
 </glyph>
