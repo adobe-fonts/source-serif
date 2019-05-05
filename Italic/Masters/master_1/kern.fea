@@ -1,4 +1,4 @@
-# Created: Wed Jul 25 17:13:12 2018
+# Created: Sun May  5 18:49:46 2019
 # PS Name: SourceSerifVariable-Italic
 # MinKern: +/- 3 inclusive
 # exported from Defcon
@@ -7,17 +7,17 @@
 @MMK_L_LAT_C = [C Ccedilla Cacute Ccaron];
 @MMK_L_LAT_D = [D Dcaron Dcroat Eth];
 @MMK_L_LAT_E = [AE E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek OE];
-@MMK_L_LAT_G = [G Gbreve Gdotaccent Gcommaaccent];
-@MMK_L_LAT_H = [H I Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek M];
+@MMK_L_LAT_G = [G Gbreve Gdotaccent Gcommaaccent Gtilde];
+@MMK_L_LAT_H = [H I Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek M Hbar Macute];
 @MMK_L_LAT_J = [J];
 @MMK_L_LAT_K = [K Kcommaaccent];
 @MMK_L_LAT_L = [L Lacute Lcaron Lslash Lcommaaccent];
-@MMK_L_LAT_N = [N Nacute Ncaron Ntilde Ndotaccent Ncommaaccent];
-@MMK_L_LAT_O = [O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde Q];
+@MMK_L_LAT_N = [N Nacute Ncaron Ntilde Ndotaccent Ncommaaccent Ngrave];
+@MMK_L_LAT_O = [O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde Q Schwa Obreve];
 @MMK_L_LAT_R = [R Racute Rcaron Rcommaaccent];
 @MMK_L_LAT_S = [S Sacute Scaron Scedilla Scommaaccent];
 @MMK_L_LAT_T = [T Tcaron Tcedilla Tcommaaccent];
-@MMK_L_LAT_U = [U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring];
+@MMK_L_LAT_U = [U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Uhorn];
 @MMK_L_LAT_W = [W];
 @MMK_L_LAT_Y = [Y Yacute Ydieresis];
 @MMK_L_LAT_Z = [Z Zacute Zcaron Zdotaccent];
@@ -27,14 +27,14 @@
 @MMK_L_LAT_dcaron = [dcaron lcaron tcaron];
 @MMK_L_LAT_e = [ae e eacute ecaron ecircumflex edieresis edotaccent egrave emacron eogonek oe];
 @MMK_L_LAT_f = [f longs f_f f_f_f];
-@MMK_L_LAT_g = [g gbreve gdotaccent gcommaaccent];
-@MMK_L_LAT_h = [h m n nacute ncaron ntilde ndotaccent ncommaaccent f_f_h f_h];
+@MMK_L_LAT_g = [g gbreve gdotaccent gcommaaccent gtilde];
+@MMK_L_LAT_h = [h m n nacute ncaron ntilde ndotaccent ncommaaccent f_f_h f_h hbar macute ngrave];
 @MMK_L_LAT_i = [dotlessi i iacute igrave iogonek f_i i.trk f_f_i];
 @MMK_L_LAT_icircumflex = [icircumflex idieresis imacron];
-@MMK_L_LAT_j = [j f_j f_f_j dotlessj];
-@MMK_L_LAT_k = [k kcommaaccent f_k f_f_k];
+@MMK_L_LAT_j = [j f_j f_f_j dotlessj gscript];
+@MMK_L_LAT_k = [k kcommaaccent f_k f_f_k kgreenlandic];
 @MMK_L_LAT_l = [d dcroat l lacute lslash f_l lcommaaccent f_f_l];
-@MMK_L_LAT_o = [o oacute ocircumflex odieresis ograve ohungarumlaut omacron otilde oslash];
+@MMK_L_LAT_o = [o oacute ocircumflex odieresis ograve ohungarumlaut omacron otilde oslash schwa obreve];
 @MMK_L_LAT_r = [r racute rcaron rcommaaccent];
 @MMK_L_LAT_s = [s sacute scaron scedilla scommaaccent];
 @MMK_L_LAT_t = [t tcommaaccent tcedilla f_t f_f_t];
@@ -66,26 +66,26 @@
 @MMK_L_two.lf = [two.lf two.cap];
 @MMK_L_zero.lf = [zero.lf zero.lfslash zero.cap];
 @MMK_R_LAT_A = [A Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Aring Aogonek];
-@MMK_R_LAT_E = [B D E F H I K L P R Dcaron Dcroat Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Edotaccent Eogonek Igrave Iacute Icircumflex Idieresis Imacron Idotaccent Iogonek Kcommaaccent Lacute Lcaron Lcommaaccent Ldot Lslash Racute Rcaron Rcommaaccent Eth Thorn];
+@MMK_R_LAT_E = [B D E F H I K L P R Dcaron Dcroat Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Edotaccent Eogonek Igrave Iacute Icircumflex Idieresis Imacron Idotaccent Iogonek Kcommaaccent Lacute Lcaron Lcommaaccent Ldot Lslash Racute Rcaron Rcommaaccent Eth Thorn Hbar];
 @MMK_R_LAT_J = [J];
-@MMK_R_LAT_M = [M N Nacute Ncaron Ntilde Ncommaaccent Ndotaccent];
-@MMK_R_LAT_O = [C G O Q Ccedilla Cacute Ccaron Gbreve Gdotaccent Gcommaaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Ohungarumlaut Oslash OE];
+@MMK_R_LAT_M = [M N Nacute Ncaron Ntilde Ncommaaccent Ndotaccent Macute Ngrave];
+@MMK_R_LAT_O = [C G O Q Ccedilla Cacute Ccaron Gbreve Gdotaccent Gcommaaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Ohungarumlaut Oslash OE Gtilde Obreve];
 @MMK_R_LAT_S = [S Sacute Scaron Scedilla Scommaaccent];
 @MMK_R_LAT_T = [T Tcaron Tcedilla Tcommaaccent];
-@MMK_R_LAT_U = [U Ugrave Uacute Ucircumflex Udieresis Umacron Uring Uhungarumlaut Uogonek];
+@MMK_R_LAT_U = [U Ugrave Uacute Ucircumflex Udieresis Umacron Uring Uhungarumlaut Uogonek Uhorn];
 @MMK_R_LAT_W = [W];
 @MMK_R_LAT_Y = [Y Yacute Ydieresis];
 @MMK_R_LAT_Z = [Z Zacute Zcaron Zdotaccent];
-@MMK_R_LAT_a = [a d q agrave aacute acircumflex atilde adieresis amacron abreve aring aogonek ae dcaron dcroat];
+@MMK_R_LAT_a = [a d q agrave aacute acircumflex atilde adieresis amacron abreve aring aogonek ae dcaron dcroat gscript];
 @MMK_R_LAT_f = [f f_b f_f f_h f_i f_j f_k f_l f_t f_f_b f_f_f f_f_h f_f_i f_f_j f_f_k f_f_l f_f_t];
-@MMK_R_LAT_g = [g gbreve gdotaccent gcommaaccent];
+@MMK_R_LAT_g = [g gbreve gdotaccent gcommaaccent gtilde];
 @MMK_R_LAT_germandbls = [germandbls longs];
-@MMK_R_LAT_h = [b h k l kcommaaccent lacute lcaron lcommaaccent ldot lslash];
+@MMK_R_LAT_h = [b h k l kcommaaccent lacute lcaron lcommaaccent ldot lslash hbar];
 @MMK_R_LAT_i = [i igrave iacute iogonek i.trk];
 @MMK_R_LAT_icircumflex = [icircumflex idieresis imacron];
 @MMK_R_LAT_j = [j dotlessj];
-@MMK_R_LAT_m = [m n r dotlessi nacute ncaron ntilde ncommaaccent ndotaccent racute rcommaaccent rcaron];
-@MMK_R_LAT_o = [c e o ccedilla cacute ccaron egrave eacute ecircumflex ecaron edieresis emacron edotaccent eogonek ograve oacute ocircumflex otilde odieresis omacron ohungarumlaut oslash oe eth];
+@MMK_R_LAT_m = [m n r dotlessi nacute ncaron ntilde ncommaaccent ndotaccent racute rcommaaccent rcaron kgreenlandic macute ngrave];
+@MMK_R_LAT_o = [c e o ccedilla cacute ccaron egrave eacute ecircumflex ecaron edieresis emacron edotaccent eogonek ograve oacute ocircumflex otilde odieresis omacron ohungarumlaut oslash oe eth schwa obreve];
 @MMK_R_LAT_s = [s sacute scaron scedilla scommaaccent];
 @MMK_R_LAT_t = [t tcaron tcedilla tcommaaccent];
 @MMK_R_LAT_u = [u ugrave uacute ucircumflex udieresis umacron uring uhungarumlaut uogonek];
