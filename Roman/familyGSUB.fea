@@ -9,6 +9,7 @@ languagesystem latn TRK; # Turkish
 languagesystem latn NLD; # Dutch
 
 languagesystem cyrl SRB; # Serbian
+languagesystem cyrl BGR; # Bulgarian
 
 
 # Figures:
@@ -526,6 +527,12 @@ feature locl { # Localized Forms
         language MKD include_dflt;
             lookup BE_LC_SRB;
 
+        language BGR include_dflt;
+            lookup BULGARIAN_CYRILLIC {
+                sub [ Icyr Ishort Igravecyr El Ef ] by [ Icyr.bgr Ishort.bgr Igravecyr.bgr El.bgr Ef.bgr ];
+                sub [ ve ghe de zhe ze icyr ishort ka el en pe te ef tse che sha shcha hard yeru soft yu igravecyr ]
+                by [ ve.bgr ghe.bgr de.bgr zhe.bgr ze.bgr icyr.bgr ishort.bgr ka.bgr el.bgr en.bgr pe.bgr te.bgr ef.bgr tse.bgr che.bgr sha.bgr shcha.bgr hard.bgr yeru.bgr soft.bgr yu.bgr igravecyr.bgr ];
+            } BULGARIAN_CYRILLIC;
 
 } locl;
 

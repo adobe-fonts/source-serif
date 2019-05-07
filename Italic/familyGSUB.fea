@@ -1,10 +1,15 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt; # Latin default
+languagesystem cyrl dflt; # Cyrillic default
+languagesystem grek dflt; # Greek default
 
 languagesystem latn AZE; # Azeri
 languagesystem latn CRT; # Crimean Tatar
 languagesystem latn TRK; # Turkish
 languagesystem latn NLD; # Dutch
+
+languagesystem cyrl SRB; # Serbian
+languagesystem cyrl BGR; # Bulgarian
 
 
 # Figures:
@@ -453,6 +458,27 @@ feature locl { # Localized Forms
 
         language CRT exclude_dflt;
             lookup I_DOT;
+
+    script grek;
+        sub acutecmb by tonoscmb; # combining marks
+
+    script cyrl;
+        sub brevecmb by brevecmb.cyr; # combining marks
+
+        language SRB include_dflt;
+            lookup BE_LC_SRB {
+                sub be by be.srb;
+            } BE_LC_SRB;
+
+        language MKD include_dflt;
+            lookup BE_LC_SRB;
+
+        language BGR include_dflt;
+            lookup BULGARIAN_CYRILLIC {
+                sub [ Icyr Ishort Igravecyr El Ef ] by [ Icyr.bgr Ishort.bgr Igravecyr.bgr El.bgr Ef.bgr ];
+                sub [ ve de zhe ze ka el ef yu ] by [ ve.bgr de.bgr zhe.bgr ze.bgr ka.bgr el.bgr ef.bgr yu.bgr ];
+            } BULGARIAN_CYRILLIC;
+
 } locl;
 
 
