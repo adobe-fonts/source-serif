@@ -1,20 +1,25 @@
-# Created: Sun May  5 18:49:36 2019
+# Created: Tue May  7 20:18:23 2019
 # PS Name: SourceSerifVariable-Italic
 # MM Inst: None
 # exported from Defcon
 
-@mGC_above_110_691 = [gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap hungarumlautcmb.cap caroncmb.cap];
-@mGC_above_71_506 = [gravecmb acutecmb circumflexcmb tildecmb dotaccentcmb dieresiscmb hungarumlautcmb caroncmb];
+@mGC_above_110_691 = [gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap hungarumlautcmb.cap caroncmb.cap hoicmb.cap dieresisacute.cap dieresisgrave.cap dieresismacron.cap dieresiscaron.cap circumflexacute.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehoi.cap brevetilde.cap];
+@mGC_above_71_506 = [gravecmb acutecmb circumflexcmb tildecmb dotaccentcmb dieresiscmb hungarumlautcmb caroncmb dieresisacute dieresisgrave dieresismacron dieresiscaron circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde];
+@mGC_below_n42_n22 = [commabelowcmb verticallinebelowcmb brevebelowcmb dieresisbelowcmb dotbelowcmb macronbelowcmb];
 
 markClass @mGC_above_110_691 <anchor 110 691> @MC_above;
 markClass @mGC_above_71_506 <anchor 71 506> @MC_above;
+markClass @mGC_below_n42_n22 <anchor -42 -22> @MC_below;
 markClass brevecmb <anchor 69 500> @MC_above;
 markClass cedillacmb <anchor -37 0> @MC_base;
-markClass commabelowcmb <anchor -42 -22> @MC_below;
+markClass dieresistonoscmb <anchor 98 506> @MC_above;
+markClass hoicmb <anchor 56 506> @MC_above;
+markClass horncmb <anchor 64 478> @MC_horn;
 markClass macroncmb <anchor 74 520> @MC_above;
 markClass ogonekcmb <anchor -20 0> @MC_ogonek;
 markClass ringcmb <anchor 71 510> @MC_above;
 markClass ringcmb.cap <anchor 111 694> @MC_above;
+markClass tonoscmb <anchor 75 505> @MC_above;
 
 lookup MARK_BASE_above {
 	@bGC_A_above = [A Aogonek];
@@ -82,6 +87,7 @@ lookup MARK_BASE_above {
 	pos base alpha <anchor 375 506> mark @MC_above;
 	pos base b <anchor 231 739> mark @MC_above;
 	pos base c <anchor 313 505> mark @MC_above;
+	pos base commabelowcmb.alt <anchor 129 780> mark @MC_above;
 	pos base d <anchor 462 739> mark @MC_above;
 	pos base epsilon <anchor 302 506> mark @MC_above;
 	pos base f <anchor 370 750> mark @MC_above;
@@ -191,6 +197,14 @@ lookup MARK_BASE_below {
 	pos base y <anchor 4 -252> mark @MC_below;
 	pos base z <anchor 169 -22> mark @MC_below;
 } MARK_BASE_below;
+
+
+lookup MARK_BASE_horn {
+	pos base O <anchor 568 676> mark @MC_horn;
+	pos base U <anchor 668 679> mark @MC_horn;
+	pos base o <anchor 416 480> mark @MC_horn;
+	pos base u <anchor 506 471> mark @MC_horn;
+} MARK_BASE_horn;
 
 
 lookup MARK_BASE_ogonek {
