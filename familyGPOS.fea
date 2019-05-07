@@ -9,6 +9,7 @@ feature mkmk {
 
 
 feature kern {
+	lookupflag IgnoreMarks;
 	include (../kern.fea);
 	include (../kern_ctxt.fea);
 } kern;
