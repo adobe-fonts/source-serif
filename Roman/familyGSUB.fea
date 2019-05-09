@@ -67,6 +67,10 @@ languagesystem cyrl BGR; # Bulgarian
 @CYR_UC_BASIC = [ Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ishort Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya ];
 @CYR_SC_BASIC = [ Acyr.sc Be.sc Ve.sc Ghe.sc De.sc Ie.sc Zhe.sc Ze.sc Icyr.sc Ishort.sc Ka.sc El.sc Em.sc En.sc Ocyr.sc Pe.sc Er.sc Es.sc Te.sc Ucyr.sc Ef.sc Ha.sc Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Yeru.sc Soft.sc Ecyr.sc Yu.sc Ya.sc ];
 
+@CYR_LC_BGR = [ ve.bgr ghe.bgr de.bgr zhe.bgr ze.bgr icyr.bgr ishort.bgr ka.bgr el.bgr en.bgr pe.bgr te.bgr ef.bgr tse.bgr che.bgr sha.bgr shcha.bgr hard.bgr soft.bgr yu.bgr igravecyr.bgr ];
+@CYR_UC_BGR = [ Icyr.bgr Ishort.bgr Igravecyr.bgr El.bgr Ef.bgr ];
+@CYR_SC_BGR = [ Icyr.scbgr Ishort.scbgr Igravecyr.scbgr El.scbgr Ef.scbgr ];
+
 @CYR_UC_EXTENDED = [ Iegrave Io Dje Gje Ieukran Dze Iukran Yi Je Lje Nje Tshe Kje Igravecyr Ushort Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Zhebreve Abrevecyr Aie Iebreve Schwacyr Imacroncyr Odieresiscyr Obarcyr Umacroncyr Uacutedblcyr ];
 @CYR_LC_EXTENDED = [ iegrave io dje gje ieukran dze iukran yi je lje nje tshe kje igravecyr ushort dzhe yat fita izhitsa gheup ghestroke zhedescender zedescender kadescender kabashkir endescender esdescender ustraight ustraightstroke hadescender chedescender shha palochka zhebreve abrevecyr aie iebreve schwacyr imacroncyr odieresiscyr obarcyr umacroncyr uacutedblcyr ];
 @CYR_SC_EXTENDED = [ Iegrave.sc Io.sc Dje.sc Gje.sc Ieukran.sc Dze.sc Iukran.sc Yi.sc Je.sc Lje.sc Nje.sc Tshe.sc Kje.sc Igravecyr.sc Ushort.sc Dzhe.sc Yat.sc Fita.sc Izhitsa.sc Gheup.sc Ghestroke.sc Zhedescender.sc Zedescender.sc Kadescender.sc Kabashkir.sc Endescender.sc Esdescender.sc Ustraight.sc Ustraightstroke.sc Hadescender.sc Chedescender.sc Shha.sc Palochka.sc Zhebreve.sc Abrevecyr.sc Aie.sc Iebreve.sc Schwacyr.sc Imacroncyr.sc Odieresiscyr.sc Obarcyr.sc Umacroncyr.sc Uacutedblcyr.sc ];
@@ -529,9 +533,8 @@ feature locl { # Localized Forms
 
         language BGR include_dflt;
             lookup BULGARIAN_CYRILLIC {
-                sub [ Icyr Ishort Igravecyr El Ef ] by [ Icyr.bgr Ishort.bgr Igravecyr.bgr El.bgr Ef.bgr ];
-                sub [ ve ghe de zhe ze icyr ishort ka el en pe te ef tse che sha shcha hard yeru soft yu igravecyr ]
-                by [ ve.bgr ghe.bgr de.bgr zhe.bgr ze.bgr icyr.bgr ishort.bgr ka.bgr el.bgr en.bgr pe.bgr te.bgr ef.bgr tse.bgr che.bgr sha.bgr shcha.bgr hard.bgr yeru.bgr soft.bgr yu.bgr igravecyr.bgr ];
+                sub [ Icyr Ishort Igravecyr El Ef ] by @CYR_UC_BGR;
+                sub [ ve ghe de zhe ze icyr ishort ka el en pe te ef tse che sha shcha hard soft yu igravecyr ] by @CYR_LC_BGR;
             } BULGARIAN_CYRILLIC;
 
 } locl;
@@ -612,6 +615,7 @@ feature c2sc {
 
     sub @CYR_UC_BASIC by @CYR_SC_BASIC;
     sub @CYR_UC_EXTENDED by @CYR_SC_EXTENDED;
+    sub @CYR_UC_BGR by @CYR_SC_BGR;
 
     sub @GRK_UC_BASIC by @GRK_SC_BASIC;
     sub @GRK_UC_ACCENTED by @GRK_SC_ACCENTED;
@@ -637,6 +641,7 @@ feature smcp {
     sub @CYR_LC_BASIC by @CYR_SC_BASIC;
     sub @CYR_LC_EXTENDED by @CYR_SC_EXTENDED;
     sub be.srb by Be.sc;
+    sub [ icyr.bgr ishort.bgr igravecyr.bgr el.bgr ef.bgr ] by @CYR_SC_BGR;
 
     sub @GRK_LC_BASIC by @GRK_SC_BASIC;
     sub @GRK_LC_ACCENTED by @GRK_SC_ACCENTED;
