@@ -78,8 +78,6 @@ languagesystem cyrl BGR; # Bulgarian
 @CYR_UC_ALL = [ @CYR_UC_BASIC @CYR_UC_EXTENDED ];
 @CYR_SC_ALL = [ @CYR_SC_BASIC @CYR_SC_EXTENDED ];
 
-
-
 @UC_ALL = [ @LAT_UC_ALL @CYR_UC_ALL @GRK_UC_ALL ];
 @SC_ALL = [ @LAT_SC_ALL @CYR_SC_ALL @GRK_SC_ALL ];
 
@@ -437,12 +435,6 @@ lookup DECOMPOSITION {
     sub zcaron by z caroncmb;
     sub zdotaccent by z dotaccentcmb;
     sub zdotbelow by z dotbelowcmb;
-    sub dieresismacron by dieresiscmb macroncmb;
-    sub dieresismacron.cap by dieresiscmb.cap macroncmb.cap;
-    sub dieresiscaron by dieresiscmb caroncmb.cap;
-    sub dieresiscaron.cap by dieresiscmb.cap caroncmb.cap;
-    sub brevehoi by hoicmb.cap brevecmb.cap;
-    sub brevehoi.cap by hoicmb.cap brevecmb.cap;
     sub alphatonos by alpha tonoscmb;
     sub epsilontonos by epsilon tonoscmb;
     sub etatonos by eta tonoscmb;
@@ -599,7 +591,7 @@ feature ccmp {
 
 
 #--------------------------------------
-feature case {
+feature case { # case-sensitive forms
     sub @CASE_SOURCE by @CASE_TARGET;
     sub @FIG_LINING_TAB by @FIG_CASE;
     sub anoteleia by anoteleia.cap;
@@ -607,7 +599,7 @@ feature case {
 
 
 #--------------------------------------
-feature c2sc {
+feature c2sc { # caps to small caps
     sub @LAT_UC_BASIC by @LAT_SC_BASIC;
     sub @LAT_UC_ACCENTED by @LAT_SC_ACCENTED;
     sub @LAT_UC_ADDL by @LAT_SC_ADDL;
@@ -630,7 +622,7 @@ feature c2sc {
 
 
 #--------------------------------------
-feature smcp {
+feature smcp { # lowercase to small caps
     sub @LAT_LC_BASIC by @LAT_SC_BASIC;
     sub @LAT_LC_ACCENTED by @LAT_SC_ACCENTED;
     sub @LAT_LC_ADDL by @LAT_SC_ADDL;
@@ -753,9 +745,9 @@ feature lnum { # Lining Figures
 
 
 #--------------------------------------
-feature zero {
-	sub zero by zero.slash;
-	sub zero.lf by zero.lfslash;
+feature zero { # Slashed Zero
+    sub zero by zero.slash;
+    sub zero.lf by zero.lfslash;
 } zero;
 
 
@@ -770,7 +762,8 @@ feature liga {
 } liga;
 
 
+
 #-------------------------------------------
 feature size {
-	parameters 10.0 0; # design size, subfamily
+    parameters 10.0 0; # design size, subfamily
 } size;
