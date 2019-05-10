@@ -57,6 +57,7 @@ languagesystem cyrl BGR; # Bulgarian
 @CYR_LC_BASIC = [ acyr be ve ghe de ie zhe ze icyr ishort ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ];
 @CYR_UC_BASIC = [ Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ishort Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya ];
 
+@CYR_LC_BGR = [ ve.bgr de.bgr zhe.bgr ze.bgr ka.bgr el.bgr ef.bgr yu.bgr ];
 @CYR_UC_BGR = [ Icyr.bgr Ishort.bgr Igravecyr.bgr El.bgr Ef.bgr ];
 
 @CYR_UC_EXTENDED = [ Iegrave Io Dje Gje Ieukran Dze Iukran Yi Je Lje Nje Tshe Kje Igravecyr Ushort Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Zhebreve Abrevecyr Aie Iebreve Schwacyr Imacroncyr Odieresiscyr Obarcyr Umacroncyr Uacutedblcyr ];
@@ -470,6 +471,8 @@ feature aalt { # Access All Alternates
     feature tnum;
     feature lnum;
     feature ss01;
+    feature ss02;
+    feature ss03;
     feature case;
     feature zero;
 } aalt;
@@ -497,17 +500,19 @@ feature locl { # Localized Forms
         sub brevecmb by brevecmb.cyr; # combining marks
 
         language SRB include_dflt;
-            lookup BE_LC_SRB {
-                sub be by be.srb;
-            } BE_LC_SRB;
+            lookup SRB_MKD_CYRILLIC {
+                sub [ be ghe de pe te ] by
+                    [ be.srb ghe.srb de.srb pe.srb te.srb ];
+            } SRB_MKD_CYRILLIC;
 
         language MKD include_dflt;
-            lookup BE_LC_SRB;
+            lookup SRB_MKD_CYRILLIC;
+
 
         language BGR include_dflt;
             lookup BULGARIAN_CYRILLIC {
                 sub [ Icyr Ishort Igravecyr El Ef ] by @CYR_UC_BGR;
-                sub [ ve de zhe ze ka el ef yu ] by [ ve.bgr de.bgr zhe.bgr ze.bgr ka.bgr el.bgr ef.bgr yu.bgr ];
+                sub [ ve de zhe ze ka el ef yu ] by @CYR_LC_BGR;
             } BULGARIAN_CYRILLIC;
 
 } locl;
@@ -686,8 +691,54 @@ feature zero { # Slashed Zero
 
 #--------------------------------------
 feature ss01 {
-    sub ampersand by ampersand.alt;
+    featureNames {
+        name "Cyrillic: Bulgarian alternates";
+        # Russian (0419)
+        # Кириллица: варианты для болгарского
+        name 3 1 0x0419 "\041A\0438\0440\0438\043B\043B\0438\0446\0430: \0432\0430\0440\0438\0430\043D\0442\044B \0434\043B\044F \0431\043E\043B\0433\0430\0440\0441\043A\043E\0433\043E";
+        # Bulgarian (0402)
+        # Кирилица: варианти за български
+        name 3 1 0x0402 "\041A\0438\0440\0438\043B\0438\0446\0430: \0432\0430\0440\0438\0430\043D\0442\0438 \0437\0430 \0431\044A\043B\0433\0430\0440\0441\043A\0438";
+        # Serbian (0C1A)
+        # Ћирилица: опције за бугарски
+        name 3 1 0x0C1A "\040B\0438\0440\0438\043B\0438\0446\0430: \043E\043F\0446\0438\0458\0435 \0437\0430 \0431\0443\0433\0430\0440\0441\043A\0438";
+        # Macedonian (042F)
+        # Кирилица: опции за бугарски
+        name 3 1 0x042F "\041A\0438\0440\0438\043B\0438\0446\0430: \043E\043F\0446\0438\0438 \0437\0430 \0431\0443\0433\0430\0440\0441\043A\0438";
+    };
+
+    lookup BULGARIAN_CYRILLIC;
+
 } ss01;
+
+
+#--------------------------------------
+feature ss02 {
+    featureNames {
+        name "Cyrillic: Serbian and Macedonian alternates";
+        # Russian (0419)
+        # Кириллица: варианты для сербского и македонского
+        name 3 1 0x0419 "\041A\0438\0440\0438\043B\043B\0438\0446\0430: \0432\0430\0440\0438\0430\043D\0442\044B \0434\043B\044F \0441\0435\0440\0431\0441\043A\043E\0433\043E \0438 \043C\0430\043A\0435\0434\043E\043D\0441\043A\043E\0433\043E";
+        # Bulgarian (0402)
+        # Кирилица: варианти за сръбски и македонски
+        name 3 1 0x0402 "\041A\0438\0440\0438\043B\0438\0446\0430: \0432\0430\0440\0438\0430\043D\0442\0438 \0437\0430 \0441\0440\044A\0431\0441\043A\0438 \0438 \043C\0430\043A\0435\0434\043E\043D\0441\043A\0438";
+        # Serbian (0C1A)
+        # Ћирилица: опције за српски и македонски
+        name 3 1 0x0C1A "\040B\0438\0440\0438\043B\0438\0446\0430: \043E\043F\0446\0438\0458\0435 \0437\0430 \0441\0440\043F\0441\043A\0438 \0438 \043C\0430\043A\0435\0434\043E\043D\0441\043A\0438";
+        # Macedonian (042F)
+        # Кирилица: опции за српски и македонски
+        name 3 1 0x042F "\041A\0438\0440\0438\043B\0438\0446\0430: \043E\043F\0446\0438\0438 \0437\0430 \0441\0440\043F\0441\043A\0438 \0438 \043C\0430\043A\0435\0434\043E\043D\0441\043A\0438";
+    };
+
+    lookup SRB_MKD_CYRILLIC;
+
+} ss02;
+
+
+#--------------------------------------
+feature ss03 {
+    sub ampersand by ampersand.alt;
+} ss03;
 
 
 #--------------------------------------
