@@ -521,6 +521,11 @@ feature locl { # Localized Forms
 #--------------------------------------
 feature ccmp {
 
+    lookup DOUBLE_I_DIAERESIS { # substitutes alternate yi/idieresis in context
+            sub [idieresis yi]' [idieresis yi] by [idieresis.narrow yi.narrow];
+            sub [idieresis.narrow yi.narrow] [idieresis yi]' by [idieresis.narrow yi.narrow];
+    } DOUBLE_I_DIAERESIS;
+
     lookup DECOMPOSE_PRECOMPOSED {
         sub [ @LAT_UC_ACCENTED @LAT_LC_ACCENTED ]' lookup DECOMPOSITION @MARKS_CMB;
     } DECOMPOSE_PRECOMPOSED;
@@ -575,6 +580,10 @@ feature ccmp {
 
 } ccmp;
 
+
+# feature calt {
+#     lookup DOUBLE_I_DIAERESIS;
+# } calt;
 
 #--------------------------------------
 feature case { # case-sensitive forms
