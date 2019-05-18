@@ -81,7 +81,7 @@ languagesystem cyrl BGR; # Bulgarian
 
 @MARKS_CMB      = [ acutecmb breveacute brevecmb brevecmb.cyr brevegrave brevehoi brevetilde caroncmb circumflexacute circumflexcmb circumflexgrave circumflexhoi circumflextilde dieresisacute dieresiscaron dieresiscmb dieresisgrave dieresismacron dotaccentcmb gravecmb hoicmb hungarumlautcmb macroncmb ringcmb tildecmb ];
 @MARKS_CMB_CASE = [ acutecmb.cap breveacute.cap brevecmb.cap brevecmb.cyrcap brevegrave.cap brevehoi.cap brevetilde.cap caroncmb.cap circumflexacute.cap circumflexcmb.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap dieresisacute.cap dieresiscaron.cap dieresiscmb.cap dieresisgrave.cap dieresismacron.cap dotaccentcmb.cap gravecmb.cap hoicmb.cap hungarumlautcmb.cap macroncmb.cap ringcmb.cap tildecmb.cap ];
-
+@DOUBLE_MARKS = [ dieresisacute dieresistonoscmb dieresisgrave dieresismacron dieresiscaron circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde ];
 
 lookup locl_NLD_ijacute {
     # lookup for handling the Dutch double-accented IJ
@@ -456,6 +456,22 @@ lookup DECOMPOSITION {
     sub uacutedblcyr by ucyr hungarumlautcmb;
 } DECOMPOSITION;
 
+lookup MARKS_DECOMPOSITION {
+        sub dieresisacute by dieresiscmb acutecmb;
+        sub dieresistonoscmb by dieresiscmb tonoscmb;
+        sub dieresisgrave by dieresiscmb gravecmb;
+        sub dieresismacron by dieresiscmb macroncmb;
+        sub dieresiscaron by dieresiscmb caroncmb;
+        sub circumflexacute by circumflexcmb acutecmb;
+        sub circumflexgrave by circumflexcmb gravecmb;
+        sub circumflexhoi by circumflexcmb hoicmb;
+        sub circumflextilde by circumflexcmb tildecmb;
+        sub breveacute by brevecmb acutecmb;
+        sub brevegrave by brevecmb gravecmb;
+        sub brevehoi by brevecmb hoicmb;
+        sub brevetilde by brevecmb tildecmb;
+} MARKS_DECOMPOSITION;
+
 
 #--------------------------------------
 feature aalt { # Access All Alternates
@@ -526,10 +542,6 @@ feature ccmp {
             sub [idieresis.narrow yi.narrow] [idieresis yi]' by [idieresis.narrow yi.narrow];
     } DOUBLE_I_DIAERESIS;
 
-    lookup DECOMPOSE_PRECOMPOSED {
-        sub [ @LAT_UC_ACCENTED @LAT_LC_ACCENTED ]' lookup DECOMPOSITION @MARKS_CMB;
-    } DECOMPOSE_PRECOMPOSED;
-
     lookup MARKS_COMPOSITION {
         sub dieresiscmb acutecmb by dieresisacute;
         sub dieresiscmb tonoscmb by dieresistonoscmb;
@@ -545,6 +557,11 @@ feature ccmp {
         sub brevecmb hoicmb by brevehoi;
         sub brevecmb tildecmb by brevetilde;
     } MARKS_COMPOSITION;
+
+    lookup DECOMPOSE_PRECOMPOSED {
+        sub [ @LAT_UC_ACCENTED @LAT_LC_ACCENTED ]' lookup DECOMPOSITION @MARKS_CMB;
+        sub @DOUBLE_MARKS' lookup MARKS_DECOMPOSITION @MARKS_CMB;
+    } DECOMPOSE_PRECOMPOSED;
 
     lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {
         sub d caroncmb by dcaron;
