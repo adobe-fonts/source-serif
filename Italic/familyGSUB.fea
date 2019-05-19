@@ -163,7 +163,6 @@ lookup DECOMPOSITION {
     sub Jcircumflex by J circumflexcmb.cap;
     sub Kcommaaccent by K commabelowcmb;
     sub Lacute by L acutecmb.cap;
-    sub Lcaron by L caroncmb;
     sub Lcommaaccent by L commabelowcmb;
     sub Ldotbelow by L dotbelowcmb;
     sub Ldotbelowmacron by Ldotbelow macroncmb.cap;
@@ -282,7 +281,6 @@ lookup DECOMPOSITION {
     sub ccaron by c caroncmb;
     sub ccircumflex by c circumflexcmb;
     sub cdotaccent by c dotaccentcmb;
-    sub dcaron by d caroncmb;
     sub ddotbelow by d dotbelowcmb;
     sub dlinebelow by d macronbelowcmb;
     sub egrave by e gravecmb;
@@ -303,7 +301,6 @@ lookup DECOMPOSITION {
     sub etilde by e tildecmb;
     sub gbreve by g brevecmb;
     sub gdotaccent by g dotaccentcmb;
-    # sub gcommaaccent by g commabelowcmb.alt;
     sub gcaron by g caroncmb;
     sub gcircumflex by g circumflexcmb;
     sub gmacron by g macroncmb;
@@ -316,7 +313,6 @@ lookup DECOMPOSITION {
     sub icircumflex by dotlessi circumflexcmb;
     sub idieresis by dotlessi dieresiscmb;
     sub imacron by dotlessi macroncmb;
-    sub iogonek by i ogonekcmb;
     sub icaron by dotlessi caroncmb;
     sub idotbelow by i dotbelowcmb;
     sub ihoi by dotlessi hoicmb;
@@ -324,7 +320,6 @@ lookup DECOMPOSITION {
     sub jcircumflex by dotlessj circumflexcmb;
     sub kcommaaccent by k commabelowcmb;
     sub lacute by l acutecmb.cap;
-    sub lcaron by l caroncmb;
     sub lcommaaccent by l commabelowcmb;
     sub ldotbelow by l dotbelowcmb;
     sub ldotbelowmacron by ldotbelow macroncmb;
@@ -374,7 +369,6 @@ lookup DECOMPOSITION {
     sub scircumflex by s circumflexcmb;
     sub sdotaccent by s dotaccentcmb;
     sub sdotbelow by s dotbelowcmb;
-    sub tcaron by t caroncmb;
     sub tcedilla by t cedillacmb;
     sub tcommaaccent by t commabelowcmb;
     sub tdieresis by t dieresiscmb;
@@ -434,8 +428,6 @@ lookup DECOMPOSITION {
     sub Kje by Ka acutecmb.cap;
     sub Igravecyr by Icyr gravecmb.cap;
     sub Ushort by Ucyr brevecmb.cyrcap;
-    # sub Zedescender by Ze turkicdsccmb;
-    # sub Esdescender by Es turkicdsccmb;
     sub Zhebreve by Zhe brevecmb.cyrcap;
     sub Abrevecyr by Acyr brevecmb.cyrcap;
     sub Iebreve by Ie brevecmb.cyrcap;
@@ -558,21 +550,15 @@ feature ccmp {
         sub brevecmb tildecmb by brevetilde;
     } MARKS_COMPOSITION;
 
-    lookup DECOMPOSE_PRECOMPOSED {
-        sub [ @LAT_UC_ACCENTED @LAT_LC_ACCENTED ]' lookup DECOMPOSITION @MARKS_CMB;
-        sub @DOUBLE_MARKS' lookup MARKS_DECOMPOSITION @MARKS_CMB;
-    } DECOMPOSE_PRECOMPOSED;
-
     lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {
+        # Glyphs that would look odd or be wrong if composed
+        # using only combining accents
         sub d caroncmb by dcaron;
         sub l caroncmb by lcaron;
         sub t caroncmb by tcaron;
         sub g tildecmb by gtilde;
         sub G tildecmb by Gtilde;
-        sub a ogonekcmb by aogonek;
-        sub A ogonekcmb by Aogonek;
         sub e ogonekcmb by eogonek;
-        sub E ogonekcmb by Eogonek;
         sub i ogonekcmb by iogonek;
         sub I ogonekcmb by Iogonek;
         # sub o ogonekcmb by oogonek;
@@ -581,6 +567,11 @@ feature ccmp {
         sub U ogonekcmb by Uogonek;
         sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
     } GLYPH_COMPOSITION_LAT_NONCONTEXTUAL;
+
+    lookup DECOMPOSE_PRECOMPOSED {
+        sub [ @LAT_UC_ACCENTED @LAT_LC_ACCENTED ]' lookup DECOMPOSITION @MARKS_CMB;
+        sub @DOUBLE_MARKS' lookup MARKS_DECOMPOSITION @MARKS_CMB;
+    } DECOMPOSE_PRECOMPOSED;
 
     lookup CASE_ACCENTS_CMB_CONTEXT {
         # substitutes combining marks for minuscules with forms for uppercase
