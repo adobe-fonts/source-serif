@@ -29,7 +29,7 @@ function build_var_font {
 	sfntedit -a CFF2=$1/.tb_cff2 $1/$2.otf
 
 	# build variable TTF
-	fontmake -m $1/$2.designspace -o variable --production-names
+	fontmake -m $1/$2.designspace -o variable --production-names --output-path $1/$2.ttf
 
 	# use DSIG, name, OS/2, hhea, post, and STAT tables from OTFs
 	sfntedit -x DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT $1/$2.otf
