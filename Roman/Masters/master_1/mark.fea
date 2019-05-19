@@ -1,4 +1,4 @@
-# Created: Tue May  7 20:16:52 2019
+# Created: Sun May 19 03:16:41 2019
 # PS Name: SourceSerifVariable-Roman
 # MM Inst: Source Serif Variable
 # exported from Defcon
@@ -23,10 +23,13 @@ lookup MARK_BASE_above {
 	@bGC_F_above = [F Ghe];
 	@bGC_G.sc_above = [G.sc U.sc Uogonek.sc Uhorn.sc];
 	@bGC_G_above = [G U Uogonek Uhorn];
-	@bGC_I_above = [I Iogonek];
+	@bGC_I.sc_above = [I.sc Iukran.sc];
+	@bGC_I_above = [I Iogonek Iukran];
+	@bGC_Icyr.sc_above = [Icyr.sc Icyr.scbgr];
+	@bGC_Icyr_above = [Icyr Icyr.bgr];
 	@bGC_J.sc_above = [J.sc L.sc];
-	@bGC_O.sc_above = [O.sc Ocyr.sc Fita.sc Obarcyr.sc];
-	@bGC_O_above = [O Q Ohorn Oslash Ocyr Fita Obarcyr];
+	@bGC_O.sc_above = [O.sc Ocyr.sc Ieukran.sc Fita.sc Obarcyr.sc];
+	@bGC_O_above = [O Q Ohorn Oslash Ocyr Ieukran Fita Obarcyr];
 	@bGC_Ucyr.sc_above = [Ucyr.sc Ya.sc];
 	@bGC_Ustraight_above = [Ustraight Ustraightstroke];
 	@bGC_Y.sc_above = [Y.sc Ustraight.sc];
@@ -34,9 +37,9 @@ lookup MARK_BASE_above {
 	@bGC_e_above = [e omicron ie];
 	@bGC_ghe_above = [ghe che];
 	@bGC_gscript_above = [gscript ya];
-	@bGC_i_above = [i j];
+	@bGC_i_above = [i j iukran];
 	@bGC_o_above = [o ohorn oslash koppa ocyr fita obarcyr];
-	@bGC_u_above = [u uogonek uhorn];
+	@bGC_u_above = [u uogonek uhorn icyr.bgr];
 	@bGC_v_above = [v ustraight ustraightstroke];
 	@bGC_x_above = [x ieukran];
 	@bGC_y_above = [y ucyr];
@@ -48,7 +51,10 @@ lookup MARK_BASE_above {
 	pos base @bGC_F_above <anchor 332 691> mark @MC_above;
 	pos base @bGC_G.sc_above <anchor 349 572> mark @MC_above;
 	pos base @bGC_G_above <anchor 379 691> mark @MC_above;
+	pos base @bGC_I.sc_above <anchor 181 572> mark @MC_above;
 	pos base @bGC_I_above <anchor 185 691> mark @MC_above;
+	pos base @bGC_Icyr.sc_above <anchor 367 572> mark @MC_above;
+	pos base @bGC_Icyr_above <anchor 399 691> mark @MC_above;
 	pos base @bGC_J.sc_above <anchor 189 572> mark @MC_above;
 	pos base @bGC_O.sc_above <anchor 328 572> mark @MC_above;
 	pos base @bGC_O_above <anchor 353 691> mark @MC_above;
@@ -77,9 +83,6 @@ lookup MARK_BASE_above {
 	pos base Ecyr.sc <anchor 252 572> mark @MC_above;
 	pos base H <anchor 395 691> mark @MC_above;
 	pos base H.sc <anchor 363 572> mark @MC_above;
-	pos base I.sc <anchor 181 572> mark @MC_above;
-	pos base Icyr <anchor 399 691> mark @MC_above;
-	pos base Icyr.sc <anchor 367 572> mark @MC_above;
 	pos base J <anchor 197 691> mark @MC_above;
 	pos base K <anchor 355 691> mark @MC_above;
 	pos base K.sc <anchor 329 572> mark @MC_above;
@@ -126,9 +129,7 @@ lookup MARK_BASE_above {
 	pos base alpha <anchor 280 506> mark @MC_above;
 	pos base alphalatin <anchor 286 506> mark @MC_above;
 	pos base b <anchor 131 739> mark @MC_above;
-	pos base breve <anchor 200 712> mark @MC_above;
 	pos base c <anchor 273 506> mark @MC_above;
-	pos base circumflex <anchor 200 733> mark @MC_above;
 	pos base commabelowcmb.alt <anchor 0 780> mark @MC_above;
 	pos base d <anchor 396 739> mark @MC_above;
 	pos base digamma <anchor 251 506> mark @MC_above;

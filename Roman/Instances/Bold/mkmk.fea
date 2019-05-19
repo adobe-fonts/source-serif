@@ -1,4 +1,4 @@
-# Created: Tue Jul 17 14:53:48 2018
+# Created: Sun May 19 03:15:08 2019
 # PS Name: SourceSerifPro-Bold
 # MM Inst: None
 # exported from Defcon
@@ -8,9 +8,44 @@
 lookup MKMK_MARK_above {
 	lookupflag MarkAttachmentType @MC_above;
 
+	pos mark acutecmb <anchor 0 786> mark @MC_above;
+	pos mark acutecmb.cap <anchor 0 890> mark @MC_above;
+	pos mark brevecmb <anchor 0 747> mark @MC_above;
+	pos mark brevecmb.cap <anchor 0 870> mark @MC_above;
+	pos mark brevecmb.cyr <anchor 0 753> mark @MC_above;
+	pos mark brevecmb.cyrcap <anchor 0 890> mark @MC_above;
+	pos mark caroncmb <anchor 0 777> mark @MC_above;
+	pos mark caroncmb.cap <anchor 0 895> mark @MC_above;
 	pos mark circumflexcmb <anchor 0 758> mark @MC_above;
+	pos mark circumflexcmb.cap <anchor 0 884> mark @MC_above;
 	pos mark dieresiscmb <anchor 0 716> mark @MC_above;
+	pos mark dieresiscmb.cap <anchor 0 861> mark @MC_above;
 	pos mark dotaccentcmb <anchor 0 731> mark @MC_above;
+	pos mark dotaccentcmb.cap <anchor 0 878> mark @MC_above;
+	pos mark gravecmb <anchor 0 786> mark @MC_above;
+	pos mark gravecmb.cap <anchor 0 890> mark @MC_above;
+	pos mark hoicmb <anchor 0 794> mark @MC_above;
+	pos mark hoicmb.cap <anchor 0 918> mark @MC_above;
+	pos mark hungarumlautcmb <anchor 0 797> mark @MC_above;
+	pos mark hungarumlautcmb.cap <anchor 0 907> mark @MC_above;
+	pos mark macroncmb <anchor 0 686> mark @MC_above;
+	pos mark macroncmb.cap <anchor 0 828> mark @MC_above;
+	pos mark ringcmb <anchor 0 792> mark @MC_above;
+	pos mark ringcmb.cap <anchor 0 909> mark @MC_above;
+	pos mark tildecmb <anchor 0 738> mark @MC_above;
+	pos mark tildecmb.cap <anchor 0 870> mark @MC_above;
 } MKMK_MARK_above;
+
+
+lookup MKMK_MARK_below {
+	lookupflag MarkAttachmentType @MC_below;
+
+	pos mark brevebelowcmb <anchor 0 -249> mark @MC_below;
+	pos mark commabelowcmb <anchor 0 -279> mark @MC_below;
+	pos mark dieresisbelowcmb <anchor 0 -221> mark @MC_below;
+	pos mark dotbelowcmb <anchor 0 -235> mark @MC_below;
+	pos mark macronbelowcmb <anchor 0 -203> mark @MC_below;
+	pos mark verticallinebelowcmb <anchor 0 -279> mark @MC_below;
+} MKMK_MARK_below;
 
 
