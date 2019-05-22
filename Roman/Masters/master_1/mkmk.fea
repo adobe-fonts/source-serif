@@ -1,51 +1,49 @@
-# Created: Sun May 19 03:16:41 2019
-# PS Name: SourceSerifVariable-Roman
-# MM Inst: Source Serif Variable
-# exported from Defcon
+lookup MKMK_MARK_aboveLC {
+	lookupflag MarkAttachmentType @MC_aboveLC;
 
-# NOTE: The markClass declarations can be found in the file 'mark.fea'.
-
-lookup MKMK_MARK_above {
-	lookupflag MarkAttachmentType @MC_above;
-
-	pos mark acutecmb <anchor 0 767> mark @MC_above;
-	pos mark acutecmb.cap <anchor 0 887> mark @MC_above;
-	pos mark brevecmb <anchor 0 744> mark @MC_above;
-	pos mark brevecmb.cap <anchor 0 880> mark @MC_above;
-	pos mark brevecmb.cyr <anchor 0 742> mark @MC_above;
-	pos mark brevecmb.cyrcap <anchor 0 884> mark @MC_above;
-	pos mark caroncmb <anchor 0 747> mark @MC_above;
-	pos mark caroncmb.cap <anchor 0 877> mark @MC_above;
-	pos mark circumflexcmb <anchor 0 733> mark @MC_above;
-	pos mark circumflexcmb.cap <anchor 0 865> mark @MC_above;
-	pos mark dieresiscmb <anchor 0 680> mark @MC_above;
-	pos mark dieresiscmb.cap <anchor 0 864> mark @MC_above;
-	pos mark dotaccentcmb <anchor 0 706> mark @MC_above;
-	pos mark dotaccentcmb.cap <anchor 0 874> mark @MC_above;
-	pos mark gravecmb <anchor 0 767> mark @MC_above;
-	pos mark gravecmb.cap <anchor 0 887> mark @MC_above;
-	pos mark hoicmb <anchor 0 755> mark @MC_above;
-	pos mark hoicmb.cap <anchor 0 890> mark @MC_above;
-	pos mark hungarumlautcmb <anchor 0 764> mark @MC_above;
-	pos mark hungarumlautcmb.cap <anchor 0 897> mark @MC_above;
-	pos mark macroncmb <anchor 0 668> mark @MC_above;
-	pos mark macroncmb.cap <anchor 0 831> mark @MC_above;
-	pos mark ringcmb <anchor 0 761> mark @MC_above;
-	pos mark ringcmb.cap <anchor 0 918> mark @MC_above;
-	pos mark tildecmb <anchor 0 724> mark @MC_above;
-	pos mark tildecmb.cap <anchor 0 873> mark @MC_above;
-} MKMK_MARK_above;
+	pos mark gravecmb <anchor 0 737> mark @MC_aboveLC;
+	pos mark acutecmb <anchor 0 757> mark @MC_aboveLC;
+	pos mark circumflexcmb <anchor 0 733> mark @MC_aboveLC;
+	pos mark tildecmb <anchor 0 724> mark @MC_aboveLC;
+	pos mark macroncmb <anchor 0 668> mark @MC_aboveLC;
+	pos mark brevecmb <anchor 0 734> mark @MC_aboveLC;
+	pos mark dotaccentcmb <anchor 0 706> mark @MC_aboveLC;
+	pos mark dieresiscmb <anchor 0 680> mark @MC_aboveLC;
+	pos mark ringcmb <anchor 0 761> mark @MC_aboveLC;
+	pos mark hungarumlautcmb <anchor 0 754> mark @MC_aboveLC;
+	pos mark caroncmb <anchor 0 727> mark @MC_aboveLC;
+	pos mark hoicmb <anchor 0 745> mark @MC_aboveLC;
+	pos mark brevecmb.cyr <anchor 0 742> mark @MC_aboveLC;
+} MKMK_MARK_aboveLC;
 
 
-lookup MKMK_MARK_below {
-	lookupflag MarkAttachmentType @MC_below;
+lookup MKMK_MARK_aboveUC {
+	lookupflag MarkAttachmentType @MC_aboveUC;
 
-	pos mark brevebelowcmb <anchor 0 -237> mark @MC_below;
-	pos mark commabelowcmb <anchor 0 -260> mark @MC_below;
-	pos mark dieresisbelowcmb <anchor 0 -202> mark @MC_below;
-	pos mark dotbelowcmb <anchor 0 -212> mark @MC_below;
-	pos mark macronbelowcmb <anchor 0 -184> mark @MC_below;
-	pos mark verticallinebelowcmb <anchor 0 -276> mark @MC_below;
-} MKMK_MARK_below;
+	pos mark gravecmb.cap <anchor 0 877> mark @MC_aboveUC;
+	pos mark acutecmb.cap <anchor 0 877> mark @MC_aboveUC;
+	pos mark circumflexcmb.cap <anchor 0 865> mark @MC_aboveUC;
+	pos mark tildecmb.cap <anchor 0 873> mark @MC_aboveUC;
+	pos mark macroncmb.cap <anchor 0 831> mark @MC_aboveUC;
+	pos mark brevecmb.cap <anchor 0 870> mark @MC_aboveUC;
+	pos mark dotaccentcmb.cap <anchor 0 874> mark @MC_aboveUC;
+	pos mark dieresiscmb.cap <anchor 0 864> mark @MC_aboveUC;
+	pos mark ringcmb.cap <anchor 0 918> mark @MC_aboveUC;
+	pos mark hungarumlautcmb.cap <anchor 0 887> mark @MC_aboveUC;
+	pos mark caroncmb.cap <anchor 0 857> mark @MC_aboveUC;
+	pos mark hoicmb.cap <anchor 0 890> mark @MC_aboveUC;
+	pos mark brevecmb.cyrcap <anchor 0 884> mark @MC_aboveUC;
+} MKMK_MARK_aboveUC;
 
+
+lookup MKMK_MARK_belowLC {
+	lookupflag MarkAttachmentType @MC_belowLC;
+
+	pos mark commabelowcmb <anchor 0 -260> mark @MC_belowLC;
+	pos mark verticallinebelowcmb <anchor 0 -276> mark @MC_belowLC;
+	pos mark brevebelowcmb <anchor 0 -237> mark @MC_belowLC;
+	pos mark dieresisbelowcmb <anchor 0 -202> mark @MC_belowLC;
+	pos mark dotbelowcmb <anchor 0 -212> mark @MC_belowLC;
+	pos mark macronbelowcmb <anchor 0 -184> mark @MC_belowLC;
+} MKMK_MARK_belowLC;
 
