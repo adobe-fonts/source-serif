@@ -52,5 +52,5 @@ function build_var_font {
     echo ""
 }
 
-build_var_font $DIR/Roman/Masters $ro_name
+# build_var_font $DIR/Roman/Masters $ro_name
 build_var_font $DIR/Italic/Masters $it_name

@@ -13,7 +13,7 @@
 			<point x="738" y="-14"/>
 			<point x="795" y="50"/>
 			<point x="838" y="113" type="curve"/>
-			<point x="810" y="133" type="line"/>
+			<point name="hintSet0006" x="810" y="133" type="line"/>
 			<point x="773" y="88"/>
 			<point x="748" y="66"/>
 			<point x="725" y="66" type="curve"/>
@@ -83,10 +83,10 @@
 			<point x="474" y="-14"/>
 			<point x="535" y="21"/>
 			<point x="598" y="80" type="curve"/>
-			<point name="hintSet0040" x="597" y="72"/>
+			<point x="597" y="72"/>
 			<point x="597" y="64"/>
 			<point x="597" y="57" type="curve"/>
-			<point x="597" y="11"/>
+			<point name="hintSet0041" x="597" y="11"/>
 			<point x="625" y="-14"/>
 		</contour>
 	</outline>
@@ -101,6 +101,8 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
+							<string>hstem -14 86</string>
+							<string>hstem 494 -20</string>
 							<string>hstem 606 71</string>
 							<string>vstem 65 773</string>
 						</array>
@@ -110,7 +112,19 @@
 						<string>hintSet0004</string>
 						<key>stems</key>
 						<array>
+							<string>hstem -14 86</string>
+							<string>hstem 494 -20</string>
+							<string>hstem 606 71</string>
+							<string>vstem 597 108</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
 							<string>hstem -14 80</string>
+							<string>hstem 494 -20</string>
 							<string>hstem 606 71</string>
 							<string>vstem 597 108</string>
 						</array>
@@ -121,6 +135,7 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -14 86</string>
+							<string>hstem 494 -20</string>
 							<string>hstem 606 71</string>
 							<string>vstem 84 113</string>
 							<string>vstem 341 113</string>
@@ -129,10 +144,11 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0040</string>
+						<string>hintSet0041</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -14 80</string>
+							<string>hstem -14 86</string>
+							<string>hstem 494 -20</string>
 							<string>hstem 606 71</string>
 							<string>vstem 597 108</string>
 						</array>

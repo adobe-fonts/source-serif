@@ -5,7 +5,7 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="41" y="5" type="line"/>
-			<point x="57" y="-8" type="line"/>
+			<point name="hintSet0001" x="57" y="-8" type="line"/>
 			<point x="212" y="0" type="line"/>
 			<point x="226" y="73"/>
 			<point x="239" y="144"/>
@@ -15,7 +15,7 @@
 			<point x="271" y="195"/>
 			<point x="288" y="156" type="curve"/>
 			<point x="317" y="89" type="line"/>
-			<point x="350" y="13"/>
+			<point name="hintSet0007" x="350" y="13"/>
 			<point x="382" y="-16"/>
 			<point x="446" y="-16" type="curve"/>
 			<point x="486" y="-16"/>
@@ -40,7 +40,7 @@
 			<point x="491" y="497" type="curve"/>
 			<point x="267" y="270" type="line"/>
 			<point x="287" y="364" type="line"/>
-			<point x="310" y="487" type="line"/>
+			<point name="hintSet0020" x="310" y="487" type="line"/>
 			<point x="289" y="505" type="line"/>
 			<point x="71" y="446" type="line"/>
 			<point x="64" y="405" type="line"/>
@@ -76,7 +76,42 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
+							<string>hstem 5 -21</string>
 							<string>hstem 223 22.5</string>
+							<string>hstem 505 -20</string>
+							<string>vstem 41 529</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 13 -21</string>
+							<string>hstem 223 22.5</string>
+							<string>hstem 505 -20</string>
+							<string>vstem 41 529</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0007</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 5 -21</string>
+							<string>hstem 223 22.5</string>
+							<string>hstem 497 -20</string>
+							<string>vstem 41 529</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0020</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 21 -21</string>
+							<string>hstem 223 22.5</string>
+							<string>hstem 505 -20</string>
 							<string>vstem 41 529</string>
 						</array>
 					</dict>
