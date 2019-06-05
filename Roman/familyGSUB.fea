@@ -650,6 +650,7 @@ feature ordn { # Ordinals
     lookup SUPERIOR_MINUSCULE {
         sub @LAT_LC_BASIC by @LAT_LCSUPS_BASIC;
         sub [ egrave eacute ] by [ egrave.sups eacute.sups ];
+        sub i.trk by i.sups;
     } SUPERIOR_MINUSCULE;
 } ordn;
 
