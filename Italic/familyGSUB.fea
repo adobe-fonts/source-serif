@@ -40,6 +40,9 @@ languagesystem cyrl BGR; # Bulgarian
 
 @LAT_UC_ALL = [ @LAT_UC_BASIC @LAT_UC_ACCENTED @LAT_UC_ADDL ];
 
+# for ccmp
+@LAT_UC_ACCENTED_DECOMP = [ Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehoi Abrevetilde Acaron Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhoi Acircumflextilde Adotbelow Ahoi Aring Aogonek Ccedilla Cacute Ccaron Ccircumflex Cdotaccent Dcaron Ddotbelow Dlinebelow Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Edotaccent Eogonek Ebreve Ecircumflexacute Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhoi Ecircumflextilde Edotbelow Ehoi Etilde Gbreve Gdotaccent Gcommaaccent Gcaron Gcircumflex Gmacron Gtilde Hbrevebelow Hcircumflex Hdotbelow Igrave Iacute Icircumflex Idieresis Imacron Idotaccent Iogonek Icaron Idotbelow Ihoi Itilde Jcircumflex Kcommaaccent Lacute Lcommaaccent Ldotbelow Ldotbelowmacron Llinebelow Mdotbelow Nacute Ncaron Ntilde Ncommaaccent Ndotaccent Ndotbelow Nlinebelow Ograve Oacute Ocircumflex Otilde Odieresis Omacron Ohungarumlaut Ocaron Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhoi Ocircumflextilde Odotbelow Ohoi Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhoi Ohorntilde Racute Rcaron Rcommaaccent Rdotbelow Rdotbelowmacron Rlinebelow Sacute Scaron Scedilla Scommaaccent Scircumflex Sdotaccent Sdotbelow Tcaron Tcedilla Tcommaaccent Tdotbelow Tlinebelow Ugrave Uacute Ucircumflex Udieresis Umacron Uring Uhungarumlaut Ubreve Ucaron Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Uhoi Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhoi Uhorntilde Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ydieresis Ycircumflex Ydotaccent Ydotbelow Ygrave Yhoi Ytilde Zacute Zcaron Zdotaccent Zdotbelow Macute Ngrave Obreve ];
+@LAT_LC_ACCENTED_DECOMP = [ agrave aacute acircumflex atilde adieresis amacron abreve abreveacute abrevedotbelow abrevegrave abrevehoi abrevetilde acaron acircumflexacute acircumflexdotbelow acircumflexgrave acircumflexhoi acircumflextilde adotbelow ahoi aring ccedilla cacute ccaron ccircumflex cdotaccent ddotbelow dlinebelow egrave eacute ecircumflex ecaron edieresis emacron edotaccent ebreve ecircumflexacute ecircumflexdotbelow ecircumflexgrave ecircumflexhoi ecircumflextilde edotbelow ehoi etilde gbreve gdotaccent gcaron gcircumflex gmacron gtilde hbrevebelow hcircumflex hdotbelow igrave iacute icircumflex idieresis imacron iogonek icaron idotbelow ihoi itilde jcircumflex kcommaaccent lacute lcommaaccent ldotbelow ldotbelowmacron llinebelow mdotbelow nacute ncaron ntilde ncommaaccent ndotaccent ndotbelow nlinebelow ograve oacute ocircumflex otilde odieresis omacron ohungarumlaut ocaron ocircumflexacute ocircumflexdotbelow ocircumflexgrave ocircumflexhoi ocircumflextilde odotbelow ohoi ohorn ohornacute ohorndotbelow ohorngrave ohornhoi ohorntilde racute rcaron rcommaaccent rdotbelow rdotbelowmacron rlinebelow sacute scaron scedilla scommaaccent scircumflex sdotaccent sdotbelow tcedilla tcommaaccent tdotbelow tlinebelow ugrave uacute ucircumflex udieresis umacron uring uhungarumlaut ubreve ucaron udieresisacute udieresiscaron udieresisgrave udieresismacron udotbelow uhoi uhorn uhornacute uhorndotbelow uhorngrave uhornhoi uhorntilde utilde wacute wcircumflex wdieresis wgrave yacute ydieresis ycircumflex ydotaccent ydotbelow ygrave yhoi ytilde zacute zcaron zdotaccent zdotbelow macute ngrave obreve ];
 
 # Greek:
 
@@ -313,6 +316,7 @@ lookup DECOMPOSITION {
     sub icircumflex by dotlessi circumflexcmb;
     sub idieresis by dotlessi dieresiscmb;
     sub imacron by dotlessi macroncmb;
+    sub iogonek by i ogonekcmb;
     sub icaron by dotlessi caroncmb;
     sub idotbelow by i dotbelowcmb;
     sub ihoi by dotlessi hoicmb;
@@ -569,7 +573,7 @@ feature ccmp {
     } GLYPH_COMPOSITION_LAT_NONCONTEXTUAL;
 
     lookup DECOMPOSE_PRECOMPOSED {
-        sub [ @LAT_UC_ACCENTED @LAT_LC_ACCENTED ]' lookup DECOMPOSITION @MARKS_CMB;
+        sub [ @LAT_UC_ACCENTED_DECOMP @LAT_LC_ACCENTED_DECOMP ]' lookup DECOMPOSITION @MARKS_CMB;
         sub @DOUBLE_MARKS' lookup MARKS_DECOMPOSITION @MARKS_CMB;
     } DECOMPOSE_PRECOMPOSED;
 
