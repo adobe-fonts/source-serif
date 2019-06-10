@@ -19,7 +19,7 @@ function build_var_font {
 	# build variable OTF
 	# -p is for using 'post' table format 3
 	buildmasterotfs $1/$2.designspace
-	buildcff2vf -p $1/$2.designspace
+	buildcff2vf -d $1/$2.designspace
 
 	# extract and subroutinize the CFF2 table
 	echo 'Subroutinizing' $2.otf
