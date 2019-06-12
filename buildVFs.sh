@@ -18,8 +18,8 @@ function build_var_font {
 	echo $2
 	# build variable OTF
 	# -p is for using 'post' table format 3
-	buildmasterotfs $1/$2.designspace
-	buildcff2vf -d $1/$2.designspace
+	buildmasterotfs -d $1/$2.designspace
+	buildcff2vf --omit-mac-names -d $1/$2.designspace
 
 	# extract and subroutinize the CFF2 table
 	echo 'Subroutinizing' $2.otf
@@ -29,7 +29,7 @@ function build_var_font {
 	sfntedit -a CFF2=$1/.tb_cff2 $1/$2.otf
 
 	# build variable TTF
-	fontmake -m $1/$2.designspace -o variable --production-names --output-path $1/$2.ttf
+	fontmake -m $1/$2.designspace -o variable --production-names --output-path $1/$2.ttf --feature-writer None
 
 	# use DSIG, name, OS/2, hhea, post, and STAT tables from OTFs
 	sfntedit -x DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT $1/$2.otf
