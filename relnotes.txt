@@ -1,26 +1,6 @@
-version 3.000 created 2019/06/12
+version 2.010(romans) & version 1.010 (italics) created 2019/01/11
+	Fixes spacing and displaying issues in many TrueType composite glyphs. (addresses #44)
 
-	Changes to Italic styles:
-	- extend Latin character set from AL-3 to AL-4
-	- add Cyrillic (covering AC-2)
-	- add Greek (covering AG-1)
-
-	Changes to Roman styles:	
-	- minor updates to spacing of modifer glyphs
-	- updates to some Cyrillic characters as suggested by external advisors
-	- minor updates to Cyrillic kerning
-	- updates to some Greek characters as suggested by external advisors
-
-	Global changes:
-	- overhaul ccmp feature to decompose accented glyphs when followed by combining 
-	  mark, thus allowing double-stacking of accents (addresses #41, #42)
-	- add ccmp solution for Ukrainian її clash, also for Latin ïï (addresses #48)
-	- add Bulgarian Cyrillic alternates both via locl and ss01 feature (addresses #20)
-	- add Serbian/Macedonian Cyrillic alternates both via locl and ss02 feature
-
-	Roman and Italic styles now support the same global character set,
-	in both static and variable versions.
-	
 
 version 2.007 (Roman) & version 1.007 (Italic) created 2018/08/07
 
@@ -45,7 +25,7 @@ version 2.007 (Roman) & version 1.007 (Italic) created 2018/08/07
 
 
 VF version 1.000 created 2017/02/01
-	
+
 	First version of source files for building Variable OTF.
 
 
@@ -53,7 +33,7 @@ version 2.001 created 2017/02/01
 
 	Designspace and .sp3 file now use a 1000-unit weight axis (instead of the previous one of 2000 units).
 	Update BASE table.
-	
+
 
 version 2.000 created 2017/01/04
 
