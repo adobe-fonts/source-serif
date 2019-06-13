@@ -1,72 +1,52 @@
 #!/usr/bin/env sh
 
 family=SourceSerifPro
-roman_weights='ExtraLight Light Regular Semibold Bold Black'
-italic_weights='ExtraLightIt LightIt It SemiboldIt BoldIt BlackIt'
-fonttools_dir=~/code/fonttools
-comp_script=$fonttools_dir/Snippets/otf2ttf.py
+roman_weights=(ExtraLight Light Regular Semibold Bold Black)
+italic_weights=(ExtraLightIt LightIt It SemiboldIt BoldIt BlackIt)
 
-script_found=True
-if [[ ! -f $comp_script ]]; then
-	echo "ERROR: Cannot find fontTools directory snippet at"
-	echo $fonttools_dir
-	echo "Please get fontTools at https://github.com/fonttools/fonttools"
-	echo "and edit the 'fonttools_dir' path in this build script."
-	script_found=false
-fi
-
-if ! $script_found; then
-	exit 1
-fi
+# get absolute path to bash script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 # clean existing build artifacts
-rm -rf target/OTF
-rm -rf target/TTF
-otf_dir="target/OTF"
-ttf_dir="target/TTF"
+rm -rf $DIR/target/OTF
+rm -rf $DIR/target/TTF
+otf_dir="$DIR/target/OTF"
+ttf_dir="$DIR/target/TTF"
 mkdir -p $otf_dir $ttf_dir
 
-for w in $roman_weights
-do
-  font_dir=Roman/Instances/$w
-  font_ufo=$font_dir/font.ufo
-  ps_name=$family-$w
-  echo $ps_name
-  echo "Building OTF ..."
-  # -r is for "release mode" (subroutinization + applied glyph order)
-  # -gs is for filtering the output font to contain only glyphs in the GOADB
-  makeotf -f $font_ufo -r -gs -o $font_dir/$ps_name.otf
-  echo "Building TTF ..."
-  python3 $comp_script $font_dir/$ps_name.otf -o $font_dir/$ps_name.ttf
-  echo "Componentizing TTF ..."
-  ttfcomponentizer $font_dir/$ps_name.ttf
 
-  # move font files to target directory
-  mv $font_dir/$ps_name.otf $otf_dir/
-  mv $font_dir/$ps_name.ttf $ttf_dir/
-  echo "Done with $ps_name"
-  echo ""
-  echo ""
+function build_font {
+    # $1 is Roman or Italic
+    # $2 is weight name
+    font_dir=$DIR/$1/Instances/$2
+    font_ufo=$font_dir/font.ufo
+    ps_name=$family-$2
+    echo $ps_name
+    echo "Building OTF ..."
+    # -r is for "release mode" (subroutinization + applied glyph order)
+    # -gs is for filtering the output font to contain only glyphs in the GOADB
+    makeotf -f $font_ufo -r -gs -omitMacNames
+    echo "Building TTF ..."
+    otf2ttf $font_dir/$ps_name.otf
+    echo "Componentizing TTF ..."
+    ttfcomponentizer $font_dir/$ps_name.ttf
+
+    # move font files to target directory
+    mv $font_dir/$ps_name.otf $otf_dir
+    mv $font_dir/$ps_name.ttf $ttf_dir
+    echo "Done with $ps_name"
+    echo ""
+    echo ""
+}
+
+
+for w in ${roman_weights[@]}
+do
+  build_font Roman $w
 done
 
 
-for w in $italic_weights
+for w in ${italic_weights[@]}
 do
-  font_dir=Italic/Instances/$w
-  font_ufo=$font_dir/font.ufo
-  ps_name=$family-$w
-
-  echo "Building OTF ..."
-  makeotf -f $font_ufo -r -gs -o $font_dir/$ps_name.otf
-  echo "Building TTF ..."
-  python3 $comp_script $font_dir/$ps_name.otf -o $font_dir/$ps_name.ttf
-  echo "Componentizing TTF ..."
-  ttfcomponentizer $font_dir/$ps_name.ttf
-
-  # move font files to target directory
-  mv $font_dir/$ps_name.otf $otf_dir/
-  mv $font_dir/$ps_name.ttf $ttf_dir/
-  echo "Done with $ps_name"
-  echo ""
-  echo ""
+  build_font Italic $w
 done
