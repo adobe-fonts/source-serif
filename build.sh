@@ -1,64 +1,54 @@
 #!/usr/bin/env sh
 
-family=SourceSerif4
-sizes='Caption SmText Text Subhead Display'
-roman_weights='ExtraLight Light Regular Semibold Bold Black'
-italic_weights='ExtraLightIt LightIt It SemiboldIt BoldIt BlackIt'
+set -e
+
+family=SourceSerifPro
+roman_weights=(ExtraLight Light Regular Semibold Bold Black)
+italic_weights=(ExtraLightIt LightIt It SemiboldIt BoldIt BlackIt)
+
+# get absolute path to bash script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 # clean existing build artifacts
-rm -rf target/OTF
-rm -rf target/TTF
-otf_dir="target/OTF"
-ttf_dir="target/TTF"
+rm -rf $DIR/target/OTF
+rm -rf $DIR/target/TTF
+otf_dir="$DIR/target/OTF"
+ttf_dir="$DIR/target/TTF"
 mkdir -p $otf_dir $ttf_dir
 
-for size in $sizes
-do
-  for weight in $roman_weights
-  do
-    font_dir=Roman/Instances/$size/$weight
+
+function build_font {
+    # $1 is Roman or Italic
+    # $2 is weight name
+    font_dir=$DIR/$1/Instances/$2
     font_ufo=$font_dir/font.ufo
-    ps_name=$family$size-$weight
+    ps_name=$family-$2
     echo $ps_name
     echo "Building OTF ..."
     # -r is for "release mode" (subroutinization + applied glyph order)
     # -gs is for filtering the output font to contain only glyphs in the GOADB
-    makeotf -f $font_ufo -r -gs -o $font_dir/$ps_name.otf
+    makeotf -f $font_ufo -r -gs -omitMacNames
     echo "Building TTF ..."
-    otf2ttf $font_dir/$ps_name.otf -o $font_dir/$ps_name.ttf
+    otf2ttf $font_dir/$ps_name.otf
     echo "Componentizing TTF ..."
     ttfcomponentizer $font_dir/$ps_name.ttf
 
     # move font files to target directory
-    mv $font_dir/$ps_name.otf $otf_dir/
-    mv $font_dir/$ps_name.ttf $ttf_dir/
+    mv $font_dir/$ps_name.otf $otf_dir
+    mv $font_dir/$ps_name.ttf $ttf_dir
     echo "Done with $ps_name"
     echo ""
     echo ""
-  done
+}
+
+
+for w in ${roman_weights[@]}
+do
+  build_font Roman $w
 done
 
 
-for size in $sizes
+for w in ${italic_weights[@]}
 do
-  for weight in $italic_weights
-  do
-    font_dir=Italic/Instances/$size/$weight
-    font_ufo=$font_dir/font.ufo
-    ps_name=$family$size-$weight
-
-    echo "Building OTF ..."
-    makeotf -f $font_ufo -r -gs -o $font_dir/$ps_name.otf
-    echo "Building TTF ..."
-    otf2ttf $font_dir/$ps_name.otf -o $font_dir/$ps_name.ttf
-    echo "Componentizing TTF ..."
-    ttfcomponentizer $font_dir/$ps_name.ttf
-
-    # move font files to target directory
-    mv $font_dir/$ps_name.otf $otf_dir/
-    mv $font_dir/$ps_name.ttf $ttf_dir/
-    echo "Done with $ps_name"
-    echo ""
-    echo ""
-  done
+  build_font Italic $w
 done
