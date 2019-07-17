@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 family=SourceSerifPro
 roman_weights=(ExtraLight Light Regular Semibold Bold Black)
 italic_weights=(ExtraLightIt LightIt It SemiboldIt BoldIt BlackIt)

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 ro_name=SourceSerifVariable-Roman
 it_name=SourceSerifVariable-Italic
 
