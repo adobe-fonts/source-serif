@@ -4,10 +4,11 @@
   <STAT>
     <Version value="0x00010001"/>
     <DesignAxisRecordSize value="8"/>
+    <!-- DesignAxisCount=2 -->
     <DesignAxisRecord>
       <Axis index="0">
         <AxisTag value="wght"/>
-        <AxisNameID value="258"/>  <!-- Weight -->
+        <AxisNameID value="266"/>  <!-- Weight -->
         <AxisOrdering value="0"/>
       </Axis>
       <Axis index="1">
@@ -16,6 +17,7 @@
         <AxisOrdering value="1"/>
       </Axis>
     </DesignAxisRecord>
+    <!-- AxisValueCount=8 -->
     <AxisValueArray>
       <AxisValue index="0" Format="2">
         <AxisIndex value="0"/>
@@ -31,22 +33,22 @@
         <ValueNameID value="261"/>  <!-- Light -->
         <NominalValue value="300.0"/>
         <RangeMinValue value="250.0"/>
-        <RangeMaxValue value="356.363636364"/>
+        <RangeMaxValue value="350.0"/>
       </AxisValue>
       <AxisValue index="2" Format="2">
         <AxisIndex value="0"/>
         <Flags value="2"/>
         <ValueNameID value="262"/>  <!-- Regular -->
         <NominalValue value="400.0"/>
-        <RangeMinValue value="356.363636364"/>
-        <RangeMaxValue value="506.363636364"/>
+        <RangeMinValue value="350.0"/>
+        <RangeMaxValue value="500.0"/>
       </AxisValue>
       <AxisValue index="3" Format="2">
         <AxisIndex value="0"/>
         <Flags value="0"/>
         <ValueNameID value="263"/>  <!-- Semibold -->
         <NominalValue value="600.0"/>
-        <RangeMinValue value="506.363636364"/>
+        <RangeMinValue value="500.0"/>
         <RangeMaxValue value="650.0"/>
       </AxisValue>
       <AxisValue index="4" Format="2">
@@ -75,7 +77,7 @@
       <AxisValue index="7" Format="1">
         <AxisIndex value="1"/>
         <Flags value="0"/>
-        <ValueNameID value="257"/>  <!-- Italic -->
+        <ValueNameID value="259"/>  <!-- Italic -->
         <Value value="1.0"/>
       </AxisValue>
     </AxisValueArray>
