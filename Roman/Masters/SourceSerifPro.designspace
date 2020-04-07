@@ -1,32 +1,89 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
+        <axis default="10.0" maximum="60.0" minimum="6.0" name="optical" tag="opsz" />
         <axis default="368.0" maximum="1000.0" minimum="0.0" name="weight" tag="wght" />
     </axes>
     <sources>
-        <source filename="text/master_0/SourceSerif_0.ufo" name="master_0">
+        <source filename="caption/master_0/SourceSerif_c0.ufo">
             <location>
                 <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="6" />
             </location>
         </source>
-        <source filename="text/master_1/SourceSerif_1.ufo" name="master_1">
+        <source filename="caption/master_1/SourceSerif_c1.ufo">
+            <location>
+                <dimension name="weight" xvalue="368" />
+                <dimension name="optical" xvalue="6" />
+            </location>
+        </source>
+        <source filename="caption/master_2/SourceSerif_c2.ufo">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="6" />
+            </location>
+        </source>
+        <source filename="text/master_0/SourceSerif_0.ufo">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="10" />
+            </location>
+        </source>
+        <source filename="text/master_1/SourceSerif_1.ufo">
             <lib copy="1" />
             <groups copy="1" />
             <info copy="1" />
             <location>
                 <dimension name="weight" xvalue="368" />
+                <dimension name="optical" xvalue="10" />
             </location>
         </source>
-        <source filename="text/master_2/SourceSerif_2.ufo" name="master_2">
+        <source filename="text/master_2/SourceSerif_2.ufo">
             <location>
                 <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="10" />
+            </location>
+        </source>
+        <source filename="display/master_0/SourceSerif_d0.ufo">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="60" />
+            </location>
+        </source>
+        <source filename="display/master_1/SourceSerif_d1.ufo">
+            <location>
+                <dimension name="weight" xvalue="368" />
+                <dimension name="optical" xvalue="60" />
+            </location>
+        </source>
+        <source filename="display/master_2/SourceSerif_d2.ufo">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="60" />
             </location>
         </source>
     </sources>
     <instances>
+        <instance familyname="Source Serif Pro" filename="../Instances/Caption/font.ufo" postscriptfontname="SourceSerifPro-Caption" stylename="Caption">
+            <location>
+                <dimension name="weight" xvalue="394" />
+                <dimension name="optical" xvalue="6" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Source Serif Pro" filename="../Instances/Display/font.ufo" postscriptfontname="SourceSerifPro-Display" stylename="Display">
+            <location>
+                <dimension name="weight" xvalue="394" />
+                <dimension name="optical" xvalue="60" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
         <instance familyname="Source Serif Pro" filename="../Instances/ExtraLight/font.ufo" postscriptfontname="SourceSerifPro-ExtraLight" stylename="ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="10" />
             </location>
             <kerning />
             <info />
@@ -34,6 +91,7 @@
         <instance familyname="Source Serif Pro" filename="../Instances/Light/font.ufo" postscriptfontname="SourceSerifPro-Light" stylename="Light">
             <location>
                 <dimension name="weight" xvalue="150" />
+                <dimension name="optical" xvalue="10" />
             </location>
             <kerning />
             <info />
@@ -41,6 +99,7 @@
         <instance familyname="Source Serif Pro" filename="../Instances/Regular/font.ufo" postscriptfontname="SourceSerifPro-Regular" stylename="Regular">
             <location>
                 <dimension name="weight" xvalue="394" />
+                <dimension name="optical" xvalue="10" />
             </location>
             <kerning />
             <info />
@@ -48,6 +107,7 @@
         <instance familyname="Source Serif Pro" filename="../Instances/Semibold/font.ufo" postscriptfontname="SourceSerifPro-Semibold" stylename="Semibold">
             <location>
                 <dimension name="weight" xvalue="600" />
+                <dimension name="optical" xvalue="10" />
             </location>
             <kerning />
             <info />
@@ -55,6 +115,7 @@
         <instance familyname="Source Serif Pro" filename="../Instances/Bold/font.ufo" postscriptfontname="SourceSerifPro-Bold" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="824" />
+                <dimension name="optical" xvalue="10" />
             </location>
             <kerning />
             <info />
@@ -62,6 +123,7 @@
         <instance familyname="Source Serif Pro" filename="../Instances/Black/font.ufo" postscriptfontname="SourceSerifPro-Black" stylename="Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="10" />
             </location>
             <kerning />
             <info />
