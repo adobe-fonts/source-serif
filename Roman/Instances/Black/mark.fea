@@ -53,7 +53,7 @@ lookup MARK_BASE_aboveLC {
 	pos base w <anchor 424 520> mark @MC_aboveLC;
 	pos base x <anchor 288 520> mark @MC_aboveLC;
 	pos base z <anchor 249 520> mark @MC_aboveLC;
-	pos base ae <anchor 399 520> mark @MC_aboveLC;
+	pos base ae <anchor 411 520> mark @MC_aboveLC;
 	pos base gcommaaccent <anchor 250 799> mark @MC_aboveLC;
 	pos base dotlessi <anchor 166 520> mark @MC_aboveLC;
 	pos base dotlessj <anchor 152 520> mark @MC_aboveLC;
@@ -97,7 +97,7 @@ lookup MARK_BASE_aboveUC {
 	@bGC_F.sc_aboveUC = [ F.sc Ghe.sc ];
 	@bGC_I.sc_aboveUC = [ I.sc J.sc Iukran.sc ];
 	@bGC_N.sc_aboveUC = [ N.sc V.sc ];
-	@bGC_O.sc_aboveUC = [ O.sc Q.sc Oslash.sc Ocyr.sc Ieukran.sc Fita.sc Obarcyr.sc ];
+	@bGC_O.sc_aboveUC = [ O.sc Q.sc Ohorn.sc Oslash.sc Ocyr.sc Ieukran.sc Fita.sc Obarcyr.sc ];
 	@bGC_S.sc_aboveUC = [ S.sc Z.sc ];
 	@bGC_U.sc_aboveUC = [ U.sc Uogonek.sc ];
 	@bGC_Y.sc_aboveUC = [ Y.sc Ustraight.sc ];
@@ -210,6 +210,7 @@ lookup MARK_BASE_belowLC {
 	@bGC_t_belowLC = [ t tcaron ];
 	@bGC_u_belowLC = [ u uogonek uhorn ];
 	@bGC_M.sc_belowLC = [ M.sc R.sc ];
+	@bGC_O.sc_belowLC = [ O.sc Ohorn.sc ];
 	@bGC_U.sc_belowLC = [ U.sc Uogonek.sc Uhorn.sc ];
 	pos base @bGC_A_belowLC <anchor 300 -22> mark @MC_belowLC;
 	pos base @bGC_D_belowLC <anchor 320 -22> mark @MC_belowLC;
@@ -228,6 +229,7 @@ lookup MARK_BASE_belowLC {
 	pos base @bGC_t_belowLC <anchor 222 -22> mark @MC_belowLC;
 	pos base @bGC_u_belowLC <anchor 316 -22> mark @MC_belowLC;
 	pos base @bGC_M.sc_belowLC <anchor 368 -18> mark @MC_belowLC;
+	pos base @bGC_O.sc_belowLC <anchor 335 -18> mark @MC_belowLC;
 	pos base @bGC_U.sc_belowLC <anchor 367 -18> mark @MC_belowLC;
 	pos base B <anchor 347 -22> mark @MC_belowLC;
 	pos base C <anchor 377 -22> mark @MC_belowLC;
@@ -282,7 +284,6 @@ lookup MARK_BASE_belowLC {
 	pos base K.sc <anchor 359 -18> mark @MC_belowLC;
 	pos base L.sc <anchor 293 -18> mark @MC_belowLC;
 	pos base N.sc <anchor 362 -18> mark @MC_belowLC;
-	pos base O.sc <anchor 335 -18> mark @MC_belowLC;
 	pos base P.sc <anchor 201 -18> mark @MC_belowLC;
 	pos base S.sc <anchor 257 -18> mark @MC_belowLC;
 	pos base T.sc <anchor 306 -18> mark @MC_belowLC;
