@@ -3,12 +3,16 @@
 	<advance width="622"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="548" y="69" type="line"/>
-			<point name="hintSet0001" x="548" y="116"/>
+			<point name="hintSet0000" x="354" y="-13" type="curve"/>
+			<point x="428" y="-13"/>
+			<point x="489" y="8"/>
+			<point x="548" y="35" type="curve"/>
+			<point x="548" y="69" type="line"/>
+			<point name="hintSet0003" x="548" y="116"/>
 			<point x="549" y="167"/>
 			<point x="550" y="218" type="curve"/>
 			<point x="601" y="223" type="line"/>
-			<point name="hintSet0003" x="601" y="261" type="line"/>
+			<point name="hintSet0005" x="601" y="261" type="line"/>
 			<point x="366" y="261" type="line"/>
 			<point x="366" y="223" type="line"/>
 			<point x="456" y="215" type="line"/>
@@ -39,15 +43,11 @@
 			<point x="58" y="275" type="curve"/>
 			<point x="58" y="111"/>
 			<point x="179" y="-13"/>
-			<point x="354" y="-13" type="curve"/>
-			<point x="428" y="-13"/>
-			<point x="489" y="8"/>
-			<point x="548" y="35" type="curve"/>
 		</contour>
 		<contour>
 			<point x="238" y="758" type="line"/>
 			<point x="214" y="737" type="line"/>
-			<point x="316" y="619" type="line"/>
+			<point name="hintSet0023" x="316" y="619" type="line"/>
 			<point x="390" y="619" type="line"/>
 			<point x="492" y="737" type="line"/>
 			<point x="468" y="758" type="line"/>
@@ -74,7 +74,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0001</string>
+						<string>hintSet0003</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 51</string>
@@ -86,7 +86,19 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0003</string>
+						<string>hintSet0005</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 51</string>
+							<string>hstem 219 42</string>
+							<string>hstem 513 50</string>
+							<string>vstem 58 107</string>
+							<string>vstem 457 91</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0023</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 51</string>
@@ -99,7 +111,7 @@
 					</dict>
 				</array>
 				<key>id</key>
-				<string>cfe2dbe7d7b4731a5d1a46e31a1b834daba7343c0a2b5f79c4b9a700bdf3269e7182a654fef0ecfcf5362b34fc9cc6d88bca641e79427529f4330b99e0c00d77</string>
+				<string>dc65c835a26f7bbb191b1569fcd4d4a361fb2baa4498c0edd5d4abf1ea6df1ddd78c5d62670d18548680d2634f68e276201c097f26db7855fdddba2283de9a0c</string>
 			</dict>
 		</dict>
 	</lib>

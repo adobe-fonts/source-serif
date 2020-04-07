@@ -3,21 +3,35 @@
 	<advance width="824"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="50" y="0" type="line"/>
+			<point name="hintSet0000" x="400" y="-203" type="curve"/>
+			<point x="438" y="-203"/>
+			<point x="467" y="-177"/>
+			<point x="467" y="-139" type="curve"/>
+			<point x="467" y="-102"/>
+			<point x="438" y="-75"/>
+			<point x="400" y="-75" type="curve"/>
+			<point x="362" y="-75"/>
+			<point x="333" y="-102"/>
+			<point x="333" y="-139" type="curve"/>
+			<point x="333" y="-177"/>
+			<point x="362" y="-203"/>
+		</contour>
+		<contour>
+			<point x="50" y="0" type="line"/>
 			<point x="246" y="0" type="line"/>
 			<point x="246" y="40" type="line"/>
 			<point x="178" y="51" type="line"/>
 			<point x="178" y="301" type="line"/>
-			<point x="173" y="448" type="line"/>
+			<point x="173" y="449" type="line"/>
 			<point x="366" y="0" type="line"/>
 			<point x="416" y="0" type="line"/>
-			<point x="598" y="448" type="line"/>
+			<point x="598" y="446" type="line"/>
 			<point x="598" y="257" type="line"/>
-			<point name="hintSet0010" x="599" y="186"/>
+			<point name="hintSet0015" x="599" y="186"/>
 			<point x="598" y="117"/>
 			<point x="597" y="49" type="curve"/>
 			<point x="527" y="40" type="line"/>
-			<point name="hintSet0012" x="527" y="0" type="line"/>
+			<point name="hintSet0017" x="527" y="0" type="line"/>
 			<point x="768" y="0" type="line"/>
 			<point x="768" y="40" type="line"/>
 			<point x="690" y="50" type="line"/>
@@ -34,24 +48,10 @@
 			<point x="410" y="111" type="line"/>
 			<point x="220" y="549" type="line"/>
 			<point x="52" y="549" type="line"/>
-			<point name="hintSet0025" x="52" y="510" type="line"/>
+			<point name="hintSet0030" x="52" y="510" type="line"/>
 			<point x="128" y="500" type="line"/>
 			<point x="128" y="52" type="line"/>
 			<point x="50" y="40" type="line"/>
-		</contour>
-		<contour>
-			<point x="400" y="-203" type="curve"/>
-			<point x="438" y="-203"/>
-			<point x="467" y="-177"/>
-			<point x="467" y="-139" type="curve"/>
-			<point x="467" y="-102"/>
-			<point x="438" y="-75"/>
-			<point x="400" y="-75" type="curve"/>
-			<point x="362" y="-75"/>
-			<point x="333" y="-102"/>
-			<point x="333" y="-139" type="curve"/>
-			<point x="333" y="-177"/>
-			<point x="362" y="-203"/>
 		</contour>
 	</outline>
 	<lib>
@@ -65,37 +65,43 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
+							<string>hstem -203 128</string>
 							<string>hstem 0 45</string>
 							<string>hstem 505.5 43.5</string>
 							<string>vstem 128 50</string>
+							<string>vstem 333 134</string>
 							<string>vstem 598 90</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0010</string>
+						<string>hintSet0015</string>
 						<key>stems</key>
 						<array>
+							<string>hstem -203 128</string>
 							<string>hstem 0 44.5</string>
 							<string>hstem 505.5 43.5</string>
 							<string>vstem 128 50</string>
+							<string>vstem 333 134</string>
 							<string>vstem 598 90</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0012</string>
+						<string>hintSet0017</string>
 						<key>stems</key>
 						<array>
+							<string>hstem -203 128</string>
 							<string>hstem 0 45</string>
 							<string>hstem 505.5 43.5</string>
 							<string>vstem 128 50</string>
+							<string>vstem 333 134</string>
 							<string>vstem 598 90</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0025</string>
+						<string>hintSet0030</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -203 128</string>
@@ -108,7 +114,7 @@
 					</dict>
 				</array>
 				<key>id</key>
-				<string>6bf02d8803e3057b3851f72492f0039385b6975f75e1c278dd3b2db6490ceb2712cd7cdd8b54be7402a5ba7681da4828634e35f9015174b1344a72a6111e1003</string>
+				<string>f5984aeb3512c41ceefed83da990c26ff22664510a297ae795f6d07ad26da90490c868cf4d53a396d12529714497964325bc735217497ad26334d89114f76c69</string>
 			</dict>
 		</dict>
 	</lib>

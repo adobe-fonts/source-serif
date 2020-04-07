@@ -3,11 +3,7 @@
 	<advance width="511"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="101" y="393" type="line"/>
-			<point name="hintSet0001" x="123" y="494" type="line"/>
-			<point x="328" y="494" type="line"/>
-			<point x="25" y="36" type="line"/>
-			<point x="25" y="0" type="line"/>
+			<point name="hintSet0000" x="25" y="0" type="line"/>
 			<point x="479" y="0" type="line"/>
 			<point x="487" y="150" type="line"/>
 			<point x="417" y="150" type="line"/>
@@ -16,11 +12,13 @@
 			<point x="472" y="509" type="line"/>
 			<point x="472" y="545" type="line"/>
 			<point x="40" y="545" type="line"/>
-			<point name="hintSet0013" x="33" y="393" type="line"/>
+			<point name="hintSet0009" x="33" y="393" type="line"/>
+			<point x="101" y="393" type="line"/>
+			<point name="hintSet0011" x="123" y="494" type="line"/>
+			<point x="328" y="494" type="line"/>
+			<point x="25" y="36" type="line"/>
 		</contour>
 	</outline>
-	<anchor name="aboveUC" x="265" y="568"/>
-	<anchor name="belowLC" x="262" y="-18"/>
 	<lib>
 		<dict>
 			<key>com.adobe.type.autohint.v2</key>
@@ -33,13 +31,23 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 0 51</string>
+							<string>hstem 494 51</string>
+							<string>vstem 25 462</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0009</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 51</string>
 							<string>hstem 393 152</string>
 							<string>vstem 25 462</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0001</string>
+						<string>hintSet0011</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 51</string>
@@ -47,19 +55,9 @@
 							<string>vstem 25 462</string>
 						</array>
 					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0013</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 0 51</string>
-							<string>hstem 393 152</string>
-							<string>vstem 25 462</string>
-						</array>
-					</dict>
 				</array>
 				<key>id</key>
-				<string>w511l101393l123494l328494l2536l250l4790l487150l417150l39751l16951l472509l472545l40545l33393</string>
+				<string>w511l250l4790l487150l417150l39751l16951l472509l472545l40545l33393l101393l123494l328494l2536</string>
 			</dict>
 		</dict>
 	</lib>

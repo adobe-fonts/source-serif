@@ -3,11 +3,7 @@
 	<advance width="511"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="101" y="393" type="line"/>
-			<point name="hintSet0001" x="123" y="494" type="line"/>
-			<point x="328" y="494" type="line"/>
-			<point x="25" y="36" type="line"/>
-			<point x="25" y="0" type="line"/>
+			<point name="hintSet0000" x="25" y="0" type="line"/>
 			<point x="479" y="0" type="line"/>
 			<point x="487" y="150" type="line"/>
 			<point x="417" y="150" type="line"/>
@@ -16,7 +12,11 @@
 			<point x="472" y="509" type="line"/>
 			<point x="472" y="545" type="line"/>
 			<point x="40" y="545" type="line"/>
-			<point name="hintSet0013" x="33" y="393" type="line"/>
+			<point name="hintSet0009" x="33" y="393" type="line"/>
+			<point x="101" y="393" type="line"/>
+			<point name="hintSet0011" x="123" y="494" type="line"/>
+			<point x="328" y="494" type="line"/>
+			<point x="25" y="36" type="line"/>
 		</contour>
 		<contour>
 			<point x="196" y="630" type="curve"/>
@@ -49,13 +49,23 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 0 51</string>
+							<string>hstem 494 51</string>
+							<string>vstem 25 462</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0009</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 51</string>
 							<string>hstem 393 152</string>
 							<string>vstem 25 462</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0001</string>
+						<string>hintSet0011</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 51</string>
@@ -63,19 +73,9 @@
 							<string>vstem 25 462</string>
 						</array>
 					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0013</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 0 51</string>
-							<string>hstem 393 152</string>
-							<string>vstem 25 462</string>
-						</array>
-					</dict>
 				</array>
 				<key>id</key>
-				<string>eb8f87800393f7573f3421fc6ded8ad1d54500d8e61aa7979b11688bb6a801a68db53a4906e07f21fcc812f396e2281396a38ab51d66bf852f0a46800034561a</string>
+				<string>fe92d54c4f304c70701faeea1af99538afe2f1bc9d49eb7fbaaa98bf64a08c830105a2523ee9dafac4eba23c7b7c7a68ff8aebfd8e44549a9ad910969747cb43</string>
 			</dict>
 		</dict>
 	</lib>

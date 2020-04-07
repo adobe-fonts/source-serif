@@ -3,14 +3,18 @@
 	<advance width="638"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="571" y="65" type="line"/>
+			<point name="hintSet0000" x="358" y="-16" type="curve"/>
+			<point x="443" y="-16"/>
+			<point x="506" y="-2"/>
+			<point x="571" y="31" type="curve"/>
+			<point x="571" y="65" type="line"/>
 			<point x="571" y="114"/>
 			<point x="571" y="160"/>
 			<point x="572" y="207" type="curve"/>
 			<point x="618" y="213" type="line"/>
 			<point x="618" y="268" type="line"/>
 			<point x="323" y="268" type="line"/>
-			<point name="hintSet0005" x="323" y="213" type="line"/>
+			<point name="hintSet0007" x="323" y="213" type="line"/>
 			<point x="402" y="202" type="line"/>
 			<point x="403" y="158"/>
 			<point x="403" y="115"/>
@@ -37,12 +41,8 @@
 			<point x="153" y="552"/>
 			<point x="39" y="444"/>
 			<point x="39" y="270" type="curve"/>
-			<point x="39" y="85"/>
+			<point name="hintSet0020" x="39" y="85"/>
 			<point x="169" y="-16"/>
-			<point x="358" y="-16" type="curve"/>
-			<point x="443" y="-16"/>
-			<point x="506" y="-2"/>
-			<point x="571" y="31" type="curve"/>
 		</contour>
 		<contour>
 			<point x="170" y="725" type="line"/>
@@ -82,7 +82,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0005</string>
+						<string>hintSet0007</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -16 54</string>
@@ -93,9 +93,22 @@
 							<string>vstem 403 168</string>
 						</array>
 					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0020</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -16 54</string>
+							<string>hstem 210 58</string>
+							<string>hstem 498 54</string>
+							<string>hstem 588 89</string>
+							<string>vstem 39 186</string>
+							<string>vstem 403 168</string>
+						</array>
+					</dict>
 				</array>
 				<key>id</key>
-				<string>31cdf3c95a2c395c273dc52d54e2edae4fe0bb1f73546149579f837c1e631c21f776ea81f863fbd6262b7b77d1aeac71988fa3154801af2dca3bb0c4d2c9880b</string>
+				<string>4b5731b7c21e327413bb5b852952062f7094362666cea5695ecafe67bbb192ab70fa0148ac8ec74a05ea739aa69c540eeab90e46c2adcb799205334ff97a2387</string>
 			</dict>
 		</dict>
 	</lib>

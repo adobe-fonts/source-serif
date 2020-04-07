@@ -3,27 +3,27 @@
 	<advance width="622"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="270" y="407" type="line"/>
-			<point x="340" y="208" type="line"/>
-			<point x="196" y="208" type="line"/>
-		</contour>
-		<contour>
-			<point x="9" y="0" type="line"/>
+			<point name="hintSet0000" x="9" y="0" type="line"/>
 			<point x="209" y="0" type="line"/>
-			<point name="hintSet0005" x="209" y="51" type="line"/>
-			<point name="hintSet0006" x="141" y="60" type="line"/>
+			<point name="hintSet0002" x="209" y="51" type="line"/>
+			<point name="hintSet0003" x="141" y="60" type="line"/>
 			<point x="176" y="153" type="line"/>
 			<point x="360" y="153" type="line"/>
-			<point name="hintSet0009" x="394" y="57" type="line"/>
+			<point name="hintSet0006" x="394" y="57" type="line"/>
 			<point x="324" y="48" type="line"/>
-			<point name="hintSet0011" x="324" y="0" type="line"/>
+			<point name="hintSet0008" x="324" y="0" type="line"/>
 			<point x="603" y="0" type="line"/>
-			<point name="hintSet0013" x="603" y="48" type="line"/>
+			<point name="hintSet0010" x="603" y="48" type="line"/>
 			<point x="550" y="54" type="line"/>
 			<point x="366" y="541" type="line"/>
 			<point x="271" y="541" type="line"/>
-			<point name="hintSet0017" x="85" y="60" type="line"/>
-			<point name="hintSet0018" x="9" y="51" type="line"/>
+			<point name="hintSet0014" x="85" y="60" type="line"/>
+			<point name="hintSet0015" x="9" y="51" type="line"/>
+		</contour>
+		<contour>
+			<point x="196" y="208" type="line"/>
+			<point x="270" y="407" type="line"/>
+			<point x="340" y="208" type="line"/>
 		</contour>
 		<contour>
 			<point x="145" y="732" type="line"/>
@@ -79,10 +79,23 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0005</string>
+						<string>hintSet0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 51</string>
+							<string>hstem 153 55</string>
+							<string>hstem 541 -20</string>
+							<string>hstem 597 81</string>
+							<string>vstem 9 200</string>
+							<string>vstem 322 77</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 55.5</string>
 							<string>hstem 153 55</string>
 							<string>hstem 541 -20</string>
 							<string>hstem 597 81</string>
@@ -95,19 +108,6 @@
 						<string>hintSet0006</string>
 						<key>stems</key>
 						<array>
-							<string>hstem 0 55.5</string>
-							<string>hstem 153 55</string>
-							<string>hstem 541 -20</string>
-							<string>hstem 597 81</string>
-							<string>vstem 9 200</string>
-							<string>vstem 322 77</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0009</string>
-						<key>stems</key>
-						<array>
 							<string>hstem 0 52.5</string>
 							<string>hstem 153 55</string>
 							<string>hstem 541 -20</string>
@@ -118,7 +118,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0011</string>
+						<string>hintSet0008</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 55.5</string>
@@ -131,7 +131,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0013</string>
+						<string>hintSet0010</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 51</string>
@@ -144,7 +144,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0017</string>
+						<string>hintSet0014</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 55.5</string>
@@ -157,7 +157,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0018</string>
+						<string>hintSet0015</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 51</string>
@@ -171,7 +171,7 @@
 					</dict>
 				</array>
 				<key>id</key>
-				<string>04d90b9f59d7efb11773af4074016f90d8b819076690d1f3335dc87fdce7eed262d6a53396d7ddd315cf51cfcb8d0c7a09cbb5a6d70e2a5db4ac5f7ef4acd985</string>
+				<string>b2fc2819b4e4ea52472f3d01d6e0ae4a18e50e0d07a67cc26e9886cb1a1de6ecf8b24d56780c8a9b33d12de9bca9d197b17a5a7b10ce272a83faae7c4371ea1a</string>
 			</dict>
 		</dict>
 	</lib>

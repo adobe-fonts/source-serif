@@ -3,27 +3,27 @@
 	<advance width="622"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="270" y="407" type="line"/>
-			<point x="340" y="208" type="line"/>
-			<point x="196" y="208" type="line"/>
-		</contour>
-		<contour>
-			<point x="9" y="0" type="line"/>
+			<point name="hintSet0000" x="9" y="0" type="line"/>
 			<point x="209" y="0" type="line"/>
-			<point name="hintSet0005" x="209" y="51" type="line"/>
-			<point name="hintSet0006" x="141" y="60" type="line"/>
+			<point name="hintSet0002" x="209" y="51" type="line"/>
+			<point name="hintSet0003" x="141" y="60" type="line"/>
 			<point x="176" y="153" type="line"/>
 			<point x="360" y="153" type="line"/>
-			<point name="hintSet0009" x="394" y="57" type="line"/>
+			<point name="hintSet0006" x="394" y="57" type="line"/>
 			<point x="324" y="48" type="line"/>
-			<point name="hintSet0011" x="324" y="0" type="line"/>
+			<point name="hintSet0008" x="324" y="0" type="line"/>
 			<point x="603" y="0" type="line"/>
-			<point name="hintSet0013" x="603" y="48" type="line"/>
+			<point name="hintSet0010" x="603" y="48" type="line"/>
 			<point x="550" y="54" type="line"/>
 			<point x="366" y="541" type="line"/>
 			<point x="271" y="541" type="line"/>
-			<point name="hintSet0017" x="85" y="60" type="line"/>
-			<point name="hintSet0018" x="9" y="51" type="line"/>
+			<point name="hintSet0014" x="85" y="60" type="line"/>
+			<point name="hintSet0015" x="9" y="51" type="line"/>
+		</contour>
+		<contour>
+			<point x="196" y="208" type="line"/>
+			<point x="270" y="407" type="line"/>
+			<point x="340" y="208" type="line"/>
 		</contour>
 		<contour>
 			<point name="hintSet0019" x="289" y="-225" type="curve"/>
@@ -60,11 +60,23 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0005</string>
+						<string>hintSet0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -225 159</string>
 							<string>hstem 0 51</string>
+							<string>hstem 153 55</string>
+							<string>hstem 541 -20</string>
+							<string>vstem 9 200</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -225 159</string>
+							<string>hstem 0 55.5</string>
 							<string>hstem 153 55</string>
 							<string>hstem 541 -20</string>
 							<string>vstem 9 200</string>
@@ -76,18 +88,6 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -225 159</string>
-							<string>hstem 0 55.5</string>
-							<string>hstem 153 55</string>
-							<string>hstem 541 -20</string>
-							<string>vstem 9 200</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0009</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -225 159</string>
 							<string>hstem 0 52.5</string>
 							<string>hstem 153 55</string>
 							<string>hstem 541 -20</string>
@@ -96,7 +96,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0011</string>
+						<string>hintSet0008</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -225 159</string>
@@ -108,7 +108,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0013</string>
+						<string>hintSet0010</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -225 159</string>
@@ -120,7 +120,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0017</string>
+						<string>hintSet0014</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -225 159</string>
@@ -132,7 +132,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0018</string>
+						<string>hintSet0015</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -225 159</string>
@@ -156,7 +156,7 @@
 					</dict>
 				</array>
 				<key>id</key>
-				<string>781246fa651153ad7db08f4a4ad8cb345ad0931caa872322898053a55f113167d663fda14edbccc7a6915f3dd270fbafc89f3eba89f23a8ac3f0ce4490bdfd0d</string>
+				<string>3621b57b706ec8a35237aaafe250ca975232fb5b24494ecc592ae7912126ffe541cf2b245f5ad28ee34ec107928b672939603636e506afdc19b5e7e5ff708e2a</string>
 			</dict>
 		</dict>
 	</lib>

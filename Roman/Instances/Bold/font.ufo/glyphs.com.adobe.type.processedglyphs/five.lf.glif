@@ -3,11 +3,14 @@
 	<advance width="531"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="498" y="192" type="curve"/>
+			<point name="hintSet0000" x="233" y="-15" type="curve"/>
+			<point x="384" y="-15"/>
+			<point x="498" y="55"/>
+			<point x="498" y="192" type="curve"/>
 			<point x="498" y="321"/>
 			<point x="404" y="390"/>
 			<point x="251" y="390" type="curve"/>
-			<point x="217" y="390"/>
+			<point name="hintSet0003" x="217" y="390"/>
 			<point x="185" y="387"/>
 			<point x="154" y="381" type="curve"/>
 			<point x="163" y="507" type="line"/>
@@ -25,7 +28,7 @@
 			<point x="330" y="89"/>
 			<point x="279" y="37"/>
 			<point x="206" y="37" type="curve"/>
-			<point name="hintSet0012" x="191" y="37"/>
+			<point name="hintSet0013" x="191" y="37"/>
 			<point x="180" y="38"/>
 			<point x="168" y="42" type="curve"/>
 			<point x="160" y="110" type="line"/>
@@ -37,9 +40,6 @@
 			<point x="24" y="150" type="curve"/>
 			<point x="30" y="49"/>
 			<point x="105" y="-15"/>
-			<point x="233" y="-15" type="curve"/>
-			<point name="hintSet0017" x="384" y="-15"/>
-			<point x="498" y="55"/>
 		</contour>
 	</outline>
 	<lib>
@@ -56,13 +56,25 @@
 							<string>hstem -15 52</string>
 							<string>hstem 317 73</string>
 							<string>hstem 507 123</string>
+							<string>vstem 24 140</string>
+							<string>vstem 330 168</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -15 52</string>
+							<string>hstem 317 73</string>
+							<string>hstem 507 123</string>
 							<string>vstem 96.5 62</string>
 							<string>vstem 330 168</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0012</string>
+						<string>hintSet0013</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -15 52</string>
@@ -72,21 +84,9 @@
 							<string>vstem 330 168</string>
 						</array>
 					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0017</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -15 52</string>
-							<string>hstem 317 73</string>
-							<string>hstem 507 123</string>
-							<string>vstem 96.5 62</string>
-							<string>vstem 330 168</string>
-						</array>
-					</dict>
 				</array>
 				<key>id</key>
-				<string>797a1d915065babac090ed66422f3fde2e1480fd086162e9978e3210a35a198de809cc91b647e82c47838d5ed49686c8817a544570ec4877b5c783e22b87d2df</string>
+				<string>de1ae16651c8ce0da7c87bb0243c67a5e24b64fde9bf44547e5b54b2d7a5c5f440c2f77df6ea7d082e9f1546408d010187648ed19ee98cb7887fd305a641cf2f</string>
 			</dict>
 		</dict>
 	</lib>

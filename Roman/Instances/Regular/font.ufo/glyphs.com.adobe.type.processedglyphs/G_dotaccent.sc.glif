@@ -3,12 +3,16 @@
 	<advance width="622"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="548" y="69" type="line"/>
-			<point name="hintSet0001" x="548" y="116"/>
+			<point name="hintSet0000" x="354" y="-13" type="curve"/>
+			<point x="428" y="-13"/>
+			<point x="489" y="8"/>
+			<point x="548" y="35" type="curve"/>
+			<point x="548" y="69" type="line"/>
+			<point name="hintSet0003" x="548" y="116"/>
 			<point x="549" y="167"/>
 			<point x="550" y="218" type="curve"/>
 			<point x="601" y="223" type="line"/>
-			<point name="hintSet0003" x="601" y="261" type="line"/>
+			<point name="hintSet0005" x="601" y="261" type="line"/>
 			<point x="366" y="261" type="line"/>
 			<point x="366" y="223" type="line"/>
 			<point x="456" y="215" type="line"/>
@@ -39,13 +43,9 @@
 			<point x="58" y="275" type="curve"/>
 			<point x="58" y="111"/>
 			<point x="179" y="-13"/>
-			<point x="354" y="-13" type="curve"/>
-			<point x="428" y="-13"/>
-			<point x="489" y="8"/>
-			<point x="548" y="35" type="curve"/>
 		</contour>
 		<contour>
-			<point x="344" y="626" type="curve"/>
+			<point name="hintSet0021" x="344" y="626" type="curve"/>
 			<point x="382" y="626"/>
 			<point x="411" y="653"/>
 			<point x="411" y="690" type="curve"/>
@@ -79,7 +79,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0001</string>
+						<string>hintSet0003</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 51</string>
@@ -91,7 +91,19 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0003</string>
+						<string>hintSet0005</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 51</string>
+							<string>hstem 219 42</string>
+							<string>hstem 513 50</string>
+							<string>vstem 58 107</string>
+							<string>vstem 457 91</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0021</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 51</string>
@@ -105,7 +117,7 @@
 					</dict>
 				</array>
 				<key>id</key>
-				<string>9e4de17bdadd806dcad3f54ab5ec4eba0932ac4b64385cb629b4dce0e610e088960af115ef169fbb8e9ae31887bf5c372858177bc6a0b198d305c5d3c89c8cd5</string>
+				<string>398793c7d19885619028643a4719e89eacaab3395d81c358df713204dcabc9ad52b5c4fa025814d655d3f44f83798ca27e9b4248a4cb26cd1fc5c0452d9687bb</string>
 			</dict>
 		</dict>
 	</lib>
