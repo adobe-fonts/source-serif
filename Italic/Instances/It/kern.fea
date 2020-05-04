@@ -522,13 +522,6 @@ pos gheup hard 30;
 pos gheup ya -10;
 pos greaterequal seven.osf -29;
 pos iogonek p 25;
-pos iotadieresis xi 60;
-pos iotadieresis zeta 30;
-pos iotadieresistonos delta -9;
-pos iotadieresistonos lambda 91;
-pos iotadieresistonos theta 16;
-pos iotadieresistonos xi 61;
-pos iotadieresistonos zeta 31;
 pos iotatonos lambda 55;
 pos izhitsa Izhitsa -20;
 pos izhitsa Je -30;
@@ -670,24 +663,15 @@ pos zeta Zeta 50;
 pos zeta tau -20;
 
 # glyph, glyph exceptions:
-pos Gheup yi 0;
 pos Lcaron V -19;
-pos Nu iotadieresistonos -9;
-pos Psi iotadieresistonos 1;
 pos V adieresis -60;
 pos V atilde -50;
-pos iotadieresistonos iotadieresistonos 30;
-pos xi iotadieresistonos 1;
-pos zeta iotadieresistonos 31;
 
 # glyph, group exceptions:
 enum pos Lcaron @MMK_R_LAT_T -49;
-enum pos Lcaron @MMK_R_LAT_U -49;
 enum pos Lcaron @MMK_R_LAT_W -19;
 enum pos Lcaron @MMK_R_LAT_Y -19;
 enum pos Lcaron @MMK_R_quotedbl -69;
-enum pos Lcaron @MMK_R_quoteleft -78;
-enum pos Lcaron @MMK_R_quoteright -68;
 enum pos Lcaron @MMK_R_registered -39;
 enum pos Lcaron @MMK_R_sups_corner -59;
 enum pos Lcaron @MMK_R_sups_desc -29;
@@ -696,17 +680,9 @@ enum pos Lcaron @MMK_R_sups_figures -69;
 enum pos Lcaron @MMK_R_sups_round -59;
 enum pos aogonek @MMK_R_LAT_g 20;
 enum pos iogonek @MMK_R_LAT_g 20;
-enum pos lslash @MMK_R_LAT_y -10;
 
 # group, glyph exceptions:
-enum pos @MMK_L_GRK_Eta iotadieresistonos 1;
-enum pos @MMK_L_GRK_Gamma iotadieresistonos 1;
-enum pos @MMK_L_GRK_Upsilon iotadieresistonos 41;
 enum pos @MMK_L_LAT_Y igrave 19;
-enum pos @MMK_L_LAT_f adieresis -15;
-enum pos @MMK_L_LAT_f amacron -15;
-enum pos @MMK_L_LAT_f atilde -15;
-enum pos @MMK_L_LAT_f igrave 31;
 enum pos @MMK_L_LAT_f odieresis 20;
 
 # glyph, group:
@@ -1557,10 +1533,10 @@ pos slash @MMK_R_hyphen -60;
 pos slash @MMK_R_nine.lf -10;
 pos slash @MMK_R_periodcentered -30;
 pos slash @MMK_R_seven.lf 20;
-
-subtable;
 pos theta @MMK_R_GRK_Alpha -20;
 pos theta @MMK_R_GRK_Upsilon 20;
+
+subtable;
 pos three.osf @MMK_R_comma -20;
 pos three.osf @MMK_R_guilsinglleft -20;
 pos three.osf @MMK_R_hyphen -29;
@@ -3631,8 +3607,6 @@ pos @MMK_L_LAT_l @MMK_R_sups_corner -20;
 pos @MMK_L_LAT_l @MMK_R_sups_diag -20;
 pos @MMK_L_LAT_l @MMK_R_sups_round -20;
 pos @MMK_L_LAT_l thorn -10;
-
-subtable;
 pos @MMK_L_LAT_o @MMK_R_LAT_T -30;
 pos @MMK_L_LAT_o @MMK_R_LAT_W -30;
 pos @MMK_L_LAT_o @MMK_R_LAT_Y -50;
@@ -3649,6 +3623,8 @@ pos @MMK_L_LAT_o X -20;
 pos @MMK_L_LAT_o backslash -20;
 pos @MMK_L_LAT_o slash 10;
 pos @MMK_L_LAT_o thorn -10;
+
+subtable;
 pos @MMK_L_LAT_r @MMK_R_LAT_A -30;
 pos @MMK_L_LAT_r @MMK_R_LAT_E -20;
 pos @MMK_L_LAT_r @MMK_R_LAT_J -30;
@@ -4087,8 +4063,6 @@ pos @MMK_L_nine.lf V -10;
 pos @MMK_L_nine.lf X -30;
 pos @MMK_L_nine.lf slash -69;
 pos @MMK_L_nine.lf underscore -99;
-
-subtable;
 pos @MMK_L_one.lf @MMK_R_CYR_Acyr 10;
 pos @MMK_L_one.lf @MMK_R_CYR_Ustraight -10;
 pos @MMK_L_one.lf @MMK_R_GRK_Alpha 10;
@@ -4127,6 +4101,8 @@ pos @MMK_L_one.lf Je 20;
 pos @MMK_L_one.lf V -10;
 pos @MMK_L_one.lf cent -20;
 pos @MMK_L_one.lf degree -59;
+
+subtable;
 pos @MMK_L_parenleft @MMK_R_CYR_Acyr -20;
 pos @MMK_L_parenleft @MMK_R_CYR_Ocyr -20;
 pos @MMK_L_parenleft @MMK_R_CYR_Ustraight 10;
