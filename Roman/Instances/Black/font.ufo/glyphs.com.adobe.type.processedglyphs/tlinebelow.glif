@@ -4,11 +4,17 @@
 	<advance width="372"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="224" y="-16" type="curve"/>
+			<point name="hintSet0000" x="49" y="-201" type="line"/>
+			<point x="391" y="-201" type="line"/>
+			<point x="391" y="-101" type="line"/>
+			<point x="49" y="-101" type="line"/>
+		</contour>
+		<contour>
+			<point name="hintSet0004" x="224" y="-16" type="curve"/>
 			<point x="306" y="-16"/>
 			<point x="355" y="17"/>
 			<point x="382" y="75" type="curve"/>
-			<point name="hintSet0002" x="357" y="98" type="line"/>
+			<point name="hintSet0006" x="357" y="98" type="line"/>
 			<point x="340" y="85"/>
 			<point x="325" y="78"/>
 			<point x="308" y="78" type="curve"/>
@@ -29,14 +35,8 @@
 			<point x="69" y="201"/>
 			<point x="68" y="172"/>
 			<point x="68" y="133" type="curve"/>
-			<point name="hintSet0017" x="68" y="26"/>
+			<point name="hintSet0021" x="68" y="26"/>
 			<point x="125" y="-16"/>
-		</contour>
-		<contour>
-			<point name="hintSet0018" x="49" y="-201" type="line"/>
-			<point x="391" y="-201" type="line"/>
-			<point x="391" y="-101" type="line"/>
-			<point x="49" y="-101" type="line"/>
 		</contour>
 	</outline>
 	<lib>
@@ -53,12 +53,23 @@
 							<string>hstem -201 100</string>
 							<string>hstem 5 -21</string>
 							<string>hstem 412 75</string>
+							<string>vstem 49 342</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0004</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -201 100</string>
+							<string>hstem 5 -21</string>
+							<string>hstem 412 75</string>
 							<string>vstem 69 190</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0002</string>
+						<string>hintSet0006</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -201 100</string>
@@ -69,7 +80,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0017</string>
+						<string>hintSet0021</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -201 100</string>
@@ -78,20 +89,9 @@
 							<string>vstem 69 190</string>
 						</array>
 					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0018</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -201 100</string>
-							<string>hstem 5 -21</string>
-							<string>hstem 412 75</string>
-							<string>vstem 49 342</string>
-						</array>
-					</dict>
 				</array>
 				<key>id</key>
-				<string>222a0693c1e7e3be790b8252669804e9f48bdf7e948700cf2f95ddf2fab9471740f065c9e94438c2dcc24de4a1427755a824a1967a7fd745683dfd9b56524b0d</string>
+				<string>d0d42cc4208acfa7966574204f0e75844842f12f0aaa00607d15a3b706c2f148e9fe50ab6391f7e21f24efdd416a33c727d6c88690bb694b419e6e4085d9dd48</string>
 			</dict>
 		</dict>
 	</lib>
