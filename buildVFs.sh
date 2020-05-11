@@ -17,8 +17,8 @@ function build_var_font {
 	# $2 is font name
 	echo $2
 	# build variable OTF
-	# -p is for using 'post' table format 3
-	buildmasterotfs $1/$2.designspace
+	# --mkot gs is for using the makeotf option -gs, which omits glyphs not in the GOADB
+	buildmasterotfs --mkot gs -d $1/$2.designspace
 	buildcff2vf -d $1/$2.designspace
 
 	# extract and subroutinize the CFF2 table
