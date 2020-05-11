@@ -619,13 +619,13 @@ feature dnom { # Denominators
 
 #--------------------------------------
 feature frac { # Fractions
-    @SLASH = [ slash.frac fraction divisionslash ];
+    @SLASH = [ slash.frac fraction ];
 
     lookup NUMR;
     sub slash by slash.frac;
     sub @FIG_NUMR space' by space.frac;
 
-    sub [ fraction divisionslash slash.frac @FIG_DNOM @PUNCT_DNOM ] [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
+    sub [ fraction slash.frac @FIG_DNOM @PUNCT_DNOM ] [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
     sub @FIG_DNOM space.frac [ @FIG_NUMR @PUNCT_NUMR ]' by [ @FIG_DNOM @PUNCT_DNOM ];
 } frac;
 
