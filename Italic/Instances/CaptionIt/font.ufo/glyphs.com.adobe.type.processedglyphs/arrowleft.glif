@@ -7,8 +7,8 @@
 			<point name="hintSet0000" x="640" y="325" type="line"/>
 			<point x="470" y="325" type="line"/>
 			<point x="112" y="308" type="line"/>
-			<point x="351" y="557" type="line"/>
-			<point x="326" y="582" type="line"/>
+			<point name="hintSet0003" x="351" y="557" type="line"/>
+			<point name="hintSet0004" x="326" y="582" type="line"/>
 			<point x="20" y="300" type="line"/>
 			<point x="20" y="280" type="line"/>
 			<point x="326" y="-2" type="line"/>
@@ -31,7 +31,29 @@
 						<array>
 							<string>hstem 19 -21</string>
 							<string>hstem 255 70</string>
+							<string>hstem 582 -20</string>
+							<string>vstem 20 620</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 19 -21</string>
+							<string>hstem 255 70</string>
 							<string>hstem 557 -20</string>
+							<string>vstem 20 620</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0004</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 19 -21</string>
+							<string>hstem 255 70</string>
+							<string>hstem 582 -20</string>
 							<string>vstem 20 620</string>
 						</array>
 					</dict>

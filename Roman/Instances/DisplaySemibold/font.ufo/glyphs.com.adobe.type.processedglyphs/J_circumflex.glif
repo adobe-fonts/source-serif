@@ -6,7 +6,7 @@
 		<contour>
 			<point name="hintSet0000" x="33" y="645" type="line"/>
 			<point x="119" y="635" type="line"/>
-			<point x="123" y="429"/>
+			<point x="123" y="428"/>
 			<point x="128" y="271"/>
 			<point x="128" y="156" type="curve"/>
 			<point x="128" y="33"/>
@@ -29,21 +29,21 @@
 			<point x="226" y="54"/>
 			<point x="226" y="219" type="curve"/>
 			<point x="226" y="358" type="line"/>
-			<point x="226" y="452"/>
-			<point x="226" y="545"/>
-			<point x="228" y="635" type="curve"/>
+			<point name="hintSet0011" x="226" y="452"/>
+			<point x="226" y="546"/>
+			<point x="228" y="636" type="curve"/>
 			<point x="302" y="645" type="line"/>
-			<point x="302" y="663" type="line"/>
-			<point x="33" y="663" type="line"/>
+			<point name="hintSet0013" x="302" y="664" type="line"/>
+			<point x="33" y="664" type="line"/>
 		</contour>
 		<contour>
 			<point x="193" y="859" type="line"/>
 			<point x="151" y="859" type="line"/>
-			<point x="18" y="726" type="line"/>
+			<point x="18" y="727" type="line"/>
 			<point x="32" y="710" type="line"/>
-			<point x="172" y="794" type="line"/>
+			<point x="172" y="795" type="line"/>
 			<point x="312" y="710" type="line"/>
-			<point x="326" y="726" type="line"/>
+			<point x="326" y="727" type="line"/>
 		</contour>
 	</outline>
 	<lib>
@@ -58,13 +58,33 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -138 96</string>
-							<string>hstem 640 23</string>
+							<string>hstem 640 24</string>
+							<string>vstem 128 98</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0011</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -138 96</string>
+							<string>hstem 640.5 23.5</string>
+							<string>vstem 128 98</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0013</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -138 96</string>
+							<string>hstem 640 24</string>
 							<string>vstem 128 98</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>b20a5f11a69221b717db05285b9e936815afd0f4bf550ad4b6b590797f7ee6366259a9767ae0bec39b8ff54f0622bd7b930be8bf01a0ca4c0ca6815a3818c705</string>
+				<string>037dde39939da9c8b8d71dc656f5805ba7b61836db2048f3dbf98851f973c3bbf86487556fae39e3a496515feca16bbc93f706d77affe881276c7b237603feea</string>
 			</dict>
 		</dict>
 	</lib>

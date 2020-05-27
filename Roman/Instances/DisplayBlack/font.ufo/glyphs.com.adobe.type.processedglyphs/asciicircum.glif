@@ -6,7 +6,7 @@
 		<contour>
 			<point name="hintSet0000" x="68" y="230" type="line"/>
 			<point x="106" y="206" type="line"/>
-			<point x="256" y="447" type="line"/>
+			<point name="hintSet0002" x="256" y="447" type="line"/>
 			<point x="406" y="206" type="line"/>
 			<point x="444" y="230" type="line"/>
 			<point x="270" y="508" type="line"/>
@@ -24,7 +24,16 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem 206 302</string>
+							<string>hstem 508 -20</string>
+							<string>vstem 68 376</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0002</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 447 61</string>
 							<string>vstem 68 376</string>
 						</array>
 					</dict>

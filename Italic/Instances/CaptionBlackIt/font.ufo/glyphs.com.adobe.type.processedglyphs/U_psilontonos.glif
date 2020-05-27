@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Upsilontonos" format="2">
 	<unicode hex="038E"/>
-	<advance width="821"/>
+	<advance width="914"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="736" y="576" type="line"/>
@@ -30,20 +30,22 @@
 			<point x="750" y="652" type="line"/>
 		</contour>
 		<contour>
-			<point x="53" y="443" type="curve"/>
-			<point x="109" y="419" type="line"/>
-			<point x="209" y="519" type="line"/>
-			<point x="237" y="547"/>
-			<point x="253" y="569"/>
-			<point x="253" y="607" type="curve"/>
-			<point x="253" y="645"/>
-			<point x="225" y="671"/>
-			<point x="183" y="671" type="curve"/>
-			<point x="141" y="671"/>
-			<point x="117" y="647"/>
-			<point x="97" y="583" type="curve"/>
-			<point x="82" y="536"/>
-			<point x="68" y="490"/>
+			<point x="76" y="449" type="curve"/>
+			<point x="128" y="425" type="line"/>
+			<point x="161" y="458"/>
+			<point x="189" y="482"/>
+			<point x="222" y="515" type="curve"/>
+			<point name="hintSet0025" x="250" y="543"/>
+			<point x="266" y="565"/>
+			<point x="266" y="603" type="curve"/>
+			<point x="266" y="641"/>
+			<point x="238" y="667"/>
+			<point x="196" y="667" type="curve"/>
+			<point x="154" y="667"/>
+			<point x="130" y="643"/>
+			<point x="110" y="579" type="curve"/>
+			<point name="hintSet0028" x="95" y="532"/>
+			<point x="86" y="496"/>
 		</contour>
 	</outline>
 	<lib>
@@ -59,12 +61,32 @@
 						<array>
 							<string>hstem 0 76</string>
 							<string>hstem 576 76</string>
-							<string>vstem 53 929</string>
+							<string>vstem 76 906</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0025</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 76</string>
+							<string>hstem 667 -20</string>
+							<string>vstem 76 906</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0028</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 76</string>
+							<string>hstem 576 76</string>
+							<string>vstem 76 906</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>f08dc11a3011fe24cc025411eda0d6e0038a316c90426ee3b9eb045edccd05da33fead4387d86f03d6d4d1f9e6298c34d2b83e10e6ffa853e08eeaf10bc4d59f</string>
+				<string>6e5b94a86e621ede81649a6cd83a411d0d28587c9100b9455b36bd26e245437b75b487f15ff0ff405c51f1aafa78aa71b5cd9d27721fff0adaf82ca9ac701925</string>
 			</dict>
 		</dict>
 	</lib>
