@@ -13,7 +13,7 @@ markClass ogonekcmb <anchor 0 0> @MC_ogonek;
 lookup MARK_BASE_aboveLC {
 	@bGC_a_aboveLC = [ a aogonek acyr ];
 	@bGC_d_aboveLC = [ d dcaron ];
-	@bGC_e_aboveLC = [ e o x eogonek ohorn oslash schwa ie ocyr fita obarcyr ];
+	@bGC_e_aboveLC = [ e o x eogonek ohorn oslash ie ocyr fita obarcyr ];
 	@bGC_i_aboveLC = [ i iukran ];
 	@bGC_l_aboveLC = [ l lcaron ];
 	@bGC_t_aboveLC = [ t tcaron ];
@@ -22,6 +22,7 @@ lookup MARK_BASE_aboveLC {
 	@bGC_w_aboveLC = [ w zhe ];
 	@bGC_y_aboveLC = [ y ucyr ];
 	@bGC_dotlessj_aboveLC = [ dotlessj iota ];
+	@bGC_schwa_aboveLC = [ schwa che ];
 	@bGC_alphalatin_aboveLC = [ alphalatin gscript ];
 	@bGC_epsilon_aboveLC = [ epsilon ghe ];
 	@bGC_ustraight_aboveLC = [ ustraight ustraightstroke ];
@@ -36,6 +37,7 @@ lookup MARK_BASE_aboveLC {
 	pos base @bGC_w_aboveLC <anchor 415 503> mark @MC_aboveLC;
 	pos base @bGC_y_aboveLC <anchor 301 503> mark @MC_aboveLC;
 	pos base @bGC_dotlessj_aboveLC <anchor 152 503> mark @MC_aboveLC;
+	pos base @bGC_schwa_aboveLC <anchor 286 503> mark @MC_aboveLC;
 	pos base @bGC_alphalatin_aboveLC <anchor 313 503> mark @MC_aboveLC;
 	pos base @bGC_epsilon_aboveLC <anchor 251 503> mark @MC_aboveLC;
 	pos base @bGC_ustraight_aboveLC <anchor 288 503> mark @MC_aboveLC;
@@ -68,7 +70,6 @@ lookup MARK_BASE_aboveLC {
 	pos base icyr <anchor 328 503> mark @MC_aboveLC;
 	pos base ka <anchor 308 503> mark @MC_aboveLC;
 	pos base tse <anchor 323 503> mark @MC_aboveLC;
-	pos base che <anchor 286 503> mark @MC_aboveLC;
 	pos base yeru <anchor 407 503> mark @MC_aboveLC;
 	pos base ecyr <anchor 245 503> mark @MC_aboveLC;
 	pos base yu <anchor 378 503> mark @MC_aboveLC;
@@ -199,7 +200,7 @@ lookup MARK_BASE_belowLC {
 	@bGC_e_belowLC = [ e eogonek ];
 	@bGC_f_belowLC = [ f i l dotlessi lcaron ];
 	@bGC_g_belowLC = [ g gcommaaccent ];
-	@bGC_o_belowLC = [ o ohorn schwa ];
+	@bGC_o_belowLC = [ o ohorn ];
 	@bGC_t_belowLC = [ t tcaron ];
 	@bGC_u_belowLC = [ u uogonek uhorn alphalatin ];
 	@bGC_A.sc_belowLC = [ A.sc Aogonek.sc ];
@@ -262,6 +263,7 @@ lookup MARK_BASE_belowLC {
 	pos base Schwa <anchor 337 -20> mark @MC_belowLC;
 	pos base ae <anchor 379 -20> mark @MC_belowLC;
 	pos base thorn <anchor 381 -20> mark @MC_belowLC;
+	pos base schwa <anchor 284 -20> mark @MC_belowLC;
 	pos base gscript <anchor 284 -247> mark @MC_belowLC;
 	pos base alpha <anchor 320 -20> mark @MC_belowLC;
 	pos base epsilon <anchor 246 -20> mark @MC_belowLC;

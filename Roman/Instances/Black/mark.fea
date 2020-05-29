@@ -17,7 +17,7 @@ lookup MARK_BASE_aboveLC {
 	@bGC_i_aboveLC = [ i iukran ];
 	@bGC_l_aboveLC = [ l lcaron ];
 	@bGC_n_aboveLC = [ n tse ];
-	@bGC_o_aboveLC = [ o ohorn oslash schwa ocyr fita obarcyr ];
+	@bGC_o_aboveLC = [ o ohorn oslash ocyr fita obarcyr ];
 	@bGC_t_aboveLC = [ t tcaron ];
 	@bGC_u_aboveLC = [ u uogonek uhorn ka icyr.bgr ];
 	@bGC_y_aboveLC = [ y ucyr ];
@@ -57,6 +57,7 @@ lookup MARK_BASE_aboveLC {
 	pos base dotlessj <anchor 152 507> mark @MC_aboveLC;
 	pos base oe <anchor 441 507> mark @MC_aboveLC;
 	pos base thorn <anchor 158 721> mark @MC_aboveLC;
+	pos base schwa <anchor 291 507> mark @MC_aboveLC;
 	pos base gscript <anchor 326 507> mark @MC_aboveLC;
 	pos base alpha <anchor 292 507> mark @MC_aboveLC;
 	pos base epsilon <anchor 260 507> mark @MC_aboveLC;
@@ -205,9 +206,10 @@ lookup MARK_BASE_belowLC {
 	@bGC_h_belowLC = [ h alpha ];
 	@bGC_i_belowLC = [ i dotlessi ];
 	@bGC_l_belowLC = [ l lcaron ];
-	@bGC_o_belowLC = [ o ohorn schwa ];
+	@bGC_o_belowLC = [ o ohorn ];
 	@bGC_t_belowLC = [ t tcaron ];
 	@bGC_u_belowLC = [ u uogonek uhorn ];
+	@bGC_schwa_belowLC = [ schwa Y.sc ];
 	@bGC_A.sc_belowLC = [ A.sc Aogonek.sc ];
 	@bGC_E.sc_belowLC = [ E.sc Eogonek.sc ];
 	@bGC_M.sc_belowLC = [ M.sc R.sc ];
@@ -232,6 +234,7 @@ lookup MARK_BASE_belowLC {
 	pos base @bGC_o_belowLC <anchor 283 -20> mark @MC_belowLC;
 	pos base @bGC_t_belowLC <anchor 222 -20> mark @MC_belowLC;
 	pos base @bGC_u_belowLC <anchor 316 -20> mark @MC_belowLC;
+	pos base @bGC_schwa_belowLC <anchor 288 -20> mark @MC_belowLC;
 	pos base @bGC_A.sc_belowLC <anchor 280 -20> mark @MC_belowLC;
 	pos base @bGC_E.sc_belowLC <anchor 312 -20> mark @MC_belowLC;
 	pos base @bGC_M.sc_belowLC <anchor 368 -20> mark @MC_belowLC;
@@ -288,7 +291,6 @@ lookup MARK_BASE_belowLC {
 	pos base V.sc <anchor 305 -20> mark @MC_belowLC;
 	pos base W.sc <anchor 456 -20> mark @MC_belowLC;
 	pos base X.sc <anchor 275 -20> mark @MC_belowLC;
-	pos base Y.sc <anchor 288 -20> mark @MC_belowLC;
 	pos base Z.sc <anchor 277 -20> mark @MC_belowLC;
 } MARK_BASE_belowLC;
 

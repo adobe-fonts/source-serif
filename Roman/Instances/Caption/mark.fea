@@ -17,7 +17,7 @@ lookup MARK_BASE_aboveLC {
 	@bGC_e_aboveLC = [ e eogonek ie ];
 	@bGC_h_aboveLC = [ h k l lcaron thorn ];
 	@bGC_i_aboveLC = [ i iukran ];
-	@bGC_o_aboveLC = [ o ohorn oslash schwa omicron ocyr ieukran fita obarcyr ];
+	@bGC_o_aboveLC = [ o ohorn oslash omicron ocyr ieukran fita obarcyr ];
 	@bGC_p_aboveLC = [ p v ];
 	@bGC_q_aboveLC = [ q alphalatin gscript ];
 	@bGC_s_aboveLC = [ s ghe ];
@@ -60,6 +60,7 @@ lookup MARK_BASE_aboveLC {
 	pos base dotlessi <anchor 180 528> mark @MC_aboveLC;
 	pos base dotlessj <anchor 164 528> mark @MC_aboveLC;
 	pos base oe <anchor 500 528> mark @MC_aboveLC;
+	pos base schwa <anchor 283 528> mark @MC_aboveLC;
 	pos base epsilon <anchor 240 528> mark @MC_aboveLC;
 	pos base iota <anchor 152 528> mark @MC_aboveLC;
 	pos base rho <anchor 356 528> mark @MC_aboveLC;
@@ -193,7 +194,7 @@ lookup MARK_BASE_belowLC {
 	@bGC_T_belowLC = [ T b d dcaron ];
 	@bGC_U_belowLC = [ U Uogonek Uhorn ];
 	@bGC_a_belowLC = [ a aogonek ];
-	@bGC_e_belowLC = [ e o eogonek ohorn schwa Y.sc ];
+	@bGC_e_belowLC = [ e o eogonek ohorn Y.sc ];
 	@bGC_g_belowLC = [ g gcommaaccent ];
 	@bGC_h_belowLC = [ h n Schwa ];
 	@bGC_i_belowLC = [ i l r dotlessi lcaron ];
@@ -255,6 +256,7 @@ lookup MARK_BASE_belowLC {
 	pos base y <anchor 193 -245> mark @MC_belowLC;
 	pos base z <anchor 262 -20> mark @MC_belowLC;
 	pos base ae <anchor 404 -20> mark @MC_belowLC;
+	pos base schwa <anchor 283 -20> mark @MC_belowLC;
 	pos base alphalatin <anchor 322 -20> mark @MC_belowLC;
 	pos base gscript <anchor 268 -245> mark @MC_belowLC;
 	pos base epsilon <anchor 240 -20> mark @MC_belowLC;

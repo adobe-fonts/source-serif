@@ -13,9 +13,10 @@ markClass ogonekcmb <anchor 0 0> @MC_ogonek;
 lookup MARK_BASE_aboveLC {
 	@bGC_a_aboveLC = [ a z aogonek acyr ];
 	@bGC_b_aboveLC = [ b h k l lcaron ];
-	@bGC_c_aboveLC = [ c o ohorn oslash schwa omicron koppa ocyr fita obarcyr ];
+	@bGC_c_aboveLC = [ c o ohorn oslash omicron koppa ocyr fita obarcyr ];
 	@bGC_d_aboveLC = [ d dcaron ];
 	@bGC_e_aboveLC = [ e eogonek ie ];
+	@bGC_g_aboveLC = [ g schwa ];
 	@bGC_i_aboveLC = [ i j iukran ];
 	@bGC_q_aboveLC = [ q alphalatin gscript alpha eta ];
 	@bGC_r_aboveLC = [ r epsilon digamma ];
@@ -32,6 +33,7 @@ lookup MARK_BASE_aboveLC {
 	pos base @bGC_c_aboveLC <anchor 240 468> mark @MC_aboveLC;
 	pos base @bGC_d_aboveLC <anchor 392 753> mark @MC_aboveLC;
 	pos base @bGC_e_aboveLC <anchor 230 468> mark @MC_aboveLC;
+	pos base @bGC_g_aboveLC <anchor 222 468> mark @MC_aboveLC;
 	pos base @bGC_i_aboveLC <anchor 130 677> mark @MC_aboveLC;
 	pos base @bGC_q_aboveLC <anchor 252 468> mark @MC_aboveLC;
 	pos base @bGC_r_aboveLC <anchor 220 468> mark @MC_aboveLC;
@@ -44,7 +46,6 @@ lookup MARK_BASE_aboveLC {
 	pos base @bGC_ka_aboveLC <anchor 256 468> mark @MC_aboveLC;
 	pos base @bGC_yeru_aboveLC <anchor 312 468> mark @MC_aboveLC;
 	pos base f <anchor 276 753> mark @MC_aboveLC;
-	pos base g <anchor 222 468> mark @MC_aboveLC;
 	pos base m <anchor 408 468> mark @MC_aboveLC;
 	pos base n <anchor 280 468> mark @MC_aboveLC;
 	pos base p <anchor 292 468> mark @MC_aboveLC;
