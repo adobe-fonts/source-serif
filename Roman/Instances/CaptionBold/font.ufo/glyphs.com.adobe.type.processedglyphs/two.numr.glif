@@ -4,9 +4,9 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="50" y="218" type="line"/>
-			<point x="381" y="218" type="line"/>
+			<point name="hintSet0001" x="381" y="218" type="line"/>
 			<point x="381" y="319" type="line"/>
-			<point x="145" y="317" type="line"/>
+			<point name="hintSet0003" x="145" y="317" type="line"/>
 			<point x="145" y="332" type="line"/>
 			<point x="212" y="370" type="line"/>
 			<point x="327" y="429"/>
@@ -44,6 +44,27 @@
 					<dict>
 						<key>pointTag</key>
 						<string>hintSet0000</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 218 100</string>
+							<string>hstem 626 41</string>
+							<string>vstem 50 95</string>
+							<string>vstem 234 137</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 218 100</string>
+							<string>hstem 626 41</string>
+							<string>vstem 50 331</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 218 100</string>

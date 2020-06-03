@@ -4,9 +4,9 @@
 	<advance width="536"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="224" y="-104" type="line"/>
-			<point x="288" y="-104" type="line"/>
-			<point x="305" y="-11" type="line"/>
+			<point name="hintSet0000" x="226" y="-104" type="line"/>
+			<point x="286" y="-104" type="line"/>
+			<point x="306" y="-11" type="line"/>
 			<point x="361" y="-8"/>
 			<point x="402" y="9"/>
 			<point x="420" y="20" type="curve"/>
@@ -25,7 +25,7 @@
 			<point x="196" y="48"/>
 			<point x="140" y="116"/>
 			<point x="140" y="248" type="curve"/>
-			<point x="140" y="416"/>
+			<point name="hintSet0013" x="140" y="416"/>
 			<point x="220" y="600"/>
 			<point x="372" y="600" type="curve"/>
 			<point x="394" y="600"/>
@@ -35,17 +35,17 @@
 			<point x="498" y="476" type="line"/>
 			<point x="520" y="628" type="line"/>
 			<point x="505" y="637"/>
-			<point x="467" y="651"/>
-			<point x="420" y="657" type="curve"/>
-			<point name="hintSet0019" x="444" y="752" type="line"/>
-			<point x="380" y="752" type="line"/>
-			<point x="363" y="660" type="line"/>
-			<point x="160" y="654"/>
+			<point x="468" y="650"/>
+			<point x="421" y="657" type="curve"/>
+			<point name="hintSet0019" x="442" y="752" type="line"/>
+			<point x="382" y="752" type="line"/>
+			<point x="362" y="660" type="line"/>
+			<point x="160" y="653"/>
 			<point x="44" y="445"/>
 			<point x="44" y="240" type="curve"/>
 			<point x="44" y="96"/>
 			<point x="128" y="7"/>
-			<point x="248" y="-9" type="curve"/>
+			<point x="247" y="-9" type="curve"/>
 		</contour>
 	</outline>
 	<lib>
@@ -57,6 +57,17 @@
 					<dict>
 						<key>pointTag</key>
 						<string>hintSet0000</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -11 59</string>
+							<string>hstem 264 60</string>
+							<string>hstem 657 -20</string>
+							<string>vstem 44 96</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0013</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -11 59</string>
@@ -78,7 +89,7 @@
 					</dict>
 				</array>
 				<key>id</key>
-				<string>02303f888f0f2a1322094557b3d80f453957a8f4198be8e1cfa0d2bc1376db3fb602bab141a88e00a3108c4993342d1433f9b79938f22398f0d68e2e0e91ec88</string>
+				<string>e6abef8fac8243cb5d924cc4f97785a3fd4acf75c2c5c73fd6e2e4ee2f68d388add3cdb84f50384ddd51f9dffb5ebf87c6d890becfc45fae898bddecac30d147</string>
 			</dict>
 		</dict>
 	</lib>

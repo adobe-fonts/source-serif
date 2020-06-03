@@ -4,16 +4,11 @@
 	<advance width="748"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="218" y="-172" type="line"/>
-			<point name="hintSet0001" x="530" y="-172" type="line"/>
-			<point x="530" y="-70" type="line"/>
-			<point name="hintSet0003" x="218" y="-70" type="line"/>
-		</contour>
-		<contour>
-			<point x="472" y="572" type="line"/>
-			<point x="566" y="572" type="line"/>
-			<point x="572" y="264" type="line"/>
-			<point x="552" y="264" type="line"/>
+			<point name="hintSet0000" x="472" y="572" type="line"/>
+			<point x="568" y="572" type="line"/>
+			<point x="568" y="417" type="line"/>
+			<point x="588" y="193" type="line"/>
+			<point x="574" y="193" type="line"/>
 			<point x="320" y="652" type="line"/>
 			<point x="28" y="652" type="line"/>
 			<point x="28" y="572" type="line"/>
@@ -23,15 +18,22 @@
 			<point x="28" y="0" type="line"/>
 			<point x="280" y="0" type="line"/>
 			<point x="280" y="80" type="line"/>
-			<point x="187" y="80" type="line"/>
-			<point x="182" y="472" type="line"/>
-			<point x="202" y="472" type="line"/>
-			<point x="500" y="0" type="line"/>
+			<point x="186" y="80" type="line"/>
+			<point x="186" y="264" type="line"/>
+			<point name="hintSet0016" x="165" y="539" type="line"/>
+			<point x="178" y="539" type="line"/>
+			<point x="480" y="0" type="line"/>
 			<point x="648" y="0" type="line"/>
-			<point x="648" y="572" type="line"/>
+			<point name="hintSet0020" x="648" y="572" type="line"/>
 			<point x="724" y="572" type="line"/>
 			<point x="724" y="652" type="line"/>
 			<point x="472" y="652" type="line"/>
+		</contour>
+		<contour>
+			<point x="218" y="-172" type="line"/>
+			<point name="hintSet0025" x="530" y="-172" type="line"/>
+			<point x="530" y="-70" type="line"/>
+			<point name="hintSet0027" x="218" y="-70" type="line"/>
 		</contour>
 	</outline>
 	<lib>
@@ -48,40 +50,66 @@
 							<string>hstem -172 102</string>
 							<string>hstem 0 80</string>
 							<string>hstem 572 80</string>
-							<string>vstem 104 80.5</string>
+							<string>vstem 104 82</string>
 							<string>vstem 218 62</string>
-							<string>vstem 569 79</string>
+							<string>vstem 568 80</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0001</string>
+						<string>hintSet0016</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -172 102</string>
+							<string>hstem 0 80</string>
+							<string>hstem 539 113</string>
+							<string>vstem 104 82</string>
+							<string>vstem 218 62</string>
+							<string>vstem 568 80</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0020</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -172 102</string>
 							<string>hstem 0 80</string>
 							<string>hstem 572 80</string>
-							<string>vstem 104 80.5</string>
+							<string>vstem 104 82</string>
+							<string>vstem 218 62</string>
+							<string>vstem 568 80</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0025</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -172 102</string>
+							<string>hstem 0 80</string>
+							<string>hstem 572 80</string>
+							<string>vstem 104 82</string>
 							<string>vstem 218 312</string>
-							<string>vstem 569 79</string>
+							<string>vstem 568 80</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0003</string>
+						<string>hintSet0027</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -172 102</string>
 							<string>hstem 0 80</string>
 							<string>hstem 572 80</string>
-							<string>vstem 104 80.5</string>
+							<string>vstem 104 82</string>
 							<string>vstem 218 62</string>
-							<string>vstem 569 79</string>
+							<string>vstem 568 80</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>709a105a011b6ff3904ffba0df777c30914b29f940224e0116dcd2d02e5f1396a3835b4531327c3ffa687d39ccfab5242f1646f5250ce48734bd67411667bed3</string>
+				<string>bce18c2876dc370409da417b4099cb3461c7b457ccabf9c1784bc9f61b5dd207f453727bc01e24ad420ca3d8460b4d94101f7e95953c519416fa959c7e4e1f65</string>
 			</dict>
 		</dict>
 	</lib>

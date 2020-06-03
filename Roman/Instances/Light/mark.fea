@@ -84,6 +84,7 @@ lookup MARK_BASE_aboveLC {
 lookup MARK_BASE_aboveUC {
 	@bGC_A_aboveUC = [ A Aogonek Acyr ];
 	@bGC_B_aboveUC = [ B P ];
+	@bGC_D_aboveUC = [ D X ];
 	@bGC_E_aboveUC = [ E Eogonek Ie ];
 	@bGC_F_aboveUC = [ F V ];
 	@bGC_I_aboveUC = [ I Iukran ];
@@ -91,7 +92,6 @@ lookup MARK_BASE_aboveUC {
 	@bGC_L_aboveUC = [ L Lcaron ];
 	@bGC_O_aboveUC = [ O Q Ohorn Oslash Ocyr Ieukran Fita Obarcyr ];
 	@bGC_U_aboveUC = [ U Uogonek Uhorn ];
-	@bGC_X_aboveUC = [ X Schwa ];
 	@bGC_Y_aboveUC = [ Y Ustraight ];
 	@bGC_Icyr_aboveUC = [ Icyr Icyr.bgr ];
 	@bGC_A.sc_aboveUC = [ A.sc Aogonek.sc Acyr.sc ];
@@ -106,6 +106,7 @@ lookup MARK_BASE_aboveUC {
 	@bGC_Icyr.sc_aboveUC = [ Icyr.sc Icyr.scbgr ];
 	pos base @bGC_A_aboveUC <anchor 318 694> mark @MC_aboveUC;
 	pos base @bGC_B_aboveUC <anchor 290 694> mark @MC_aboveUC;
+	pos base @bGC_D_aboveUC <anchor 331 694> mark @MC_aboveUC;
 	pos base @bGC_E_aboveUC <anchor 325 694> mark @MC_aboveUC;
 	pos base @bGC_F_aboveUC <anchor 332 694> mark @MC_aboveUC;
 	pos base @bGC_I_aboveUC <anchor 183 694> mark @MC_aboveUC;
@@ -113,7 +114,6 @@ lookup MARK_BASE_aboveUC {
 	pos base @bGC_L_aboveUC <anchor 186 694> mark @MC_aboveUC;
 	pos base @bGC_O_aboveUC <anchor 353 694> mark @MC_aboveUC;
 	pos base @bGC_U_aboveUC <anchor 375 694> mark @MC_aboveUC;
-	pos base @bGC_X_aboveUC <anchor 323 694> mark @MC_aboveUC;
 	pos base @bGC_Y_aboveUC <anchor 328 694> mark @MC_aboveUC;
 	pos base @bGC_Icyr_aboveUC <anchor 399 694> mark @MC_aboveUC;
 	pos base @bGC_A.sc_aboveUC <anchor 282 573> mark @MC_aboveUC;
@@ -127,7 +127,6 @@ lookup MARK_BASE_aboveUC {
 	pos base @bGC_Y.sc_aboveUC <anchor 296 573> mark @MC_aboveUC;
 	pos base @bGC_Icyr.sc_aboveUC <anchor 368 573> mark @MC_aboveUC;
 	pos base C <anchor 372 694> mark @MC_aboveUC;
-	pos base D <anchor 331 694> mark @MC_aboveUC;
 	pos base G <anchor 385 694> mark @MC_aboveUC;
 	pos base H <anchor 396 694> mark @MC_aboveUC;
 	pos base J <anchor 196 694> mark @MC_aboveUC;
@@ -140,6 +139,7 @@ lookup MARK_BASE_aboveUC {
 	pos base Z <anchor 286 694> mark @MC_aboveUC;
 	pos base AE <anchor 595 694> mark @MC_aboveUC;
 	pos base OE <anchor 503 694> mark @MC_aboveUC;
+	pos base Schwa <anchor 323 694> mark @MC_aboveUC;
 	pos base Zhe <anchor 461 694> mark @MC_aboveUC;
 	pos base Ka <anchor 357 694> mark @MC_aboveUC;
 	pos base Ucyr <anchor 334 694> mark @MC_aboveUC;
@@ -260,7 +260,7 @@ lookup MARK_BASE_belowLC {
 	pos base T <anchor 299 -20> mark @MC_belowLC;
 	pos base V <anchor 336 -20> mark @MC_belowLC;
 	pos base W <anchor 500 -20> mark @MC_belowLC;
-	pos base X <anchor 321 -20> mark @MC_belowLC;
+	pos base X <anchor 318 -20> mark @MC_belowLC;
 	pos base c <anchor 276 -20> mark @MC_belowLC;
 	pos base f <anchor 155 -20> mark @MC_belowLC;
 	pos base j <anchor 41 -263> mark @MC_belowLC;

@@ -5,7 +5,7 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="30" y="542" type="line"/>
-			<point x="74" y="542" type="line"/>
+			<point name="hintSet0001" x="74" y="542" type="line"/>
 			<point x="95" y="607" type="line"/>
 			<point x="142" y="607" type="line"/>
 			<point x="142" y="377" type="line"/>
@@ -15,11 +15,11 @@
 			<point x="306" y="377" type="line"/>
 			<point x="266" y="377" type="line"/>
 			<point x="266" y="607" type="line"/>
-			<point x="313" y="607" type="line"/>
+			<point name="hintSet0011" x="313" y="607" type="line"/>
 			<point x="334" y="542" type="line"/>
 			<point x="378" y="542" type="line"/>
 			<point x="378" y="652" type="line"/>
-			<point x="30" y="652" type="line"/>
+			<point name="hintSet0015" x="30" y="652" type="line"/>
 		</contour>
 		<contour>
 			<point x="418" y="327" type="line"/>
@@ -65,7 +65,43 @@
 						<array>
 							<string>hstem 327 50</string>
 							<string>hstem 607 45</string>
+							<string>vstem 30 236</string>
+							<string>vstem 455 40.5</string>
+							<string>vstem 729.5 115.5</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 327 50</string>
+							<string>hstem 607 45</string>
 							<string>vstem 142 124</string>
+							<string>vstem 455 40.5</string>
+							<string>vstem 729.5 115.5</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0011</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 327 50</string>
+							<string>hstem 607 45</string>
+							<string>vstem 142 236</string>
+							<string>vstem 455 40.5</string>
+							<string>vstem 729.5 115.5</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0015</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 327 50</string>
+							<string>hstem 607 45</string>
+							<string>vstem 30 236</string>
 							<string>vstem 455 40.5</string>
 							<string>vstem 729.5 115.5</string>
 						</array>

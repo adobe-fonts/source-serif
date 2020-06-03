@@ -8,55 +8,54 @@ LicenseCode	ADOBE
 
 
 begin FDDict LOWERCASE
-    DescenderHeight -222
-    DescenderOvershoot -10
     BaselineYCoord 0
-    BaselineOvershoot -20
-    LcHeight 487
-    LcOvershoot 18
-    AscenderHeight 711
-    AscenderOvershoot 20
-    DominantV [190]
-    DominantH [60]
+    BaselineOvershoot -15
+    DescenderHeight -240
+    DescenderOvershoot -10
+    LcHeight 475
+    LcOvershoot 13
+    AscenderHeight 670
+    AscenderOvershoot 15
+    DominantV [85]
+    DominantH [36]
     FlexOK false
 end FDDict LOWERCASE
 
 
 begin FDDict UPPERCASE
     BaselineYCoord 0
-    BaselineOvershoot -20
-    CapHeight 652
-    CapOvershoot 20
-    DominantV [190]
-    DominantH [60]
+    BaselineOvershoot -15
+    CapHeight 647
+    CapOvershoot 13
+    DominantV [85]
+    DominantH [36]
     FlexOK false
 end FDDict UPPERCASE
 
 
-begin FDDict FIGURES
-    BaselineYCoord 0
-    BaselineOvershoot -20
-    FigHeight 625
-    FigOvershoot 15
-    DominantV [190]
-    DominantH [60]
-    FlexOK false
-end FDDict FIGURES
-
-
 begin FDDict TEXT_FIGURES
     BaselineYCoord 0
-    BaselineOvershoot -20
-    FigHeight 516
-    FigOvershoot 15
-    DominantV [190]
-    DominantH [60]
+    BaselineOvershoot -15
+    FigHeight 527
+    FigOvershoot 13
+    DominantV [85]
+    DominantH [36]
     FlexOK false
 end FDDict TEXT_FIGURES
 
 
-#------------------------------------------------------
+begin FDDict FIGURES
+    BaselineYCoord 0
+    BaselineOvershoot -15
+    FigHeight 549
+    FigOvershoot 14
+    DominantV [85]
+    DominantH [36]
+    FlexOK false
+end FDDict FIGURES
 
+
+#------------------------------------------------------
 begin GlyphSet LOWERCASE
     # LAT
         ^(dotless|germandbl|schw|long)?[a-z](macron|breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe|hoi)?(above|below|dotaccent)?(\.)?(alt|d|trk)?(sups)?$
@@ -114,6 +113,11 @@ begin GlyphSet UPPERCASE
 end GlyphSet UPPERCASE
 
 
+begin GlyphSet TEXT_FIGURES
+        ^(zero|one|two|three|four|five|six|seven|eight|nine)\.t?(osf)$
+end GlyphSet TEXT_FIGURES
+
+
 begin GlyphSet FIGURES
         ^(zero|one|two|three|four|five|six|seven|eight|nine)(\.)?(lf)?(slash)?(dnom|numr)$
         ^(dollar|cent|sterling|yen|Euro|florin|colonmonetary|lira|naira|peseta|dong|peso|guarani|cedi|rupeeindian|currency|won|tugrik|hryvnia|tenge|ruble|bitcoin)(turkish)?$
@@ -121,10 +125,5 @@ begin GlyphSet FIGURES
         ^(one|two|three|five|seven)(half|quarter|third|eighth)(s)?$
         ^\.notdef$
 end GlyphSet FIGURES
-
-
-begin GlyphSet TEXT_FIGURES
-        ^(zero|one|two|three|four|five|six|seven|eight|nine)\.t?(osf)$
-end GlyphSet TEXT_FIGURES
 
 
