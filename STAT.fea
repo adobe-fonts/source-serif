@@ -2,8 +2,8 @@ table STAT {
 
    ElidedFallbackName { name "Regular"; };
 
-   DesignAxis wght 0 { name "Weight"; };
-   DesignAxis opsz 1 { name "Optical"; };
+   DesignAxis opsz 0 { name "Optical"; };
+   DesignAxis wght 1 { name "Weight"; };
 
    AxisValue {
       location wght 200 200 - 250;
@@ -44,16 +44,20 @@ table STAT {
 
    AxisValue {
       location
-      opsz 10 8 - 24;
+      opsz 10 8 - 16;
       name "Text";
       flag ElidableAxisValueName;
    };
 
-   # some subhead stuff here
+   AxisValue {
+      location
+      opsz 60 16 - 32;
+      name "Subhead";
+   };
 
    AxisValue {
       location
-      opsz 60 24 - 100;
+      opsz 60 32 - 100;
       name "Display";
    };
 
