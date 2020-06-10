@@ -32,7 +32,7 @@
 			<point x="302" y="35"/>
 		</contour>
 		<contour>
-			<point x="159" y="575" type="curve"/>
+			<point name="hintSet0010" x="159" y="575" type="curve"/>
 			<point name="hintSet0011" x="197" y="558" type="line"/>
 			<point name="hintSet0012" x="216" y="592"/>
 			<point x="238" y="616"/>
@@ -46,8 +46,8 @@
 			<point x="465" y="558"/>
 			<point x="513" y="599"/>
 			<point x="539" y="701" type="curve"/>
-			<point name="hintSet0016" x="501" y="718" type="line"/>
-			<point name="hintSet0017" x="482" y="683"/>
+			<point x="501" y="718" type="line"/>
+			<point x="482" y="683"/>
 			<point x="460" y="659"/>
 			<point x="434" y="659" type="curve"/>
 			<point x="410" y="659"/>
@@ -69,6 +69,18 @@
 					<dict>
 						<key>pointTag</key>
 						<string>hintSet0000</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -16 51</string>
+							<string>hstem 444 51</string>
+							<string>hstem 558 101</string>
+							<string>vstem 22 164</string>
+							<string>vstem 354 164</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0010</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -16 51</string>
@@ -105,30 +117,6 @@
 					<dict>
 						<key>pointTag</key>
 						<string>hintSet0014</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -16 51</string>
-							<string>hstem 444 51</string>
-							<string>hstem 558 101</string>
-							<string>vstem 22 164</string>
-							<string>vstem 354 164</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0016</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -16 51</string>
-							<string>hstem 444 51</string>
-							<string>hstem 616 101</string>
-							<string>vstem 22 164</string>
-							<string>vstem 354 164</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0017</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -16 51</string>
