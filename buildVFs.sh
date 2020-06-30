@@ -30,6 +30,7 @@ function build_var_font {
 
 	# comment out STAT feature file which cannot be digested by fontmake
 	sed -i '' 's/^/#/' $1/../../STAT.fea
+	sed -i '' 's/^/#/' $1/../../STAT-Italic.fea
 
 	# build variable TTF
 	fontmake -m $1/$2.designspace -o variable --production-names --output-path $1/$2.ttf
@@ -52,6 +53,7 @@ function build_var_font {
 
 	# undo changes to STAT feature file
 	sed -i '' 's/#//' $1/../../STAT.fea
+	sed -i '' 's/#//' $1/../../STAT-Italic.fea
 
     echo "Done with $2"
     echo ""

@@ -1,24 +1,24 @@
-include (../../../../featuresVar.fea);
+include (../../../../featuresVar-Italic.fea);
 
 table OS/2 {
-    include (../../../Instances/It/os2.fea);
+    include (../../../Instances/Text/It/os2.fea);
     include (../../../../familyOS2.fea);
 } OS/2;
 
 # GPOS -----------------------------------
 feature mark {
-    include (../../../Instances/It/mark.fea);
+    include (../../../Instances/Text/It/mark.fea);
 } mark;
 
 feature mkmk {
-    include (../../../Instances/It/mkmk.fea);
+    include (../../../Instances/Text/It/mkmk.fea);
 } mkmk;
 
 feature kern {
     lookupflag IgnoreMarks;
     lookup KERN useExtension {
-        include (../../../Instances/It/kern.fea);
+        include (../../../Instances/Text/It/kern.fea);
     } KERN;
 
-    include (../../../Instances/It/kern_ctxt.fea);
+    include (../../../Instances/Text/It/kern_ctxt.fea);
 } kern;

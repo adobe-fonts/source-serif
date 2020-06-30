@@ -1,24 +1,24 @@
 include (../../../../featuresVar.fea);
 
 table OS/2 {
-    include (../../../Instances/Caption/os2.fea);
+    include (../../../Instances/Caption/Regular/os2.fea);
     include (../../../../familyOS2.fea);
 } OS/2;
 
 # GPOS -----------------------------------
 feature mark {
-    include (../../../Instances/Caption/mark.fea);
+    include (../../../Instances/Caption/Regular/mark.fea);
 } mark;
 
 feature mkmk {
-    include (../../../Instances/Caption/mkmk.fea);
+    include (../../../Instances/Caption/Regular/mkmk.fea);
 } mkmk;
 
 feature kern {
     lookupflag IgnoreMarks;
     lookup KERN useExtension {
-        include (../../../Instances/Caption/kern.fea);
+        include (../../../Instances/Caption/Regular/kern.fea);
     } KERN;
 
-    include (../../../Instances/Caption/kern_ctxt.fea);
+    include (../../../Instances/Caption/Regular/kern_ctxt.fea);
 } kern;
