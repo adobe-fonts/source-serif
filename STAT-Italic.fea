@@ -1,6 +1,6 @@
 table STAT {
 
-   ElidedFallbackName { name "Regular"; };
+   ElidedFallbackName { name "Italic"; };
 
    DesignAxis opsz 0 { name "Optical Size"; };
    DesignAxis wght 1 { name "Weight"; };
@@ -69,9 +69,8 @@ table STAT {
    };
 
    AxisValue {
-      location ital 0 1;
-      name "Regular";
-      flag ElidableAxisValueName;
+      location ital 1 0;
+      name "Italic";
    };
 
 } STAT;
