@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-ro_name=SourceSerifVariable-Roman
-it_name=SourceSerifVariable-Italic
+ro_name=SourceSerif4Variable-Roman
+it_name=SourceSerif4Variable-Italic
 
 # get absolute path to bash script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
