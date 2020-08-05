@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 family=SourceSerif4
-sizes='Caption SmText Text Subhead Display'
+sizes='Capt SmTxt Text Subh Disp'
 roman_weights='ExtraLight Light Regular Semibold Bold Black'
 italic_weights='ExtraLightIt LightIt It SemiboldIt BoldIt BlackIt'
 
