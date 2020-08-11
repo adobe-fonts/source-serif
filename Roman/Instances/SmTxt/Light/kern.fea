@@ -1,4 +1,4 @@
-# PS Name: SourceSerif4SmText-Light
+# PS Name: SourceSerif4SmTxt-Light
 # MinKern: +/- 3 inclusive
 # exported from Defcon
 
@@ -15,6 +15,7 @@
 @MMK_L_CYR_Ghe = [Ghe Gje Ghestroke];
 @MMK_L_CYR_Ghe.sc = [Ghe.sc Gje.sc Ghestroke.sc];
 @MMK_L_CYR_Ie = [Ie Iegrave Io Aie Iebreve];
+@MMK_L_CYR_Ie.sc = [Ie.sc Iegrave.sc Io.sc Aie.sc Iebreve.sc];
 @MMK_L_CYR_Ka = [Zhe Ka Ha Kje Zhedescender Kadescender Kabashkir Hadescender Zhebreve];
 @MMK_L_CYR_Ka.sc = [Zhe.sc Ka.sc Ha.sc Kje.sc Zhedescender.sc Kadescender.sc Kabashkir.sc Hadescender.sc Zhebreve.sc];
 @MMK_L_CYR_Ocyr = [Ocyr Ecyr Yu Fita Schwacyr Odieresiscyr Obarcyr];
@@ -696,6 +697,8 @@ pos four.osf seven.osf -29;
 pos four.osf slash 22;
 pos four.osf three.osf -13;
 pos four.osf zero.osf 8;
+pos fraction four.dnom -30;
+pos fraction six.dnom -17;
 pos germandbls V -29;
 pos germandbls backslash -8;
 pos germandbls bullet -13;
@@ -757,6 +760,7 @@ pos liraturkish five.osf -7;
 pos liraturkish seven.osf -40;
 pos liraturkish three.osf -14;
 pos liraturkish two.osf -14;
+pos nine.numr fraction -22;
 pos nine.osf backslash -6;
 pos nine.osf degree -8;
 pos nine.osf er -4;
@@ -839,6 +843,7 @@ pos rupeeindian nine.osf -32;
 pos rupeeindian three.osf -21;
 pos rupeeindian two.osf -22;
 pos rupeeindian zero.osf -14;
+pos seven.numr fraction -52;
 pos seven.osf at -13;
 pos seven.osf de -24;
 pos seven.osf degree 22;
@@ -1013,8 +1018,8 @@ enum pos @MMK_L_LAT_W igrave -6;
 enum pos @MMK_L_LAT_Y atilde -57;
 enum pos @MMK_L_LAT_Y icircumflex -2;
 enum pos @MMK_L_LAT_Y igrave -26;
-enum pos @MMK_L_LAT_f idieresis 61;
-enum pos @MMK_L_LAT_f igrave 59;
+enum pos @MMK_L_LAT_f idieresis 59;
+enum pos @MMK_L_LAT_f igrave 56;
 enum pos @MMK_L_quotedbl yi 29;
 
 # glyph, group:
@@ -3692,6 +3697,8 @@ pos @MMK_L_GRK_Alpha.sc @MMK_R_GRK_Upsilon.sc -82;
 pos @MMK_L_GRK_Alpha.sc Phi.sc -34;
 pos @MMK_L_GRK_Alpha.sc Psi.sc -85;
 pos @MMK_L_GRK_Alpha.sc Tau.sc -56;
+
+subtable;
 pos @MMK_L_GRK_Epsilon @MMK_R_GRK_Upsilon -15;
 pos @MMK_L_GRK_Epsilon @MMK_R_GRK_gamma -7;
 pos @MMK_L_GRK_Epsilon @MMK_R_GRK_upsilon -5;
@@ -3710,8 +3717,6 @@ pos @MMK_L_GRK_Epsilon anoteleia -13;
 pos @MMK_L_GRK_Epsilon bullet -9;
 pos @MMK_L_GRK_Epsilon chi -14;
 pos @MMK_L_GRK_Epsilon tau -25;
-
-subtable;
 pos @MMK_L_GRK_Epsilon.sc Phi.sc -10;
 pos @MMK_L_GRK_Eta @MMK_R_GRK_Theta -19;
 pos @MMK_L_GRK_Eta @MMK_R_GRK_Upsilon -6;
@@ -5106,15 +5111,15 @@ pos @MMK_L_LAT_f @MMK_R_LAT_W 35;
 pos @MMK_L_LAT_f @MMK_R_LAT_Y 35;
 pos @MMK_L_LAT_f @MMK_R_LAT_Z 25;
 pos @MMK_L_LAT_f @MMK_R_LAT_g -11;
-pos @MMK_L_LAT_f @MMK_R_LAT_h -11;
-pos @MMK_L_LAT_f @MMK_R_LAT_i 13;
-pos @MMK_L_LAT_f @MMK_R_LAT_icircumflex 49;
+pos @MMK_L_LAT_f @MMK_R_LAT_h -10;
+pos @MMK_L_LAT_f @MMK_R_LAT_i 12;
+pos @MMK_L_LAT_f @MMK_R_LAT_icircumflex 47;
 pos @MMK_L_LAT_f @MMK_R_LAT_j 10;
 pos @MMK_L_LAT_f @MMK_R_LAT_o -18;
 pos @MMK_L_LAT_f @MMK_R_LAT_s -6;
 pos @MMK_L_LAT_f @MMK_R_LAT_u -3;
-pos @MMK_L_LAT_f @MMK_R_LAT_v 10;
-pos @MMK_L_LAT_f @MMK_R_LAT_y 12;
+pos @MMK_L_LAT_f @MMK_R_LAT_v 9;
+pos @MMK_L_LAT_f @MMK_R_LAT_y 11;
 pos @MMK_L_LAT_f @MMK_R_LAT_z -6;
 pos @MMK_L_LAT_f @MMK_R_colon -6;
 pos @MMK_L_LAT_f @MMK_R_comma -39;
@@ -5125,7 +5130,7 @@ pos @MMK_L_LAT_f @MMK_R_guilsinglleft -31;
 pos @MMK_L_LAT_f @MMK_R_hyphen -25;
 pos @MMK_L_LAT_f @MMK_R_nine.lf 32;
 pos @MMK_L_LAT_f @MMK_R_one.lf 15;
-pos @MMK_L_LAT_f @MMK_R_parenright 102;
+pos @MMK_L_LAT_f @MMK_R_parenright 100;
 pos @MMK_L_LAT_f @MMK_R_periodcentered -13;
 pos @MMK_L_LAT_f @MMK_R_quotedbl 88;
 pos @MMK_L_LAT_f @MMK_R_quoteleft 64;

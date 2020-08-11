@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="one.subs" format="2">
 	<unicode hex="2081"/>
-	<advance width="385"/>
+	<advance width="384"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="65" y="-208" type="line"/>
-			<point x="328" y="-208" type="line"/>
-			<point x="328" y="-171" type="line"/>
-			<point x="245" y="-161" type="line"/>
-			<point x="245" y="197" type="line"/>
-			<point x="227" y="201" type="line"/>
-			<point x="76" y="163" type="line"/>
-			<point x="76" y="121" type="line"/>
-			<point x="151" y="130" type="line"/>
-			<point x="151" y="-161" type="line"/>
-			<point x="65" y="-171" type="line"/>
+			<point name="hintSet0000" x="65" y="-202" type="line"/>
+			<point x="328" y="-202" type="line"/>
+			<point name="hintSet0002" x="328" y="-166" type="line"/>
+			<point x="245" y="-156" type="line"/>
+			<point x="245" y="203" type="line"/>
+			<point x="227" y="207" type="line"/>
+			<point x="76" y="168" type="line"/>
+			<point x="76" y="127" type="line"/>
+			<point x="151" y="135" type="line"/>
+			<point name="hintSet0009" x="151" y="-155" type="line"/>
+			<point x="65" y="-166" type="line"/>
 		</contour>
 	</outline>
 	<lib>
@@ -28,13 +28,31 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -208 42</string>
+							<string>hstem -202 41.5</string>
+							<string>vstem 151 94</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0002</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -202 41</string>
+							<string>vstem 151 94</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0009</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -202 41.5</string>
 							<string>vstem 151 94</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>w385l65-208l328-208l328-171l245-161l245197l227201l76163l76121l151130l151-161l65-171</string>
+				<string>w384l65-202l328-202l328-166l245-156l245203l227207l76168l76127l151135l151-155l65-166</string>
 			</dict>
 		</dict>
 	</lib>
