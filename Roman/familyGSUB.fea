@@ -433,6 +433,7 @@ lookup DECOMPOSITION {
     sub zcaron by z caroncmb;
     sub zdotaccent by z dotaccentcmb;
     sub zdotbelow by z dotbelowcmb;
+
     sub alphatonos by alpha tonoscmb;
     sub epsilontonos by epsilon tonoscmb;
     sub etatonos by eta tonoscmb;
@@ -444,8 +445,11 @@ lookup DECOMPOSITION {
     sub omegatonos by omega tonoscmb;
     sub iotadieresistonos by iota dieresistonoscmb;
     sub upsilondieresistonos by upsilon dieresistonoscmb;
+
     sub Ishort by Icyr brevecmb.cyrcap;
+    sub Io by Ie dieresiscmb.cap;
     sub Gje by Ghe acutecmb.cap;
+    sub Yi by Iukran dieresiscmb.cap;
     sub Kje by Ka acutecmb.cap;
     sub Igravecyr by Icyr gravecmb.cap;
     sub Ushort by Ucyr brevecmb.cyrcap;
@@ -456,8 +460,11 @@ lookup DECOMPOSITION {
     sub Odieresiscyr by Ocyr dieresiscmb.cap;
     sub Umacroncyr by Ucyr macroncmb.cap;
     sub Uacutedblcyr by Ucyr hungarumlautcmb.cap;
+
     sub ishort by icyr brevecmb.cyr;
+    sub io by icyr dieresiscmb;
     sub gje by ghe acutecmb;
+    sub yi by dotlessi dieresiscmb;
     sub kje by ka acutecmb;
     sub igravecyr by icyr gravecmb;
     sub ushort by ucyr brevecmb.cyr;
@@ -467,6 +474,7 @@ lookup DECOMPOSITION {
     sub imacroncyr by icyr macroncmb;
     sub umacroncyr by ucyr macroncmb;
     sub uacutedblcyr by ucyr hungarumlautcmb;
+
 } DECOMPOSITION;
 
 lookup SOFT_DOT {
