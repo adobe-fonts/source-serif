@@ -625,14 +625,6 @@ feature ccmp {
 
 
 #--------------------------------------
-feature case { # case-sensitive forms
-    sub @CASE_SOURCE by @CASE_TARGET;
-    sub @FIG_LINING_TAB by @FIG_CASE;
-    sub anoteleia by anoteleia.cap;
-} case;
-
-
-#--------------------------------------
 feature numr { # Numerators
     lookup NUMR {
         sub @FIG_LINING_TAB by @FIG_NUMR;
@@ -702,6 +694,63 @@ feature subs { # Subscript
 feature sinf { # Scientific Inferiors
     lookup INFERIOR;
 } sinf;
+
+
+#--------------------------------------
+feature c2sc { # caps to small caps
+    sub @LAT_UC_BASIC by @LAT_SC_BASIC;
+    sub @LAT_UC_ACCENTED by @LAT_SC_ACCENTED;
+    sub @LAT_UC_ADDL by @LAT_SC_ADDL;
+    sub Germandbls by Germandbls.sc;
+
+    sub @CYR_UC_BASIC by @CYR_SC_BASIC;
+    sub @CYR_UC_EXTENDED by @CYR_SC_EXTENDED;
+    sub @CYR_UC_BGR by @CYR_SC_BGR;
+
+    sub @GRK_UC_BASIC by @GRK_SC_BASIC;
+    sub @GRK_UC_ACCENTED by @GRK_SC_ACCENTED;
+
+    lookup NUMERALS_SC {
+        sub @FIG_LINING_TAB by @FIG_SC;
+    } NUMERALS_SC;
+
+    sub @PUNCT_SC_SRC by @PUNCT_SC;
+
+} c2sc;
+
+
+#--------------------------------------
+feature smcp { # lowercase to small caps
+    sub @LAT_LC_BASIC by @LAT_SC_BASIC;
+    sub @LAT_LC_ACCENTED by @LAT_SC_ACCENTED;
+    sub @LAT_LC_ADDL by @LAT_SC_ADDL;
+    sub [ dotlessi dotlessj kgreenlandic germandbls    longs tdieresis    f_i    f_l    ]
+     by [ I.sc     J.sc     K.sc         germandbls.sc S.sc  tdieresis.sc f_i.sc f_l.sc ];
+    sub idieresis.narrow by Idieresis.sc;
+    # A substitution for napostrophe is missing - no obvious solution;
+
+    sub @CYR_LC_BASIC by @CYR_SC_BASIC;
+    sub @CYR_LC_EXTENDED by @CYR_SC_EXTENDED;
+    sub @CYR_LC_BGR by [ Ve.sc Ghe.sc De.sc Zhe.sc Ze.sc Icyr.scbgr Ishort.scbgr Ka.sc El.scbgr En.sc Pe.sc Te.sc Ef.scbgr Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Soft.sc Yu.sc Igravecyr.scbgr ];
+    sub be.srb by Be.sc;
+    sub yi.narrow by Yi.sc;
+
+    sub @GRK_LC_BASIC by @GRK_SC_BASIC;
+    sub @GRK_LC_ACCENTED by @GRK_SC_ACCENTED;
+    sub [ sigma.end iotadieresistonos upsilondieresistonos ]
+     by [ Sigma.sc  Iotadieresis.sc   Upsilondieresis.sc   ];
+
+    lookup NUMERALS_SC;
+
+} smcp;
+
+
+#--------------------------------------
+feature case { # case-sensitive forms
+    sub @CASE_SOURCE by @CASE_TARGET;
+    sub @FIG_LINING_TAB by @FIG_CASE;
+    sub anoteleia by anoteleia.cap;
+} case;
 
 
 #--------------------------------------
@@ -783,55 +832,6 @@ feature ss02 {
     lookup SRB_MKD_CYRILLIC;
 
 } ss02;
-
-
-#--------------------------------------
-feature c2sc { # caps to small caps
-    sub @LAT_UC_BASIC by @LAT_SC_BASIC;
-    sub @LAT_UC_ACCENTED by @LAT_SC_ACCENTED;
-    sub @LAT_UC_ADDL by @LAT_SC_ADDL;
-    sub Germandbls by Germandbls.sc;
-
-    sub @CYR_UC_BASIC by @CYR_SC_BASIC;
-    sub @CYR_UC_EXTENDED by @CYR_SC_EXTENDED;
-    sub @CYR_UC_BGR by @CYR_SC_BGR;
-
-    sub @GRK_UC_BASIC by @GRK_SC_BASIC;
-    sub @GRK_UC_ACCENTED by @GRK_SC_ACCENTED;
-
-    lookup NUMERALS_SC {
-        sub @FIG_LINING_TAB by @FIG_SC;
-    } NUMERALS_SC;
-
-    sub @PUNCT_SC_SRC by @PUNCT_SC;
-
-} c2sc;
-
-
-#--------------------------------------
-feature smcp { # lowercase to small caps
-    sub @LAT_LC_BASIC by @LAT_SC_BASIC;
-    sub @LAT_LC_ACCENTED by @LAT_SC_ACCENTED;
-    sub @LAT_LC_ADDL by @LAT_SC_ADDL;
-    sub [ dotlessi dotlessj kgreenlandic germandbls    longs tdieresis    f_i    f_l    ]
-     by [ I.sc     J.sc     K.sc         germandbls.sc S.sc  tdieresis.sc f_i.sc f_l.sc ];
-    sub idieresis.narrow by Idieresis.sc;
-    # A substitution for napostrophe is missing - no obvious solution;
-
-    sub @CYR_LC_BASIC by @CYR_SC_BASIC;
-    sub @CYR_LC_EXTENDED by @CYR_SC_EXTENDED;
-    sub @CYR_LC_BGR by [ Ve.sc Ghe.sc De.sc Zhe.sc Ze.sc Icyr.scbgr Ishort.scbgr Ka.sc El.scbgr En.sc Pe.sc Te.sc Ef.scbgr Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Soft.sc Yu.sc Igravecyr.scbgr ];
-    sub be.srb by Be.sc;
-    sub yi.narrow by Yi.sc;
-
-    sub @GRK_LC_BASIC by @GRK_SC_BASIC;
-    sub @GRK_LC_ACCENTED by @GRK_SC_ACCENTED;
-    sub [ sigma.end iotadieresistonos upsilondieresistonos ]
-     by [ Sigma.sc  Iotadieresis.sc   Upsilondieresis.sc   ];
-
-    lookup NUMERALS_SC;
-
-} smcp;
 
 
 #--------------------------------------

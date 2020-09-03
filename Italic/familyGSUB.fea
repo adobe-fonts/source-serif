@@ -610,14 +610,6 @@ feature ccmp {
 
 
 #--------------------------------------
-feature case { # case-sensitive forms
-    sub @CASE_SOURCE by @CASE_TARGET;
-    sub @FIG_LINING_TAB by @FIG_CASE;
-    sub anoteleia by anoteleia.cap;
-} case;
-
-
-#--------------------------------------
 feature numr { # Numerators
     lookup NUMR {
         sub @FIG_LINING_TAB by @FIG_NUMR;
@@ -686,6 +678,14 @@ feature subs { # Subscript
 feature sinf { # Scientific Inferiors
     lookup INFERIOR;
 } sinf;
+
+
+#--------------------------------------
+feature case { # case-sensitive forms
+    sub @CASE_SOURCE by @CASE_TARGET;
+    sub @FIG_LINING_TAB by @FIG_CASE;
+    sub anoteleia by anoteleia.cap;
+} case;
 
 
 #--------------------------------------
