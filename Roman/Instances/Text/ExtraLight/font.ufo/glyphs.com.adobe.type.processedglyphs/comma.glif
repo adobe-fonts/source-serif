@@ -4,11 +4,14 @@
 	<advance width="300"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="185" y="5" type="curve"/>
+			<point name="hintSet0000" x="77" y="-150" type="line"/>
+			<point x="147" y="-111"/>
+			<point x="185" y="-66"/>
+			<point x="185" y="5" type="curve"/>
 			<point x="185" y="23"/>
 			<point x="182" y="30"/>
 			<point x="178" y="42" type="curve"/>
-			<point x="170" y="50"/>
+			<point name="hintSet0003" x="170" y="50"/>
 			<point x="160" y="53"/>
 			<point x="148" y="53" type="curve"/>
 			<point x="130" y="53"/>
@@ -17,13 +20,10 @@
 			<point x="120" y="9"/>
 			<point x="129" y="-2"/>
 			<point x="145" y="-13" type="curve"/>
-			<point x="161" y="-24" type="line"/>
-			<point x="152" y="-78"/>
-			<point x="126" y="-104"/>
+			<point name="hintSet0006" x="160" y="-24" type="line"/>
+			<point x="151" y="-77"/>
+			<point x="123" y="-101"/>
 			<point x="68" y="-132" type="curve"/>
-			<point x="77" y="-151" type="line"/>
-			<point x="151" y="-115"/>
-			<point x="185" y="-66"/>
 		</contour>
 	</outline>
 	<lib>
@@ -37,13 +37,31 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -151 204</string>
-							<string>vstem 161 24</string>
+							<string>hstem -150 203</string>
+							<string>vstem 160 25</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -150 203</string>
+							<string>vstem 120 65</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -150 203</string>
+							<string>vstem 160 25</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>w300c18551852318230c178421705016053c148531305312040c120251209129-2c145-13l161-24152-78126-104c68-132l77-151151-115185-66</string>
+				<string>w300l77-150147-111185-66c18551852318230c178421705016053c148531305312040c120251209129-2c145-13l160-24151-77123-101c68-132</string>
 			</dict>
 		</dict>
 	</lib>

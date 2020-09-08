@@ -4,26 +4,26 @@
 	<advance width="304"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="224" y="24" type="curve"/>
-			<point x="224" y="56"/>
+			<point name="hintSet0000" x="54" y="-190" type="line"/>
+			<point name="hintSet0001" x="167" y="-140"/>
+			<point x="224" y="-65"/>
+			<point x="224" y="28" type="curve"/>
+			<point x="224" y="60"/>
 			<point x="220" y="88"/>
-			<point x="212" y="112" type="curve"/>
+			<point x="212" y="110" type="curve"/>
 			<point x="200" y="120"/>
 			<point x="180" y="128"/>
 			<point x="156" y="128" type="curve"/>
 			<point x="114" y="128"/>
 			<point x="84" y="100"/>
-			<point x="84" y="56" type="curve"/>
-			<point x="84" y="16"/>
-			<point x="112" y="-6"/>
-			<point x="140" y="-24" type="curve"/>
-			<point x="151" y="-31" type="line"/>
-			<point x="141" y="-92"/>
-			<point x="97" y="-146"/>
-			<point x="12" y="-188" type="curve"/>
-			<point x="36" y="-224" type="line"/>
-			<point x="148" y="-176"/>
-			<point x="224" y="-96"/>
+			<point x="84" y="58" type="curve"/>
+			<point x="84" y="19"/>
+			<point x="106" y="-6"/>
+			<point x="149" y="-6" type="curve"/>
+			<point name="hintSet0006" x="168" y="-15" type="line"/>
+			<point x="155" y="-73"/>
+			<point x="120" y="-110"/>
+			<point x="37" y="-152" type="curve"/>
 		</contour>
 	</outline>
 	<lib>
@@ -37,13 +37,31 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -224 352</string>
+							<string>hstem 15 -21</string>
+							<string>vstem 84 140</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -6 134</string>
+							<string>vstem 84 140</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 6 -21</string>
 							<string>vstem 84 140</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>w304c224242245622088c212112200120180128c15612811412884100c84568416112-6c140-24l151-31141-9297-146c12-188l36-224148-176224-96</string>
+				<string>w304l54-190167-140224-65c224282246022088c212110200120180128c15612811412884100c84588419106-6c149-6l168-15155-73120-110c37-152</string>
 			</dict>
 		</dict>
 	</lib>
