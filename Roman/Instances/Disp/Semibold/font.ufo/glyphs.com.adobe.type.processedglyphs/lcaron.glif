@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="338"/>
+	<advance width="282"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="30" y="0" type="line"/>
@@ -24,18 +24,18 @@
 			<point x="30" y="19" type="line"/>
 		</contour>
 		<contour>
-			<point x="314" y="744" type="curve"/>
-			<point x="300" y="744"/>
+			<point x="311" y="744" type="curve"/>
+			<point x="297" y="744"/>
 			<point x="285" y="739"/>
 			<point x="271" y="732" type="curve"/>
 			<point x="267" y="517" type="line"/>
-			<point x="290" y="517" type="line"/>
-			<point x="315" y="591" type="line"/>
-			<point x="331" y="635"/>
+			<point name="hintSet0017" x="286" y="517" type="line"/>
+			<point name="hintSet0018" x="316" y="591" type="line"/>
+			<point x="332" y="634"/>
 			<point x="344" y="680"/>
 			<point x="344" y="707" type="curve"/>
 			<point x="344" y="727"/>
-			<point x="338" y="744"/>
+			<point x="335" y="744"/>
 		</contour>
 	</outline>
 	<lib>
@@ -77,9 +77,31 @@
 							<string>vstem 269 75</string>
 						</array>
 					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0017</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 23.5</string>
+							<string>hstem 744 -20</string>
+							<string>vstem 95 98</string>
+							<string>vstem 269 17</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0018</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 23.5</string>
+							<string>hstem 744 -20</string>
+							<string>vstem 95 98</string>
+							<string>vstem 269 75</string>
+						</array>
+					</dict>
 				</array>
 				<key>id</key>
-				<string>1b72685d87dd8fc994906dbe926c14903010e57d538afe6658c43022bd8e1f9e8d145d0216c39a2f12160a7d43136e7a5e0515693f1a9d40566bfd48f9c2854f</string>
+				<string>a8dd60d50a2e48ea26f2fd0e2e7906e894af5124a80cabbe1c040f00f917ce88094c0d1b9096f65d8ea90ecb3e763ed9e3a885f2c4014f198e280444c5769278</string>
 			</dict>
 		</dict>
 	</lib>

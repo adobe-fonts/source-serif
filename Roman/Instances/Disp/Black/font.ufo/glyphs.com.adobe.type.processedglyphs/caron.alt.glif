@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="caron.alt" format="2">
-	<advance width="87"/>
+	<advance width="10"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="52" y="730" type="curve"/>
@@ -8,12 +8,12 @@
 			<point x="17" y="723"/>
 			<point x="4" y="714" type="curve"/>
 			<point x="0" y="509" type="line"/>
-			<point x="36" y="509" type="line"/>
-			<point x="67" y="590" type="line"/>
-			<point x="81" y="626"/>
-			<point x="92" y="659"/>
-			<point x="92" y="686" type="curve"/>
-			<point x="92" y="710"/>
+			<point name="hintSet0003" x="26" y="509" type="line"/>
+			<point name="hintSet0004" x="68" y="588" type="line"/>
+			<point x="86" y="622"/>
+			<point x="98" y="659"/>
+			<point x="98" y="686" type="curve"/>
+			<point x="98" y="710"/>
 			<point x="85" y="730"/>
 		</contour>
 	</outline>
@@ -29,12 +29,30 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 509 221</string>
-							<string>vstem 2 90</string>
+							<string>vstem 2 96</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 509 221</string>
+							<string>vstem 2 24</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0004</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 509 221</string>
+							<string>vstem 2 96</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>w87c527303673017723c4714l0509l36509l675908162692659c926869271085730</string>
+				<string>w10c527303673017723c4714l0509l26509l685888662298659c986869871085730</string>
 			</dict>
 		</dict>
 	</lib>
