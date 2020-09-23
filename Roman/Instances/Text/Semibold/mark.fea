@@ -23,11 +23,14 @@ lookup MARK_BASE_aboveLC {
 	@bGC_p_aboveLC = [ p er ];
 	@bGC_s_aboveLC = [ s z ];
 	@bGC_t_aboveLC = [ t tcaron ];
-	@bGC_u_aboveLC = [ u uogonek uhorn icyr.bgr ];
+	@bGC_u_aboveLC = [ u uogonek uhorn icyr.bgr tse.bgr ];
 	@bGC_y_aboveLC = [ y rho ucyr ustraight ustraightstroke ];
 	@bGC_dotlessj_aboveLC = [ dotlessj iota ];
 	@bGC_alphalatin_aboveLC = [ alphalatin gscript ];
 	@bGC_omicron_aboveLC = [ omicron koppa ];
+	@bGC_ze_aboveLC = [ ze ze.bgr ];
+	@bGC_che_aboveLC = [ che che.bgr ];
+	@bGC_hard_aboveLC = [ hard hard.bgr ];
 	pos base @bGC_a_aboveLC <anchor 255 499> mark @MC_aboveLC;
 	pos base @bGC_c_aboveLC <anchor 283 499> mark @MC_aboveLC;
 	pos base @bGC_d_aboveLC <anchor 429 734> mark @MC_aboveLC;
@@ -44,6 +47,9 @@ lookup MARK_BASE_aboveLC {
 	pos base @bGC_dotlessj_aboveLC <anchor 154 499> mark @MC_aboveLC;
 	pos base @bGC_alphalatin_aboveLC <anchor 295 499> mark @MC_aboveLC;
 	pos base @bGC_omicron_aboveLC <anchor 267 499> mark @MC_aboveLC;
+	pos base @bGC_ze_aboveLC <anchor 230 499> mark @MC_aboveLC;
+	pos base @bGC_che_aboveLC <anchor 266 499> mark @MC_aboveLC;
+	pos base @bGC_hard_aboveLC <anchor 274 499> mark @MC_aboveLC;
 	pos base b <anchor 157 734> mark @MC_aboveLC;
 	pos base f <anchor 304 734> mark @MC_aboveLC;
 	pos base h <anchor 151 734> mark @MC_aboveLC;
@@ -69,12 +75,9 @@ lookup MARK_BASE_aboveLC {
 	pos base omega <anchor 380 499> mark @MC_aboveLC;
 	pos base digamma <anchor 262 499> mark @MC_aboveLC;
 	pos base zhe <anchor 396 499> mark @MC_aboveLC;
-	pos base ze <anchor 230 499> mark @MC_aboveLC;
 	pos base icyr <anchor 328 499> mark @MC_aboveLC;
 	pos base ka <anchor 307 499> mark @MC_aboveLC;
 	pos base tse <anchor 313 499> mark @MC_aboveLC;
-	pos base che <anchor 266 499> mark @MC_aboveLC;
-	pos base hard <anchor 274 499> mark @MC_aboveLC;
 	pos base yeru <anchor 395 499> mark @MC_aboveLC;
 	pos base ecyr <anchor 224 499> mark @MC_aboveLC;
 	pos base yu <anchor 369 499> mark @MC_aboveLC;
@@ -82,6 +85,10 @@ lookup MARK_BASE_aboveLC {
 	pos base ieukran <anchor 291 499> mark @MC_aboveLC;
 	pos base yat <anchor 267 644> mark @MC_aboveLC;
 	pos base izhitsa <anchor 296 499> mark @MC_aboveLC;
+	pos base ghe.bgr <anchor 229 499> mark @MC_aboveLC;
+	pos base zhe.bgr <anchor 396 734> mark @MC_aboveLC;
+	pos base ka.bgr <anchor 307 734> mark @MC_aboveLC;
+	pos base yu.bgr <anchor 369 734> mark @MC_aboveLC;
 } MARK_BASE_aboveLC;
 
 
@@ -106,7 +113,7 @@ lookup MARK_BASE_aboveUC {
 	@bGC_O.sc_aboveUC = [ O.sc Q.sc Ohorn.sc Oslash.sc Ocyr.sc Fita.sc Obarcyr.sc ];
 	@bGC_P.sc_aboveUC = [ P.sc Er.sc ];
 	@bGC_R.sc_aboveUC = [ R.sc X.sc ];
-	@bGC_U.sc_aboveUC = [ U.sc Uogonek.sc Uhorn.sc Icyr.sc ];
+	@bGC_U.sc_aboveUC = [ U.sc Uogonek.sc Uhorn.sc Icyr.sc Icyr.scbgr ];
 	@bGC_Y.sc_aboveUC = [ Y.sc Ustraight.sc Ustraightstroke.sc ];
 	pos base @bGC_A_aboveUC <anchor 336 684> mark @MC_aboveUC;
 	pos base @bGC_C_aboveUC <anchor 387 684> mark @MC_aboveUC;
@@ -187,7 +194,6 @@ lookup MARK_BASE_aboveUC {
 	pos base Ieukran.sc <anchor 345 565> mark @MC_aboveUC;
 	pos base Yat.sc <anchor 278 613> mark @MC_aboveUC;
 	pos base Izhitsa.sc <anchor 343 565> mark @MC_aboveUC;
-	pos base Icyr.scbgr <anchor 373 565> mark @MC_aboveUC;
 } MARK_BASE_aboveUC;
 
 
@@ -305,12 +311,12 @@ lookup MARK_BASE_belowLC {
 
 
 lookup MARK_BASE_hornLC {
-	pos base O <anchor 503 565> mark @MC_hornLC;
-	pos base U <anchor 591 579> mark @MC_hornLC;
-	pos base o <anchor 396 378> mark @MC_hornLC;
-	pos base u <anchor 490 378> mark @MC_hornLC;
-	pos base O.sc <anchor 485 466> mark @MC_hornLC;
-	pos base U.sc <anchor 526 435> mark @MC_hornLC;
+	pos base O <anchor 524 565> mark @MC_hornLC;
+	pos base U <anchor 610 587> mark @MC_hornLC;
+	pos base o <anchor 400 383> mark @MC_hornLC;
+	pos base u <anchor 460 441> mark @MC_hornLC;
+	pos base O.sc <anchor 504 444> mark @MC_hornLC;
+	pos base U.sc <anchor 541 449> mark @MC_hornLC;
 } MARK_BASE_hornLC;
 
 
