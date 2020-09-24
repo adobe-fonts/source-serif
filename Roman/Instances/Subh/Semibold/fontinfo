@@ -33,17 +33,6 @@ begin FDDict UPPERCASE
 end FDDict UPPERCASE
 
 
-begin FDDict FIGURES
-    BaselineYCoord 0
-    BaselineOvershoot -16
-    FigHeight 639
-    FigOvershoot 14
-    DominantV [115]
-    DominantH [38]
-    FlexOK false
-end FDDict FIGURES
-
-
 begin FDDict TEXT_FIGURES
     BaselineYCoord 0
     BaselineOvershoot -16
@@ -53,6 +42,17 @@ begin FDDict TEXT_FIGURES
     DominantH [38]
     FlexOK false
 end FDDict TEXT_FIGURES
+
+
+begin FDDict FIGURES
+    BaselineYCoord 0
+    BaselineOvershoot -16
+    FigHeight 639
+    FigOvershoot 14
+    DominantV [115]
+    DominantH [38]
+    FlexOK false
+end FDDict FIGURES
 
 
 begin FDDict SMALL_CAPS
@@ -124,6 +124,11 @@ begin GlyphSet UPPERCASE
 end GlyphSet UPPERCASE
 
 
+begin GlyphSet TEXT_FIGURES
+        ^(zero|one|two|three|four|five|six|seven|eight|nine)\.t?(osf)$
+end GlyphSet TEXT_FIGURES
+
+
 begin GlyphSet FIGURES
         ^(zero|one|two|three|four|five|six|seven|eight|nine)(\.)?(lf)?(slash)?(dnom|numr)$
         ^(dollar|cent|sterling|yen|Euro|florin|colonmonetary|lira|naira|peseta|dong|peso|guarani|cedi|rupeeindian|currency|won|tugrik|hryvnia|tenge|ruble|bitcoin)(turkish)?$
@@ -131,11 +136,6 @@ begin GlyphSet FIGURES
         ^(one|two|three|five|seven)(half|quarter|third|eighth)(s)?$
         ^\.notdef$
 end GlyphSet FIGURES
-
-
-begin GlyphSet TEXT_FIGURES
-        ^(zero|one|two|three|four|five|six|seven|eight|nine)\.t?(osf)$
-end GlyphSet TEXT_FIGURES
 
 
 begin GlyphSet SMALL_CAPS
