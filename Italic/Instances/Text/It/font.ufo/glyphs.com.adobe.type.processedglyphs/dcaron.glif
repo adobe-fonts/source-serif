@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dcaron" format="2">
 	<unicode hex="010F"/>
-	<advance width="597"/>
+	<advance width="538"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="106" y="151" type="curve"/>
@@ -37,7 +37,7 @@
 			<point x="379" y="110"/>
 			<point x="384" y="135" type="curve"/>
 			<point x="505" y="732" type="line"/>
-			<point x="493" y="740" type="line"/>
+			<point name="hintSet0014" x="493" y="740" type="line"/>
 			<point x="322" y="690" type="line"/>
 			<point x="318" y="661" type="line"/>
 			<point x="419" y="654" type="line"/>
@@ -57,7 +57,7 @@
 			<point x="297" y="70"/>
 			<point x="297" y="53"/>
 			<point x="297" y="39" type="curve"/>
-			<point x="297" y="4"/>
+			<point name="hintSet0024" x="297" y="4"/>
 			<point x="322" y="-13"/>
 		</contour>
 		<contour>
@@ -88,13 +88,38 @@
 						<array>
 							<string>hstem -13 69</string>
 							<string>hstem 422 66</string>
+							<string>hstem 750 -20</string>
+							<string>vstem 29 77</string>
+							<string>vstem 297 79</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0014</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 69</string>
+							<string>hstem 422 66</string>
+							<string>hstem 740 -20</string>
+							<string>vstem 29 77</string>
+							<string>vstem 297 79</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0024</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 69</string>
+							<string>hstem 422 66</string>
+							<string>hstem 750 -20</string>
 							<string>vstem 29 77</string>
 							<string>vstem 297 79</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>c76011ccf82b01f05ebbaa053f40c73b267836f3657a8e6b255782a9730d06391937bcd8faf3e7acbad442d342465c06b264e8068a77df35a6d5b0fa05c14508</string>
+				<string>fa386ea8673ebde5f27c9f9aa7c6135d368139c6747e047556a3a7cb9fb45adee674102c457d16fb3465776860c89dc2237ea70551df742068052e4d624e1be1</string>
 			</dict>
 		</dict>
 	</lib>

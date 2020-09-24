@@ -6,11 +6,11 @@
 		<contour>
 			<point name="hintSet0000" x="258" y="-7" type="line"/>
 			<point x="295" y="-7" type="line"/>
-			<point name="hintSet0002" x="538" y="495" type="line"/>
-			<point x="574" y="572"/>
+			<point x="538" y="495" type="line"/>
+			<point name="hintSet0003" x="574" y="572"/>
 			<point x="598" y="613"/>
 			<point x="632" y="638" type="curve"/>
-			<point x="640" y="623" type="line"/>
+			<point name="hintSet0004" x="640" y="623" type="line"/>
 			<point x="651" y="603"/>
 			<point x="665" y="591"/>
 			<point x="685" y="591" type="curve"/>
@@ -51,7 +51,17 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0002</string>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 14 -21</string>
+							<string>hstem 638 48</string>
+							<string>vstem 75 650</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0004</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 14 -21</string>

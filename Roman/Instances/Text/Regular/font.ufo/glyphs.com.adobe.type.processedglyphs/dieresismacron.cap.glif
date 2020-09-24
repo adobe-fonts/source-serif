@@ -3,20 +3,20 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="-112" y="745" type="curve"/>
-			<point x="-80" y="745"/>
+			<point name="hintSet0001" x="-80" y="745"/>
 			<point x="-55" y="768"/>
 			<point x="-55" y="800" type="curve"/>
 			<point x="-55" y="832"/>
 			<point x="-80" y="855"/>
 			<point x="-112" y="855" type="curve"/>
-			<point x="-143" y="855"/>
+			<point name="hintSet0003" x="-143" y="855"/>
 			<point x="-170" y="832"/>
 			<point x="-170" y="800" type="curve"/>
 			<point x="-170" y="768"/>
 			<point x="-143" y="745"/>
 		</contour>
 		<contour>
-			<point x="111" y="745" type="curve"/>
+			<point name="hintSet0005" x="111" y="745" type="curve"/>
 			<point x="142" y="745"/>
 			<point x="169" y="768"/>
 			<point x="169" y="800" type="curve"/>
@@ -30,10 +30,10 @@
 			<point x="79" y="745"/>
 		</contour>
 		<contour>
-			<point x="-151" y="913" type="line"/>
-			<point x="151" y="913" type="line"/>
-			<point x="151" y="976" type="line"/>
-			<point x="-151" y="976" type="line"/>
+			<point x="-140" y="913" type="line"/>
+			<point x="140" y="913" type="line"/>
+			<point x="140" y="976" type="line"/>
+			<point x="-140" y="976" type="line"/>
 		</contour>
 	</outline>
 	<anchor name="_aboveUC" x="0" y="690"/>
@@ -54,9 +54,42 @@
 							<string>vstem 54 115</string>
 						</array>
 					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 745 110</string>
+							<string>hstem 913 63</string>
+							<string>vstem -140 85</string>
+							<string>vstem 54 115</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 745 110</string>
+							<string>hstem 913 63</string>
+							<string>vstem -170 115</string>
+							<string>vstem 54 115</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0005</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 745 110</string>
+							<string>hstem 913 63</string>
+							<string>vstem -140 85</string>
+							<string>vstem 54 115</string>
+						</array>
+					</dict>
 				</array>
 				<key>id</key>
-				<string>7a0b064f19b6cf160933965133a4ebde81bb28b320f23bf840ff792d40cda0e28f83f2fccfd9be816210a53b46f5384777a3c1b400b05bbc8e0a7e9a64c9bcd3</string>
+				<string>c97e1dfa55b2b99ffb61fd0930be4d3c82b7ee0dd0e588290a004d164362986129b44c624b47f2c7a3555fd6960283511b784a9f6ee0a3ca8a3fac4cba08955e</string>
 			</dict>
 		</dict>
 	</lib>

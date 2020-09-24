@@ -7,7 +7,7 @@
 			<point name="hintSet0000" x="94" y="645" type="line"/>
 			<point x="158" y="635" type="line"/>
 			<point x="277" y="322" type="line"/>
-			<point x="46" y="29" type="line"/>
+			<point name="hintSet0003" x="46" y="29" type="line"/>
 			<point x="-28" y="19" type="line"/>
 			<point name="hintSet0005" x="-31" y="0" type="line"/>
 			<point x="156" y="0" type="line"/>
@@ -25,8 +25,8 @@
 			<point x="650" y="645" type="line"/>
 			<point x="654" y="664" type="line"/>
 			<point x="466" y="664" type="line"/>
-			<point name="hintSet0021" x="462" y="645" type="line"/>
-			<point name="hintSet0022" x="542" y="635" type="line"/>
+			<point x="462" y="645" type="line"/>
+			<point x="542" y="635" type="line"/>
 			<point x="356" y="390" type="line"/>
 			<point x="262" y="635" type="line"/>
 			<point x="338" y="645" type="line"/>
@@ -45,8 +45,18 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
+							<string>hstem 0 23.5</string>
+							<string>hstem 640 24</string>
+							<string>vstem -31 685</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0003</string>
+						<key>stems</key>
+						<array>
 							<string>hstem 0 24</string>
-							<string>hstem 645 -20</string>
+							<string>hstem 640 24</string>
 							<string>vstem -31 685</string>
 						</array>
 					</dict>
@@ -73,26 +83,6 @@
 					<dict>
 						<key>pointTag</key>
 						<string>hintSet0010</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 0 23.5</string>
-							<string>hstem 640 24</string>
-							<string>vstem -31 685</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0021</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 0 23.5</string>
-							<string>hstem 645 -20</string>
-							<string>vstem -31 685</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0022</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 23.5</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="302"/>
+	<advance width="250"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="109" y="-13" type="curve"/>
@@ -34,7 +34,7 @@
 			<point x="85" y="-13"/>
 		</contour>
 		<contour>
-			<point x="354" y="753" type="curve"/>
+			<point name="hintSet0015" x="354" y="753" type="curve"/>
 			<point x="348" y="753"/>
 			<point x="343" y="751"/>
 			<point x="337" y="748" type="curve"/>
@@ -60,13 +60,23 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -13 26</string>
-							<string>hstem 718 15</string>
+							<string>hstem 718 20</string>
+							<string>vstem 67 27</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0015</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 26</string>
+							<string>hstem 753 -20</string>
 							<string>vstem 67 27</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>788f05e5e9764a2dabb61c321e817d23df231ad4d2e52c798cc95661eee879fd45cbcde25253aa32f20aae6a4bbc4facdbae141163358ca19b8a69350eb5e990</string>
+				<string>387ea2d7a2f33b6d946ac065e93f83bf2ca7045c2d1c28df53adccf8290efc1ba4546c72c259f9d921f0bb36c6560250140a8a36356e652bc4bf419ff5020657</string>
 			</dict>
 		</dict>
 	</lib>

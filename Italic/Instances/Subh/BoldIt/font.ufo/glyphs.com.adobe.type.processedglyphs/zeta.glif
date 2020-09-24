@@ -4,8 +4,7 @@
 	<advance width="397"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="220" y="-183" type="curve"/>
-			<point x="247" y="-207" type="line"/>
+			<point name="hintSet0000" x="247" y="-207" type="line"/>
 			<point x="330" y="-147"/>
 			<point x="376" y="-87"/>
 			<point x="376" y="-24" type="curve"/>
@@ -15,14 +14,14 @@
 			<point x="183" y="135"/>
 			<point x="164" y="158"/>
 			<point x="164" y="207" type="curve"/>
-			<point x="164" y="301"/>
-			<point x="258" y="440"/>
-			<point x="472" y="637" type="curve"/>
-			<point x="484" y="719" type="line"/>
-			<point x="138" y="737" type="line"/>
-			<point x="117" y="614" type="line"/>
-			<point x="380" y="616" type="line"/>
-			<point x="131" y="412"/>
+			<point name="hintSet0004" x="164" y="300"/>
+			<point x="258" y="438"/>
+			<point x="470" y="635" type="curve"/>
+			<point x="486" y="718" type="line"/>
+			<point name="hintSet0006" x="140" y="736" type="line"/>
+			<point x="114" y="612" type="line"/>
+			<point x="380" y="615" type="line"/>
+			<point x="131" y="410"/>
 			<point x="27" y="274"/>
 			<point x="27" y="162" type="curve"/>
 			<point x="27" y="86"/>
@@ -33,6 +32,7 @@
 			<point x="257" y="-84" type="curve"/>
 			<point x="257" y="-116"/>
 			<point x="241" y="-148"/>
+			<point x="220" y="-183" type="curve"/>
 		</contour>
 	</outline>
 	<lib>
@@ -46,14 +46,34 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem 615 113</string>
+							<string>hstem 613.5 122.5</string>
+							<string>vstem 27 137</string>
+							<string>vstem 257 119</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0004</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 736 -20</string>
+							<string>vstem 27 137</string>
+							<string>vstem 257 119</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 613.5 122.5</string>
 							<string>vstem 27 137</string>
 							<string>vstem 257 119</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>733e7e389f050872517baaa146c608fb48916f26de5f893050602ce702526e432d25aa4c2726e4af14c37d80033ab829db29637ef0d99bbf188f0d1f0f5c98fd</string>
+				<string>bbe3e254e1a9f439a3116745add2bdcdbedaaf3b84c8422eff9367d5b24a3b54ee526d2322c4361f61b0953aaa977fb5ce3788e1213a09d1d465cf6f9e9fdfa1</string>
 			</dict>
 		</dict>
 	</lib>

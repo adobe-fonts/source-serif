@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="375"/>
+	<advance width="308"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="114" y="-14" type="curve"/>
@@ -19,7 +19,7 @@
 			<point x="161" y="115"/>
 			<point x="167" y="138" type="curve"/>
 			<point x="287" y="719" type="line"/>
-			<point x="274" y="730" type="line"/>
+			<point name="hintSet0007" x="274" y="730" type="line"/>
 			<point x="83" y="676" type="line"/>
 			<point x="78" y="643" type="line"/>
 			<point x="158" y="634" type="line"/>
@@ -34,7 +34,7 @@
 			<point x="75" y="-14"/>
 		</contour>
 		<contour>
-			<point x="406" y="740" type="curve"/>
+			<point name="hintSet0015" x="406" y="740" type="curve"/>
 			<point x="389" y="740"/>
 			<point x="377" y="737"/>
 			<point x="360" y="730" type="curve"/>
@@ -60,7 +60,7 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 7 -21</string>
-							<string>hstem 676 -20</string>
+							<string>hstem 740 -20</string>
 							<string>vstem 47 112</string>
 						</array>
 					</dict>
@@ -70,7 +70,17 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -14 80</string>
-							<string>hstem 676 -20</string>
+							<string>hstem 740 -20</string>
+							<string>vstem 47 112</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0007</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 7 -21</string>
+							<string>hstem 730 -20</string>
 							<string>vstem 47 112</string>
 						</array>
 					</dict>
@@ -80,13 +90,23 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 7 -21</string>
-							<string>hstem 676 -20</string>
+							<string>hstem 740 -20</string>
 							<string>vstem 47 112</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0015</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 7 -21</string>
+							<string>hstem 740 -20</string>
+							<string>vstem 47 399</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>c02bf35cd49a891f671b852b3fd1415627900e15f3eedb5a5d3308f919a1147ee1f01ef833cabdbe048dfae1f1eefbf5707da188caed009ae4cf9d7283d897d9</string>
+				<string>6ff8e8fb6cf56ece05a52a6eccfdb68e0af0ebd2011bb5ccd10d46b4caba79bfdae261cea11130e0ca26c88d4a584d6429448aa4e6dedb7fa35e72be8d8ff863</string>
 			</dict>
 		</dict>
 	</lib>

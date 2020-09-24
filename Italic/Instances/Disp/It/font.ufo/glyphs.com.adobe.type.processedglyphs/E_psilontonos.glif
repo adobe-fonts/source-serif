@@ -5,7 +5,7 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="245" y="654" type="line"/>
-			<point name="hintSet0001" x="326" y="645" type="line"/>
+			<point x="326" y="645" type="line"/>
 			<point x="311" y="550"/>
 			<point x="295" y="456"/>
 			<point x="278" y="361" type="curve"/>
@@ -38,7 +38,7 @@
 		<contour>
 			<point x="68" y="480" type="curve"/>
 			<point x="83" y="475" type="line"/>
-			<point x="115" y="520"/>
+			<point name="hintSet0028" x="115" y="520"/>
 			<point x="149" y="565"/>
 			<point x="182" y="610" type="curve"/>
 			<point x="196" y="627"/>
@@ -50,7 +50,7 @@
 			<point x="155" y="686"/>
 			<point x="145" y="664"/>
 			<point x="135" y="641" type="curve"/>
-			<point x="113" y="587"/>
+			<point name="hintSet0032" x="113" y="587"/>
 			<point x="91" y="534"/>
 		</contour>
 	</outline>
@@ -65,17 +65,6 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem 0 24</string>
-							<string>hstem 330 24</string>
-							<string>hstem 654 -20</string>
-							<string>vstem 68 599</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0001</string>
-						<key>stems</key>
-						<array>
 							<string>hstem 0 20.5</string>
 							<string>hstem 330 24</string>
 							<string>hstem 649.5 20.5</string>
@@ -85,6 +74,28 @@
 					<dict>
 						<key>pointTag</key>
 						<string>hintSet0005</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 24</string>
+							<string>hstem 330 24</string>
+							<string>hstem 646 24</string>
+							<string>vstem 68 599</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0028</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 24</string>
+							<string>hstem 330 24</string>
+							<string>hstem 686 -20</string>
+							<string>vstem 68 599</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0032</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 24</string>

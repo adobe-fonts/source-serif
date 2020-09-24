@@ -5,10 +5,10 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="166" y="412" type="curve"/>
-			<point x="220" y="412"/>
+			<point name="hintSet0001" x="220" y="412"/>
 			<point x="258" y="451"/>
 			<point x="287" y="499" type="curve"/>
-			<point x="265" y="514" type="line"/>
+			<point name="hintSet0002" x="265" y="514" type="line"/>
 			<point x="242" y="484"/>
 			<point x="227" y="471"/>
 			<point x="214" y="471" type="curve"/>
@@ -40,7 +40,26 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 412 59</string>
-							<string>hstem 514 -20</string>
+							<string>hstem 499 -20</string>
+							<string>vstem 110 90</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 499 -20</string>
+							<string>vstem 110 90</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0002</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 412 59</string>
+							<string>hstem 499 -20</string>
 							<string>vstem 110 90</string>
 						</array>
 					</dict>

@@ -33,8 +33,8 @@
 			<point x="274" y="462"/>
 			<point x="209" y="363" type="curve"/>
 			<point x="196" y="363" type="line"/>
-			<point x="277" y="735" type="line"/>
-			<point x="252" y="741" type="line"/>
+			<point name="hintSet0012" x="277" y="735" type="line"/>
+			<point name="hintSet0013" x="252" y="741" type="line"/>
 			<point x="109" y="722" type="line"/>
 			<point x="103" y="690" type="line"/>
 			<point x="214" y="682" type="line"/>
@@ -47,7 +47,7 @@
 			<point x="174" y="-234" type="line"/>
 			<point x="182" y="-199" type="line"/>
 			<point x="82" y="-199" type="line"/>
-			<point name="hintSet0024" x="94" y="-133"/>
+			<point x="94" y="-133"/>
 			<point x="107" y="-65"/>
 			<point x="119" y="0" type="curve"/>
 			<point name="hintSet0025" x="137" y="-7"/>
@@ -68,19 +68,31 @@
 							<string>hstem -234 35</string>
 							<string>hstem -12 37</string>
 							<string>hstem 471 44</string>
-							<string>hstem 690 -20</string>
+							<string>hstem 741 -20</string>
 							<string>vstem 455 56</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0024</string>
+						<string>hintSet0012</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -234 35</string>
+							<string>hstem -12 37</string>
+							<string>hstem 471 44</string>
+							<string>hstem 735 -20</string>
+							<string>vstem 455 56</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0013</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -234 35</string>
 							<string>hstem 21 -21</string>
 							<string>hstem 471 44</string>
-							<string>hstem 690 -20</string>
+							<string>hstem 741 -20</string>
 							<string>vstem 455 56</string>
 						</array>
 					</dict>
@@ -92,7 +104,7 @@
 							<string>hstem -234 35</string>
 							<string>hstem -12 37</string>
 							<string>hstem 471 44</string>
-							<string>hstem 690 -20</string>
+							<string>hstem 741 -20</string>
 							<string>vstem 455 56</string>
 						</array>
 					</dict>

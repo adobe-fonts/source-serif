@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="311"/>
+	<advance width="265"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="107" y="-13" type="curve"/>
@@ -18,9 +18,9 @@
 			<point x="105" y="66"/>
 			<point x="109" y="89"/>
 			<point x="114" y="110" type="curve"/>
-			<point x="242" y="737" type="line"/>
+			<point name="hintSet0006" x="242" y="737" type="line"/>
 			<point x="232" y="745" type="line"/>
-			<point x="83" y="718" type="line"/>
+			<point name="hintSet0008" x="83" y="718" type="line"/>
 			<point x="80" y="701" type="line"/>
 			<point x="187" y="697" type="line"/>
 			<point x="177" y="636"/>
@@ -34,18 +34,18 @@
 			<point x="81" y="-13"/>
 		</contour>
 		<contour>
-			<point x="361" y="749" type="curve"/>
-			<point x="351" y="749"/>
+			<point x="360" y="749" type="curve"/>
+			<point x="350" y="749"/>
 			<point x="343" y="747"/>
 			<point x="334" y="743" type="curve"/>
 			<point x="291" y="529" type="line"/>
 			<point x="310" y="527" type="line"/>
-			<point x="339" y="602" type="line"/>
-			<point x="359" y="655"/>
-			<point x="381" y="708"/>
-			<point x="381" y="730" type="curve"/>
-			<point x="382" y="740"/>
-			<point x="377" y="749"/>
+			<point x="339" y="603" type="line"/>
+			<point x="359" y="656"/>
+			<point x="380" y="708"/>
+			<point x="380" y="729" type="curve"/>
+			<point x="381" y="740"/>
+			<point x="376" y="749"/>
 		</contour>
 	</outline>
 	<lib>
@@ -61,12 +61,34 @@
 						<array>
 							<string>hstem -13 40</string>
 							<string>hstem 699 19</string>
+							<string>hstem 749 -20</string>
+							<string>vstem 60 45</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 40</string>
+							<string>hstem 737 -20</string>
+							<string>vstem 60 45</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0008</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 40</string>
+							<string>hstem 699 19</string>
+							<string>hstem 749 -20</string>
 							<string>vstem 60 45</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>29cab8004b41343ae7d9fa1f63ac89c820b137370be9a6ee5743077bf9cc3e19a84c5dd05f6029fef5dc7a9b35601f656a005342c382926b79406e5b26902ed9</string>
+				<string>c97d18dc2945f70ffc3d10611cf8f2601a364d44b618f0eb1108fb2b6b90f1765cd431757c962a945a84392d909fb75547bf16e804aa4a4fbd629f11cef809a8</string>
 			</dict>
 		</dict>
 	</lib>

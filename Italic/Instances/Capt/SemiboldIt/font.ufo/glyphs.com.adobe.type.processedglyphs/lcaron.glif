@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="396"/>
+	<advance width="347"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="163" y="-13" type="curve"/>
@@ -19,7 +19,7 @@
 			<point x="199" y="137"/>
 			<point x="206" y="171" type="curve"/>
 			<point x="321" y="723" type="line"/>
-			<point x="272" y="733" type="line"/>
+			<point name="hintSet0007" x="272" y="733" type="line"/>
 			<point x="86" y="696" type="line"/>
 			<point x="74" y="641" type="line"/>
 			<point x="176" y="631" type="line"/>
@@ -30,11 +30,11 @@
 			<point x="71" y="140"/>
 			<point x="64" y="114"/>
 			<point x="64" y="80" type="curve"/>
-			<point x="64" y="23"/>
+			<point name="hintSet0014" x="64" y="23"/>
 			<point x="93" y="-13"/>
 		</contour>
 		<contour>
-			<point x="440" y="734" type="curve"/>
+			<point name="hintSet0015" x="440" y="734" type="curve"/>
 			<point x="424" y="734"/>
 			<point x="413" y="732"/>
 			<point x="405" y="730" type="curve"/>
@@ -60,12 +60,43 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -13 83</string>
+							<string>hstem 723 -20</string>
 							<string>vstem 64 130</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0007</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 83</string>
+							<string>hstem 733 -20</string>
+							<string>vstem 64 130</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0014</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 83</string>
+							<string>hstem 723 -20</string>
+							<string>vstem 64 130</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0015</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 83</string>
+							<string>hstem 734 -20</string>
+							<string>vstem 64 425</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>c665e7670750bb66764d5315651479d9b4c4bd14b58d6d654de0915bc9dc43244e5d092b60d4335e6959762f69635cb43b9391b18f2f22e71419f9a6223e8fe7</string>
+				<string>62b17649dd931879403cf5429d5ad4f93197bea15d174af4590dda5a064ff646161dc00f4afdc553f2b8d34596b730c7868f057e6245ee71cb1b9bd0f6676eb4</string>
 			</dict>
 		</dict>
 	</lib>

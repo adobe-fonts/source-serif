@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="322"/>
+	<advance width="268"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="110" y="-13" type="curve"/>
@@ -18,9 +18,9 @@
 			<point x="109" y="69"/>
 			<point x="113" y="92"/>
 			<point x="118" y="114" type="curve"/>
-			<point x="244" y="736" type="line"/>
+			<point name="hintSet0006" x="244" y="736" type="line"/>
 			<point x="233" y="745" type="line"/>
-			<point x="80" y="716" type="line"/>
+			<point name="hintSet0008" x="80" y="716" type="line"/>
 			<point x="77" y="696" type="line"/>
 			<point x="187" y="692" type="line"/>
 			<point x="177" y="629"/>
@@ -61,12 +61,34 @@
 						<array>
 							<string>hstem -13 43</string>
 							<string>hstem 694 22</string>
+							<string>hstem 751 -20</string>
+							<string>vstem 63 46</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 43</string>
+							<string>hstem 736 -20</string>
+							<string>vstem 63 46</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0008</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 43</string>
+							<string>hstem 694 22</string>
+							<string>hstem 751 -20</string>
 							<string>vstem 63 46</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>8c7e304d512f1d37b60562fc18262a1e592b72933c6f3b7a0b934885cd8c33fac0c355c5c747d7e0af906391cb52ccb1c5ae046039f0591b72b704c2d1fa0047</string>
+				<string>80d30698180e9ce4666f9e0e5f89800ffd1d0ef0dd3223e256f7039c214083768d9f03e3513e251cef85f437e531531cb57a5e33740f8b5e6ec18d0ba925b06a</string>
 			</dict>
 		</dict>
 	</lib>

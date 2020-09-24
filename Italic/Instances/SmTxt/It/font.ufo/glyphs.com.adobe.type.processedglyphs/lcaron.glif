@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="351"/>
+	<advance width="304"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="126" y="-13" type="curve"/>
@@ -18,8 +18,8 @@
 			<point x="142" y="94"/>
 			<point x="145" y="115"/>
 			<point x="152" y="146" type="curve"/>
-			<point x="270" y="731" type="line"/>
-			<point x="249" y="740" type="line"/>
+			<point name="hintSet0006" x="270" y="731" type="line"/>
+			<point name="hintSet0007" x="249" y="740" type="line"/>
 			<point x="80" y="695" type="line"/>
 			<point x="74" y="660" type="line"/>
 			<point x="174" y="651" type="line"/>
@@ -30,7 +30,7 @@
 			<point x="64" y="93"/>
 			<point x="60" y="74"/>
 			<point x="60" y="55" type="curve"/>
-			<point x="60" y="11"/>
+			<point name="hintSet0014" x="60" y="11"/>
 			<point x="87" y="-13"/>
 		</contour>
 		<contour>
@@ -60,12 +60,43 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -13 69</string>
+							<string>hstem 746 -20</string>
+							<string>vstem 60 82</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 69</string>
+							<string>hstem 731 -20</string>
+							<string>vstem 60 82</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0007</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 69</string>
+							<string>hstem 740 -20</string>
+							<string>vstem 60 82</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0014</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 69</string>
+							<string>hstem 746 -20</string>
 							<string>vstem 60 82</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>c26a86c5726a0b13ec2236f9aea7ee9fab5851cf6ea0dee4327cd94b36160138c4e94ca657737a01a3ed38f5f999835a3e09738b62444b072778b9138e8dbfad</string>
+				<string>9d62cf27d91e858b2debb9f3c52cc449c5dfbdef4ea28cc96df125cec3b33a030ac649e4318b4d977b3e0425b645be6e6472ba902ce30fff618382cf6e37f6cb</string>
 			</dict>
 		</dict>
 	</lib>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="447"/>
+	<advance width="373"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="172" y="-15" type="curve"/>
@@ -19,7 +19,7 @@
 			<point x="233" y="150"/>
 			<point x="240" y="178" type="curve"/>
 			<point x="355" y="716" type="line"/>
-			<point x="298" y="726" type="line"/>
+			<point name="hintSet0007" x="298" y="726" type="line"/>
 			<point x="89" y="686" type="line"/>
 			<point x="76" y="624" type="line"/>
 			<point x="169" y="615" type="line"/>
@@ -34,7 +34,7 @@
 			<point x="89" y="-15"/>
 		</contour>
 		<contour>
-			<point x="472" y="727" type="curve"/>
+			<point name="hintSet0015" x="472" y="727" type="curve"/>
 			<point x="454" y="727"/>
 			<point x="441" y="725"/>
 			<point x="434" y="723" type="curve"/>
@@ -60,6 +60,7 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 6 -21</string>
+							<string>hstem 727 -20</string>
 							<string>vstem 60 169</string>
 						</array>
 					</dict>
@@ -69,6 +70,17 @@
 						<key>stems</key>
 						<array>
 							<string>hstem -15 100</string>
+							<string>hstem 716 -20</string>
+							<string>vstem 60 169</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0007</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 6 -21</string>
+							<string>hstem 726 -20</string>
 							<string>vstem 60 169</string>
 						</array>
 					</dict>
@@ -78,12 +90,23 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 6 -21</string>
+							<string>hstem 727 -20</string>
 							<string>vstem 60 169</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0015</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 6 -21</string>
+							<string>hstem 727 -20</string>
+							<string>vstem 60 469</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>5c133e78b8d5971b93034f42c6012722e2ba167d895d66a758ede3eae16858ed25b6ea320fc7715896b9065d00d3aaf46b81e3f305711718596a5277c54bbc54</string>
+				<string>dae7b6b73cf5d9e8e52dccc77ceb23f935ebd9257b02f072943d872736d5f9b86fea72e844345004512389949932da61414c01aa4dff6827343de0465bb73aa5</string>
 			</dict>
 		</dict>
 	</lib>
