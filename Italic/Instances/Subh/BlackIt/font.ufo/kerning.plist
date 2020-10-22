@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>Aogonek</key>
+		<dict>
+			<key>public.kern2.LAT_j</key>
+			<integer>-25</integer>
+			<key>public.kern2.LAT_y</key>
+			<integer>-75</integer>
+		</dict>
 		<key>B</key>
 		<dict>
 			<key>AE</key>
@@ -220,10 +227,8 @@
 			<integer>-70</integer>
 			<key>delta</key>
 			<integer>-6</integer>
-			<key>iotadieresis</key>
-			<integer>7</integer>
 			<key>iotadieresistonos</key>
-			<integer>53</integer>
+			<integer>39</integer>
 			<key>lambda</key>
 			<integer>20</integer>
 			<key>public.kern2.GRK_Alpha</key>
@@ -240,6 +245,8 @@
 			<integer>-50</integer>
 			<key>public.kern2.GRK_iota</key>
 			<integer>-11</integer>
+			<key>public.kern2.GRK_iotadieresis</key>
+			<integer>3</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-11</integer>
 			<key>public.kern2.GRK_upsilon</key>
@@ -276,11 +283,6 @@
 			<integer>-80</integer>
 			<key>theta</key>
 			<integer>-30</integer>
-		</dict>
-		<key>De</key>
-		<dict>
-			<key>De</key>
-			<integer>8</integer>
 		</dict>
 		<key>Delta</key>
 		<dict>
@@ -395,8 +397,6 @@
 		</dict>
 		<key>Dje</key>
 		<dict>
-			<key>El</key>
-			<integer>6</integer>
 			<key>Izhitsa</key>
 			<integer>-38</integer>
 			<key>Je</key>
@@ -480,8 +480,6 @@
 			<integer>-13</integer>
 			<key>Dze</key>
 			<integer>5</integer>
-			<key>El</key>
-			<integer>-19</integer>
 			<key>Je</key>
 			<integer>-3</integer>
 			<key>ampersand</key>
@@ -882,6 +880,8 @@
 			<integer>-76</integer>
 			<key>hard</key>
 			<integer>-72</integer>
+			<key>iukran</key>
+			<integer>-36</integer>
 			<key>je</key>
 			<integer>-40</integer>
 			<key>kabashkir</key>
@@ -919,7 +919,7 @@
 			<key>public.kern2.CYR_ie</key>
 			<integer>-90</integer>
 			<key>public.kern2.CYR_iukran</key>
-			<integer>-30</integer>
+			<integer>-22</integer>
 			<key>public.kern2.CYR_shha</key>
 			<integer>11</integer>
 			<key>public.kern2.CYR_ucyr</key>
@@ -979,29 +979,9 @@
 			<key>ya</key>
 			<integer>-108</integer>
 			<key>yi</key>
-			<integer>21</integer>
+			<integer>7</integer>
 			<key>ze.bgr</key>
 			<integer>-92</integer>
-		</dict>
-		<key>Hadescender</key>
-		<dict>
-			<key>De</key>
-			<integer>-3</integer>
-		</dict>
-		<key>Izhitsa</key>
-		<dict>
-			<key>Je</key>
-			<integer>-10</integer>
-			<key>Schwacyr</key>
-			<integer>10</integer>
-			<key>Yat</key>
-			<integer>44</integer>
-			<key>public.kern2.CYR_Ef</key>
-			<integer>-21</integer>
-			<key>public.kern2.CYR_Ze</key>
-			<integer>0</integer>
-			<key>public.kern2.CYR_Zhe</key>
-			<integer>29</integer>
 		</dict>
 		<key>Je</key>
 		<dict>
@@ -1123,15 +1103,8 @@
 			<integer>-4</integer>
 			<key>ya</key>
 			<integer>-30</integer>
-			<key>yi</key>
-			<integer>26</integer>
 			<key>ze.bgr</key>
 			<integer>-29</integer>
-		</dict>
-		<key>Kadescender</key>
-		<dict>
-			<key>De</key>
-			<integer>-3</integer>
 		</dict>
 		<key>Kappa</key>
 		<dict>
@@ -1159,10 +1132,8 @@
 			<integer>-45</integer>
 			<key>delta</key>
 			<integer>-6</integer>
-			<key>iotadieresis</key>
-			<integer>6</integer>
 			<key>iotadieresistonos</key>
-			<integer>36</integer>
+			<integer>14</integer>
 			<key>lambda</key>
 			<integer>30</integer>
 			<key>public.kern2.GRK_Alpha</key>
@@ -1181,6 +1152,8 @@
 			<integer>-72</integer>
 			<key>public.kern2.GRK_iota</key>
 			<integer>-11</integer>
+			<key>public.kern2.GRK_iotadieresis</key>
+			<integer>-6</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-12</integer>
 			<key>public.kern2.GRK_upsilon</key>
@@ -1249,9 +1222,9 @@
 			<key>public.kern2.quotedbl</key>
 			<integer>-10</integer>
 			<key>public.kern2.quoteleft</key>
-			<integer>10</integer>
+			<integer>-1</integer>
 			<key>public.kern2.quoteright</key>
-			<integer>20</integer>
+			<integer>6</integer>
 			<key>public.kern2.registered</key>
 			<integer>-28</integer>
 			<key>public.kern2.sups_corner</key>
@@ -1261,7 +1234,7 @@
 			<key>public.kern2.sups_diag</key>
 			<integer>10</integer>
 			<key>public.kern2.sups_figures</key>
-			<integer>-20</integer>
+			<integer>-12</integer>
 			<key>public.kern2.sups_round</key>
 			<integer>-10</integer>
 		</dict>
@@ -1291,10 +1264,8 @@
 			<integer>-29</integer>
 			<key>delta</key>
 			<integer>-15</integer>
-			<key>iotadieresis</key>
-			<integer>21</integer>
 			<key>iotadieresistonos</key>
-			<integer>51</integer>
+			<integer>23</integer>
 			<key>kai</key>
 			<integer>-20</integer>
 			<key>lambda</key>
@@ -1320,7 +1291,7 @@
 			<key>public.kern2.GRK_iota</key>
 			<integer>-10</integer>
 			<key>public.kern2.GRK_iotadieresis</key>
-			<integer>10</integer>
+			<integer>16</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-37</integer>
 			<key>public.kern2.GRK_upsilon</key>
@@ -1375,22 +1346,11 @@
 		<key>Ohorn</key>
 		<dict>
 			<key>V</key>
-			<integer>-18</integer>
+			<integer>-16</integer>
 			<key>public.kern2.LAT_W</key>
 			<integer>-13</integer>
 			<key>public.kern2.LAT_Y</key>
 			<integer>-21</integer>
-		</dict>
-		<key>Oslash</key>
-		<dict>
-			<key>V</key>
-			<integer>-18</integer>
-			<key>X</key>
-			<integer>-27</integer>
-			<key>public.kern2.LAT_W</key>
-			<integer>-13</integer>
-			<key>public.kern2.LAT_Y</key>
-			<integer>-27</integer>
 		</dict>
 		<key>P</key>
 		<dict>
@@ -1626,10 +1586,8 @@
 			<integer>30</integer>
 			<key>beta</key>
 			<integer>-6</integer>
-			<key>iotadieresis</key>
-			<integer>26</integer>
 			<key>iotadieresistonos</key>
-			<integer>66</integer>
+			<integer>30</integer>
 			<key>lambda</key>
 			<integer>11</integer>
 			<key>pi</key>
@@ -1647,7 +1605,7 @@
 			<key>public.kern2.GRK_iota</key>
 			<integer>-16</integer>
 			<key>public.kern2.GRK_iotadieresis</key>
-			<integer>20</integer>
+			<integer>23</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-17</integer>
 			<key>public.kern2.GRK_upsilon</key>
@@ -1699,13 +1657,6 @@
 			<key>xi</key>
 			<integer>6</integer>
 		</dict>
-		<key>Q</key>
-		<dict>
-			<key>comma</key>
-			<integer>-6</integer>
-			<key>quotedblbase</key>
-			<integer>6</integer>
-		</dict>
 		<key>Rho</key>
 		<dict>
 			<key>Chi</key>
@@ -1728,10 +1679,6 @@
 			<integer>8</integer>
 			<key>delta</key>
 			<integer>-4</integer>
-			<key>iotadieresis</key>
-			<integer>4</integer>
-			<key>iotadieresistonos</key>
-			<integer>8</integer>
 			<key>kai</key>
 			<integer>6</integer>
 			<key>lambda</key>
@@ -2039,7 +1986,7 @@
 			<key>ya</key>
 			<integer>-54</integer>
 			<key>yi</key>
-			<integer>11</integer>
+			<integer>3</integer>
 			<key>ze.bgr</key>
 			<integer>-33</integer>
 		</dict>
@@ -2221,16 +2168,12 @@
 			<integer>3</integer>
 			<key>X</key>
 			<integer>-10</integer>
-			<key>adieresis</key>
-			<integer>-75</integer>
 			<key>ampersand</key>
 			<integer>-6</integer>
 			<key>at</key>
 			<integer>-11</integer>
 			<key>at.cap</key>
 			<integer>-20</integer>
-			<key>atilde</key>
-			<integer>-75</integer>
 			<key>backslash</key>
 			<integer>13</integer>
 			<key>p</key>
@@ -2336,8 +2279,6 @@
 		</dict>
 		<key>X</key>
 		<dict>
-			<key>Oslash</key>
-			<integer>-21</integer>
 			<key>V</key>
 			<integer>-16</integer>
 			<key>X</key>
@@ -2348,8 +2289,6 @@
 			<integer>-3</integer>
 			<key>at.cap</key>
 			<integer>-8</integer>
-			<key>oslash</key>
-			<integer>-34</integer>
 			<key>public.kern2.LAT_A</key>
 			<integer>3</integer>
 			<key>public.kern2.LAT_J</key>
@@ -2427,8 +2366,6 @@
 			<integer>-10</integer>
 			<key>Dze</key>
 			<integer>2</integer>
-			<key>El</key>
-			<integer>-18</integer>
 			<key>Izhitsa</key>
 			<integer>-70</integer>
 			<key>Je</key>
@@ -2528,10 +2465,8 @@
 			<integer>3</integer>
 			<key>chi</key>
 			<integer>-20</integer>
-			<key>iotadieresis</key>
-			<integer>6</integer>
 			<key>iotadieresistonos</key>
-			<integer>46</integer>
+			<integer>32</integer>
 			<key>lambda</key>
 			<integer>4</integer>
 			<key>public.kern2.GRK_Theta</key>
@@ -2542,6 +2477,8 @@
 			<integer>-20</integer>
 			<key>public.kern2.GRK_iota</key>
 			<integer>-4</integer>
+			<key>public.kern2.GRK_iotadieresis</key>
+			<integer>3</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-6</integer>
 			<key>public.kern2.colon</key>
@@ -2687,8 +2624,8 @@
 		<dict>
 			<key>public.kern2.LAT_g</key>
 			<integer>20</integer>
-			<key>public.kern2.parenright</key>
-			<integer>6</integer>
+			<key>public.kern2.LAT_j</key>
+			<integer>7</integer>
 		</dict>
 		<key>at</key>
 		<dict>
@@ -3115,8 +3052,6 @@
 			<integer>6</integer>
 			<key>chi</key>
 			<integer>4</integer>
-			<key>comma</key>
-			<integer>24</integer>
 			<key>delta</key>
 			<integer>-30</integer>
 			<key>kai</key>
@@ -3140,7 +3075,7 @@
 			<key>public.kern2.GRK_upsilon</key>
 			<integer>6</integer>
 			<key>public.kern2.comma</key>
-			<integer>8</integer>
+			<integer>13</integer>
 			<key>public.kern2.guilsinglleft</key>
 			<integer>-6</integer>
 			<key>public.kern2.hyphen</key>
@@ -3156,8 +3091,6 @@
 			<key>questiongreek</key>
 			<integer>6</integer>
 			<key>rho</key>
-			<integer>6</integer>
-			<key>semicolon</key>
 			<integer>6</integer>
 			<key>slash</key>
 			<integer>17</integer>
@@ -3263,8 +3196,6 @@
 			<integer>-3</integer>
 			<key>chi</key>
 			<integer>-6</integer>
-			<key>iotadieresistonos</key>
-			<integer>33</integer>
 			<key>public.kern2.GRK_Alpha</key>
 			<integer>-8</integer>
 			<key>public.kern2.GRK_Beta</key>
@@ -3849,63 +3780,59 @@
 		<key>iogonek</key>
 		<dict>
 			<key>p</key>
-			<integer>25</integer>
+			<integer>21</integer>
 			<key>public.kern2.LAT_g</key>
 			<integer>20</integer>
-			<key>public.kern2.parenright</key>
-			<integer>6</integer>
-		</dict>
-		<key>iota</key>
-		<dict>
-			<key>anoteleia</key>
-			<integer>-11</integer>
+			<key>public.kern2.LAT_j</key>
+			<integer>7</integer>
 		</dict>
 		<key>iotadieresis</key>
 		<dict>
-			<key>Psi</key>
-			<integer>30</integer>
-			<key>Sigma</key>
-			<integer>11</integer>
-			<key>Tau</key>
-			<integer>26</integer>
-			<key>Xi</key>
-			<integer>6</integer>
-			<key>public.kern2.GRK_Upsilon</key>
-			<integer>34</integer>
 			<key>xi</key>
-			<integer>50</integer>
+			<integer>34</integer>
 			<key>zeta</key>
-			<integer>30</integer>
+			<integer>20</integer>
 		</dict>
 		<key>iotadieresistonos</key>
 		<dict>
 			<key>Chi</key>
-			<integer>30</integer>
+			<integer>31</integer>
 			<key>Nu</key>
 			<integer>31</integer>
 			<key>Psi</key>
-			<integer>36</integer>
+			<integer>38</integer>
+			<key>Sigma</key>
+			<integer>17</integer>
+			<key>Tau</key>
+			<integer>31</integer>
+			<key>Xi</key>
+			<integer>11</integer>
 			<key>delta</key>
-			<integer>49</integer>
+			<integer>23</integer>
 			<key>iotadieresistonos</key>
-			<integer>10</integer>
+			<integer>4</integer>
 			<key>lambda</key>
-			<integer>129</integer>
+			<integer>99</integer>
 			<key>public.kern2.GRK_Beta</key>
 			<integer>36</integer>
 			<key>public.kern2.GRK_Upsilon</key>
-			<integer>39</integer>
+			<integer>41</integer>
 			<key>theta</key>
-			<integer>50</integer>
+			<integer>20</integer>
 			<key>xi</key>
-			<integer>104</integer>
+			<integer>77</integer>
 			<key>zeta</key>
-			<integer>100</integer>
+			<integer>57</integer>
 		</dict>
 		<key>iotatonos</key>
 		<dict>
 			<key>lambda</key>
-			<integer>60</integer>
+			<integer>52</integer>
+		</dict>
+		<key>iukran</key>
+		<dict>
+			<key>public.kern2.registered</key>
+			<integer>20</integer>
 		</dict>
 		<key>izhitsa</key>
 		<dict>
@@ -4189,14 +4116,9 @@
 		<key>lslash</key>
 		<dict>
 			<key>p</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>public.kern2.LAT_y</key>
 			<integer>-2</integer>
-		</dict>
-		<key>mu</key>
-		<dict>
-			<key>anoteleia</key>
-			<integer>-11</integer>
 		</dict>
 		<key>nine.numr</key>
 		<dict>
@@ -4471,6 +4393,8 @@
 		<dict>
 			<key>Aie</key>
 			<integer>4</integer>
+			<key>De</key>
+			<integer>7</integer>
 			<key>Je</key>
 			<integer>78</integer>
 			<key>Ya</key>
@@ -4493,12 +4417,14 @@
 			<integer>-20</integer>
 			<key>hard</key>
 			<integer>-30</integer>
+			<key>je</key>
+			<integer>6</integer>
 			<key>kabashkir</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Che</key>
 			<integer>-17</integer>
 			<key>public.kern2.CYR_De</key>
-			<integer>6</integer>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Dje</key>
 			<integer>-2</integer>
 			<key>public.kern2.CYR_Ef</key>
@@ -4514,7 +4440,7 @@
 			<key>public.kern2.CYR_che</key>
 			<integer>-34</integer>
 			<key>public.kern2.CYR_el</key>
-			<integer>0</integer>
+			<integer>-14</integer>
 			<key>public.kern2.CYR_en</key>
 			<integer>-14</integer>
 			<key>public.kern2.CYR_ghe</key>
@@ -4563,8 +4489,6 @@
 			<integer>-10</integer>
 			<key>ya</key>
 			<integer>8</integer>
-			<key>yi</key>
-			<integer>21</integer>
 			<key>ze.bgr</key>
 			<integer>41</integer>
 		</dict>
@@ -4574,8 +4498,6 @@
 			<integer>-60</integer>
 			<key>Dze</key>
 			<integer>-10</integer>
-			<key>El</key>
-			<integer>-84</integer>
 			<key>Izhitsa</key>
 			<integer>-41</integer>
 			<key>Je</key>
@@ -4759,8 +4681,6 @@
 			<integer>-20</integer>
 			<key>ve.bgr</key>
 			<integer>-20</integer>
-			<key>yi</key>
-			<integer>17</integer>
 			<key>ze.bgr</key>
 			<integer>-14</integer>
 		</dict>
@@ -4976,7 +4896,7 @@
 			<key>ya</key>
 			<integer>-60</integer>
 			<key>yi</key>
-			<integer>11</integer>
+			<integer>6</integer>
 			<key>ze.bgr</key>
 			<integer>-33</integer>
 		</dict>
@@ -5080,41 +5000,43 @@
 		<key>public.kern1.CYR_Ka</key>
 		<dict>
 			<key>Aie</key>
-			<integer>-60</integer>
+			<integer>-11</integer>
 			<key>Dze</key>
 			<integer>-1</integer>
 			<key>Izhitsa</key>
-			<integer>-34</integer>
+			<integer>-26</integer>
 			<key>Je</key>
-			<integer>-3</integer>
+			<integer>-6</integer>
 			<key>Yat</key>
-			<integer>-20</integer>
+			<integer>-28</integer>
 			<key>be</key>
-			<integer>-20</integer>
+			<integer>-23</integer>
 			<key>be.srb</key>
 			<integer>-20</integer>
 			<key>de</key>
-			<integer>-34</integer>
+			<integer>-37</integer>
 			<key>dze</key>
-			<integer>-11</integer>
+			<integer>-23</integer>
 			<key>el.bgr</key>
-			<integer>1</integer>
+			<integer>-7</integer>
 			<key>er</key>
-			<integer>-10</integer>
+			<integer>-13</integer>
 			<key>hard</key>
-			<integer>-46</integer>
+			<integer>-63</integer>
+			<key>iukran</key>
+			<integer>-6</integer>
 			<key>je</key>
-			<integer>-10</integer>
+			<integer>-13</integer>
 			<key>kabashkir</key>
-			<integer>-60</integer>
+			<integer>-84</integer>
 			<key>public.kern2.CYR_Acyr</key>
-			<integer>-25</integer>
+			<integer>3</integer>
 			<key>public.kern2.CYR_Che</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_De</key>
-			<integer>-8</integer>
+			<integer>-14</integer>
 			<key>public.kern2.CYR_Dje</key>
-			<integer>-18</integer>
+			<integer>-23</integer>
 			<key>public.kern2.CYR_Ef</key>
 			<integer>-60</integer>
 			<key>public.kern2.CYR_En</key>
@@ -5122,35 +5044,33 @@
 			<key>public.kern2.CYR_Ocyr</key>
 			<integer>-38</integer>
 			<key>public.kern2.CYR_Ustraight</key>
-			<integer>-31</integer>
+			<integer>-26</integer>
 			<key>public.kern2.CYR_Ze</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Zhe</key>
-			<integer>-9</integer>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_acyr</key>
-			<integer>-15</integer>
-			<key>public.kern2.CYR_che</key>
-			<integer>-60</integer>
-			<key>public.kern2.CYR_en</key>
-			<integer>-5</integer>
-			<key>public.kern2.CYR_ghe</key>
-			<integer>-20</integer>
-			<key>public.kern2.CYR_ie</key>
-			<integer>-22</integer>
-			<key>public.kern2.CYR_iukran</key>
-			<integer>5</integer>
-			<key>public.kern2.CYR_ucyr</key>
-			<integer>-2</integer>
-			<key>public.kern2.CYR_ustraight</key>
-			<integer>-64</integer>
-			<key>public.kern2.CYR_ze</key>
-			<integer>-12</integer>
-			<key>public.kern2.CYR_zhe</key>
 			<integer>-24</integer>
-			<key>public.kern2.comma</key>
-			<integer>4</integer>
-			<key>public.kern2.copyright</key>
+			<key>public.kern2.CYR_che</key>
+			<integer>-66</integer>
+			<key>public.kern2.CYR_el</key>
+			<integer>-3</integer>
+			<key>public.kern2.CYR_en</key>
+			<integer>-8</integer>
+			<key>public.kern2.CYR_ghe</key>
+			<integer>-23</integer>
+			<key>public.kern2.CYR_ie</key>
+			<integer>-32</integer>
+			<key>public.kern2.CYR_iukran</key>
 			<integer>-6</integer>
+			<key>public.kern2.CYR_ucyr</key>
+			<integer>-46</integer>
+			<key>public.kern2.CYR_ustraight</key>
+			<integer>-67</integer>
+			<key>public.kern2.CYR_ze</key>
+			<integer>-16</integer>
+			<key>public.kern2.CYR_zhe</key>
+			<integer>-27</integer>
 			<key>public.kern2.eight.lf</key>
 			<integer>-10</integer>
 			<key>public.kern2.five.lf</key>
@@ -5163,18 +5083,16 @@
 			<integer>-31</integer>
 			<key>public.kern2.nine.lf</key>
 			<integer>-20</integer>
-			<key>public.kern2.parenright</key>
-			<integer>-10</integer>
 			<key>public.kern2.periodcentered</key>
 			<integer>-73</integer>
 			<key>public.kern2.quotedbl</key>
 			<integer>-10</integer>
 			<key>public.kern2.quoteleft</key>
-			<integer>-6</integer>
+			<integer>-8</integer>
 			<key>public.kern2.quoteright</key>
-			<integer>-22</integer>
+			<integer>-23</integer>
 			<key>public.kern2.registered</key>
-			<integer>-19</integer>
+			<integer>-22</integer>
 			<key>public.kern2.seven.lf</key>
 			<integer>-20</integer>
 			<key>public.kern2.six.lf</key>
@@ -5186,9 +5104,124 @@
 			<key>public.kern2.zero.lf</key>
 			<integer>-30</integer>
 			<key>ve.bgr</key>
+			<integer>-26</integer>
+			<key>ze.bgr</key>
+			<integer>-8</integer>
+		</dict>
+		<key>public.kern1.CYR_Kadescender</key>
+		<dict>
+			<key>Aie</key>
+			<integer>17</integer>
+			<key>De</key>
+			<integer>24</integer>
+			<key>Dze</key>
+			<integer>-1</integer>
+			<key>Izhitsa</key>
+			<integer>-26</integer>
+			<key>Je</key>
+			<integer>103</integer>
+			<key>Yat</key>
+			<integer>-28</integer>
+			<key>be</key>
+			<integer>-23</integer>
+			<key>be.srb</key>
+			<integer>-20</integer>
+			<key>de</key>
+			<integer>-34</integer>
+			<key>de.bgr</key>
+			<integer>-15</integer>
+			<key>dze</key>
+			<integer>-20</integer>
+			<key>el.bgr</key>
+			<integer>-4</integer>
+			<key>er</key>
+			<integer>20</integer>
+			<key>hard</key>
+			<integer>-63</integer>
+			<key>iukran</key>
+			<integer>-6</integer>
+			<key>je</key>
+			<integer>30</integer>
+			<key>kabashkir</key>
+			<integer>-84</integer>
+			<key>public.kern2.CYR_Acyr</key>
+			<integer>27</integer>
+			<key>public.kern2.CYR_Che</key>
+			<integer>-20</integer>
+			<key>public.kern2.CYR_De</key>
+			<integer>7</integer>
+			<key>public.kern2.CYR_Dje</key>
+			<integer>-23</integer>
+			<key>public.kern2.CYR_Ef</key>
+			<integer>-60</integer>
+			<key>public.kern2.CYR_En</key>
+			<integer>6</integer>
+			<key>public.kern2.CYR_Ocyr</key>
+			<integer>-38</integer>
+			<key>public.kern2.CYR_Ustraight</key>
+			<integer>-26</integer>
+			<key>public.kern2.CYR_Ze</key>
+			<integer>-20</integer>
+			<key>public.kern2.CYR_Zhe</key>
+			<integer>6</integer>
+			<key>public.kern2.CYR_acyr</key>
+			<integer>-21</integer>
+			<key>public.kern2.CYR_che</key>
+			<integer>-66</integer>
+			<key>public.kern2.CYR_el</key>
+			<integer>-3</integer>
+			<key>public.kern2.CYR_en</key>
+			<integer>-5</integer>
+			<key>public.kern2.CYR_ghe</key>
+			<integer>-20</integer>
+			<key>public.kern2.CYR_ie</key>
+			<integer>-29</integer>
+			<key>public.kern2.CYR_iukran</key>
+			<integer>-6</integer>
+			<key>public.kern2.CYR_ucyr</key>
+			<integer>39</integer>
+			<key>public.kern2.CYR_ustraight</key>
+			<integer>-67</integer>
+			<key>public.kern2.CYR_ze</key>
+			<integer>-13</integer>
+			<key>public.kern2.CYR_zhe</key>
+			<integer>-24</integer>
+			<key>public.kern2.eight.lf</key>
+			<integer>-10</integer>
+			<key>public.kern2.five.lf</key>
+			<integer>-17</integer>
+			<key>public.kern2.four.lf</key>
+			<integer>-40</integer>
+			<key>public.kern2.guilsinglleft</key>
+			<integer>-54</integer>
+			<key>public.kern2.hyphen</key>
+			<integer>-31</integer>
+			<key>public.kern2.nine.lf</key>
+			<integer>-17</integer>
+			<key>public.kern2.parenright</key>
+			<integer>7</integer>
+			<key>public.kern2.periodcentered</key>
+			<integer>-73</integer>
+			<key>public.kern2.quotedbl</key>
+			<integer>-10</integer>
+			<key>public.kern2.quoteleft</key>
+			<integer>-8</integer>
+			<key>public.kern2.quoteright</key>
+			<integer>-23</integer>
+			<key>public.kern2.registered</key>
 			<integer>-22</integer>
-			<key>yi</key>
-			<integer>22</integer>
+			<key>public.kern2.seven.lf</key>
+			<integer>-20</integer>
+			<key>public.kern2.six.lf</key>
+			<integer>-30</integer>
+			<key>public.kern2.three.lf</key>
+			<integer>-7</integer>
+			<key>public.kern2.two.lf</key>
+			<integer>-7</integer>
+			<key>public.kern2.zero.lf</key>
+			<integer>-30</integer>
+			<key>ve.bgr</key>
+			<integer>-23</integer>
 			<key>ze.bgr</key>
 			<integer>17</integer>
 		</dict>
@@ -5198,8 +5231,6 @@
 			<integer>-36</integer>
 			<key>Dze</key>
 			<integer>-1</integer>
-			<key>El</key>
-			<integer>-50</integer>
 			<key>Izhitsa</key>
 			<integer>-16</integer>
 			<key>Je</key>
@@ -5315,8 +5346,6 @@
 		<dict>
 			<key>Dze</key>
 			<integer>2</integer>
-			<key>El</key>
-			<integer>-27</integer>
 			<key>Izhitsa</key>
 			<integer>-84</integer>
 			<key>Je</key>
@@ -5409,7 +5438,7 @@
 			<key>Izhitsa</key>
 			<integer>63</integer>
 			<key>Je</key>
-			<integer>7</integer>
+			<integer>4</integer>
 			<key>Ya</key>
 			<integer>-21</integer>
 			<key>Yat</key>
@@ -5434,8 +5463,6 @@
 			<integer>-101</integer>
 			<key>hard</key>
 			<integer>-30</integer>
-			<key>iukran</key>
-			<integer>30</integer>
 			<key>je</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Acyr</key>
@@ -5451,7 +5478,7 @@
 			<key>public.kern2.CYR_En</key>
 			<integer>14</integer>
 			<key>public.kern2.CYR_Ocyr</key>
-			<integer>4</integer>
+			<integer>2</integer>
 			<key>public.kern2.CYR_Ucyr</key>
 			<integer>49</integer>
 			<key>public.kern2.CYR_Ustraight</key>
@@ -5473,7 +5500,7 @@
 			<key>public.kern2.CYR_ie</key>
 			<integer>-65</integer>
 			<key>public.kern2.CYR_iukran</key>
-			<integer>42</integer>
+			<integer>28</integer>
 			<key>public.kern2.CYR_shha</key>
 			<integer>6</integer>
 			<key>public.kern2.CYR_ucyr</key>
@@ -5540,6 +5567,8 @@
 			<integer>-120</integer>
 			<key>ya</key>
 			<integer>-86</integer>
+			<key>yi</key>
+			<integer>36</integer>
 			<key>ze.bgr</key>
 			<integer>-40</integer>
 		</dict>
@@ -5684,8 +5713,6 @@
 			<integer>-34</integer>
 			<key>Dze</key>
 			<integer>-9</integer>
-			<key>El</key>
-			<integer>-33</integer>
 			<key>Izhitsa</key>
 			<integer>-51</integer>
 			<key>Je</key>
@@ -6381,8 +6408,6 @@
 			<integer>18</integer>
 			<key>Je</key>
 			<integer>22</integer>
-			<key>backslash</key>
-			<integer>-2</integer>
 			<key>bar</key>
 			<integer>40</integer>
 			<key>dagger</key>
@@ -6426,7 +6451,7 @@
 			<key>public.kern2.CYR_ie</key>
 			<integer>2</integer>
 			<key>public.kern2.CYR_iukran</key>
-			<integer>20</integer>
+			<integer>26</integer>
 			<key>public.kern2.CYR_shha</key>
 			<integer>14</integer>
 			<key>public.kern2.CYR_ucyr</key>
@@ -6446,7 +6471,7 @@
 			<key>public.kern2.periodcentered</key>
 			<integer>-3</integer>
 			<key>public.kern2.quotedbl</key>
-			<integer>9</integer>
+			<integer>12</integer>
 			<key>public.kern2.quoteleft</key>
 			<integer>4</integer>
 			<key>public.kern2.quoteright</key>
@@ -6465,8 +6490,6 @@
 			<integer>20</integer>
 			<key>public.kern2.sups_round</key>
 			<integer>20</integer>
-			<key>public.kern2.trademark</key>
-			<integer>-6</integer>
 			<key>question</key>
 			<integer>20</integer>
 			<key>slash</key>
@@ -6829,15 +6852,19 @@
 		<key>public.kern1.CYR_tse</key>
 		<dict>
 			<key>Je</key>
-			<integer>73</integer>
+			<integer>71</integer>
 			<key>backslash</key>
 			<integer>-6</integer>
 			<key>be</key>
 			<integer>10</integer>
 			<key>er</key>
 			<integer>10</integer>
+			<key>je</key>
+			<integer>10</integer>
 			<key>public.kern2.CYR_che</key>
 			<integer>-10</integer>
+			<key>public.kern2.CYR_el</key>
+			<integer>7</integer>
 			<key>public.kern2.CYR_ucyr</key>
 			<integer>10</integer>
 			<key>public.kern2.CYR_ustraight</key>
@@ -7014,7 +7041,7 @@
 			<key>Izhitsa</key>
 			<integer>-37</integer>
 			<key>Je</key>
-			<integer>7</integer>
+			<integer>29</integer>
 			<key>backslash</key>
 			<integer>-6</integer>
 			<key>be</key>
@@ -7025,10 +7052,12 @@
 			<integer>-10</integer>
 			<key>el.bgr</key>
 			<integer>-29</integer>
+			<key>er</key>
+			<integer>3</integer>
 			<key>gheup</key>
 			<integer>-34</integer>
 			<key>je</key>
-			<integer>4</integer>
+			<integer>3</integer>
 			<key>public.kern2.CYR_Acyr</key>
 			<integer>4</integer>
 			<key>public.kern2.CYR_Dje</key>
@@ -7231,10 +7260,6 @@
 			<integer>-11</integer>
 			<key>exclam</key>
 			<integer>4</integer>
-			<key>iotadieresis</key>
-			<integer>4</integer>
-			<key>iotadieresistonos</key>
-			<integer>11</integer>
 			<key>kai</key>
 			<integer>3</integer>
 			<key>lambda</key>
@@ -7316,10 +7341,8 @@
 			<integer>-20</integer>
 			<key>delta</key>
 			<integer>-30</integer>
-			<key>iotadieresis</key>
-			<integer>8</integer>
 			<key>iotadieresistonos</key>
-			<integer>46</integer>
+			<integer>20</integer>
 			<key>lambda</key>
 			<integer>10</integer>
 			<key>pi</key>
@@ -7338,6 +7361,8 @@
 			<integer>-27</integer>
 			<key>public.kern2.GRK_iota</key>
 			<integer>-13</integer>
+			<key>public.kern2.GRK_iotadieresis</key>
+			<integer>6</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-9</integer>
 			<key>public.kern2.GRK_upsilon</key>
@@ -7417,10 +7442,6 @@
 			<integer>-20</integer>
 			<key>exclam</key>
 			<integer>11</integer>
-			<key>iotadieresis</key>
-			<integer>28</integer>
-			<key>iotadieresistonos</key>
-			<integer>51</integer>
 			<key>kai</key>
 			<integer>6</integer>
 			<key>lambda</key>
@@ -7674,10 +7695,8 @@
 			<integer>-3</integer>
 			<key>exclam</key>
 			<integer>6</integer>
-			<key>iotadieresis</key>
-			<integer>44</integer>
 			<key>iotadieresistonos</key>
-			<integer>80</integer>
+			<integer>44</integer>
 			<key>kai</key>
 			<integer>-6</integer>
 			<key>lambda</key>
@@ -7703,7 +7722,7 @@
 			<key>public.kern2.GRK_iota</key>
 			<integer>-17</integer>
 			<key>public.kern2.GRK_iotadieresis</key>
-			<integer>40</integer>
+			<integer>37</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-17</integer>
 			<key>public.kern2.GRK_upsilon</key>
@@ -7762,117 +7781,91 @@
 			<integer>-6</integer>
 			<key>underscore</key>
 			<integer>-30</integer>
-			<key>upsilondieresistonos</key>
-			<integer>-30</integer>
 			<key>xi</key>
 			<integer>8</integer>
 		</dict>
 		<key>public.kern1.GRK_alpha</key>
 		<dict>
-			<key>Chi</key>
-			<integer>14</integer>
 			<key>Delta</key>
-			<integer>1</integer>
+			<integer>-6</integer>
 			<key>Phi</key>
 			<integer>-6</integer>
 			<key>Psi</key>
-			<integer>-17</integer>
+			<integer>-22</integer>
 			<key>Sigma</key>
-			<integer>6</integer>
+			<integer>-3</integer>
 			<key>Tau</key>
-			<integer>-6</integer>
-			<key>Xi</key>
-			<integer>6</integer>
+			<integer>-38</integer>
 			<key>Zeta</key>
-			<integer>24</integer>
+			<integer>12</integer>
 			<key>anoteleia</key>
-			<integer>-6</integer>
+			<integer>-8</integer>
 			<key>backslash</key>
 			<integer>-17</integer>
 			<key>bar</key>
-			<integer>40</integer>
+			<integer>27</integer>
 			<key>beta</key>
-			<integer>1</integer>
+			<integer>-4</integer>
 			<key>chi</key>
-			<integer>-7</integer>
-			<key>dagger</key>
-			<integer>20</integer>
+			<integer>-4</integer>
 			<key>delta</key>
-			<integer>-7</integer>
-			<key>exclam</key>
-			<integer>20</integer>
+			<integer>-14</integer>
 			<key>lambda</key>
-			<integer>16</integer>
+			<integer>4</integer>
 			<key>pi</key>
-			<integer>11</integer>
-			<key>public.kern2.GRK_Alpha</key>
-			<integer>6</integer>
+			<integer>-3</integer>
 			<key>public.kern2.GRK_Beta</key>
-			<integer>20</integer>
+			<integer>9</integer>
 			<key>public.kern2.GRK_Mu</key>
-			<integer>20</integer>
+			<integer>2</integer>
 			<key>public.kern2.GRK_Theta</key>
 			<integer>4</integer>
 			<key>public.kern2.GRK_Upsilon</key>
-			<integer>-22</integer>
+			<integer>-51</integer>
 			<key>public.kern2.GRK_alpha</key>
-			<integer>-1</integer>
+			<integer>-3</integer>
 			<key>public.kern2.GRK_epsilon</key>
-			<integer>4</integer>
+			<integer>-3</integer>
 			<key>public.kern2.GRK_eta</key>
 			<integer>10</integer>
 			<key>public.kern2.GRK_gamma</key>
-			<integer>18</integer>
+			<integer>4</integer>
 			<key>public.kern2.GRK_iota</key>
 			<integer>-8</integer>
 			<key>public.kern2.GRK_mu</key>
-			<integer>-9</integer>
-			<key>public.kern2.GRK_upsilon</key>
-			<integer>2</integer>
-			<key>public.kern2.colon</key>
-			<integer>10</integer>
-			<key>public.kern2.comma</key>
-			<integer>14</integer>
-			<key>public.kern2.guilsinglleft</key>
-			<integer>-6</integer>
-			<key>public.kern2.guilsinglright</key>
-			<integer>6</integer>
-			<key>public.kern2.hyphen</key>
-			<integer>13</integer>
-			<key>public.kern2.periodcentered</key>
 			<integer>-11</integer>
-			<key>public.kern2.quotedbl</key>
-			<integer>-2</integer>
-			<key>public.kern2.quoteleft</key>
-			<integer>4</integer>
-			<key>public.kern2.quoteright</key>
-			<integer>9</integer>
-			<key>public.kern2.registered</key>
-			<integer>14</integer>
-			<key>public.kern2.subs_figures</key>
-			<integer>40</integer>
-			<key>public.kern2.sups_corner</key>
-			<integer>20</integer>
-			<key>public.kern2.sups_desc</key>
-			<integer>20</integer>
-			<key>public.kern2.sups_diag</key>
-			<integer>20</integer>
-			<key>public.kern2.sups_figures</key>
-			<integer>20</integer>
-			<key>public.kern2.sups_round</key>
-			<integer>20</integer>
-			<key>public.kern2.trademark</key>
+			<key>public.kern2.colon</key>
+			<integer>7</integer>
+			<key>public.kern2.comma</key>
+			<integer>7</integer>
+			<key>public.kern2.hyphen</key>
 			<integer>-6</integer>
-			<key>question</key>
-			<integer>14</integer>
+			<key>public.kern2.periodcentered</key>
+			<integer>-8</integer>
+			<key>public.kern2.quotedbl</key>
+			<integer>-11</integer>
+			<key>public.kern2.quoteleft</key>
+			<integer>-11</integer>
+			<key>public.kern2.quoteright</key>
+			<integer>-7</integer>
+			<key>public.kern2.subs_figures</key>
+			<integer>34</integer>
+			<key>public.kern2.sups_desc</key>
+			<integer>40</integer>
+			<key>public.kern2.sups_figures</key>
+			<integer>-11</integer>
+			<key>public.kern2.sups_round</key>
+			<integer>9</integer>
+			<key>public.kern2.trademark</key>
+			<integer>-11</integer>
 			<key>rho</key>
-			<integer>-1</integer>
+			<integer>-11</integer>
 			<key>tau</key>
-			<integer>-2</integer>
+			<integer>-6</integer>
 			<key>theta</key>
-			<integer>-2</integer>
+			<integer>-3</integer>
 			<key>zeta</key>
-			<integer>4</integer>
+			<integer>-3</integer>
 		</dict>
 		<key>public.kern1.GRK_epsilon</key>
 		<dict>
@@ -8067,12 +8060,89 @@
 			<key>zeta</key>
 			<integer>-6</integer>
 		</dict>
+		<key>public.kern1.GRK_iota</key>
+		<dict>
+			<key>Chi</key>
+			<integer>14</integer>
+			<key>Delta</key>
+			<integer>0</integer>
+			<key>Phi</key>
+			<integer>-6</integer>
+			<key>Psi</key>
+			<integer>-20</integer>
+			<key>Sigma</key>
+			<integer>3</integer>
+			<key>Tau</key>
+			<integer>-28</integer>
+			<key>Xi</key>
+			<integer>3</integer>
+			<key>Zeta</key>
+			<integer>24</integer>
+			<key>anoteleia</key>
+			<integer>-11</integer>
+			<key>backslash</key>
+			<integer>-17</integer>
+			<key>bar</key>
+			<integer>34</integer>
+			<key>chi</key>
+			<integer>-14</integer>
+			<key>delta</key>
+			<integer>-7</integer>
+			<key>lambda</key>
+			<integer>10</integer>
+			<key>public.kern2.GRK_Alpha</key>
+			<integer>6</integer>
+			<key>public.kern2.GRK_Beta</key>
+			<integer>23</integer>
+			<key>public.kern2.GRK_Mu</key>
+			<integer>14</integer>
+			<key>public.kern2.GRK_Theta</key>
+			<integer>4</integer>
+			<key>public.kern2.GRK_Upsilon</key>
+			<integer>-47</integer>
+			<key>public.kern2.GRK_eta</key>
+			<integer>10</integer>
+			<key>public.kern2.GRK_gamma</key>
+			<integer>-6</integer>
+			<key>public.kern2.GRK_iota</key>
+			<integer>-3</integer>
+			<key>public.kern2.GRK_mu</key>
+			<integer>-8</integer>
+			<key>public.kern2.colon</key>
+			<integer>7</integer>
+			<key>public.kern2.comma</key>
+			<integer>14</integer>
+			<key>public.kern2.hyphen</key>
+			<integer>14</integer>
+			<key>public.kern2.periodcentered</key>
+			<integer>-8</integer>
+			<key>public.kern2.quotedbl</key>
+			<integer>-11</integer>
+			<key>public.kern2.quoteleft</key>
+			<integer>-11</integer>
+			<key>public.kern2.quoteright</key>
+			<integer>-14</integer>
+			<key>public.kern2.registered</key>
+			<integer>-14</integer>
+			<key>public.kern2.subs_figures</key>
+			<integer>60</integer>
+			<key>public.kern2.sups_desc</key>
+			<integer>40</integer>
+			<key>public.kern2.sups_figures</key>
+			<integer>-8</integer>
+			<key>public.kern2.trademark</key>
+			<integer>-11</integer>
+			<key>rho</key>
+			<integer>-3</integer>
+			<key>tau</key>
+			<integer>-6</integer>
+			<key>zeta</key>
+			<integer>1</integer>
+		</dict>
 		<key>public.kern1.GRK_iotadieresis</key>
 		<dict>
 			<key>Chi</key>
-			<integer>26</integer>
-			<key>Mu</key>
-			<integer>26</integer>
+			<integer>14</integer>
 			<key>Phi</key>
 			<integer>10</integer>
 			<key>Psi</key>
@@ -8080,9 +8150,9 @@
 			<key>Sigma</key>
 			<integer>11</integer>
 			<key>Tau</key>
-			<integer>31</integer>
+			<integer>14</integer>
 			<key>Xi</key>
-			<integer>11</integer>
+			<integer>6</integer>
 			<key>Zeta</key>
 			<integer>36</integer>
 			<key>anoteleia</key>
@@ -8098,17 +8168,17 @@
 			<key>exclam</key>
 			<integer>31</integer>
 			<key>lambda</key>
-			<integer>60</integer>
+			<integer>52</integer>
 			<key>pi</key>
 			<integer>10</integer>
 			<key>public.kern2.GRK_Beta</key>
-			<integer>30</integer>
+			<integer>22</integer>
 			<key>public.kern2.GRK_Mu</key>
-			<integer>20</integer>
+			<integer>17</integer>
 			<key>public.kern2.GRK_Theta</key>
 			<integer>10</integer>
 			<key>public.kern2.GRK_Upsilon</key>
-			<integer>30</integer>
+			<integer>22</integer>
 			<key>public.kern2.GRK_epsilon</key>
 			<integer>10</integer>
 			<key>public.kern2.GRK_eta</key>
@@ -8116,7 +8186,7 @@
 			<key>public.kern2.GRK_gamma</key>
 			<integer>30</integer>
 			<key>public.kern2.GRK_iotadieresis</key>
-			<integer>50</integer>
+			<integer>36</integer>
 			<key>public.kern2.colon</key>
 			<integer>10</integer>
 			<key>public.kern2.comma</key>
@@ -8152,7 +8222,9 @@
 			<key>question</key>
 			<integer>26</integer>
 			<key>xi</key>
-			<integer>20</integer>
+			<integer>14</integer>
+			<key>zeta</key>
+			<integer>6</integer>
 		</dict>
 		<key>public.kern1.GRK_omicron</key>
 		<dict>
@@ -8363,8 +8435,6 @@
 		<dict>
 			<key>AE</key>
 			<integer>6</integer>
-			<key>Oslash</key>
-			<integer>-16</integer>
 			<key>V</key>
 			<integer>-106</integer>
 			<key>X</key>
@@ -8375,8 +8445,6 @@
 			<integer>-26</integer>
 			<key>backslash</key>
 			<integer>-60</integer>
-			<key>oslash</key>
-			<integer>-38</integer>
 			<key>p</key>
 			<integer>-25</integer>
 			<key>public.kern2.LAT_A</key>
@@ -8984,8 +9052,6 @@
 		<dict>
 			<key>AE</key>
 			<integer>-50</integer>
-			<key>Oslash</key>
-			<integer>-33</integer>
 			<key>V</key>
 			<integer>-60</integer>
 			<key>X</key>
@@ -8996,8 +9062,6 @@
 			<integer>-6</integer>
 			<key>at.cap</key>
 			<integer>-6</integer>
-			<key>oslash</key>
-			<integer>-20</integer>
 			<key>p</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_A</key>
@@ -9380,8 +9444,6 @@
 		<dict>
 			<key>AE</key>
 			<integer>-50</integer>
-			<key>Oslash</key>
-			<integer>-19</integer>
 			<key>V</key>
 			<integer>-71</integer>
 			<key>X</key>
@@ -9394,8 +9456,6 @@
 			<integer>-11</integer>
 			<key>backslash</key>
 			<integer>-40</integer>
-			<key>oslash</key>
-			<integer>-16</integer>
 			<key>public.kern2.LAT_A</key>
 			<integer>-25</integer>
 			<key>public.kern2.LAT_E</key>
@@ -10462,7 +10522,7 @@
 			<key>question</key>
 			<integer>57</integer>
 			<key>scaron</key>
-			<integer>8</integer>
+			<integer>10</integer>
 			<key>x</key>
 			<integer>-3</integer>
 		</dict>
@@ -10544,11 +10604,9 @@
 			<key>X</key>
 			<integer>42</integer>
 			<key>adieresis</key>
-			<integer>-20</integer>
-			<key>amacron</key>
-			<integer>-30</integer>
+			<integer>-32</integer>
 			<key>atilde</key>
-			<integer>-40</integer>
+			<integer>-50</integer>
 			<key>backslash</key>
 			<integer>76</integer>
 			<key>bar</key>
@@ -10564,7 +10622,7 @@
 			<key>four.osf</key>
 			<integer>-40</integer>
 			<key>igrave</key>
-			<integer>70</integer>
+			<integer>76</integer>
 			<key>odieresis</key>
 			<integer>5</integer>
 			<key>public.kern2.LAT_A</key>
@@ -11121,7 +11179,7 @@
 			<key>exclam</key>
 			<integer>3</integer>
 			<key>p</key>
-			<integer>-2</integer>
+			<integer>-3</integer>
 			<key>public.kern2.LAT_A</key>
 			<integer>10</integer>
 			<key>public.kern2.LAT_E</key>
@@ -12110,7 +12168,7 @@
 			<key>public.kern2.LAT_a</key>
 			<integer>-44</integer>
 			<key>public.kern2.LAT_f</key>
-			<integer>8</integer>
+			<integer>22</integer>
 			<key>public.kern2.LAT_g</key>
 			<integer>-6</integer>
 			<key>public.kern2.LAT_germandbls</key>
@@ -12248,8 +12306,6 @@
 			<integer>-11</integer>
 			<key>public.kern2.CYR_Ustraight</key>
 			<integer>-11</integer>
-			<key>public.kern2.CYR_Zhe</key>
-			<integer>-6</integer>
 			<key>public.kern2.CYR_che</key>
 			<integer>6</integer>
 			<key>public.kern2.CYR_el</key>
@@ -12848,7 +12904,7 @@
 			<key>public.kern2.GRK_Upsilon</key>
 			<integer>-58</integer>
 			<key>public.kern2.GRK_alpha</key>
-			<integer>6</integer>
+			<integer>3</integer>
 			<key>public.kern2.GRK_gamma</key>
 			<integer>-31</integer>
 			<key>public.kern2.GRK_iota</key>
@@ -13970,8 +14026,6 @@
 			<integer>11</integer>
 			<key>ya</key>
 			<integer>-36</integer>
-			<key>yi</key>
-			<integer>36</integer>
 			<key>ze.bgr</key>
 			<integer>-24</integer>
 			<key>zero.osf</key>
@@ -14380,8 +14434,6 @@
 			<integer>-20</integer>
 			<key>public.kern2.trademark</key>
 			<integer>-6</integer>
-			<key>question</key>
-			<integer>-6</integer>
 			<key>x</key>
 			<integer>-40</integer>
 		</dict>
@@ -14479,13 +14531,6 @@
 			<integer>-16</integer>
 			<key>public.kern2.LAT_Z</key>
 			<integer>-7</integer>
-		</dict>
-		<key>quotedblbase</key>
-		<dict>
-			<key>public.kern2.LAT_f</key>
-			<integer>36</integer>
-			<key>public.kern2.LAT_y</key>
-			<integer>-64</integer>
 		</dict>
 		<key>sampi</key>
 		<dict>
@@ -14852,8 +14897,6 @@
 			<integer>-53</integer>
 			<key>ya</key>
 			<integer>-17</integer>
-			<key>yi</key>
-			<integer>6</integer>
 			<key>zero.osf</key>
 			<integer>-30</integer>
 		</dict>
@@ -14897,7 +14940,7 @@
 		<key>tcaron</key>
 		<dict>
 			<key>exclam</key>
-			<integer>10</integer>
+			<integer>14</integer>
 			<key>public.kern2.LAT_h</key>
 			<integer>46</integer>
 			<key>public.kern2.LAT_i</key>
@@ -14915,7 +14958,7 @@
 			<key>public.kern2.registered</key>
 			<integer>20</integer>
 			<key>question</key>
-			<integer>10</integer>
+			<integer>17</integer>
 		</dict>
 		<key>theta</key>
 		<dict>
@@ -15139,8 +15182,8 @@
 		</dict>
 		<key>uogonek</key>
 		<dict>
-			<key>public.kern2.parenright</key>
-			<integer>6</integer>
+			<key>public.kern2.LAT_j</key>
+			<integer>11</integer>
 		</dict>
 		<key>upsilondieresistonos</key>
 		<dict>
@@ -15264,7 +15307,7 @@
 			<key>delta</key>
 			<integer>-6</integer>
 			<key>iotadieresistonos</key>
-			<integer>50</integer>
+			<integer>24</integer>
 			<key>kai</key>
 			<integer>11</integer>
 			<key>lambda</key>
@@ -15282,7 +15325,7 @@
 			<key>public.kern2.GRK_iota</key>
 			<integer>-7</integer>
 			<key>public.kern2.GRK_iotadieresis</key>
-			<integer>10</integer>
+			<integer>17</integer>
 			<key>public.kern2.GRK_mu</key>
 			<integer>-6</integer>
 			<key>public.kern2.GRK_upsilon</key>
@@ -15300,32 +15343,12 @@
 		</dict>
 		<key>yi</key>
 		<dict>
-			<key>Izhitsa</key>
-			<integer>35</integer>
-			<key>Yat</key>
-			<integer>11</integer>
-			<key>backslash</key>
-			<integer>9</integer>
-			<key>public.kern2.CYR_Che</key>
-			<integer>11</integer>
-			<key>public.kern2.CYR_Dje</key>
-			<integer>26</integer>
-			<key>public.kern2.CYR_En</key>
-			<integer>29</integer>
-			<key>public.kern2.CYR_Ucyr</key>
-			<integer>11</integer>
-			<key>public.kern2.CYR_Zhe</key>
-			<integer>26</integer>
 			<key>public.kern2.quotedbl</key>
 			<integer>20</integer>
 			<key>public.kern2.quoteleft</key>
-			<integer>19</integer>
+			<integer>10</integer>
 			<key>public.kern2.quoteright</key>
-			<integer>26</integer>
-			<key>public.kern2.registered</key>
-			<integer>31</integer>
-			<key>public.kern2.trademark</key>
-			<integer>11</integer>
+			<integer>17</integer>
 			<key>yi</key>
 			<integer>54</integer>
 		</dict>
@@ -15469,7 +15492,7 @@
 			<key>chi</key>
 			<integer>2</integer>
 			<key>iotadieresistonos</key>
-			<integer>81</integer>
+			<integer>47</integer>
 			<key>kai</key>
 			<integer>11</integer>
 			<key>lambda</key>
@@ -15497,7 +15520,7 @@
 			<key>public.kern2.GRK_iota</key>
 			<integer>-6</integer>
 			<key>public.kern2.GRK_iotadieresis</key>
-			<integer>40</integer>
+			<integer>47</integer>
 			<key>public.kern2.GRK_upsilon</key>
 			<integer>-21</integer>
 			<key>public.kern2.colon</key>
@@ -15536,10 +15559,6 @@
 			<integer>-46</integer>
 			<key>theta</key>
 			<integer>-2</integer>
-			<key>upsilondieresis</key>
-			<integer>-16</integer>
-			<key>upsilondieresistonos</key>
-			<integer>-11</integer>
 			<key>xi</key>
 			<integer>6</integer>
 		</dict>

@@ -4,35 +4,7 @@
 	<advance width="258"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="59" y="619" type="curve"/>
-			<point x="80" y="619"/>
-			<point x="98" y="635"/>
-			<point x="98" y="658" type="curve"/>
-			<point x="98" y="681"/>
-			<point x="80" y="696"/>
-			<point x="59" y="696" type="curve"/>
-			<point x="39" y="696"/>
-			<point x="21" y="681"/>
-			<point x="21" y="658" type="curve"/>
-			<point x="21" y="635"/>
-			<point x="39" y="619"/>
-		</contour>
-		<contour>
-			<point x="228" y="619" type="curve"/>
-			<point x="249" y="619"/>
-			<point x="266" y="635"/>
-			<point x="266" y="658" type="curve"/>
-			<point x="266" y="681"/>
-			<point x="249" y="696"/>
-			<point x="228" y="696" type="curve"/>
-			<point x="207" y="696"/>
-			<point x="189" y="681"/>
-			<point x="189" y="658" type="curve"/>
-			<point x="189" y="635"/>
-			<point x="207" y="619"/>
-		</contour>
-		<contour>
-			<point name="hintSet0010" x="173" y="-13" type="curve"/>
+			<point name="hintSet0000" x="173" y="-13" type="curve"/>
 			<point x="204" y="-13"/>
 			<point x="227" y="8"/>
 			<point x="239" y="29" type="curve"/>
@@ -43,14 +15,42 @@
 			<point x="156" y="27"/>
 			<point x="139" y="43"/>
 			<point x="139" y="101" type="curve"/>
-			<point x="139" y="175"/>
+			<point name="hintSet0005" x="139" y="175"/>
 			<point x="144" y="260"/>
 			<point x="154" y="467" type="curve"/>
 			<point x="145" y="474" type="line"/>
 			<point x="101" y="461" type="line"/>
 			<point x="102" y="98" type="line"/>
-			<point x="102" y="16"/>
+			<point name="hintSet0009" x="102" y="16"/>
 			<point x="128" y="-13"/>
+		</contour>
+		<contour>
+			<point name="hintSet0010" x="47" y="619" type="curve"/>
+			<point x="67" y="619"/>
+			<point x="85" y="635"/>
+			<point x="85" y="658" type="curve"/>
+			<point x="85" y="681"/>
+			<point x="67" y="696"/>
+			<point x="47" y="696" type="curve"/>
+			<point x="26" y="696"/>
+			<point x="8" y="681"/>
+			<point x="8" y="658" type="curve"/>
+			<point x="8" y="635"/>
+			<point x="26" y="619"/>
+		</contour>
+		<contour>
+			<point x="215" y="619" type="curve"/>
+			<point x="236" y="619"/>
+			<point x="253" y="635"/>
+			<point x="253" y="658" type="curve"/>
+			<point x="253" y="681"/>
+			<point x="236" y="696"/>
+			<point x="215" y="696" type="curve"/>
+			<point x="195" y="696"/>
+			<point x="176" y="681"/>
+			<point x="176" y="658" type="curve"/>
+			<point x="176" y="635"/>
+			<point x="195" y="619"/>
 		</contour>
 	</outline>
 	<lib>
@@ -67,13 +67,12 @@
 							<string>hstem -13 40</string>
 							<string>hstem 474 -20</string>
 							<string>hstem 619 77</string>
-							<string>vstem 21 77</string>
-							<string>vstem 189 77</string>
+							<string>vstem 102 37</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0010</string>
+						<string>hintSet0005</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 40</string>
@@ -82,9 +81,33 @@
 							<string>vstem 102 37</string>
 						</array>
 					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0009</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 40</string>
+							<string>hstem 474 -20</string>
+							<string>hstem 619 77</string>
+							<string>vstem 102 37</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0010</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -13 40</string>
+							<string>hstem 474 -20</string>
+							<string>hstem 619 77</string>
+							<string>vstem 8 77</string>
+							<string>vstem 102 37</string>
+							<string>vstem 176 77</string>
+						</array>
+					</dict>
 				</array>
 				<key>id</key>
-				<string>af1648518382d81e54528464c6e73c9cc31f9ea9d1de303b0d94b5196c016368309fee642867a8553641e7b6ffeed9e6b12b188649564d9b8ab8fda47799a6e1</string>
+				<string>0f85d0e9691b34a61147dc3da0f89f2a649c0a297c69ff6e8e0f05fbf737b0b9fa40e09a4280c2fcad53549f1b13cfe2cc49cf1a9ad956d5519faa4cd3caa70c</string>
 			</dict>
 		</dict>
 	</lib>
