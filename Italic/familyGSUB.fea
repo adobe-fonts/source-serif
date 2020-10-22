@@ -41,8 +41,14 @@ languagesystem cyrl BGR; # Bulgarian
 @LAT_UC_ALL = [ @LAT_UC_BASIC @LAT_UC_ACCENTED @LAT_UC_ADDL ];
 
 # for ccmp
-@LAT_UC_ACCENTED_DECOMP = [ Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehoi Abrevetilde Acaron Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhoi Acircumflextilde Adotbelow Ahoi Aring Aogonek Ccedilla Cacute Ccaron Ccircumflex Cdotaccent Dcaron Ddotbelow Dlinebelow Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Edotaccent Eogonek Ebreve Ecircumflexacute Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhoi Ecircumflextilde Edotbelow Ehoi Etilde Gbreve Gdotaccent Gcommaaccent Gcaron Gcircumflex Gmacron Gtilde Hbrevebelow Hcircumflex Hdotbelow Igrave Iacute Icircumflex Idieresis Imacron Idotaccent Iogonek Icaron Idotbelow Ihoi Itilde Jcircumflex Kcommaaccent Lacute Lcommaaccent Ldotbelow Ldotbelowmacron Llinebelow Mdotbelow Nacute Ncaron Ntilde Ncommaaccent Ndotaccent Ndotbelow Nlinebelow Ograve Oacute Ocircumflex Otilde Odieresis Omacron Ohungarumlaut Ocaron Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhoi Ocircumflextilde Odotbelow Ohoi Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhoi Ohorntilde Racute Rcaron Rcommaaccent Rdotbelow Rdotbelowmacron Rlinebelow Sacute Scaron Scedilla Scommaaccent Scircumflex Sdotaccent Sdotbelow Tcaron Tcedilla Tcommaaccent Tdotbelow Tlinebelow Ugrave Uacute Ucircumflex Udieresis Umacron Uring Uhungarumlaut Ubreve Ucaron Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Uhoi Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhoi Uhorntilde Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ydieresis Ycircumflex Ydotaccent Ydotbelow Ygrave Yhoi Ytilde Zacute Zcaron Zdotaccent Zdotbelow Macute Ngrave Obreve ];
-@LAT_LC_ACCENTED_DECOMP = [ agrave aacute acircumflex atilde adieresis amacron abreve abreveacute abrevedotbelow abrevegrave abrevehoi abrevetilde acaron acircumflexacute acircumflexdotbelow acircumflexgrave acircumflexhoi acircumflextilde adotbelow ahoi aring ccedilla cacute ccaron ccircumflex cdotaccent ddotbelow dlinebelow egrave eacute ecircumflex ecaron edieresis emacron edotaccent ebreve ecircumflexacute ecircumflexdotbelow ecircumflexgrave ecircumflexhoi ecircumflextilde edotbelow ehoi etilde gbreve gdotaccent gcaron gcircumflex gmacron gtilde hbrevebelow hcircumflex hdotbelow igrave iacute icircumflex idieresis imacron iogonek icaron idotbelow ihoi itilde jcircumflex kcommaaccent lacute lcommaaccent ldotbelow ldotbelowmacron llinebelow mdotbelow nacute ncaron ntilde ncommaaccent ndotaccent ndotbelow nlinebelow ograve oacute ocircumflex otilde odieresis omacron ohungarumlaut ocaron ocircumflexacute ocircumflexdotbelow ocircumflexgrave ocircumflexhoi ocircumflextilde odotbelow ohoi ohorn ohornacute ohorndotbelow ohorngrave ohornhoi ohorntilde racute rcaron rcommaaccent rdotbelow rdotbelowmacron rlinebelow sacute scaron scedilla scommaaccent scircumflex sdotaccent sdotbelow tcedilla tcommaaccent tdotbelow tlinebelow ugrave uacute ucircumflex udieresis umacron uring uhungarumlaut ubreve ucaron udieresisacute udieresiscaron udieresisgrave udieresismacron udotbelow uhoi uhorn uhornacute uhorndotbelow uhorngrave uhornhoi uhorntilde utilde wacute wcircumflex wdieresis wgrave yacute ydieresis ycircumflex ydotaccent ydotbelow ygrave yhoi ytilde zacute zcaron zdotaccent zdotbelow macute ngrave obreve ];
+@LAT_UC_ACCENTED_DECOMP = [ Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehoi Abrevetilde Acaron Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhoi Acircumflextilde Adotbelow Ahoi Aring Aogonek Ccedilla Cacute Ccaron Ccircumflex Cdotaccent Dcaron Ddotbelow Dlinebelow Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Edotaccent Eogonek Ebreve Ecircumflexacute Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhoi Ecircumflextilde Edotbelow Ehoi Etilde Gbreve Gdotaccent Gcommaaccent Gcaron Gcircumflex Gmacron Gtilde Hbrevebelow Hcircumflex Hdotbelow Igrave Iacute Icircumflex Idieresis Imacron Idotaccent Iogonek Icaron Idotbelow Ihoi Itilde Jcircumflex Kcommaaccent Lacute Lcommaaccent Ldotbelow Ldotbelowmacron Llinebelow Macute Mdotbelow Nacute Ncaron Ngrave Ntilde Ncommaaccent Ndotaccent Ndotbelow Nlinebelow Ograve Oacute Obreve Ocircumflex Otilde Odieresis Omacron Ohungarumlaut Ocaron Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhoi Ocircumflextilde Odotbelow Ohoi Ohornacute Ohorndotbelow Ohorngrave Ohornhoi Ohorntilde Racute Rcaron Rcommaaccent Rdotbelow Rdotbelowmacron Rlinebelow Sacute Scaron Scedilla Scommaaccent Scircumflex Sdotaccent Sdotbelow Tcaron Tcedilla Tcommaaccent Tdotbelow Tlinebelow Ugrave Uacute Ucircumflex Udieresis Umacron Uring Uhungarumlaut Ubreve Ucaron Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Uhoi Uhornacute Uhorndotbelow Uhorngrave Uhornhoi Uhorntilde Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ydieresis Ycircumflex Ydotaccent Ydotbelow Ygrave Yhoi Ytilde Zacute Zcaron Zdotaccent Zdotbelow ];
+@LAT_LC_ACCENTED_DECOMP = [ agrave aacute acircumflex atilde adieresis amacron abreve abreveacute abrevedotbelow abrevegrave abrevehoi abrevetilde acaron acircumflexacute acircumflexdotbelow acircumflexgrave acircumflexhoi acircumflextilde adotbelow ahoi aring ccedilla cacute ccaron ccircumflex cdotaccent ddotbelow dlinebelow egrave eacute ecircumflex ecaron edieresis emacron edotaccent ebreve ecircumflexacute ecircumflexdotbelow ecircumflexgrave ecircumflexhoi ecircumflextilde edotbelow ehoi etilde gbreve gdotaccent gcaron gcircumflex gmacron gtilde hbrevebelow hcircumflex hdotbelow igrave iacute icircumflex idieresis imacron iogonek icaron idotbelow ihoi itilde jcircumflex kcommaaccent lacute lcommaaccent ldotbelow ldotbelowmacron llinebelow macute mdotbelow nacute ncaron ngrave ntilde ncommaaccent ndotaccent ndotbelow nlinebelow ograve oacute obreve ocircumflex otilde odieresis omacron ohungarumlaut ocaron ocircumflexacute ocircumflexdotbelow ocircumflexgrave ocircumflexhoi ocircumflextilde odotbelow ohoi ohornacute ohorndotbelow ohorngrave ohornhoi ohorntilde racute rcaron rcommaaccent rdotbelow rdotbelowmacron rlinebelow sacute scaron scedilla scommaaccent scircumflex sdotaccent sdotbelow tcedilla tcommaaccent tdieresis tdotbelow tlinebelow ugrave uacute ucircumflex udieresis umacron uring uhungarumlaut ubreve ucaron udieresisacute udieresiscaron udieresisgrave udieresismacron udotbelow uhoi uhornacute uhorndotbelow uhorngrave uhornhoi uhorntilde utilde wacute wcircumflex wdieresis wgrave yacute ydieresis ycircumflex ydotaccent ydotbelow ygrave yhoi ytilde zacute zcaron zdotaccent zdotbelow ];
+@GRK_LC_ACCENTED_DECOMP = [ alphatonos epsilontonos etatonos iotatonos iotadieresis omicrontonos upsilontonos upsilondieresis omegatonos iotadieresistonos upsilondieresistonos ];
+@CYR_UC_ACCENTED_DECOMP = [ Ishort Io Gje Yi Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr ];
+@CYR_LC_ACCENTED_DECOMP = [ ishort io gje yi kje igravecyr ushort zhebreve abrevecyr iebreve imacroncyr odieresiscyr umacroncyr uacutedblcyr ];
+
+@LC_ACCENTED_DECOMP_ALL = [ @LAT_LC_ACCENTED_DECOMP @CYR_LC_ACCENTED_DECOMP @GRK_LC_ACCENTED_DECOMP ];
+@UC_ACCENTED_DECOMP_ALL = [ @LAT_UC_ACCENTED_DECOMP @CYR_UC_ACCENTED_DECOMP ];
 
 # Greek:
 
@@ -82,8 +88,10 @@ languagesystem cyrl BGR; # Bulgarian
 @CASE_SOURCE  =  [  at      braceleft      braceright      bracketleft      bracketright      emdash      endash      exclamdown      guillemotleft      guillemotright      guilsinglleft      guilsinglright      horizontalbar      hyphen      parenleft      parenright      questiondown      ];
 @CASE_TARGET  =  [  at.cap  braceleft.cap  braceright.cap  bracketleft.cap  bracketright.cap  emdash.cap  endash.cap  exclamdown.cap  guillemotleft.cap  guillemotright.cap  guilsinglleft.cap  guilsinglright.cap  horizontalbar.cap  hyphen.cap  parenleft.cap  parenright.cap  questiondown.cap  ];
 
-@MARKS_CMB      = [ acutecmb breveacute brevecmb brevecmb.cyr brevegrave brevehoi brevetilde caroncmb circumflexacute circumflexcmb circumflexgrave circumflexhoi circumflextilde dieresisacute dieresiscaron dieresiscmb dieresisgrave dieresismacron dotaccentcmb gravecmb hoicmb hungarumlautcmb macroncmb ringcmb tildecmb ];
-@MARKS_CMB_CASE = [ acutecmb.cap breveacute.cap brevecmb.cap brevecmb.cyrcap brevegrave.cap brevehoi.cap brevetilde.cap caroncmb.cap circumflexacute.cap circumflexcmb.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap dieresisacute.cap dieresiscaron.cap dieresiscmb.cap dieresisgrave.cap dieresismacron.cap dotaccentcmb.cap gravecmb.cap hoicmb.cap hungarumlautcmb.cap macroncmb.cap ringcmb.cap tildecmb.cap ];
+@MARKS_CMB_ABOVE = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb ringcmb hungarumlautcmb caroncmb hoicmb dieresisacute dieresisgrave dieresismacron dieresiscaron circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde brevecmb.cyr ];
+@MARKS_CMB_ABOVE_CAP = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap hoicmb.cap dieresisacute.cap dieresisgrave.cap dieresismacron.cap dieresiscaron.cap circumflexacute.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehoi.cap brevetilde.cap brevecmb.cyrcap ];
+
+@MARKS_CMB_BELOW = [ commabelowcmb cedillacmb ogonekcmb verticallinebelowcmb brevebelowcmb dieresisbelowcmb dotbelowcmb macronbelowcmb ];
 @DOUBLE_MARKS = [ dieresisacute dieresistonoscmb dieresisgrave dieresismacron dieresiscaron circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde ];
 
 lookup locl_NLD_ijacute {
@@ -196,7 +204,7 @@ lookup DECOMPOSITION {
     sub Ocircumflextilde by O circumflexcmb.cap tildecmb.cap;
     sub Odotbelow by O dotbelowcmb;
     sub Ohoi by O hoicmb.cap;
-    sub Ohorn by O horncmb;
+    # sub Ohorn by O horncmb;
     sub Ohornacute by Ohorn acutecmb.cap;
     sub Ohorndotbelow by Ohorn dotbelowcmb;
     sub Ohorngrave by Ohorn gravecmb.cap;
@@ -235,7 +243,7 @@ lookup DECOMPOSITION {
     sub Udieresismacron by U dieresiscmb.cap macroncmb.cap;
     sub Udotbelow by U dotbelowcmb;
     sub Uhoi by U hoicmb.cap;
-    sub Uhorn by U horncmb;
+    # sub Uhorn by U horncmb;
     sub Uhornacute by Uhorn acutecmb.cap;
     sub Uhorndotbelow by Uhorn dotbelowcmb;
     sub Uhorngrave by Uhorn gravecmb.cap;
@@ -354,15 +362,14 @@ lookup DECOMPOSITION {
     sub ocircumflextilde by o circumflexcmb tildecmb;
     sub odotbelow by o dotbelowcmb;
     sub ohoi by o hoicmb;
-    sub ohorn by o horncmb;
     sub ohornacute by ohorn acutecmb;
     sub ohorndotbelow by ohorn dotbelowcmb;
     sub ohorngrave by ohorn gravecmb;
     sub ohornhoi by ohorn hoicmb;
     sub ohorntilde by ohorn tildecmb;
     sub racute by r acutecmb;
-    sub rcommaaccent by r commabelowcmb;
     sub rcaron by r caroncmb;
+    sub rcommaaccent by r commabelowcmb;
     sub rdotbelow by r dotbelowcmb;
     sub rdotbelowmacron by rdotbelow macroncmb;
     sub rlinebelow by r macronbelowcmb;
@@ -393,7 +400,6 @@ lookup DECOMPOSITION {
     sub udieresismacron by u dieresiscmb macroncmb;
     sub udotbelow by u dotbelowcmb;
     sub uhoi by u hoicmb;
-    sub uhorn by u horncmb;
     sub uhornacute by uhorn acutecmb;
     sub uhorndotbelow by uhorn dotbelowcmb;
     sub uhorngrave by uhorn gravecmb;
@@ -455,6 +461,7 @@ lookup DECOMPOSITION {
     sub abrevecyr by acyr brevecmb.cyr;
     sub iebreve by ie brevecmb.cyr;
     sub imacroncyr by icyr macroncmb;
+    sub odieresiscyr by ocyr dieresiscmb;
     sub umacroncyr by ucyr macroncmb;
     sub uacutedblcyr by ucyr hungarumlautcmb;
 
@@ -569,35 +576,46 @@ feature ccmp {
         sub brevecmb tildecmb by brevetilde;
     } MARKS_COMPOSITION;
 
+    lookup DECOMPOSE_PRECOMPOSED {
+        sub [ @UC_ACCENTED_DECOMP_ALL @LC_ACCENTED_DECOMP_ALL ]' lookup DECOMPOSITION [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW ];
+        sub [ i j iukran je ]' lookup SOFT_DOT @MARKS_CMB_ABOVE;
+        sub @DOUBLE_MARKS' lookup MARKS_DECOMPOSITION @MARKS_CMB_ABOVE;
+    } DECOMPOSE_PRECOMPOSED;
+
+    lookup CAP_ACCENTS_CMB_CONTEXT {
+        # substitutes combining marks for minuscules with forms for uppercase
+        sub [ @UC_ALL ] @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
+        sub [ @UC_ALL ] @MARKS_CMB_BELOW @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
+        sub @MARKS_CMB_ABOVE_CAP @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
+    } CAP_ACCENTS_CMB_CONTEXT;
+
     lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {
-        # Glyphs that would look odd or be wrong if composed
-        # using only combining accents
+        # Glyphs that would look odd or be wrong if composed only with combining accents.
+        # The re-constructional substitution is mostly for InDesign.
+        # Works as expected in InDesign (15.1.2), not in Chrome (86.0) or Safari (14.0).
+
+        # For some reason, L|l|d + caron + dotbelowcmb/macronbelowcmb (in any order) will produce the wrong (and unattached) caron form in Chrome/Safari.
+
         sub d caroncmb by dcaron;
         sub l caroncmb by lcaron;
         sub t caroncmb by tcaron;
-        sub g tildecmb by gtilde;
-        sub G tildecmb by Gtilde;
+        sub L caroncmb.cap by Lcaron;
+        sub g tildecmb by gtilde;  # AL4
+        sub G tildecmb.cap by Gtilde;  # AL4
         sub e ogonekcmb by eogonek;
         sub i ogonekcmb by iogonek;
         sub I ogonekcmb by Iogonek;
-        # sub o ogonekcmb by oogonek;
-        # sub O ogonekcmb by Oogonek;
         sub u ogonekcmb by uogonek;
         sub U ogonekcmb by Uogonek;
         sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
+
     } GLYPH_COMPOSITION_LAT_NONCONTEXTUAL;
 
-    lookup DECOMPOSE_PRECOMPOSED {
-        sub [ @LAT_UC_ACCENTED_DECOMP @LAT_LC_ACCENTED_DECOMP ]' lookup DECOMPOSITION @MARKS_CMB;
-        sub [ i j iukran je ]' lookup SOFT_DOT @MARKS_CMB;
-        sub @DOUBLE_MARKS' lookup MARKS_DECOMPOSITION @MARKS_CMB;
-    } DECOMPOSE_PRECOMPOSED;
+    # works but silly. The caron is duplicated in the end.
+    # lookup CARON_RESHUFFLE {
+    # 	sub [ d l t L ]' [ @MARKS_CMB_BELOW @MARKS_CMB_ABOVE ] [ caroncmb caroncmb.cap ] by [ dcaron lcaron tcaron Lcaron ];
 
-    lookup CASE_ACCENTS_CMB_CONTEXT {
-        # substitutes combining marks for minuscules with forms for uppercase
-        sub [ @LAT_UC_ALL ] @MARKS_CMB' by @MARKS_CMB_CASE;
-        sub @MARKS_CMB_CASE @MARKS_CMB' by @MARKS_CMB_CASE;
-    } CASE_ACCENTS_CMB_CONTEXT;
+    # } CARON_RESHUFFLE;
 
     lookup IJ_ACUTE {
         script latn;
