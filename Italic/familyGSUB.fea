@@ -49,6 +49,9 @@ languagesystem cyrl BGR; # Bulgarian
 
 @LC_ACCENTED_DECOMP_ALL = [ @LAT_LC_ACCENTED_DECOMP @CYR_LC_ACCENTED_DECOMP @GRK_LC_ACCENTED_DECOMP ];
 @UC_ACCENTED_DECOMP_ALL = [ @LAT_UC_ACCENTED_DECOMP @CYR_UC_ACCENTED_DECOMP ];
+@LAT_LC_ASCENDING = [ b d f h k l dcaron gcommaaccent lcaron tcaron thorn ];
+@CYR_LC_ASCENDING = [ zhe.bgr ka.bgr yu.bgr ];
+@LC_ASCENDING_ALL = [ @LAT_LC_ASCENDING @CYR_LC_ASCENDING ];
 
 # Greek:
 
@@ -584,9 +587,10 @@ feature ccmp {
 
     lookup CAP_ACCENTS_CMB_CONTEXT {
         # substitutes combining marks for minuscules with forms for uppercase
-        sub [ @UC_ALL ] @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
-        sub [ @UC_ALL ] @MARKS_CMB_BELOW @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
+        sub [ @UC_ALL @LC_ASCENDING_ALL ] @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
+        sub [ @UC_ALL @LC_ASCENDING_ALL ] @MARKS_CMB_BELOW @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
         sub @MARKS_CMB_ABOVE_CAP @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
+        sub @MARKS_CMB_ABOVE_CAP @MARKS_CMB_BELOW @MARKS_CMB_ABOVE' by @MARKS_CMB_ABOVE_CAP;
     } CAP_ACCENTS_CMB_CONTEXT;
 
     lookup GLYPH_COMPOSITION_LAT_NONCONTEXTUAL {
