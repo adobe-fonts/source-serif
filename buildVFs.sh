@@ -2,8 +2,8 @@
 
 set -e
 
-ro_name=SourceSerifVariable-Roman
-it_name=SourceSerifVariable-Italic
+ro_name=SourceSerif4Variable-Roman
+it_name=SourceSerif4Variable-Italic
 
 # get absolute path to bash script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
@@ -19,8 +19,8 @@ function build_var_font {
 	# $2 is font name
 	echo $2
 	# build variable OTF
-	# -p is for using 'post' table format 3
-	buildmasterotfs -d $1/$2.designspace
+	# --mkot gs is for using the makeotf option -gs, which omits glyphs not in the GOADB
+	buildmasterotfs --mkot gs -d $1/$2.designspace
 	buildcff2vf --omit-mac-names -d $1/$2.designspace
 
 	# extract and subroutinize the CFF2 table
@@ -30,12 +30,15 @@ function build_var_font {
 	# replace CFF2 table with subroutinized version
 	sfntedit -a CFF2=$1/.tb_cff2 $1/$2.otf
 
+	# comment out STAT feature file which cannot be digested by fontmake
+	sed -i '' 's/^/#/' $1/../STAT.fea
+
 	# build variable TTF
 	fontmake -m $1/$2.designspace -o variable --production-names --output-path $1/$2.ttf --feature-writer None
 
 	# use DSIG, name, OS/2, hhea, post, and STAT tables from OTFs
-	sfntedit -x DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT $1/$2.otf
-	sfntedit -a DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT $1/$2.ttf
+	sfntedit -x DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT,fvar=$1/.tb_fvar $1/$2.otf
+	sfntedit -a DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT,fvar=$1/.tb_fvar $1/$2.ttf
 
 	# use cmap, GDEF, GPOS, and GSUB tables from TTFs
 	sfntedit -x cmap=$1/.tb_cmap,GDEF=$1/.tb_GDEF,GPOS=$1/.tb_GPOS,GSUB=$1/.tb_GSUB $1/$2.ttf
@@ -47,7 +50,10 @@ function build_var_font {
 
 	# delete build artifacts
 	rm $1/.tb_*
-	rm $1/master_*/*.*tf
+	rm $1/*/master_*/*.*tf
+
+	# undo changes to STAT feature file
+	sed -i '' 's/#//' $1/../STAT.fea
 
     echo "Done with $2"
     echo ""
