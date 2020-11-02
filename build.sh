@@ -25,6 +25,10 @@ function build_font {
 	font_dir=$DIR/$slope/Instances/$opsz/$weight
 	font_ufo=$font_dir/font.ufo
 	ps_name=$family$opsz-$weight
+	if [[ $opsz == 'Text' ]]
+		# the 'Text' styles do not include their opsz name
+		then ps_name=$family-$weight
+	fi
 	echo $ps_name
 	echo "Building OTF ..."
 	# -r is for "release mode" (subroutinization + applied glyph order)
