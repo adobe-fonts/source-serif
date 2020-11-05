@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="source-serif-pro.css">
     <style>
 
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #222;
+                color: #FFF;
+            }
+            div:hover
+            {
+                background-color: #333;
+            }
+        }
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #FFF;
+                color: #000;
+            }
+            div:hover
+            {
+                background-color: #EEE;
+            }
+        }
+
         body {
             font-family: 'Source Serif 4', sans;
             overflow-x: hidden;
@@ -19,20 +40,21 @@
         article {
             margin: 0 auto;
             max-width: 900px;
-            padding: 1em;
+            padding: 1rem;
         }
         h1 {
-            font-size: 56px;
+            font-size: 5rem;
             margin: 0;
         }
         h2 {
             color: #AAA ;
-            margin-top: 0.75em;
-            margin-bottom: 0;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+            padding-left: 1rem;
         }
         div {
-            font-size: 40px;
-            padding: 0.5em 0.75em;
+            font-size: 4rem;
+            padding: 0rem 1.5rem;
             margin: 0;
             outline: 0px solid transparent;
             autocorrect: "off";
@@ -41,17 +63,13 @@
         }
         p {
             margin: 0;
-            padding-bottom: .5em;
-        }
-        div:hover
-        {
-            background-color: #EEE;
+            padding-bottom: 1rem;
         }
         .ribbon {
             background: none repeat scroll 0% 0% rgb(34, 34, 34);
             color: white;
             display: block;
-            font: 400 13px 'Source Serif Pro';
+            font: 400 0.75rem 'Source Serif Pro';
             font-weight: 700;
             padding: 8px 150px;
             position: absolute;
@@ -85,7 +103,7 @@
             font-feature-settings: "locl" 1;
             }
 */
-        @media (max-width: 720px) {
+/*        @media (max-width: 720px) {
             h1 {
                 font-size: 36px;
             }
@@ -112,7 +130,7 @@
                 max-width: 1100px;
             }
         }
-
+*/
     </style>
   </head>
   <body>
@@ -368,8 +386,8 @@
         </p>
         </div>
 
-        <a class="ribbon" href="https://github.com/adobe-fonts/source-serif-pro">Fork me on GitHub</a>
-
+<!--         <a class="ribbon" href="https://github.com/adobe-fonts/source-serif-pro">Fork me on GitHub</a>
+ -->
     </article>
   </body>
 </html>
