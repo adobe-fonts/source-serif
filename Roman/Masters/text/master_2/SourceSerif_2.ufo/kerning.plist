@@ -96,6 +96,8 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-20</integer>
+			<key>Germandbls.sc</key>
+			<integer>-10</integer>
 			<key>V.sc</key>
 			<integer>-20</integer>
 			<key>X.sc</key>
@@ -729,12 +731,21 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-90</integer>
+			<key>Germandbls.sc</key>
+			<integer>-30</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-70</integer>
-			<key>public.kern2.LAT_E.sc</key>
-			<integer>5</integer>
+			<key>public.kern2.LAT_O.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.LAT_T.sc</key>
-			<integer>20</integer>
+			<integer>15</integer>
+		</dict>
+		<key>Germandbls.sc</key>
+		<dict>
+			<key>public.kern2.LAT_T.sc</key>
+			<integer>-20</integer>
+			<key>public.kern2.LAT_U.sc</key>
+			<integer>-10</integer>
 		</dict>
 		<key>Gheup</key>
 		<dict>
@@ -1146,6 +1157,17 @@
 			<key>public.kern2.trademark</key>
 			<integer>0</integer>
 		</dict>
+		<key>Lcaron.sc</key>
+		<dict>
+			<key>V.sc</key>
+			<integer>-20</integer>
+			<key>public.kern2.LAT_T.sc</key>
+			<integer>-20</integer>
+			<key>public.kern2.LAT_W.sc</key>
+			<integer>-20</integer>
+			<key>public.kern2.LAT_Y.sc</key>
+			<integer>-10</integer>
+		</dict>
 		<key>Nu</key>
 		<dict>
 			<key>Chi</key>
@@ -1316,10 +1338,12 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-70</integer>
+			<key>Germandbls.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-70</integer>
 			<key>public.kern2.LAT_O.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Phi</key>
 		<dict>
@@ -1981,29 +2005,27 @@
 		<key>Thorn.sc</key>
 		<dict>
 			<key>AE.sc</key>
-			<integer>-60</integer>
-			<key>V.sc</key>
 			<integer>-40</integer>
+			<key>V.sc</key>
+			<integer>-30</integer>
 			<key>X.sc</key>
-			<integer>-50</integer>
+			<integer>-30</integer>
 			<key>public.kern2.LAT_A.sc</key>
-			<integer>-80</integer>
+			<integer>-60</integer>
 			<key>public.kern2.LAT_E.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_J.sc</key>
-			<integer>-20</integer>
+			<integer>-10</integer>
 			<key>public.kern2.LAT_M.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.LAT_O.sc</key>
 			<integer>20</integer>
-			<key>public.kern2.LAT_T.sc</key>
-			<integer>-30</integer>
 			<key>public.kern2.LAT_U.sc</key>
-			<integer>-20</integer>
+			<integer>-10</integer>
 			<key>public.kern2.LAT_W.sc</key>
-			<integer>-40</integer>
+			<integer>-30</integer>
 			<key>public.kern2.LAT_Y.sc</key>
-			<integer>-50</integer>
+			<integer>-30</integer>
 		</dict>
 		<key>Tshe</key>
 		<dict>
@@ -2192,16 +2214,18 @@
 			<integer>-110</integer>
 			<key>V.sc</key>
 			<integer>20</integer>
+			<key>X.sc</key>
+			<integer>10</integer>
 			<key>public.kern2.LAT_A.sc</key>
-			<integer>-110</integer>
+			<integer>-100</integer>
 			<key>public.kern2.LAT_O.sc</key>
-			<integer>-30</integer>
+			<integer>-20</integer>
 			<key>public.kern2.LAT_S.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_W.sc</key>
 			<integer>20</integer>
 			<key>public.kern2.LAT_Y.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>X</key>
 		<dict>
@@ -2286,6 +2310,8 @@
 			<integer>-20</integer>
 			<key>public.kern2.LAT_S.sc</key>
 			<integer>-5</integer>
+			<key>public.kern2.LAT_T.sc</key>
+			<integer>-10</integer>
 		</dict>
 		<key>Yat</key>
 		<dict>
@@ -7877,13 +7903,13 @@
 			<key>public.kern2.LAT_O.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_T.sc</key>
-			<integer>-70</integer>
+			<integer>-60</integer>
 			<key>public.kern2.LAT_U.sc</key>
 			<integer>-40</integer>
 			<key>public.kern2.LAT_W.sc</key>
-			<integer>-70</integer>
-			<key>public.kern2.LAT_Y.sc</key>
 			<integer>-80</integer>
+			<key>public.kern2.LAT_Y.sc</key>
+			<integer>-70</integer>
 		</dict>
 		<key>public.kern1.LAT_C</key>
 		<dict>
@@ -7925,6 +7951,13 @@
 			<integer>20</integer>
 			<key>x</key>
 			<integer>-10</integer>
+		</dict>
+		<key>public.kern1.LAT_C.sc</key>
+		<dict>
+			<key>public.kern2.LAT_O.sc</key>
+			<integer>10</integer>
+			<key>public.kern2.LAT_S.sc</key>
+			<integer>10</integer>
 		</dict>
 		<key>public.kern1.LAT_D</key>
 		<dict>
@@ -8022,19 +8055,21 @@
 		<key>public.kern1.LAT_D.sc</key>
 		<dict>
 			<key>AE.sc</key>
-			<integer>-40</integer>
+			<integer>-50</integer>
+			<key>Germandbls.sc</key>
+			<integer>-10</integer>
 			<key>V.sc</key>
 			<integer>-25</integer>
 			<key>X.sc</key>
 			<integer>-35</integer>
 			<key>public.kern2.LAT_A.sc</key>
-			<integer>-60</integer>
+			<integer>-50</integer>
 			<key>public.kern2.LAT_E.sc</key>
+			<integer>-10</integer>
+			<key>public.kern2.LAT_J.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_M.sc</key>
 			<integer>-10</integer>
-			<key>public.kern2.LAT_O.sc</key>
-			<integer>20</integer>
 			<key>public.kern2.LAT_T.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_U.sc</key>
@@ -8093,14 +8128,8 @@
 		</dict>
 		<key>public.kern1.LAT_E.sc</key>
 		<dict>
-			<key>V.sc</key>
-			<integer>5</integer>
-			<key>public.kern2.LAT_O.sc</key>
-			<integer>-10</integer>
 			<key>public.kern2.LAT_U.sc</key>
 			<integer>-15</integer>
-			<key>public.kern2.LAT_W.sc</key>
-			<integer>5</integer>
 		</dict>
 		<key>public.kern1.LAT_G</key>
 		<dict>
@@ -8201,12 +8230,16 @@
 			<integer>-10</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-20</integer>
+			<key>public.kern2.LAT_E.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.LAT_J.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>public.kern2.LAT_M.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_O.sc</key>
 			<integer>20</integer>
+			<key>public.kern2.LAT_S.sc</key>
+			<integer>10</integer>
 			<key>public.kern2.LAT_T.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.LAT_U.sc</key>
@@ -8270,6 +8303,13 @@
 			<integer>-10</integer>
 			<key>public.kern2.zero.lf</key>
 			<integer>-10</integer>
+		</dict>
+		<key>public.kern1.LAT_H.sc</key>
+		<dict>
+			<key>Germandbls.sc</key>
+			<integer>-20</integer>
+			<key>public.kern2.LAT_O.sc</key>
+			<integer>-5</integer>
 		</dict>
 		<key>public.kern1.LAT_J</key>
 		<dict>
@@ -8378,8 +8418,10 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-60</integer>
+			<key>Germandbls.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.LAT_A.sc</key>
-			<integer>-50</integer>
+			<integer>-40</integer>
 			<key>public.kern2.LAT_M.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_O.sc</key>
@@ -8490,20 +8532,20 @@
 		</dict>
 		<key>public.kern1.LAT_K.sc</key>
 		<dict>
-			<key>AE.sc</key>
-			<integer>30</integer>
+			<key>V.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>20</integer>
-			<key>public.kern2.LAT_M.sc</key>
-			<integer>20</integer>
 			<key>public.kern2.LAT_O.sc</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.LAT_T.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_U.sc</key>
 			<integer>-20</integer>
-			<key>public.kern2.LAT_Z.sc</key>
-			<integer>20</integer>
+			<key>public.kern2.LAT_W.sc</key>
+			<integer>-20</integer>
+			<key>public.kern2.LAT_Y.sc</key>
+			<integer>-20</integer>
 		</dict>
 		<key>public.kern1.LAT_L</key>
 		<dict>
@@ -8579,7 +8621,9 @@
 			<key>V.sc</key>
 			<integer>-40</integer>
 			<key>public.kern2.LAT_T.sc</key>
-			<integer>-30</integer>
+			<integer>-40</integer>
+			<key>public.kern2.LAT_U.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.LAT_W.sc</key>
 			<integer>-40</integer>
 			<key>public.kern2.LAT_Y.sc</key>
@@ -8692,12 +8736,14 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-50</integer>
-			<key>X.sc</key>
-			<integer>-10</integer>
+			<key>Germandbls.sc</key>
+			<integer>-30</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-50</integer>
 			<key>public.kern2.LAT_O.sc</key>
 			<integer>-10</integer>
+			<key>public.kern2.LAT_S.sc</key>
+			<integer>-5</integer>
 			<key>public.kern2.LAT_Z.sc</key>
 			<integer>-10</integer>
 		</dict>
@@ -8784,12 +8830,16 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-40</integer>
+			<key>Germandbls.sc</key>
+			<integer>-20</integer>
 			<key>V.sc</key>
 			<integer>-20</integer>
 			<key>X.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-30</integer>
+			<key>public.kern2.LAT_E.sc</key>
+			<integer>-5</integer>
 			<key>public.kern2.LAT_J.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_M.sc</key>
@@ -8801,9 +8851,9 @@
 			<key>public.kern2.LAT_U.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_W.sc</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 			<key>public.kern2.LAT_Y.sc</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 		</dict>
 		<key>public.kern1.LAT_R</key>
 		<dict>
@@ -8909,19 +8959,15 @@
 		<key>public.kern1.LAT_R.sc</key>
 		<dict>
 			<key>AE.sc</key>
-			<integer>20</integer>
+			<integer>5</integer>
 			<key>V.sc</key>
 			<integer>-50</integer>
 			<key>public.kern2.LAT_A.sc</key>
-			<integer>20</integer>
-			<key>public.kern2.LAT_M.sc</key>
-			<integer>20</integer>
+			<integer>15</integer>
 			<key>public.kern2.LAT_O.sc</key>
 			<integer>-10</integer>
-			<key>public.kern2.LAT_S.sc</key>
-			<integer>5</integer>
 			<key>public.kern2.LAT_T.sc</key>
-			<integer>-40</integer>
+			<integer>-30</integer>
 			<key>public.kern2.LAT_U.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.LAT_W.sc</key>
@@ -9136,6 +9182,8 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-80</integer>
+			<key>Germandbls.sc</key>
+			<integer>-40</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-70</integer>
 			<key>public.kern2.LAT_O.sc</key>
@@ -9260,17 +9308,23 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-90</integer>
+			<key>Germandbls.sc</key>
+			<integer>-40</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-80</integer>
 			<key>public.kern2.LAT_E.sc</key>
 			<integer>-5</integer>
 			<key>public.kern2.LAT_J.sc</key>
-			<integer>-5</integer>
+			<integer>-15</integer>
 			<key>public.kern2.LAT_M.sc</key>
 			<integer>-5</integer>
 			<key>public.kern2.LAT_O.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.LAT_S.sc</key>
+			<integer>-10</integer>
+			<key>public.kern2.LAT_U.sc</key>
+			<integer>-10</integer>
+			<key>public.kern2.LAT_Z.sc</key>
 			<integer>-10</integer>
 		</dict>
 		<key>public.kern1.LAT_Uhorn</key>
@@ -9370,11 +9424,23 @@
 		<dict>
 			<key>AE.sc</key>
 			<integer>-90</integer>
+			<key>Germandbls.sc</key>
+			<integer>-40</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-80</integer>
+			<key>public.kern2.LAT_E.sc</key>
+			<integer>-5</integer>
+			<key>public.kern2.LAT_J.sc</key>
+			<integer>-15</integer>
+			<key>public.kern2.LAT_M.sc</key>
+			<integer>-5</integer>
 			<key>public.kern2.LAT_O.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.LAT_S.sc</key>
+			<integer>-10</integer>
+			<key>public.kern2.LAT_U.sc</key>
+			<integer>-10</integer>
+			<key>public.kern2.LAT_Z.sc</key>
 			<integer>-10</integer>
 		</dict>
 		<key>public.kern1.LAT_W</key>
@@ -9498,16 +9564,18 @@
 			<integer>-100</integer>
 			<key>V.sc</key>
 			<integer>20</integer>
+			<key>X.sc</key>
+			<integer>20</integer>
 			<key>public.kern2.LAT_A.sc</key>
 			<integer>-100</integer>
 			<key>public.kern2.LAT_O.sc</key>
-			<integer>-25</integer>
+			<integer>-20</integer>
 			<key>public.kern2.LAT_S.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_W.sc</key>
 			<integer>20</integer>
 			<key>public.kern2.LAT_Y.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>public.kern1.LAT_Y</key>
 		<dict>
@@ -9629,21 +9697,19 @@
 		<key>public.kern1.LAT_Y.sc</key>
 		<dict>
 			<key>AE.sc</key>
-			<integer>-90</integer>
+			<integer>-70</integer>
 			<key>V.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>public.kern2.LAT_A.sc</key>
-			<integer>-90</integer>
+			<integer>-80</integer>
 			<key>public.kern2.LAT_O.sc</key>
-			<integer>-30</integer>
+			<integer>-25</integer>
 			<key>public.kern2.LAT_S.sc</key>
 			<integer>-10</integer>
-			<key>public.kern2.LAT_T.sc</key>
-			<integer>20</integer>
 			<key>public.kern2.LAT_W.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>public.kern2.LAT_Y.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>public.kern1.LAT_Z</key>
 		<dict>
@@ -9682,8 +9748,8 @@
 		</dict>
 		<key>public.kern1.LAT_Z.sc</key>
 		<dict>
-			<key>public.kern2.LAT_A.sc</key>
-			<integer>5</integer>
+			<key>X.sc</key>
+			<integer>10</integer>
 		</dict>
 		<key>public.kern1.LAT_a</key>
 		<dict>
