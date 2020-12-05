@@ -175,6 +175,8 @@
 		<dict>
 			<key>Chi.sc</key>
 			<integer>-20</integer>
+			<key>Phi.sc</key>
+			<integer>-10</integer>
 			<key>Psi.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
@@ -266,7 +268,7 @@
 		<key>Chi.sc</key>
 		<dict>
 			<key>Phi.sc</key>
-			<integer>-40</integer>
+			<integer>-30</integer>
 			<key>Zeta.sc</key>
 			<integer>20</integer>
 			<key>public.kern2.GRK_Theta.sc</key>
@@ -392,7 +394,7 @@
 			<key>Yat.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Che.sc</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_En.sc</key>
 			<integer>-5</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
@@ -522,12 +524,14 @@
 			<key>public.kern2.CYR_Acyr.sc</key>
 			<integer>-50</integer>
 			<key>public.kern2.CYR_Che.sc</key>
-			<integer>-10</integer>
+			<integer>-15</integer>
 			<key>public.kern2.CYR_De.sc</key>
-			<integer>-70</integer>
+			<integer>-60</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
 			<integer>20</integer>
 			<key>public.kern2.CYR_En.sc</key>
+			<integer>-10</integer>
+			<key>public.kern2.CYR_Ucyr.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
 			<integer>-20</integer>
@@ -772,7 +776,7 @@
 			<key>public.kern2.CYR_Ocyr.sc</key>
 			<integer>-60</integer>
 			<key>public.kern2.CYR_Ze.sc</key>
-			<integer>-20</integer>
+			<integer>-10</integer>
 		</dict>
 		<key>Je</key>
 		<dict>
@@ -900,7 +904,7 @@
 			<key>public.kern2.CYR_Acyr.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_De.sc</key>
-			<integer>-10</integer>
+			<integer>-15</integer>
 		</dict>
 		<key>Kappa</key>
 		<dict>
@@ -982,7 +986,7 @@
 		<key>Kappa.sc</key>
 		<dict>
 			<key>Phi.sc</key>
-			<integer>-30</integer>
+			<integer>-25</integer>
 			<key>Zeta.sc</key>
 			<integer>20</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
@@ -1086,6 +1090,11 @@
 			<integer>-10</integer>
 			<key>public.kern2.GRK_Theta.sc</key>
 			<integer>-10</integer>
+		</dict>
+		<key>Omega.sc</key>
+		<dict>
+			<key>public.kern2.GRK_Upsilon.sc</key>
+			<integer>-30</integer>
 		</dict>
 		<key>P</key>
 		<dict>
@@ -1273,15 +1282,19 @@
 		<key>Phi.sc</key>
 		<dict>
 			<key>Chi.sc</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>Psi.sc</key>
 			<integer>-10</integer>
 			<key>Sigma.sc</key>
 			<integer>-20</integer>
+			<key>Tau.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
 			<integer>-40</integer>
 			<key>public.kern2.GRK_Beta.sc</key>
-			<integer>-20</integer>
+			<integer>-25</integer>
+			<key>public.kern2.GRK_Mu.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.GRK_Upsilon.sc</key>
 			<integer>-50</integer>
 		</dict>
@@ -1363,9 +1376,9 @@
 			<key>Psi.sc</key>
 			<integer>20</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
-			<integer>-70</integer>
+			<integer>-45</integer>
 			<key>public.kern2.GRK_Theta.sc</key>
-			<integer>-10</integer>
+			<integer>-15</integer>
 		</dict>
 		<key>Rho</key>
 		<dict>
@@ -1545,15 +1558,15 @@
 		<key>Shha.sc</key>
 		<dict>
 			<key>Izhitsa.sc</key>
-			<integer>-120</integer>
-			<key>Yat.sc</key>
 			<integer>-80</integer>
+			<key>Yat.sc</key>
+			<integer>-70</integer>
 			<key>public.kern2.CYR_Che.sc</key>
 			<integer>-100</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
-			<integer>-90</integer>
+			<integer>-70</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
-			<integer>-30</integer>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ucyr.sc</key>
@@ -1690,6 +1703,8 @@
 			<integer>-40</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
 			<integer>20</integer>
+			<key>public.kern2.CYR_Ef.sc</key>
+			<integer>-10</integer>
 		</dict>
 		<key>Thorn</key>
 		<dict>
@@ -1851,13 +1866,15 @@
 		<key>Tshe.sc</key>
 		<dict>
 			<key>Izhitsa.sc</key>
-			<integer>-70</integer>
+			<integer>-60</integer>
 			<key>Yat.sc</key>
 			<integer>-50</integer>
 			<key>public.kern2.CYR_Che.sc</key>
 			<integer>-70</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
 			<integer>-20</integer>
+			<key>public.kern2.CYR_Ocyr.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Ucyr.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
@@ -2117,13 +2134,11 @@
 			<key>public.kern2.CYR_Che.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
-			<integer>-20</integer>
-			<key>public.kern2.CYR_Ocyr.sc</key>
-			<integer>20</integer>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Ucyr.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 		</dict>
 		<key>Zeta</key>
 		<dict>
@@ -2174,8 +2189,6 @@
 		<dict>
 			<key>Phi.sc</key>
 			<integer>-20</integer>
-			<key>Psi.sc</key>
-			<integer>-10</integer>
 		</dict>
 		<key>ampersand</key>
 		<dict>
@@ -3712,7 +3725,7 @@
 		<key>public.kern1.CYR_Acyr.sc</key>
 		<dict>
 			<key>Izhitsa.sc</key>
-			<integer>-80</integer>
+			<integer>-65</integer>
 			<key>Yat.sc</key>
 			<integer>-50</integer>
 			<key>public.kern2.CYR_Acyr.sc</key>
@@ -3830,13 +3843,15 @@
 			<key>Yat.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Che.sc</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
 			<integer>-20</integer>
+			<key>public.kern2.CYR_Ucyr.sc</key>
+			<integer>-5</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
 			<integer>-20</integer>
 		</dict>
@@ -3944,11 +3959,11 @@
 			<key>Em.sc</key>
 			<integer>-20</integer>
 			<key>Izhitsa.sc</key>
-			<integer>-30</integer>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_Acyr.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Che.sc</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.CYR_De.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
@@ -3958,7 +3973,7 @@
 			<key>public.kern2.CYR_En.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>public.kern2.CYR_Ucyr.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
@@ -4062,7 +4077,7 @@
 			<key>public.kern2.CYR_Che.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
 			<integer>-15</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
@@ -4125,6 +4140,8 @@
 		<dict>
 			<key>Aie.sc</key>
 			<integer>-10</integer>
+			<key>public.kern2.CYR_Che.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
 			<integer>-10</integer>
 		</dict>
@@ -4261,6 +4278,8 @@
 		<dict>
 			<key>Aie.sc</key>
 			<integer>-90</integer>
+			<key>Ocyr.cs</key>
+			<integer>-20</integer>
 			<key>Ya.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Acyr.sc</key>
@@ -4314,6 +4333,11 @@
 			<integer>-10</integer>
 			<key>yat</key>
 			<integer>-20</integer>
+		</dict>
+		<key>public.kern1.CYR_Ie.sc</key>
+		<dict>
+			<key>public.kern2.CYR_Che.sc</key>
+			<integer>-10</integer>
 		</dict>
 		<key>public.kern1.CYR_Ka</key>
 		<dict>
@@ -4390,12 +4414,12 @@
 		<dict>
 			<key>Yat.sc</key>
 			<integer>-20</integer>
-			<key>public.kern2.CYR_Acyr.sc</key>
-			<integer>20</integer>
+			<key>public.kern2.CYR_Che.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 		</dict>
 		<key>public.kern1.CYR_Kadescender</key>
 		<dict>
@@ -4481,7 +4505,9 @@
 			<key>Yat.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Acyr.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
+			<key>public.kern2.CYR_Che.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
@@ -4580,8 +4606,6 @@
 		<dict>
 			<key>Aie.sc</key>
 			<integer>-60</integer>
-			<key>Dze.sc</key>
-			<integer>10</integer>
 			<key>Izhitsa.sc</key>
 			<integer>-30</integer>
 			<key>Ya.sc</key>
@@ -4589,17 +4613,19 @@
 			<key>public.kern2.CYR_Acyr.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Che.sc</key>
-			<integer>-30</integer>
+			<integer>-40</integer>
 			<key>public.kern2.CYR_De.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
-			<integer>25</integer>
+			<integer>15</integer>
 			<key>public.kern2.CYR_En.sc</key>
 			<integer>-15</integer>
 			<key>public.kern2.CYR_Ucyr.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
 			<integer>-30</integer>
+			<key>public.kern2.CYR_Ze.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Zhe.sc</key>
 			<integer>-20</integer>
 		</dict>
@@ -4643,13 +4669,15 @@
 			<key>Yat.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_Che.sc</key>
-			<integer>-50</integer>
+			<integer>-60</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
 			<integer>-30</integer>
+			<key>public.kern2.CYR_En.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Ucyr.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
-			<integer>-60</integer>
+			<integer>-65</integer>
 		</dict>
 		<key>public.kern1.CYR_Ucyr</key>
 		<dict>
@@ -4833,29 +4861,31 @@
 			<key>Dze.sc</key>
 			<integer>-10</integer>
 			<key>Izhitsa.sc</key>
-			<integer>40</integer>
+			<integer>20</integer>
+			<key>Je.sc</key>
+			<integer>-10</integer>
 			<key>Ya.sc</key>
 			<integer>-20</integer>
+			<key>Yat.sc</key>
+			<integer>-10</integer>
 			<key>public.kern2.CYR_Acyr.sc</key>
-			<integer>-70</integer>
-			<key>public.kern2.CYR_Che.sc</key>
-			<integer>20</integer>
+			<integer>-60</integer>
 			<key>public.kern2.CYR_De.sc</key>
-			<integer>-70</integer>
+			<integer>-60</integer>
 			<key>public.kern2.CYR_Dje.sc</key>
-			<integer>40</integer>
+			<integer>20</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ucyr.sc</key>
-			<integer>50</integer>
+			<integer>10</integer>
 			<key>public.kern2.CYR_Ustraight.sc</key>
-			<integer>30</integer>
+			<integer>10</integer>
 			<key>public.kern2.CYR_Ze.sc</key>
-			<integer>30</integer>
+			<integer>10</integer>
 			<key>public.kern2.CYR_Zhe.sc</key>
-			<integer>30</integer>
+			<integer>10</integer>
 		</dict>
 		<key>public.kern1.CYR_Ustraight</key>
 		<dict>
@@ -5033,9 +5063,13 @@
 			<key>Dze.sc</key>
 			<integer>-30</integer>
 			<key>Ya.sc</key>
-			<integer>-30</integer>
+			<integer>-40</integer>
+			<key>Yat.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_Acyr.sc</key>
 			<integer>-75</integer>
+			<key>public.kern2.CYR_Che.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_De.sc</key>
 			<integer>-70</integer>
 			<key>public.kern2.CYR_Ef.sc</key>
@@ -5044,6 +5078,8 @@
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
 			<integer>-40</integer>
+			<key>public.kern2.CYR_Ze.sc</key>
+			<integer>-10</integer>
 		</dict>
 		<key>public.kern1.CYR_Ve</key>
 		<dict>
@@ -5124,10 +5160,12 @@
 			<integer>-10</integer>
 			<key>Je.sc</key>
 			<integer>-10</integer>
+			<key>Yat.sc</key>
+			<integer>-20</integer>
 			<key>public.kern2.CYR_Acyr.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Che.sc</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.CYR_En.sc</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_Ocyr.sc</key>
@@ -6442,9 +6480,9 @@
 		<key>public.kern1.GRK_Alpha.sc</key>
 		<dict>
 			<key>Phi.sc</key>
-			<integer>-30</integer>
+			<integer>-40</integer>
 			<key>Psi.sc</key>
-			<integer>-80</integer>
+			<integer>-45</integer>
 			<key>Tau.sc</key>
 			<integer>-30</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
@@ -6496,7 +6534,7 @@
 		<key>public.kern1.GRK_Epsilon.sc</key>
 		<dict>
 			<key>Phi.sc</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 		</dict>
 		<key>public.kern1.GRK_Eta</key>
 		<dict>
@@ -6568,7 +6606,7 @@
 		<key>public.kern1.GRK_Eta.sc</key>
 		<dict>
 			<key>Phi.sc</key>
-			<integer>-20</integer>
+			<integer>-25</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.GRK_Theta.sc</key>
@@ -6683,14 +6721,18 @@
 		</dict>
 		<key>public.kern1.GRK_Gamma.sc</key>
 		<dict>
+			<key>Omega.sc</key>
+			<integer>-50</integer>
 			<key>Phi.sc</key>
-			<integer>-30</integer>
+			<integer>-20</integer>
 			<key>Tau.sc</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>Zeta.sc</key>
 			<integer>20</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
 			<integer>-40</integer>
+			<key>public.kern2.GRK_Theta.sc</key>
+			<integer>-20</integer>
 		</dict>
 		<key>public.kern1.GRK_Omega</key>
 		<dict>
@@ -6793,7 +6835,7 @@
 			<key>Chi.sc</key>
 			<integer>-20</integer>
 			<key>Psi.sc</key>
-			<integer>-10</integer>
+			<integer>-15</integer>
 			<key>Sigma.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
@@ -6932,6 +6974,8 @@
 		</dict>
 		<key>public.kern1.GRK_Upsilon.sc</key>
 		<dict>
+			<key>Omega.sc</key>
+			<integer>-35</integer>
 			<key>Phi.sc</key>
 			<integer>-50</integer>
 			<key>public.kern2.GRK_Alpha.sc</key>
@@ -8156,8 +8200,6 @@
 			<integer>-10</integer>
 			<key>public.kern2.LAT_E.sc</key>
 			<integer>-15</integer>
-			<key>public.kern2.LAT_S.sc</key>
-			<integer>10</integer>
 			<key>public.kern2.LAT_U.sc</key>
 			<integer>-10</integer>
 			<key>public.kern2.LAT_W.sc</key>
