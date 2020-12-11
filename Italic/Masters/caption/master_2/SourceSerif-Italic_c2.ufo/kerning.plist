@@ -1535,6 +1535,8 @@
 		</dict>
 		<key>aogonek</key>
 		<dict>
+			<key>p</key>
+			<integer>20</integer>
 			<key>public.kern2.LAT_g</key>
 			<integer>20</integer>
 			<key>public.kern2.LAT_j</key>
@@ -1622,27 +1624,6 @@
 			<integer>-20</integer>
 			<key>x</key>
 			<integer>-20</integer>
-		</dict>
-		<key>bar</key>
-		<dict>
-			<key>chi</key>
-			<integer>20</integer>
-			<key>er</key>
-			<integer>60</integer>
-			<key>je</key>
-			<integer>60</integer>
-			<key>p</key>
-			<integer>60</integer>
-			<key>public.kern2.CYR_ucyr</key>
-			<integer>40</integer>
-			<key>public.kern2.LAT_f</key>
-			<integer>120</integer>
-			<key>public.kern2.LAT_j</key>
-			<integer>60</integer>
-			<key>public.kern2.LAT_y</key>
-			<integer>40</integer>
-			<key>thorn</key>
-			<integer>60</integer>
 		</dict>
 		<key>beta</key>
 		<dict>
@@ -2167,6 +2148,14 @@
 		</dict>
 		<key>lslash</key>
 		<dict>
+			<key>public.kern2.LAT_i</key>
+			<integer>20</integer>
+			<key>public.kern2.LAT_j</key>
+			<integer>20</integer>
+			<key>public.kern2.LAT_m</key>
+			<integer>20</integer>
+			<key>public.kern2.LAT_v</key>
+			<integer>0</integer>
 			<key>public.kern2.LAT_y</key>
 			<integer>30</integer>
 		</dict>
@@ -4048,13 +4037,13 @@
 		</dict>
 		<key>public.kern1.CYR_yi</key>
 		<dict>
-			<key>bar</key>
-			<integer>60</integer>
 			<key>kabashkir</key>
 			<integer>-10</integer>
 			<key>public.kern2.CYR_shha</key>
 			<integer>20</integer>
 			<key>public.kern2.CYR_yi</key>
+			<integer>60</integer>
+			<key>public.kern2.bar</key>
 			<integer>60</integer>
 			<key>public.kern2.subs_figures</key>
 			<integer>60</integer>
@@ -4451,12 +4440,12 @@
 		</dict>
 		<key>public.kern1.GRK_alpha</key>
 		<dict>
-			<key>bar</key>
-			<integer>20</integer>
 			<key>delta</key>
 			<integer>-20</integer>
 			<key>exclam</key>
 			<integer>-20</integer>
+			<key>public.kern2.bar</key>
+			<integer>20</integer>
 			<key>public.kern2.quotedbl</key>
 			<integer>-20</integer>
 			<key>public.kern2.quoteright</key>
@@ -4550,14 +4539,14 @@
 		<dict>
 			<key>Phi</key>
 			<integer>-20</integer>
-			<key>bar</key>
-			<integer>80</integer>
 			<key>delta</key>
 			<integer>0</integer>
 			<key>lambda</key>
 			<integer>60</integer>
 			<key>public.kern2.GRK_iotadieresis</key>
 			<integer>40</integer>
+			<key>public.kern2.bar</key>
+			<integer>80</integer>
 			<key>public.kern2.subs_figures</key>
 			<integer>30</integer>
 			<key>public.kern2.sups_desc</key>
@@ -5473,6 +5462,8 @@
 			<integer>-40</integer>
 			<key>public.kern2.LAT_z</key>
 			<integer>-20</integer>
+			<key>public.kern2.bar</key>
+			<integer>60</integer>
 			<key>public.kern2.colon</key>
 			<integer>-20</integer>
 			<key>public.kern2.comma</key>
@@ -5485,7 +5476,15 @@
 			<integer>-20</integer>
 			<key>public.kern2.guilsinglright</key>
 			<integer>-20</integer>
+			<key>public.kern2.quoteright</key>
+			<integer>20</integer>
+			<key>public.kern2.sups_corner</key>
+			<integer>70</integer>
 			<key>public.kern2.sups_desc</key>
+			<integer>80</integer>
+			<key>public.kern2.sups_diag</key>
+			<integer>80</integer>
+			<key>public.kern2.sups_round</key>
 			<integer>80</integer>
 			<key>slash</key>
 			<integer>-20</integer>
@@ -5850,10 +5849,10 @@
 			<integer>80</integer>
 			<key>backslash</key>
 			<integer>80</integer>
-			<key>bar</key>
-			<integer>110</integer>
 			<key>dagger</key>
 			<integer>60</integer>
+			<key>degree</key>
+			<integer>50</integer>
 			<key>exclam</key>
 			<integer>30</integer>
 			<key>five.osf</key>
@@ -5896,6 +5895,8 @@
 			<integer>10</integer>
 			<key>public.kern2.LAT_z</key>
 			<integer>-10</integer>
+			<key>public.kern2.bar</key>
+			<integer>80</integer>
 			<key>public.kern2.colon</key>
 			<integer>-40</integer>
 			<key>public.kern2.comma</key>
@@ -5915,7 +5916,7 @@
 			<key>public.kern2.quotedbl</key>
 			<integer>60</integer>
 			<key>public.kern2.quoteleft</key>
-			<integer>70</integer>
+			<integer>60</integer>
 			<key>public.kern2.quoteright</key>
 			<integer>60</integer>
 			<key>public.kern2.registered</key>
@@ -5947,6 +5948,8 @@
 		<dict>
 			<key>exclam</key>
 			<integer>-20</integer>
+			<key>public.kern2.LAT_J</key>
+			<integer>20</integer>
 			<key>public.kern2.LAT_a</key>
 			<integer>-60</integer>
 			<key>public.kern2.LAT_f</key>
@@ -6030,13 +6033,13 @@
 		</dict>
 		<key>public.kern1.LAT_icircumflex</key>
 		<dict>
-			<key>bar</key>
-			<integer>60</integer>
 			<key>public.kern2.LAT_U</key>
 			<integer>10</integer>
 			<key>public.kern2.LAT_h</key>
 			<integer>20</integer>
 			<key>public.kern2.LAT_icircumflex</key>
+			<integer>60</integer>
+			<key>public.kern2.bar</key>
 			<integer>60</integer>
 			<key>public.kern2.subs_figures</key>
 			<integer>60</integer>
@@ -6296,8 +6299,6 @@
 		</dict>
 		<key>public.kern1.LAT_t</key>
 		<dict>
-			<key>bar</key>
-			<integer>20</integer>
 			<key>public.kern2.LAT_J</key>
 			<integer>-30</integer>
 			<key>public.kern2.LAT_a</key>
@@ -6314,6 +6315,8 @@
 			<integer>-10</integer>
 			<key>public.kern2.LAT_z</key>
 			<integer>-10</integer>
+			<key>public.kern2.bar</key>
+			<integer>20</integer>
 			<key>public.kern2.comma</key>
 			<integer>-20</integer>
 			<key>public.kern2.quotedbl</key>
@@ -6444,6 +6447,33 @@
 			<integer>-20</integer>
 			<key>public.kern2.sups_diag</key>
 			<integer>-60</integer>
+		</dict>
+		<key>public.kern1.bar</key>
+		<dict>
+			<key>Je</key>
+			<integer>50</integer>
+			<key>chi</key>
+			<integer>20</integer>
+			<key>er</key>
+			<integer>30</integer>
+			<key>je</key>
+			<integer>40</integer>
+			<key>p</key>
+			<integer>30</integer>
+			<key>public.kern2.CYR_ucyr</key>
+			<integer>30</integer>
+			<key>public.kern2.LAT_J</key>
+			<integer>50</integer>
+			<key>public.kern2.LAT_f</key>
+			<integer>80</integer>
+			<key>public.kern2.LAT_germandbls</key>
+			<integer>80</integer>
+			<key>public.kern2.LAT_j</key>
+			<integer>40</integer>
+			<key>public.kern2.LAT_y</key>
+			<integer>30</integer>
+			<key>thorn</key>
+			<integer>40</integer>
 		</dict>
 		<key>public.kern1.colon</key>
 		<dict>
@@ -7042,6 +7072,8 @@
 		</dict>
 		<key>public.kern1.parenleft</key>
 		<dict>
+			<key>Je</key>
+			<integer>30</integer>
 			<key>public.kern2.CYR_Acyr</key>
 			<integer>-20</integer>
 			<key>public.kern2.CYR_yi</key>
@@ -7050,6 +7082,8 @@
 			<integer>-20</integer>
 			<key>public.kern2.LAT_A</key>
 			<integer>-20</integer>
+			<key>public.kern2.LAT_J</key>
+			<integer>30</integer>
 			<key>public.kern2.LAT_f</key>
 			<integer>80</integer>
 			<key>public.kern2.LAT_germandbls</key>
