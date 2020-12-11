@@ -44,7 +44,6 @@ lookup MARK_BASE_above {
 	@bGC_A.sc_above = [ A.sc Aogonek.sc Schwa.sc Acyr.sc ];
 	@bGC_C.sc_above = [ C.sc H.sc Es.sc ];
 	@bGC_E.sc_above = [ E.sc Eogonek.sc Ie.sc ];
-	@bGC_F.sc_above = [ F.sc Che.sc ];
 	@bGC_G.sc_above = [ G.sc Tse.sc ];
 	@bGC_I.sc_above = [ I.sc Iukran.sc ];
 	@bGC_L.sc_above = [ L.sc Lcaron.sc ];
@@ -85,7 +84,6 @@ lookup MARK_BASE_above {
 	pos base @bGC_A.sc_above <anchor 306 565> mark @MC_above;
 	pos base @bGC_C.sc_above <anchor 362 565> mark @MC_above;
 	pos base @bGC_E.sc_above <anchor 312 565> mark @MC_above;
-	pos base @bGC_F.sc_above <anchor 314 565> mark @MC_above;
 	pos base @bGC_G.sc_above <anchor 355 565> mark @MC_above;
 	pos base @bGC_I.sc_above <anchor 186 565> mark @MC_above;
 	pos base @bGC_L.sc_above <anchor 188 565> mark @MC_above;
@@ -168,7 +166,8 @@ lookup MARK_BASE_above {
 	pos base yu.bgr <anchor 369 734> mark @MC_above;
 	pos base B.sc <anchor 297 565> mark @MC_above;
 	pos base D.sc <anchor 317 565> mark @MC_above;
-	pos base J.sc <anchor 191 565> mark @MC_above;
+	pos base F.sc <anchor 314 565> mark @MC_above;
+	pos base J.sc <anchor 201 565> mark @MC_above;
 	pos base K.sc <anchor 334 565> mark @MC_above;
 	pos base M.sc <anchor 412 565> mark @MC_above;
 	pos base N.sc <anchor 341 565> mark @MC_above;
@@ -183,6 +182,7 @@ lookup MARK_BASE_above {
 	pos base Ze.sc <anchor 258 565> mark @MC_above;
 	pos base Ka.sc <anchor 344 565> mark @MC_above;
 	pos base Ucyr.sc <anchor 337 565> mark @MC_above;
+	pos base Che.sc <anchor 305 565> mark @MC_above;
 	pos base Hard.sc <anchor 293 565> mark @MC_above;
 	pos base Yeru.sc <anchor 445 565> mark @MC_above;
 	pos base Ecyr.sc <anchor 241 565> mark @MC_above;
@@ -290,7 +290,7 @@ lookup MARK_BASE_below {
 	pos base F.sc <anchor 188 -20> mark @MC_below;
 	pos base H.sc <anchor 362 -20> mark @MC_below;
 	pos base I.sc <anchor 186 -20> mark @MC_below;
-	pos base J.sc <anchor 127 -128> mark @MC_below;
+	pos base J.sc <anchor 137 -128> mark @MC_below;
 	pos base M.sc <anchor 387 -20> mark @MC_below;
 	pos base N.sc <anchor 342 -20> mark @MC_below;
 	pos base P.sc <anchor 187 -20> mark @MC_below;

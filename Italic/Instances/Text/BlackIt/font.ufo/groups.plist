@@ -1485,6 +1485,11 @@
 			<string>be</string>
 			<string>be.srb</string>
 		</array>
+		<key>public.kern1.CYR_er</key>
+		<array>
+			<string>er</string>
+			<string>ef</string>
+		</array>
 		<key>public.kern1.CYR_es</key>
 		<array>
 			<string>es</string>
@@ -1538,9 +1543,7 @@
 		<key>public.kern1.CYR_iukran</key>
 		<array>
 			<string>iukran</string>
-			<string>yi</string>
 			<string>yi.narrow</string>
-			<string>ghe.srb</string>
 		</array>
 		<key>public.kern1.CYR_je</key>
 		<array>
@@ -1559,8 +1562,6 @@
 		<key>public.kern1.CYR_ocyr</key>
 		<array>
 			<string>ocyr</string>
-			<string>er</string>
-			<string>ef</string>
 			<string>ecyr</string>
 			<string>yu</string>
 			<string>fita</string>
@@ -1598,6 +1599,11 @@
 			<string>ve</string>
 			<string>ze</string>
 			<string>zedescender</string>
+		</array>
+		<key>public.kern1.CYR_yi</key>
+		<array>
+			<string>yi</string>
+			<string>ghe.srb</string>
 		</array>
 		<key>public.kern1.CYR_zhe</key>
 		<array>
@@ -2074,6 +2080,7 @@
 			<string>i</string>
 			<string>igrave</string>
 			<string>iacute</string>
+			<string>idieresis.narrow</string>
 			<string>iogonek</string>
 			<string>i.trk</string>
 			<string>idotbelow</string>
@@ -2086,7 +2093,6 @@
 		<array>
 			<string>icircumflex</string>
 			<string>idieresis</string>
-			<string>idieresis.narrow</string>
 			<string>imacron</string>
 			<string>icaron</string>
 			<string>itilde</string>
@@ -2245,6 +2251,11 @@
 			<string>zdotaccent</string>
 			<string>zdotbelow</string>
 		</array>
+		<key>public.kern1.bar</key>
+		<array>
+			<string>bar</string>
+			<string>brokenbar</string>
+		</array>
 		<key>public.kern1.colon</key>
 		<array>
 			<string>colon</string>
@@ -2257,6 +2268,7 @@
 			<string>ellipsis</string>
 			<string>quotesinglbase</string>
 			<string>quotedblbase</string>
+			<string>verticallinelowmod</string>
 		</array>
 		<key>public.kern1.comma.sups</key>
 		<array>
@@ -2392,16 +2404,19 @@
 		<array>
 			<string>quotesingle</string>
 			<string>quotedbl</string>
+			<string>verticallinemod</string>
 		</array>
 		<key>public.kern1.quoteleft</key>
 		<array>
 			<string>quoteleft</string>
 			<string>quotedblleft</string>
+			<string>ringhalfleftmod</string>
 		</array>
 		<key>public.kern1.quoteright</key>
 		<array>
 			<string>quoteright</string>
 			<string>quotedblright</string>
+			<string>ringhalfrightmod</string>
 		</array>
 		<key>public.kern1.registered</key>
 		<array>
@@ -2543,7 +2558,6 @@
 			<string>Icyr</string>
 			<string>Ishort</string>
 			<string>Ka</string>
-			<string>Em</string>
 			<string>En</string>
 			<string>Pe</string>
 			<string>Er</string>
@@ -2633,28 +2647,16 @@
 		</array>
 		<key>public.kern2.CYR_en</key>
 		<array>
-			<string>icyr</string>
-			<string>ishort</string>
 			<string>ka</string>
 			<string>en</string>
 			<string>pe</string>
 			<string>te</string>
-			<string>tse</string>
-			<string>sha</string>
-			<string>shcha</string>
-			<string>yeru</string>
-			<string>soft</string>
 			<string>yu</string>
 			<string>nje</string>
 			<string>kje</string>
-			<string>igravecyr</string>
-			<string>dzhe</string>
 			<string>yat</string>
 			<string>kadescender</string>
 			<string>endescender</string>
-			<string>imacroncyr</string>
-			<string>pe.srb</string>
-			<string>te.srb</string>
 		</array>
 		<key>public.kern2.CYR_ghe</key>
 		<array>
@@ -2666,6 +2668,21 @@
 		<array>
 			<string>ha</string>
 			<string>hadescender</string>
+		</array>
+		<key>public.kern2.CYR_icyr</key>
+		<array>
+			<string>icyr</string>
+			<string>ishort</string>
+			<string>tse</string>
+			<string>sha</string>
+			<string>shcha</string>
+			<string>yeru</string>
+			<string>soft</string>
+			<string>igravecyr</string>
+			<string>dzhe</string>
+			<string>imacroncyr</string>
+			<string>pe.srb</string>
+			<string>te.srb</string>
 		</array>
 		<key>public.kern2.CYR_ie</key>
 		<array>
@@ -2687,9 +2704,7 @@
 		<key>public.kern2.CYR_iukran</key>
 		<array>
 			<string>iukran</string>
-			<string>yi</string>
 			<string>yi.narrow</string>
-			<string>ghe.srb</string>
 		</array>
 		<key>public.kern2.CYR_shha</key>
 		<array>
@@ -2712,6 +2727,11 @@
 			<string>izhitsa</string>
 			<string>ustraight</string>
 			<string>ustraightstroke</string>
+		</array>
+		<key>public.kern2.CYR_yi</key>
+		<array>
+			<string>yi</string>
+			<string>ghe.srb</string>
 		</array>
 		<key>public.kern2.CYR_ze</key>
 		<array>
@@ -3145,6 +3165,7 @@
 			<string>i</string>
 			<string>igrave</string>
 			<string>iacute</string>
+			<string>idieresis.narrow</string>
 			<string>iogonek</string>
 			<string>i.trk</string>
 			<string>idotbelow</string>
@@ -3154,7 +3175,6 @@
 		<array>
 			<string>icircumflex</string>
 			<string>idieresis</string>
-			<string>idieresis.narrow</string>
 			<string>imacron</string>
 			<string>icaron</string>
 			<string>itilde</string>
@@ -3321,6 +3341,11 @@
 			<string>zdotaccent</string>
 			<string>zdotbelow</string>
 		</array>
+		<key>public.kern2.bar</key>
+		<array>
+			<string>bar</string>
+			<string>brokenbar</string>
+		</array>
 		<key>public.kern2.colon</key>
 		<array>
 			<string>colon</string>
@@ -3333,6 +3358,7 @@
 			<string>ellipsis</string>
 			<string>quotesinglbase</string>
 			<string>quotedblbase</string>
+			<string>verticallinelowmod</string>
 		</array>
 		<key>public.kern2.comma.sups</key>
 		<array>
@@ -3438,6 +3464,14 @@
 			<string>bracketleft.cap</string>
 			<string>braceleft.cap</string>
 		</array>
+		<key>public.kern2.parenleft.sups</key>
+		<array>
+			<string>parenleft.sups</string>
+			<string>parenright.sups</string>
+			<string>bracketleft.sups</string>
+			<string>bracketright.sups</string>
+			<string>colon.sups</string>
+		</array>
 		<key>public.kern2.parenright</key>
 		<array>
 			<string>parenright</string>
@@ -3466,16 +3500,21 @@
 		<array>
 			<string>quotesingle</string>
 			<string>quotedbl</string>
+			<string>verticallinemod</string>
+			<string>prime</string>
+			<string>dblprime</string>
 		</array>
 		<key>public.kern2.quoteleft</key>
 		<array>
 			<string>quoteleft</string>
 			<string>quotedblleft</string>
+			<string>ringhalfleftmod</string>
 		</array>
 		<key>public.kern2.quoteright</key>
 		<array>
 			<string>quoteright</string>
 			<string>quotedblright</string>
+			<string>ringhalfrightmod</string>
 		</array>
 		<key>public.kern2.registered</key>
 		<array>
