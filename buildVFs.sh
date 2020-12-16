@@ -32,10 +32,18 @@ function build_var_font {
 
 	# comment out STAT feature file which cannot be digested by fontmake
 	sed -i '' 's/^/#/' $1/../STAT.fea
-
-	# build variable TTF
+	# build variable TTF with fontmake. Use set +e so we can un-hack the
+	# STAT.fea before exiting.
+	set +e
 	fontmake -m $1/$2.designspace -o variable --production-names --output-path $1/$2.ttf --feature-writer None
-
+	fm_status=$?
+	# undo changes to STAT feature file
+	sed -i '' 's/#//' $1/../STAT.fea
+	if [ $fm_status -ne 0 ]
+	then
+		exit $fm_status
+	fi
+	set -e
 	# use DSIG, name, OS/2, hhea, post, and STAT tables from OTFs
 	sfntedit -x DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT,fvar=$1/.tb_fvar $1/$2.otf
 	sfntedit -a DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT,fvar=$1/.tb_fvar $1/$2.ttf
@@ -51,10 +59,6 @@ function build_var_font {
 	# delete build artifacts
 	rm $1/.tb_*
 	rm $1/*/master_*/*.*tf
-
-	# undo changes to STAT feature file
-	sed -i '' 's/#//' $1/../STAT.fea
-
     echo "Done with $2"
     echo ""
     echo ""
