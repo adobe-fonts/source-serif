@@ -1,16 +1,19 @@
-# Source Serif Pro
+# Source Serif
 
-[Source Serif Pro](http://adobe-fonts.github.io/source-serif-pro/)
+[Source Serif Pro](http://adobe-fonts.github.io/source-serif/)
 is a set of OpenType fonts to complement the
-[Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) family.
+[Source Sans](https://github.com/adobe-fonts/source-sans-pro) family.
+
 
 ## Open source files
 
-The fonts' source files and build instructions are available in the [repository's `main` branch](https://github.com/adobe-fonts/source-serif-pro/tree/main).
+The fonts’ source files and build instructions are available in the [repository’s `main` branch](https://github.com/adobe-fonts/source-serif/tree/main).
+
 
 ## Getting involved
 
-[Open an issue](https://github.com/adobe-fonts/source-serif-pro/issues) or send a suggestion to Source Serif's designer [Frank Grießhammer](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Serif%20Pro), for consideration.
+Please [open an issue](https://github.com/adobe-fonts/source-serif/issues) to start the discussion
+
 
 ## Releases
 
