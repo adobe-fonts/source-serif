@@ -1,0 +1,325 @@
+:root {
+    --main_foreground_color: #000;
+    --main_background_color: #FFF;
+}
+body {
+    font-family: "Source Serif VF", "Source Serif", sans;
+    overflow-x: hidden;
+    font-size: 100%;
+    font-feature-settings: "kern" 1, "liga" 1;
+    margin: 0;
+}
+
+main {
+    padding: 0.5rem;
+    display: grid;
+}
+
+footer {
+    border-top: 0.5px solid var(--main_foreground_color);
+    padding: 1rem .5rem .5rem .5rem;
+    /*padding: .5rem;*/
+}
+
+article {
+    autocorrect: "off";
+    margin: 0 auto;
+    padding: 0.125rem 0.125rem 1rem 0.125rem;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+h1 {
+    /*page title*/
+    margin: 0;
+    font-family: "Source Serif VF", "Source Serif Display";
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0.25rem 0 0.25rem 0.75rem;
+}
+
+h2 {
+    /*weight names in small caps*/
+    margin: 0;
+    font-family: "Source Serif VF", "Source Serif SmText";
+    font-weight: 400;
+    font-variation-settings: "opsz" 8;
+    font-feature-settings: "c2sc" 1, "smcp" 1;
+    font-size: 1rem;
+    color: #BBB;
+    padding-bottom: 0.25rem;
+    letter-spacing: 0.04em;
+    border-bottom: 0.5px solid;
+}
+
+h3 {
+    /*article headlines*/
+    font-family: "Source Serif VF", "Source Serif Display";
+    font-weight: inherit;
+    font-size: 2.5rem;
+    font-variation-settings: "opsz" 60;
+    line-height: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+h4 {
+    /*article subheads in small caps*/
+    font-family: "Source Serif VF", "Source Serif Subhead";
+    font-weight: inherit;
+    font-size: 2rem;
+    font-variation-settings: "opsz" 40;
+    line-height: 2rem;
+    font-feature-settings: "smcp" 1, "c2sc" 1;
+    padding-bottom: 0.5rem;
+    padding-left: 0.125rem;
+    margin: 0;
+}
+
+h5 {
+    /*headline in footer*/
+    font-family: "Source Serif VF", "Source Serif Subhead";
+    font-weight: inherit;
+    font-size: 1rem;
+    font-variation-settings: "opsz" 10;
+    font-feature-settings: "smcp" 1, "c2sc" 1;
+    font-weight: 500;
+    line-height: 1rem;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+p {
+    font-feature-settings: "onum" 1, "pnum" 1;
+    margin: 0;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.para_padding {
+    padding-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5em 0 0.5em 0;
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+.indent {
+    /*text-indent: 0.5em;*/
+    padding-left: 0.5em;
+    font-style: italic;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+.columns {
+    columns: 30rem;
+    column-gap: 0.75rem;
+}
+
+.dynamic_color {
+    color: var(--main_foreground_color);
+    background-color: var(--main_background_color);
+}
+
+.dynamic_text_color {
+    /* for creating an unstyled link */
+    color: var(--main_foreground_color);
+}
+
+.opsz_text {
+    font-size: 1.25rem;
+    font-variation-settings: "opsz" 10;
+    line-height: 1.5rem;
+    padding-left: 0.125rem;
+    padding-bottom: 0.375rem;
+}
+
+.opsz_smtext {
+    font-size: 1rem;
+    font-variation-settings: "opsz" 8;
+    line-height: 1.3rem;
+    padding-left: 0.125rem;
+}
+
+.opsz_caption {
+    font-family: "Source Serif VF", "Source Serif Caption";
+    font-size: 0.875rem;
+    font-variation-settings: "opsz" 4;
+    line-height: 1.125rem;
+    padding-left: 0.125rem;
+}
+
+.hide_on_mobile {
+    display: none;
+}
+
+.spacer {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.5px solid var(--main_foreground_color);
+}
+
+.smcp {
+    font-feature-settings: "smcp" 1;
+}
+
+.header_links {
+    display: none;
+}
+
+.ExtraLight {
+    font-weight: 200;
+}
+
+.Light {
+    font-weight: 300;
+}
+
+.Regular {
+    font-weight: 500;
+}
+
+.Semibold {
+    font-weight: 600;
+}
+
+.Bold {
+    font-weight: 700;
+}
+
+.Black {
+    font-weight: 900;
+}
+
+@media screen and (min-width: 700px) {
+    .spacer {
+        height: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0.375rem 0 0.5rem 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        height: 1.5rem;
+        letter-spacing: 0.04em;
+    }
+
+    h3 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    h4 {
+        padding-left: 0.25rem;
+    }
+
+    footer {
+        padding: 2rem 4.5rem 1.5rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+
+    }
+    .opsz_text {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        padding-bottom: 0.75rem;
+        padding-left: 0.25rem;
+    }
+
+    .opsz_smtext {
+        font-size: 1rem;
+        line-height: 1.375rem;
+        padding-left: 0.25rem;
+    }
+    .opsz_caption {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        padding-bottom: 1rem;
+        padding-left: 0.25rem;
+    }
+
+    article {
+        padding: 0.25rem 1rem 1rem 1rem;
+        color: var(--main_foreground_color);
+    }
+
+    article:hover {
+        background-color: #EEE;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+
+    .hide_on_mobile {
+        display: inline;
+    }
+
+    .header_links {
+        height: 3.25rem;
+        position: absolute;
+        right: 1.5rem;
+        top: 0rem;
+        text-align: right;
+        align-items: center;
+        display: flex;
+    }
+
+    .columns {
+        columns: 17rem;
+        column-gap: 0.75rem;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --main_foreground_color: #FFF;
+        --main_background_color: #222;
+    }
+
+    a {
+        color: #CCC;
+    }
+
+    h2 {
+        color: #666;
+    }
+
+    article:hover {
+        background-color: #333;
+    }
+}
