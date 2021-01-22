@@ -36,15 +36,6 @@ List of people who have made notable contributions to Source Serif:
 	Cyrillic design consultation (2016)
 
 
-# Content Translations
-
-[Krista Radoeva](https://www.kristaradoeva.com/About-me)  
-	Bulgarian translation for feature descriptions (2017)
-
-[Jovica Veljović](https://en.wikipedia.org/wiki/Jovica_Veljović)  
-	Serbian translation for feature descriptions (2017)
-
-
 # Further Contriubutions
 
 [Paul D. Hunt](https://fonts.adobe.com/designers/paul-d-hunt)  
@@ -52,6 +43,9 @@ List of people who have made notable contributions to Source Serif:
 
 [Ernest March](https://blog.typekit.com/2014/01/21/an-unconventional-engineer-how-fine-art-and-computer-smarts-brought-ernie-march-to-adobe/)  
 	font quality engineering (ongoing)
+
+[Krista Radoeva](https://www.kristaradoeva.com/About-me)  
+	Bulgarian translation for feature descriptions (2017)
 
 [Nick Sherman](https://nicksherman.com)  
 	CSS advice (2021)
@@ -61,3 +55,6 @@ List of people who have made notable contributions to Source Serif:
 
 [Miguel Sousa](https://github.com/miguelsousa)  
 	font production advice, repository organization (ongoing)
+
+[Jovica Veljović](https://en.wikipedia.org/wiki/Jovica_Veljović)  
+	Serbian translation for feature descriptions (2017)
