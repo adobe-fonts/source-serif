@@ -86,7 +86,9 @@ def refresh():
     html_output.append('</ul>')
 
     year = time.gmtime().tm_year
-    html_output.append(f'<h5>© Adobe 2014 – {year}</h5></div>\n')
+    html_output.append(
+        '<h5><span style="vertical-align: -0.05em;">©</span> '
+        f'Adobe 2014 – {year}</h5></div>\n')
 
     with open(footer_html, 'w') as footer:
         footer.write('\n'.join(html_output))
