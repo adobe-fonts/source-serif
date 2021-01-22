@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lcaron" format="2">
 	<unicode hex="013E"/>
-	<advance width="329"/>
+	<advance width="328"/>
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="25" y="0" type="line"/>
-			<point x="300" y="0" type="line"/>
-			<point x="300" y="43" type="line"/>
-			<point x="256" y="52" type="line"/>
-			<point x="255" y="103"/>
-			<point x="254" y="158"/>
-			<point x="254" y="209" type="curve"/>
-			<point x="254" y="552" type="line"/>
-			<point x="258" y="711" type="line"/>
-			<point x="241" y="722" type="line"/>
+			<point x="299" y="0" type="line"/>
+			<point x="299" y="43" type="line"/>
+			<point x="255" y="52" type="line"/>
+			<point x="254" y="103"/>
+			<point x="253" y="158"/>
+			<point x="253" y="209" type="curve"/>
+			<point x="253" y="551" type="line"/>
+			<point x="257" y="711" type="line"/>
+			<point name="hintSet0007" x="240" y="722" type="line"/>
 			<point x="19" y="675" type="line"/>
-			<point x="19" y="637" type="line"/>
-			<point x="72" y="625" type="line"/>
+			<point x="19" y="638" type="line"/>
+			<point x="72" y="626" type="line"/>
 			<point x="72" y="209" type="line"/>
 			<point x="72" y="158"/>
 			<point x="72" y="104"/>
@@ -24,18 +24,18 @@
 			<point x="25" y="43" type="line"/>
 		</contour>
 		<contour>
-			<point x="369" y="750" type="curve"/>
-			<point x="350" y="750"/>
-			<point x="332" y="745"/>
-			<point x="313" y="733" type="curve"/>
-			<point x="308" y="513" type="line"/>
-			<point x="355" y="513" type="line"/>
-			<point x="388" y="587" type="line"/>
-			<point x="404" y="624"/>
-			<point x="420" y="673"/>
-			<point x="420" y="700" type="curve"/>
-			<point x="420" y="729"/>
-			<point x="410" y="750"/>
+			<point name="hintSet0014" x="368" y="750" type="curve"/>
+			<point x="349" y="750"/>
+			<point x="331" y="744"/>
+			<point x="312" y="732" type="curve"/>
+			<point x="307" y="512" type="line"/>
+			<point x="353" y="512" type="line"/>
+			<point x="386" y="587" type="line"/>
+			<point x="403" y="624"/>
+			<point x="419" y="672"/>
+			<point x="419" y="700" type="curve"/>
+			<point x="419" y="729"/>
+			<point x="408" y="750"/>
 		</contour>
 	</outline>
 	<lib>
@@ -50,14 +50,36 @@
 						<key>stems</key>
 						<array>
 							<string>hstem 0 43</string>
+							<string>hstem 732 -20</string>
+							<string>vstem 72 181</string>
+							<string>vstem 309.5 109.5</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0007</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 43</string>
 							<string>hstem 722 -20</string>
-							<string>vstem 72 182</string>
-							<string>vstem 310.5 109.5</string>
+							<string>vstem 72 181</string>
+							<string>vstem 309.5 109.5</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0014</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 0 43</string>
+							<string>hstem 732 -20</string>
+							<string>vstem 72 181</string>
+							<string>vstem 309.5 109.5</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>a43ec9c9c07cda0d0cedd26103ce3376be67ae6c292837cc871a26c37482c16c51d7b3aca6438f095612d494faa32d9c9158585ab1c6ac2e2073601ea139d9be</string>
+				<string>8620f3f6a9e38e068d501fd5411c5908c013629416d076ad8e006aa73db802b2d905e7217cc56187d18a4c4d2046c55ac33f9eaaebdf667cf2a78e5af0ba2abd</string>
 			</dict>
 		</dict>
 	</lib>
