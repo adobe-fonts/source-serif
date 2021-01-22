@@ -48,28 +48,28 @@ table STAT {
 	};
 
 	AxisValue {
-		location opsz 4 4 6;
+		location opsz 8 8 12;
 		name "Caption";
 	};
 
 	AxisValue {
-		location opsz 8 6 8;
+		location opsz 16 12 18;
 		name "SmallText";
 	};
 
 	AxisValue {
-		location opsz 10 8 16;
+		location opsz 20 18 26;
 		name "Text";
 		flag ElidableAxisValueName;
 	};
 
 	AxisValue {
-		location opsz 24 16 32;
+		location opsz 32 26 48;
 		name "Subhead";
 	};
 
 	AxisValue {
-		location opsz 60 32 60;
+		location opsz 60 48 60;
 		name "Display";
 	};
 
