@@ -49,7 +49,7 @@ h2 {
     margin: 0;
     font-family: "Source Serif VF", "Source Serif SmText";
     font-weight: 400;
-    font-variation-settings: "opsz" 8;
+    font-variation-settings: "opsz" 16;
     font-feature-settings: "c2sc" 1, "smcp" 1;
     font-size: 1rem;
     color: #BBB;
@@ -75,7 +75,7 @@ h4 {
     font-family: "Source Serif VF", "Source Serif Subhead";
     font-weight: inherit;
     font-size: 2rem;
-    font-variation-settings: "opsz" 40;
+    font-variation-settings: "opsz" 32;
     line-height: 2rem;
     font-feature-settings: "smcp" 1, "c2sc" 1;
     padding-bottom: 0.5rem;
@@ -85,10 +85,10 @@ h4 {
 
 h5 {
     /*headline in footer*/
-    font-family: "Source Serif VF", "Source Serif Subhead";
+    font-family: "Source Serif VF", "Source Serif SmText";
     font-weight: inherit;
     font-size: 1rem;
-    font-variation-settings: "opsz" 10;
+    font-variation-settings: "opsz" 16;
     font-feature-settings: "smcp" 1, "c2sc" 1;
     font-weight: 500;
     line-height: 1rem;
@@ -143,16 +143,18 @@ li {
 }
 
 .opsz_text {
+    font-family: "Source Serif VF", "Source Serif";
     font-size: 1.25rem;
-    font-variation-settings: "opsz" 10;
+    font-variation-settings: "opsz" 20;
     line-height: 1.5rem;
     padding-left: 0.125rem;
     padding-bottom: 0.375rem;
 }
 
 .opsz_smtext {
+    font-family: "Source Serif VF", "Source Serif SmText";
     font-size: 1rem;
-    font-variation-settings: "opsz" 8;
+    font-variation-settings: "opsz" 16;
     line-height: 1.3rem;
     padding-left: 0.125rem;
 }
@@ -160,7 +162,7 @@ li {
 .opsz_caption {
     font-family: "Source Serif VF", "Source Serif Caption";
     font-size: 0.875rem;
-    font-variation-settings: "opsz" 4;
+    font-variation-settings: "opsz" 8;
     line-height: 1.125rem;
     padding-left: 0.125rem;
 }
