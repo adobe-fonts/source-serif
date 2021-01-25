@@ -51,7 +51,7 @@ $ ./build.sh
 
 ## Getting Involved
 
-Please file an issue to start the discussion.
+Please [open an issue](https://github.com/adobe-fonts/source-serif/issues) to start the discussion.
 
 
 ## Further information
@@ -64,6 +64,6 @@ Please file an issue to start the discussion.
 
 [Source Serif Italics](https://blog.typekit.com/2018/08/16/source-serif-italics/) (2018)  
 
-For information about the design and background of Source Serif, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-serif-readme.html).  
+For information about the design and background of Source Serif, please refer to the [official font readme file](https://github.com/adobe-fonts/source-serif/wiki/Source-Serif-Readme).  
 
 For a glance at the design of Source Serif, see the [editable web specimen](http://adobe-fonts.github.io/source-serif/).
