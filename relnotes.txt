@@ -1,23 +1,69 @@
-version 3.001 created 2019/10/11
+version 4.004 created 2021/01/22
 
-	Fixes the STAT table of the variable fonts.
+	Major changes
+
+	- Add optical sizes (#57)
+	  Source Serif now has six weights across five optical sizes, which increases the
+	  number of styles from 12 to 60. The variable fonts represent this change through
+	  the addition of an opsz axis.
+
+	- Shift text master in design space
+	  Source Serif’s interpolation setup was conceived in a time before Variable Fonts
+	  existed, which means that axis coordinates of masters did not necessarily need
+	  to coincide with instance locations. This led to a setup where the Regular style
+	  was defined to be slightly off the location of an intermediate master – simply
+	  because a heavier Regular looked better. 
+	  In VF context, this approach was a little problematic, because default masters
+	  are presented in the list of available instances.
+	  In this release, the intermediate master (SourceSerif_1.ufo) was replaced by
+	  the Regular instance, and re-established as a new master.
+	  Effectively, the intermediate master was shifted while increasing its weight.
+	  Ripple effects across the interpolation space (changes of point coordinates,
+	  advance widths, kerning values) are small, but they do exist.
+
+	- Change family name (announced in #77)
+	  Adding optical sizes required re-assessment of spacing, proportions, and kerning
+	  decisions in all masters. Additionally, an intermediate master was shifted
+	  to clean up the VF design space.
+	  While care was taken to keep the existing styles largely equivalent to previous
+	  releases, reflow of existing documents is likely.
+	  The “Pro” label originally was attached to OpenType fonts to indicate their
+	  extended language coverage. With Source Serif’s character support far exceeding
+	  former “Pro” standards, this label does not have much meaning anymore.
+	  
+	  For these reasons, the decision was made to change the family name from
+	  Source Serif Pro to Source Serif 4.
 
 
-version 3.000 created 2019/06/14
+	Further fixes
+
+	- add Ŋ/ŋ to support Kazakh typesetting in Latin (partly addresses #64)
+	- fix soft-dotted i/j (addresses #71)
+	- make the mark feature work for Cyrillic (addresses #72)
+	- add U+2011 NON-BREAKING HYPHEN (addresses #73)
+	- add f_f_t ligature (addresses #79)
+	- add all spaces as code points to avoid fallback (addresses #81)
+	- revise kerning of Small Caps (addresses #83)
+	- update construction of uhorn & related glyphs to avoid clashes
+	- space fractions more generously
+	- update construction of J/J.sc for better spacing
+
+
+version 3.000 created 2019/06/12
 
 	Changes to Italic styles:
 	- extend Latin character set from AL-3 to AL-4
 	- add Cyrillic (covering AC-2)
 	- add Greek (covering AG-1)
 
-	Changes to Roman styles:
+	Changes to Roman styles:	
 	- minor updates to spacing of modifer glyphs
 	- updates to some Cyrillic characters as suggested by external advisors
 	- minor updates to Cyrillic kerning
 	- updates to some Greek characters as suggested by external advisors
 
 	Global changes:
-	- overhaul ccmp feature to decompose accented glyphs when followed by combining
+	- overhaul ccmp feature to decompose accented glyphs when followed by combining 
 	  mark, thus allowing double-stacking of accents (addresses #41, #42)
 	- add ccmp solution for Ukrainian її clash, also for Latin ïï (addresses #48)
 	- add Bulgarian Cyrillic alternates both via locl and ss01 feature (addresses #20)
@@ -25,11 +71,6 @@ version 3.000 created 2019/06/14
 
 	Roman and Italic styles now support the same global character set,
 	in both static and variable versions.
-
-
-version 2.010 (Romans) & version 1.010 (Italic) created 2019/01/11
-
-	Fixes spacing and displaying issues in many TrueType composite glyphs. (addresses #44)
 
 
 version 2.007 (Roman) & version 1.007 (Italic) created 2018/08/07
@@ -67,9 +108,9 @@ version 2.001 created 2017/02/01
 
 version 2.000 created 2017/01/04
 
-	Increased character set to AL-4.
-	Added Greek (AG-1) & Cyrillic (AC-2) writing systems.
-	Added Small Caps for all of the above.
+	Increase character set to AL-4.
+	Add Greek (AG-1) & Cyrillic (AC-2) writing systems.
+	Add Small Caps for all of the above.
 
 
 version 1.017 created 2014/09/16

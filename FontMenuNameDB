@@ -4,95 +4,491 @@
 #   l=Windows_Compatible_MenuName
 #   m=1,Macintosh_Compatible_MenuName
 
-# Variable fonts -----------------------------
 
-# Master 1
-[SourceSerifVariable-Roman]
-    f=Source Serif Variable
+# Variable fonts --------------------------------
+
+[SourceSerif4Variable-Roman]
+    f=Source Serif 4 Variable
     s=Roman
 
-[SourceSerifVariable-Italic]
-    f=Source Serif Variable
+[SourceSerif4Variable-Italic]
+    f=Source Serif 4 Variable
     s=Italic
 
-[SourceSerif_Master0]
-    f=Source Serif Variable
-    s=Roman Master 0
+# Masters (VF) ----------------------------------
 
-[SourceSerifItalic_Master0]
-    f=Source Serif Variable
-    s=Italic Master 0
+[SourceSerif4Variable-Caption0]
+    f=Source Serif 4 Variable
+    s=Caption 0
 
-[SourceSerif_Master2]
-    f=Source Serif Variable
-    s=Roman Master 2
+[SourceSerif4Variable-Caption1]
+    f=Source Serif 4 Variable
+    s=Caption 1
 
-[SourceSerifItalic_Master2]
-    f=Source Serif Variable
-    s=Italic Master 2
+[SourceSerif4Variable-Caption2]
+    f=Source Serif 4 Variable
+    s=Caption 2
+
+[SourceSerif4Variable-ItalicCaption0]
+    f=Source Serif 4 Variable
+    s=Italic Caption 0
+
+[SourceSerif4Variable-ItalicCaption1]
+    f=Source Serif 4 Variable
+    s=Italic Caption 1
+
+[SourceSerif4Variable-ItalicCaption2]
+    f=Source Serif 4 Variable
+    s=Italic Caption 2
+
+[SourceSerif4Variable-Text0]
+    f=Source Serif 4 Variable
+    s=Text 0
+
+[SourceSerif4Variable-Text2]
+    f=Source Serif 4 Variable
+    s=Text 2
+
+[SourceSerif4Variable-ItalicText0]
+    f=Source Serif 4 Variable
+    s=Italic Text 0
+
+[SourceSerif4Variable-ItalicText2]
+    f=Source Serif 4 Variable
+    s=Italic Text 2
+
+[SourceSerif4Variable-Display0]
+    f=Source Serif 4 Variable
+    s=Display 0
+
+[SourceSerif4Variable-Display1]
+    f=Source Serif 4 Variable
+    s=Display 1
+
+[SourceSerif4Variable-Display2]
+    f=Source Serif 4 Variable
+    s=Display 2
+
+[SourceSerif4Variable-ItalicDisplay0]
+    f=Source Serif 4 Variable
+    s=Italic Display 0
+
+[SourceSerif4Variable-ItalicDisplay1]
+    f=Source Serif 4 Variable
+    s=Italic Display 1
+
+[SourceSerif4Variable-ItalicDisplay2]
+    f=Source Serif 4 Variable
+    s=Italic Display 2
 
 
-# Roman --------------------------------------
+# Masters (production) --------------------------
 
-[SourceSerifPro-ExtraLight]
-    f=Source Serif Pro
+[SourceSerifMaster-Caption0]
+    f=Source Serif Master
+    s=Caption 0
+    l=Source Serif Master Caption 0
+
+[SourceSerifMaster-Caption1]
+    f=Source Serif Master
+    s=Caption 1
+    l=Source Serif Master Caption 1
+
+[SourceSerifMaster-Caption2]
+    f=Source Serif Master
+    s=Caption 2
+    l=Source Serif Master Caption 1
+
+
+[SourceSerifMaster-ItalicCaption0]
+    f=Source Serif Master
+    s=Italic Caption 0
+    l=Source Serif Master Caption 0
+
+[SourceSerifMaster-ItalicCaption1]
+    f=Source Serif Master
+    s=Italic Caption 1
+    l=Source Serif Master Caption 1
+
+[SourceSerifMaster-ItalicCaption2]
+    f=Source Serif Master
+    s=Italic Caption 2
+    l=Source Serif Master Caption 1
+
+
+[SourceSerifMaster-Text0]
+    f=Source Serif Master
+    s=Text 0
+    l=Source Serif Master Text 0
+
+[SourceSerifMaster-Text1]
+    f=Source Serif Master
+    s=Text 1
+    l=Source Serif Master Text 1
+
+[SourceSerifMaster-Text2]
+    f=Source Serif Master
+    s=Text 2
+    l=Source Serif Master Text 1
+
+
+[SourceSerifMaster-ItalicText0]
+    f=Source Serif Master
+    s=Italic Text 0
+    l=Source Serif Master Text 0
+
+[SourceSerifMaster-ItalicText1]
+    f=Source Serif Master
+    s=Italic Text 1
+    l=Source Serif Master Text 1
+
+[SourceSerifMaster-ItalicText2]
+    f=Source Serif Master
+    s=Italic Text 2
+    l=Source Serif Master Text 1
+
+
+[SourceSerifMaster-Display0]
+    f=Source Serif Master
+    s=Display 0
+    l=Source Serif Master Display 0
+
+[SourceSerifMaster-Display1]
+    f=Source Serif Master
+    s=Display 1
+    l=Source Serif Master Display 1
+
+[SourceSerifMaster-Display2]
+    f=Source Serif Master
+    s=Display 2
+    l=Source Serif Master Display 1
+
+
+[SourceSerifMaster-ItalicDisplay0]
+    f=Source Serif Master
+    s=Italic Display 0
+    l=Source Serif Master Display 0
+
+[SourceSerifMaster-ItalicDisplay1]
+    f=Source Serif Master
+    s=Italic Display 1
+    l=Source Serif Master Display 1
+
+[SourceSerifMaster-ItalicDisplay2]
+    f=Source Serif Master
+    s=Italic Display 2
+    l=Source Serif Master Display 1
+
+
+# Roman -----------------------------------------
+
+[SourceSerif4Display-ExtraLight]
+    f=Source Serif 4 Display
     s=ExtraLight
-    l=Source Serif Pro ExtraLight
+    l=Source Serif 4 Display ExtraLight
 
-[SourceSerifPro-Light]
-    f=Source Serif Pro
+[SourceSerif4Display-Light]
+    f=Source Serif 4 Display
     s=Light
-    l=Source Serif Pro Light
+    l=Source Serif 4 Display Light
 
-[SourceSerifPro-Regular]
-    f=Source Serif Pro
+[SourceSerif4Display-Regular]
+    f=Source Serif 4 Display
     s=Regular
-    l=Source Serif Pro
+    l=Source Serif 4 Display
 
-[SourceSerifPro-Semibold]
-    f=Source Serif Pro
+[SourceSerif4Display-Semibold]
+    f=Source Serif 4 Display
     s=Semibold
-    l=Source Serif Pro Semibold
+    l=Source Serif 4 Display Semibold
 
-[SourceSerifPro-Bold]
-    f=Source Serif Pro
+[SourceSerif4Display-Bold]
+    f=Source Serif 4 Display
     s=Bold
-    l=Source Serif Pro
+    l=Source Serif 4 Display
 
-[SourceSerifPro-Black]
-    f=Source Serif Pro
+[SourceSerif4Display-Black]
+    f=Source Serif 4 Display
     s=Black
-    l=Source Serif Pro Black
+    l=Source Serif 4 Display Black
 
 
-# Italic --------------------------------------
+[SourceSerif4Subhead-ExtraLight]
+    f=Source Serif 4 Subhead
+    s=ExtraLight
+    l=Source Serif 4 Subhead ExtraLight
 
-[SourceSerifPro-ExtraLightIt]
-    f=Source Serif Pro
+[SourceSerif4Subhead-Light]
+    f=Source Serif 4 Subhead
+    s=Light
+    l=Source Serif 4 Subhead Light
+
+[SourceSerif4Subhead-Regular]
+    f=Source Serif 4 Subhead
+    s=Regular
+    l=Source Serif 4 Subhead
+
+[SourceSerif4Subhead-Semibold]
+    f=Source Serif 4 Subhead
+    s=Semibold
+    l=Source Serif 4 Subhead Semibold
+
+[SourceSerif4Subhead-Bold]
+    f=Source Serif 4 Subhead
+    s=Bold
+    l=Source Serif 4 Subhead
+
+[SourceSerif4Subhead-Black]
+    f=Source Serif 4 Subhead
+    s=Black
+    l=Source Serif 4 Subhead Black
+
+
+[SourceSerif4-ExtraLight]
+    f=Source Serif 4
+    s=ExtraLight
+    l=Source Serif 4 ExtraLight
+
+[SourceSerif4-Light]
+    f=Source Serif 4
+    s=Light
+    l=Source Serif 4 Light
+
+[SourceSerif4-Regular]
+    f=Source Serif 4
+    s=Regular
+    l=Source Serif 4
+
+[SourceSerif4-Semibold]
+    f=Source Serif 4
+    s=Semibold
+    l=Source Serif 4 Semibold
+
+[SourceSerif4-Bold]
+    f=Source Serif 4
+    s=Bold
+    l=Source Serif 4
+
+[SourceSerif4-Black]
+    f=Source Serif 4
+    s=Black
+    l=Source Serif 4 Black
+
+
+[SourceSerif4SmText-ExtraLight]
+    f=Source Serif 4 SmText
+    s=ExtraLight
+    l=Source Serif 4 SmText ExtraLight
+
+[SourceSerif4SmText-Light]
+    f=Source Serif 4 SmText
+    s=Light
+    l=Source Serif 4 SmText Light
+
+[SourceSerif4SmText-Regular]
+    f=Source Serif 4 SmText
+    s=Regular
+    l=Source Serif 4 SmText
+
+[SourceSerif4SmText-Semibold]
+    f=Source Serif 4 SmText
+    s=Semibold
+    l=Source Serif 4 SmText Semibold
+
+[SourceSerif4SmText-Bold]
+    f=Source Serif 4 SmText
+    s=Bold
+    l=Source Serif 4 SmText
+
+[SourceSerif4SmText-Black]
+    f=Source Serif 4 SmText
+    s=Black
+    l=Source Serif 4 SmText Black
+
+
+[SourceSerif4Caption-ExtraLight]
+    f=Source Serif 4 Caption
+    s=ExtraLight
+    l=Source Serif 4 Caption ExtraLight
+
+[SourceSerif4Caption-Light]
+    f=Source Serif 4 Caption
+    s=Light
+    l=Source Serif 4 Caption Light
+
+[SourceSerif4Caption-Regular]
+    f=Source Serif 4 Caption
+    s=Regular
+    l=Source Serif 4 Caption
+
+[SourceSerif4Caption-Semibold]
+    f=Source Serif 4 Caption
+    s=Semibold
+    l=Source Serif 4 Caption Semibold
+
+[SourceSerif4Caption-Bold]
+    f=Source Serif 4 Caption
+    s=Bold
+    l=Source Serif 4 Caption
+
+[SourceSerif4Caption-Black]
+    f=Source Serif 4 Caption
+    s=Black
+    l=Source Serif 4 Caption Black
+
+
+# Italic ----------------------------------------
+
+[SourceSerif4Caption-ExtraLightIt]
+    f=Source Serif 4 Caption
     s=ExtraLight Italic
-    l=Source Serif Pro ExtraLight
+    l=Source Serif 4 Caption ExtraLight
 
-[SourceSerifPro-LightIt]
-    f=Source Serif Pro
+[SourceSerif4Caption-LightIt]
+    f=Source Serif 4 Caption
     s=Light Italic
-    l=Source Serif Pro Light
+    l=Source Serif 4 Caption Light
 
-[SourceSerifPro-It]
-    f=Source Serif Pro
+[SourceSerif4Caption-It]
+    f=Source Serif 4 Caption
     s=Italic
-    l=Source Serif Pro
+    l=Source Serif 4 Caption
 
-[SourceSerifPro-SemiboldIt]
-    f=Source Serif Pro
+[SourceSerif4Caption-SemiboldIt]
+    f=Source Serif 4 Caption
     s=Semibold Italic
-    l=Source Serif Pro Semibold
+    l=Source Serif 4 Caption Semibold
 
-[SourceSerifPro-BoldIt]
-    f=Source Serif Pro
+[SourceSerif4Caption-BoldIt]
+    f=Source Serif 4 Caption
     s=Bold Italic
-    l=Source Serif Pro
+    l=Source Serif 4 Caption
 
-[SourceSerifPro-BlackIt]
-    f=Source Serif Pro
+[SourceSerif4Caption-BlackIt]
+    f=Source Serif 4 Caption
     s=Black Italic
-    l=Source Serif Pro Black
+    l=Source Serif 4 Caption Black
+
+
+[SourceSerif4SmText-ExtraLightIt]
+    f=Source Serif 4 SmText
+    s=ExtraLight Italic
+    l=Source Serif 4 SmText ExtraLight
+
+[SourceSerif4SmText-LightIt]
+    f=Source Serif 4 SmText
+    s=Light Italic
+    l=Source Serif 4 SmText Light
+
+[SourceSerif4SmText-It]
+    f=Source Serif 4 SmText
+    s=Italic
+    l=Source Serif 4 SmText
+
+[SourceSerif4SmText-SemiboldIt]
+    f=Source Serif 4 SmText
+    s=Semibold Italic
+    l=Source Serif 4 SmText Semibold
+
+[SourceSerif4SmText-BoldIt]
+    f=Source Serif 4 SmText
+    s=Bold Italic
+    l=Source Serif 4 SmText
+
+[SourceSerif4SmText-BlackIt]
+    f=Source Serif 4 SmText
+    s=Black Italic
+    l=Source Serif 4 SmText Black
+
+
+[SourceSerif4-ExtraLightIt]
+    f=Source Serif 4
+    s=ExtraLight Italic
+    l=Source Serif 4 ExtraLight
+
+[SourceSerif4-LightIt]
+    f=Source Serif 4
+    s=Light Italic
+    l=Source Serif 4 Light
+
+[SourceSerif4-It]
+    f=Source Serif 4
+    s=Italic
+    l=Source Serif 4
+
+[SourceSerif4-SemiboldIt]
+    f=Source Serif 4
+    s=Semibold Italic
+    l=Source Serif 4 Semibold
+
+[SourceSerif4-BoldIt]
+    f=Source Serif 4
+    s=Bold Italic
+    l=Source Serif 4
+
+[SourceSerif4-BlackIt]
+    f=Source Serif 4
+    s=Black Italic
+    l=Source Serif 4 Black
+
+
+[SourceSerif4Subhead-ExtraLightIt]
+    f=Source Serif 4 Subhead
+    s=ExtraLight Italic
+    l=Source Serif 4 Subhead ExtraLight
+
+[SourceSerif4Subhead-LightIt]
+    f=Source Serif 4 Subhead
+    s=Light Italic
+    l=Source Serif 4 Subhead Light
+
+[SourceSerif4Subhead-It]
+    f=Source Serif 4 Subhead
+    s=Italic
+    l=Source Serif 4 Subhead
+
+[SourceSerif4Subhead-SemiboldIt]
+    f=Source Serif 4 Subhead
+    s=Semibold Italic
+    l=Source Serif 4 Subhead Semibold
+
+[SourceSerif4Subhead-BoldIt]
+    f=Source Serif 4 Subhead
+    s=Bold Italic
+    l=Source Serif 4 Subhead
+
+[SourceSerif4Subhead-BlackIt]
+    f=Source Serif 4 Subhead
+    s=Black Italic
+    l=Source Serif 4 Subhead Black
+
+
+[SourceSerif4Display-ExtraLightIt]
+    f=Source Serif 4 Display
+    s=ExtraLight Italic
+    l=Source Serif 4 Display ExtraLight
+
+[SourceSerif4Display-LightIt]
+    f=Source Serif 4 Display
+    s=Light Italic
+    l=Source Serif 4 Display Light
+
+[SourceSerif4Display-It]
+    f=Source Serif 4 Display
+    s=Italic
+    l=Source Serif 4 Display
+
+[SourceSerif4Display-SemiboldIt]
+    f=Source Serif 4 Display
+    s=Semibold Italic
+    l=Source Serif 4 Display Semibold
+
+[SourceSerif4Display-BoldIt]
+    f=Source Serif 4 Display
+    s=Bold Italic
+    l=Source Serif 4 Display
+
+[SourceSerif4Display-BlackIt]
+    f=Source Serif 4 Display
+    s=Black Italic
+    l=Source Serif 4 Display Black

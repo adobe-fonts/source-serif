@@ -1,0 +1,24 @@
+include (../../../../featuresVar.fea);
+
+table OS/2 {
+    include (../../../Instances/Caption/ExtraLight/os2.fea);
+    include (../../../../familyOS2.fea);
+} OS/2;
+
+# GPOS -----------------------------------
+feature mark {
+    include (../../../Instances/Caption/ExtraLight/mark.fea);
+} mark;
+
+feature mkmk {
+    include (../../../Instances/Caption/ExtraLight/mkmk.fea);
+} mkmk;
+
+feature kern {
+    lookupflag IgnoreMarks;
+    lookup KERN useExtension {
+        include (../../../Instances/Caption/ExtraLight/kern.fea);
+    } KERN;
+
+    include (../../../Instances/Caption/ExtraLight/kern_ctxt.fea);
+} kern;

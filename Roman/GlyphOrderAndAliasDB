@@ -227,6 +227,7 @@ Zdotaccent	Zdotaccent
 uni1E92	Zdotbelow
 Eth	Eth
 Thorn	Thorn
+Eng	Eng
 uni018F	Schwa
 agrave	agrave
 aacute	aacute
@@ -410,16 +411,21 @@ zdotaccent	zdotaccent
 uni1E93	zdotbelow
 eth	eth
 thorn	thorn
+eng	eng
 uni0259	schwa
 uni0251	alphalatin
 uni0261	gscript
 f_i	f_i	uniFB01
+f_j	f_j
 f_l	f_l	uniFB02
 f_t	f_t
 f_f	f_f	uniFB00
 f_f_i	f_f_i	uniFB03
+f_f_j	f_f_j
 f_f_l	f_f_l	uniFB04
+f_f_t	f_f_t
 ampersand	ampersand
+zero.slash	zero.slash
 zero	zero
 one	one
 two	two
@@ -430,7 +436,7 @@ six	six
 seven	seven
 eight	eight
 nine	nine
-zero.slash	zero.slash
+zero.lfslash	zero.lfslash
 zero.lf	zero.lf
 one.lf	one.lf
 two.lf	two.lf
@@ -441,7 +447,6 @@ six.lf	six.lf
 seven.lf	seven.lf
 eight.lf	eight.lf
 nine.lf	nine.lf
-zero.lfslash	zero.lfslash
 zero.tosf	zero.tosf
 one.tosf	one.tosf
 two.tosf	two.tosf
@@ -495,7 +500,7 @@ guilsinglleft	guilsinglleft
 guilsinglright	guilsinglright
 guillemotleft	guillemotleft
 guillemotright	guillemotright
-hyphen	hyphen	uni002D,uni00AD,uni2010
+hyphen	hyphen	uni002D,uni00AD,uni2010,uni2011
 endash	endash
 emdash	emdash
 figuredash	figuredash
@@ -516,7 +521,7 @@ guillemotright.cap	guillemotright.cap
 hyphen.cap	hyphen.cap
 endash.cap	endash.cap
 emdash.cap	emdash.cap
-horizontalbar.cap	horizontalbar.cap
+uni2015.cap	horizontalbar.cap
 parenleft.cap	parenleft.cap
 parenright.cap	parenright.cap
 bracketleft.cap	bracketleft.cap
@@ -688,8 +693,7 @@ uni20BA	liraturkish
 uni20B8	tenge
 uni20BD	ruble
 uni20BF	bitcoin
-fraction	fraction
-uni2215	divisionslash
+fraction	fraction	uni2044,uni2215
 slash.frac	slash.frac
 uni2007	figurespace
 space.frac	space.frac
@@ -776,27 +780,27 @@ dotaccent	dotaccent
 cedilla	cedilla
 ogonek	ogonek
 uni0300	gravecmb
-gravecmb.cap	gravecmb.cap
+uni0300.cap	gravecmb.cap
 uni0301	acutecmb
-acutecmb.cap	acutecmb.cap
+uni0301.cap	acutecmb.cap
 uni0302	circumflexcmb
-circumflexcmb.cap	circumflexcmb.cap
+uni0302.cap	circumflexcmb.cap
 uni0303	tildecmb
-tildecmb.cap	tildecmb.cap
+uni0303.cap	tildecmb.cap
 uni0304	macroncmb
-macroncmb.cap	macroncmb.cap
+uni0304.cap	macroncmb.cap
 uni0306	brevecmb
-brevecmb.cap	brevecmb.cap
+uni0306.cap	brevecmb.cap
 uni0307	dotaccentcmb
-dotaccentcmb.cap	dotaccentcmb.cap
+uni0307.cap	dotaccentcmb.cap
 uni0308	dieresiscmb
-dieresiscmb.cap	dieresiscmb.cap
+uni0308.cap	dieresiscmb.cap
 uni030A	ringcmb
-ringcmb.cap	ringcmb.cap
+uni030A.cap	ringcmb.cap
 uni030B	hungarumlautcmb
-hungarumlautcmb.cap	hungarumlautcmb.cap
+uni030B.cap	hungarumlautcmb.cap
 uni030C	caroncmb
-caroncmb.cap	caroncmb.cap
+uni030C.cap	caroncmb.cap
 uni0326	commabelowcmb
 uni0327	cedillacmb
 uni0328	ogonekcmb
@@ -1094,8 +1098,8 @@ uni044C.bgr	soft.bgr
 uni044E.bgr	yu.bgr
 uni045D.bgr	igravecyr.bgr
 uni2116	numero
-brevecmb.cyr	brevecmb.cyr
-brevecmb.cyrcap	brevecmb.cyrcap
+uni0306.cyr	brevecmb.cyr
+uni0306.cyrcap	brevecmb.cyrcap
 uni2E3A	twoemdash
 uni2E3B	threeemdash
 u1F12F	copyleft
@@ -1308,6 +1312,7 @@ Zdotaccent.sc	Zdotaccent.sc
 uni1E92.sc	Zdotbelow.sc
 Eth.sc	Eth.sc
 Thorn.sc	Thorn.sc
+Eng.sc	Eng.sc
 uni018F.sc	Schwa.sc
 Alpha.sc	Alpha.sc
 Beta.sc	Beta.sc
@@ -1448,3 +1453,11 @@ uni0419.scbgr	Ishort.scbgr
 uni040D.scbgr	Igravecyr.scbgr
 uni041B.scbgr	El.scbgr
 uni0424.scbgr	Ef.scbgr
+uni2002	enspace
+uni2003	emspace
+uni2004	threeperemspace
+uni2005	fourperemspace
+uni2006	sixperemspace
+thinspace	thinspace	uni2009,uni202F
+uni200A	hairspace
+uni200B	zerowidthspace

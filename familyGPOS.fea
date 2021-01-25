@@ -10,6 +10,8 @@ feature mkmk {
 
 feature kern {
 	lookupflag IgnoreMarks;
-	include (../kern.fea);
+	lookup KERN useExtension {
+		include (../kern.fea);
+	} KERN;
 	include (../kern_ctxt.fea);
 } kern;

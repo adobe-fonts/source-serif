@@ -1,0 +1,24 @@
+include (../../../../featuresVar.fea);
+
+table OS/2 {
+    include (../../../Instances/Display/Regular/os2.fea);
+    include (../../../../familyOS2.fea);
+} OS/2;
+
+# GPOS -----------------------------------
+feature mark {
+    include (../../../Instances/Display/Regular/mark.fea);
+} mark;
+
+feature mkmk {
+    include (../../../Instances/Display/Regular/mkmk.fea);
+} mkmk;
+
+feature kern {
+    lookupflag IgnoreMarks;
+    lookup KERN useExtension {
+        include (../../../Instances/Display/Regular/kern.fea);
+    } KERN;
+
+    include (../../../Instances/Display/Regular/kern_ctxt.fea);
+} kern;
