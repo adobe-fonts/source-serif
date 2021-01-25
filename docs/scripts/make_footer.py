@@ -21,23 +21,23 @@ Paul D. Hunt’s
 <a href="https://adobe-fonts.github.io/source-sans-pro/">
 Source Sans</a>.
 
-With six weights in five optical sizes, the Source Serif family has a total of
-60 styles, shared across Roman and Italic. Nevertheless, if you are looking at
-this page in a browser that supports variable fonts, only two font files will
-have been loaded.
 Source Serif supports the
-<a href="http://adobe-type-tools.github.io/adobe-latin-charsets/adobe-latin-4.html">
+<a href="https://github.com/adobe-type-tools/adobe-latin-charsets#adobe-latin-4">
 Adobe Latin-4</a> character set, as well as
-<a href="http://adobe-type-tools.github.io/adobe-cyrillic-charsets/adobe-cyrillic-2.html">
+<a href="https://github.com/adobe-type-tools/adobe-cyrillic-charsets#adobe-cyrillic-2">
 Cyrillic</a> and
-<a href="http://adobe-type-tools.github.io/adobe-greek-charsets/adobe-greek-1.html">
+<a href="https://github.com/adobe-type-tools/adobe-greek-charsets#adobe-greek-1">
 Greek</a> writing systems.
+With six weights in five optical sizes, the Source Serif family has a total of
+60 styles, shared across Roman and Italic. In spite of this impressive bouquet,
+a browser that supports variable fonts will only load two font files for this
+specimen.
 
 Source Serif was designed by Frank Grießhammer, with contributions by
 Reymund Schroeder, Emilios Theofanous, Thomas Thiemich, and Irene Vlachou.
 
-Significant extensions of this project (Greek italics, optical sizes) were made
-possible through support from
+Significant extensions of this project (italics for Greek, optical sizes) were
+made possible through support from
 <a href="https://design.google/library/variable-fonts-are-here-to-stay/">
 Google Fonts</a>.
 '''

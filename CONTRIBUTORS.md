@@ -3,19 +3,19 @@ List of people who have made notable contributions to Source Serif:
 # Typeface Design
 
 [Frank Grießhammer](https://github.com/frankrolf)  
-	design lead, font production, engineering, project direction (ongoing)
+	Design lead, font production, engineering, project direction (ongoing)
 
 [Emilios Theofanous](https://www.monotype.com/studio/emilios-theofanous)  
-	design of Greek italic masters, revision of Greek upright design (2019)
+	Design of Greek italic, revision of Greek upright (2019)
 
 [Thomas Thiemich](https://www.typeby.com/about)  
-	design of display-size masters (2019–2020)
+	Design of display-size masters (2019–2020)
 
 [Reymund Schroeder](http://www.zeugler.de)  
-	design of caption-size masters (2019–2020)
+	Design of caption-size masters (2019–2020)
 
 [Irene Vlachou](https://www.ivtype.com)  
-	design of Greek italic masters, revision of Greek upright design (2019)
+	Design of Greek italic, revision of Greek upright (2019)
 
 
 # Design Consultation
@@ -39,10 +39,10 @@ List of people who have made notable contributions to Source Serif:
 # Further Contributions
 
 [Paul D. Hunt](https://fonts.adobe.com/designers/paul-d-hunt)  
-	typeface design input (ongoing)
+	Typeface design input (ongoing)
 
 [Ernest March](https://blog.typekit.com/2014/01/21/an-unconventional-engineer-how-fine-art-and-computer-smarts-brought-ernie-march-to-adobe/)  
-	font quality engineering (ongoing)
+	Font quality engineering (ongoing)
 
 [Krista Radoeva](https://www.kristaradoeva.com/About-me)  
 	Bulgarian translation for feature descriptions (2017)
@@ -51,10 +51,10 @@ List of people who have made notable contributions to Source Serif:
 	CSS advice (2021)
 
 [Robert Slimbach](https://en.wikipedia.org/wiki/Robert_Slimbach)  
-	typeface design input (ongoing)
+	Typeface design input (ongoing)
 
 [Miguel Sousa](https://github.com/miguelsousa)  
-	font production advice, repository organization (ongoing)
+	Font production advice, repository strategy (ongoing)
 
 [Jovica Veljović](https://en.wikipedia.org/wiki/Jovica_Veljović)  
 	Serbian translation for feature descriptions (2017)
