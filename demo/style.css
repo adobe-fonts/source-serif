@@ -1,0 +1,93 @@
+:root {
+    --main_foreground_color: #000;
+    --main_background_color: #FFF;
+    font-size: 200%;
+
+}
+body {
+    font-family: "Source Serif VF", "Source Serif", sans;
+    overflow-x: hidden;
+    font-feature-settings: "kern" 1, "liga" 1;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+main {
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+h1 {
+    /*page title*/
+    margin: 0;
+    font-family: "Source Serif VF", "Source Serif Display";
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0.25rem 0 0.25rem 0.75rem;
+}
+
+h2 {
+    /*weight names in small caps*/
+    margin: 0;
+    font-family: "Source Serif VF", "Source Serif SmText";
+    font-weight: 400;
+    /*font-variation-settings: "opsz" 8;*/
+    font-feature-settings: "c2sc" 1, "smcp" 1;
+    font-size: 1rem;
+    color: #BBB;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.04em;
+    border-bottom: 0.5px solid;
+}
+
+
+.dynamic_color {
+    color: var(--main_foreground_color);
+    background-color: var(--main_background_color);
+}
+
+.ExtraLight {
+    font-weight: 200;
+}
+
+.Light {
+    font-weight: 300;
+}
+
+.Regular {
+    font-weight: 500;
+}
+
+.Semibold {
+    font-weight: 600;
+}
+
+.Bold {
+    font-weight: 700;
+}
+
+.Black {
+    font-weight: 900;
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --main_foreground_color: #FFF;
+        --main_background_color: #222;
+    }
+
+    a {
+        color: #CCC;
+    }
+
+    h2 {
+        color: #666;
+    }
+
