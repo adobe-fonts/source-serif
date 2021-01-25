@@ -23,9 +23,9 @@ title: Source Serif 4
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
         <title>Source Serif 4</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="/source-serif-variable.css">
-        <link rel="stylesheet" href="/source-serif-static.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="source-serif-variable.css">
+        <link rel="stylesheet" href="source-serif-static.css">
     </head>
     <body class="dynamic_color">
         <header class="dynamic_color sticky">
@@ -101,7 +101,9 @@ if args.shuffle:
     article_dir = os.path.join(os.path.dirname(__file__), '../_includes')
     animal_htmls = [
         file for file in os.listdir(article_dir) if
-        os.path.splitext(file)[-1].lower() == '.html']
+        os.path.splitext(file)[-1].lower() == '.html' and
+        file != 'footer.html'
+    ]
     random.shuffle(animal_htmls)
 
 else:

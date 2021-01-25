@@ -8,7 +8,7 @@ List of people who have made notable contributions to Source Serif:
 [Emilios Theofanous](https://www.monotype.com/studio/emilios-theofanous)  
 	design of Greek italic masters, revision of Greek upright design (2019)
 
-[Thomas Thiemich](https://twitter.com/tthiemich)  
+[Thomas Thiemich](https://www.typeby.com/about)  
 	design of display-size masters (2019–2020)
 
 [Reymund Schroeder](http://www.zeugler.de)  
@@ -36,7 +36,7 @@ List of people who have made notable contributions to Source Serif:
 	Cyrillic design consultation (2016)
 
 
-# Further Contriubutions
+# Further Contributions
 
 [Paul D. Hunt](https://fonts.adobe.com/designers/paul-d-hunt)  
 	typeface design input (ongoing)
