@@ -1,0 +1,1 @@
+Cold storage for a high-contrast heavy master drawn for [Source Han Serif](https://github.com/adobe-fonts/source-han-serif).
