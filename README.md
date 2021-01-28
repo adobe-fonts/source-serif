@@ -18,19 +18,6 @@ Please [open an issue](https://github.com/adobe-fonts/source-serif/issues) to st
 * [All releases](../../releases)
 
 
-## Font installation instructions
-
-* [macOS](https://support.apple.com/en-us/HT201749)
-* [Windows](https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx)
-* [Linux/Unix-based systems](https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116)
-* Bower<br/>
-	`bower install git://github.com/adobe-fonts/source-serif.git#release`
-* npm 2.x<br/>
-	`npm install --fetch-only git://github.com/adobe-fonts/source-serif.git#release`
-* npm 3.x<br/>
-	`npm install git://github.com/adobe-fonts/source-serif.git#release`
-
-
 ## Design information
 
 * [Blog post on the introductory release of Source Serif](https://blog.typekit.com/2014/05/20/source-serif-pro/) (2014)  
