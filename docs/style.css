@@ -2,6 +2,7 @@
     --main_foreground_color: #000;
     --main_background_color: #FFF;
 }
+
 body {
     font-family: "Source Serif VF", "Source Serif", sans;
     overflow-x: hidden;
@@ -9,6 +10,9 @@ body {
     font-feature-settings: "kern" 1, "liga" 1;
     /*font-optical-sizing: auto;*/
     margin: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 main {
