@@ -36,7 +36,7 @@ title: Source Serif 4
             <div class="header_links smcp">
                 <a href="https://github.com/adobe-fonts/source-serif/tree/main">fork</a>
                 &ensp;|&ensp;
-                <a href="http://github.com/adobe-fonts/source-serif/releases/latest">fonts</a>
+                <a href="https://github.com/adobe-fonts/source-serif/releases/download/4.004R/source-serif-4.004.zip">fonts</a>
             </div>
         </header>
         <div class="spacer">

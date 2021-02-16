@@ -18,7 +18,7 @@ interpretation of the transitional typefaces of
 Pierre-Simon Fournier</a>.
 Additionally, Source Serif has been conceived as a friendly companion to
 Paul D. Hunt’s
-<a href="https://adobe-fonts.github.io/source-sans-pro/">
+<a href="https://adobe-fonts.github.io/source-sans/">
 Source Sans</a>.
 
 Source Serif supports the
