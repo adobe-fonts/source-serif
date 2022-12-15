@@ -22,8 +22,7 @@ function build_var_font {
 	# --mkot gs is for using the makeotf option -gs, which omits glyphs not in the GOADB
 	buildmasterotfs --mkot gs -d $1/$2.designspace
 	# -k writes post table v2
-	# buildcff2vf -k --omit-mac-names -d $1/$2.designspace
-	buildcff2vf --omit-mac-names -d $1/$2.designspace
+	buildcff2vf -k --omit-mac-names -d $1/$2.designspace
 
 	# extract and subroutinize the CFF2 table
 	echo 'Subroutinizing' $2.otf
