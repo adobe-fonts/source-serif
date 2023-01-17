@@ -1,62 +1,68 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
+        <axis default="400" maximum="900" minimum="200" name="weight" tag="wght">
+            <map input="200" output="0" />   <!-- ExtraLight -->
+            <map input="300" output="145" /> <!-- Light -->
+            <map input="400" output="394" /> <!-- Regular (default) -->
+            <map input="600" output="594" /> <!-- Semibold -->
+            <map input="700" output="823" /> <!-- Bold -->
+            <map input="900" output="1000" /><!-- Black -->
+        </axis>
         <axis default="20" maximum="60" minimum="8" name="optical" tag="opsz" />
-        <axis default="394" maximum="1000" minimum="0" name="weight" tag="wght" />
     </axes>
     <sources>
-        <source filename="caption/master_0/SourceSerif-Italic_c0.ufo">
+        <source filename="Masters/caption/master_0/SourceSerif_c0.ufo">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="8" />
             </location>
         </source>
-        <source filename="caption/master_1/SourceSerif-Italic_c1.ufo">
+        <source filename="Masters/caption/master_1/SourceSerif_c1.ufo">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="8" />
             </location>
         </source>
-        <source filename="caption/master_2/SourceSerif-Italic_c2.ufo">
+        <source filename="Masters/caption/master_2/SourceSerif_c2.ufo">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="8" />
             </location>
         </source>
-        <source filename="text/master_0/SourceSerif-Italic_0.ufo">
+        <source filename="Masters/text/master_0/SourceSerif_0.ufo">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="20" />
             </location>
         </source>
-        <source filename="text/master_1/SourceSerif-Italic_1.ufo">
-            <lib copy="1" />
-            <groups copy="1" />
+        <source familyname="Source Serif 4 Variable" filename="Masters/text/master_1/SourceSerif_1.ufo">
+            <lib copy="1"/>
             <info copy="1" />
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="20" />
             </location>
         </source>
-        <source filename="text/master_2/SourceSerif-Italic_2.ufo">
+        <source filename="Masters/text/master_2/SourceSerif_2.ufo">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="20" />
             </location>
         </source>
-        <source filename="display/master_0/SourceSerif-Italic_d0.ufo">
+        <source filename="Masters/display/master_0/SourceSerif_d0.ufo">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="60" />
             </location>
         </source>
-        <source filename="display/master_1/SourceSerif-Italic_d1.ufo">
+        <source filename="Masters/display/master_1/SourceSerif_d1.ufo">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="60" />
             </location>
         </source>
-        <source filename="display/master_2/SourceSerif-Italic_d2.ufo">
+        <source filename="Masters/display/master_2/SourceSerif_d2.ufo">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="60" />
@@ -64,7 +70,7 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Source Serif 4 Caption" filename="../Instances/Caption/ExtraLightIt/font.ufo" postscriptfontname="SourceSerif4Caption-ExtraLightIt" stylename="ExtraLight Italic">
+        <instance postscriptfontname="SourceSerif4Variable-CaptionExtraLight" stylename="Caption ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="8" />
@@ -72,15 +78,15 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Caption" filename="../Instances/Caption/LightIt/font.ufo" postscriptfontname="SourceSerif4Caption-LightIt" stylename="Light Italic">
+        <instance postscriptfontname="SourceSerif4Variable-CaptionLight" stylename="Caption Light">
             <location>
-                <dimension name="weight" xvalue="155" />
+                <dimension name="weight" xvalue="145" />
                 <dimension name="optical" xvalue="8" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Caption" filename="../Instances/Caption/It/font.ufo" postscriptfontname="SourceSerif4Caption-It" stylename="Italic">
+        <instance postscriptfontname="SourceSerif4Variable-CaptionRegular" stylename="Caption">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="8" />
@@ -88,23 +94,23 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Caption" filename="../Instances/Caption/SemiboldIt/font.ufo" postscriptfontname="SourceSerif4Caption-SemiboldIt" stylename="Semibold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-CaptionSemibold" stylename="Caption Semibold">
             <location>
-                <dimension name="weight" xvalue="611" />
+                <dimension name="weight" xvalue="594" />
                 <dimension name="optical" xvalue="8" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Caption" filename="../Instances/Caption/BoldIt/font.ufo" postscriptfontname="SourceSerif4Caption-BoldIt" stylename="Bold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-CaptionBold" stylename="Caption Bold">
             <location>
-                <dimension name="weight" xvalue="828" />
+                <dimension name="weight" xvalue="823" />
                 <dimension name="optical" xvalue="8" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Caption" filename="../Instances/Caption/BlackIt/font.ufo" postscriptfontname="SourceSerif4Caption-BlackIt" stylename="Black Italic">
+        <instance postscriptfontname="SourceSerif4Variable-CaptionBlack" stylename="Caption Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="8" />
@@ -112,7 +118,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 SmText" filename="../Instances/SmText/ExtraLightIt/font.ufo" postscriptfontname="SourceSerif4SmText-ExtraLightIt" stylename="ExtraLight Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SmTextExtraLight" stylename="SmText ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="16" />
@@ -120,15 +126,15 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 SmText" filename="../Instances/SmText/LightIt/font.ufo" postscriptfontname="SourceSerif4SmText-LightIt" stylename="Light Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SmTextLight" stylename="SmText Light">
             <location>
-                <dimension name="weight" xvalue="155" />
+                <dimension name="weight" xvalue="145" />
                 <dimension name="optical" xvalue="16" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 SmText" filename="../Instances/SmText/It/font.ufo" postscriptfontname="SourceSerif4SmText-It" stylename="Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SmTextRegular" stylename="SmText">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="16" />
@@ -136,23 +142,23 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 SmText" filename="../Instances/SmText/SemiboldIt/font.ufo" postscriptfontname="SourceSerif4SmText-SemiboldIt" stylename="Semibold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SmTextSemibold" stylename="SmText Semibold">
             <location>
-                <dimension name="weight" xvalue="611" />
+                <dimension name="weight" xvalue="594" />
                 <dimension name="optical" xvalue="16" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 SmText" filename="../Instances/SmText/BoldIt/font.ufo" postscriptfontname="SourceSerif4SmText-BoldIt" stylename="Bold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SmTextBold" stylename="SmText Bold">
             <location>
-                <dimension name="weight" xvalue="828" />
+                <dimension name="weight" xvalue="823" />
                 <dimension name="optical" xvalue="16" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 SmText" filename="../Instances/SmText/BlackIt/font.ufo" postscriptfontname="SourceSerif4SmText-BlackIt" stylename="Black Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SmTextBlack" stylename="SmText Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="16" />
@@ -160,7 +166,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="../Instances/Text/ExtraLightIt/font.ufo" postscriptfontname="SourceSerif4-ExtraLightIt" stylename="ExtraLight Italic">
+        <instance postscriptfontname="SourceSerif4Variable-ExtraLight" stylename="ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="20" />
@@ -168,15 +174,16 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="../Instances/Text/LightIt/font.ufo" postscriptfontname="SourceSerif4-LightIt" stylename="Light Italic">
+        <instance postscriptfontname="SourceSerif4Variable-Light" stylename="Light">
             <location>
-                <dimension name="weight" xvalue="155" />
+                <dimension name="weight" xvalue="145" />
                 <dimension name="optical" xvalue="20" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="../Instances/Text/It/font.ufo" postscriptfontname="SourceSerif4-It" stylename="Italic">
+        <!-- default instance -->
+        <instance postscriptfontname="SourceSerif4Variable-Roman" stylename="Regular">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="20" />
@@ -184,23 +191,23 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="../Instances/Text/SemiboldIt/font.ufo" postscriptfontname="SourceSerif4-SemiboldIt" stylename="Semibold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-Semibold" stylename="Semibold">
             <location>
-                <dimension name="weight" xvalue="611" />
+                <dimension name="weight" xvalue="594" />
                 <dimension name="optical" xvalue="20" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="../Instances/Text/BoldIt/font.ufo" postscriptfontname="SourceSerif4-BoldIt" stylename="Bold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-Bold" stylename="Bold">
             <location>
-                <dimension name="weight" xvalue="828" />
+                <dimension name="weight" xvalue="823" />
                 <dimension name="optical" xvalue="20" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="../Instances/Text/BlackIt/font.ufo" postscriptfontname="SourceSerif4-BlackIt" stylename="Black Italic">
+        <instance postscriptfontname="SourceSerif4Variable-Black" stylename="Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="20" />
@@ -208,7 +215,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Subhead" filename="../Instances/Subhead/ExtraLightIt/font.ufo" postscriptfontname="SourceSerif4Subhead-ExtraLightIt" stylename="ExtraLight Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SubheadExtraLight" stylename="Subhead ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="32" />
@@ -216,15 +223,15 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Subhead" filename="../Instances/Subhead/LightIt/font.ufo" postscriptfontname="SourceSerif4Subhead-LightIt" stylename="Light Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SubheadLight" stylename="Subhead Light">
             <location>
-                <dimension name="weight" xvalue="155" />
+                <dimension name="weight" xvalue="145" />
                 <dimension name="optical" xvalue="32" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Subhead" filename="../Instances/Subhead/It/font.ufo" postscriptfontname="SourceSerif4Subhead-It" stylename="Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SubheadRegular" stylename="Subhead">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="32" />
@@ -232,23 +239,23 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Subhead" filename="../Instances/Subhead/SemiboldIt/font.ufo" postscriptfontname="SourceSerif4Subhead-SemiboldIt" stylename="Semibold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SubheadSemibold" stylename="Subhead Semibold">
             <location>
-                <dimension name="weight" xvalue="611" />
+                <dimension name="weight" xvalue="594" />
                 <dimension name="optical" xvalue="32" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Subhead" filename="../Instances/Subhead/BoldIt/font.ufo" postscriptfontname="SourceSerif4Subhead-BoldIt" stylename="Bold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SubheadBold" stylename="Subhead Bold">
             <location>
-                <dimension name="weight" xvalue="828" />
+                <dimension name="weight" xvalue="823" />
                 <dimension name="optical" xvalue="32" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Subhead" filename="../Instances/Subhead/BlackIt/font.ufo" postscriptfontname="SourceSerif4Subhead-BlackIt" stylename="Black Italic">
+        <instance postscriptfontname="SourceSerif4Variable-SubheadBlack" stylename="Subhead Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="32" />
@@ -256,7 +263,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Display" filename="../Instances/Display/ExtraLightIt/font.ufo" postscriptfontname="SourceSerif4Display-ExtraLightIt" stylename="ExtraLight Italic">
+        <instance postscriptfontname="SourceSerif4Variable-DisplayExtraLight" stylename="Display ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="optical" xvalue="60" />
@@ -264,15 +271,15 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Display" filename="../Instances/Display/LightIt/font.ufo" postscriptfontname="SourceSerif4Display-LightIt" stylename="Light Italic">
+        <instance postscriptfontname="SourceSerif4Variable-DisplayLight" stylename="Display Light">
             <location>
-                <dimension name="weight" xvalue="155" />
+                <dimension name="weight" xvalue="145" />
                 <dimension name="optical" xvalue="60" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Display" filename="../Instances/Display/It/font.ufo" postscriptfontname="SourceSerif4Display-It" stylename="Italic">
+        <instance postscriptfontname="SourceSerif4Variable-DisplayRegular" stylename="Display">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="optical" xvalue="60" />
@@ -280,23 +287,23 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Display" filename="../Instances/Display/SemiboldIt/font.ufo" postscriptfontname="SourceSerif4Display-SemiboldIt" stylename="Semibold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-DisplaySemibold" stylename="Display Semibold">
             <location>
-                <dimension name="weight" xvalue="611" />
+                <dimension name="weight" xvalue="594" />
                 <dimension name="optical" xvalue="60" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Display" filename="../Instances/Display/BoldIt/font.ufo" postscriptfontname="SourceSerif4Display-BoldIt" stylename="Bold Italic">
+        <instance postscriptfontname="SourceSerif4Variable-DisplayBold" stylename="Display Bold">
             <location>
-                <dimension name="weight" xvalue="828" />
+                <dimension name="weight" xvalue="823" />
                 <dimension name="optical" xvalue="60" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4 Display" filename="../Instances/Display/BlackIt/font.ufo" postscriptfontname="SourceSerif4Display-BlackIt" stylename="Black Italic">
+        <instance postscriptfontname="SourceSerif4Variable-DisplayBlack" stylename="Display Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="optical" xvalue="60" />
@@ -305,4 +312,38 @@
             <info />
         </instance>
     </instances>
+    <lib>
+        <dict>
+        <key>public.skipExportGlyphs</key>
+        <array>
+            <string>caron.alt</string>
+            <string>commabelowcmb.alt</string>
+            <string>tonos.cap</string>
+            <string>f.ligalong</string>
+            <string>dieresiscmb.tight</string>
+            <string>IJ</string>
+            <string>Tbar</string>
+            <string>colontriangularmod</string>
+            <string>crossmark</string>
+            <string>ij</string>
+            <string>overline</string>
+            <string>similar</string>
+            <string>tbar</string>
+            <string>triangularbullet</string>
+            <string>turkicdsccmb</string>
+            <string>circumflexcaron</string>
+            <string>circumflexcaron.cap</string>
+            <string>circumflexmacron</string>
+            <string>circumflexmacron.cap</string>
+            <string>uni004Duni0300</string>
+            <string>uni004Duni0304</string>
+            <string>uni006Duni0300</string>
+            <string>uni006Duni0304</string>
+            <string>uni00CAuni0304</string>
+            <string>uni00CAuni030C</string>
+            <string>uni00EAuni0304</string>
+            <string>uni00EAuni030C</string>
+        </array>
+        </dict>
+    </lib>
 </designspace>
