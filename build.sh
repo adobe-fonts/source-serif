@@ -17,6 +17,8 @@ otf_dir="$DIR/target/OTF"
 ttf_dir="$DIR/target/TTF"
 mkdir -p $otf_dir $ttf_dir
 
+# copy LICENSE.md to the target folder
+cp $DIR/LICENSE.md target/
 
 function build_font {
 	local slope=${1}
