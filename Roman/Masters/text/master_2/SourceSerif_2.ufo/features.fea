@@ -6,13 +6,13 @@ table OS/2 {
 } OS/2;
 
 # GPOS -----------------------------------
-feature mark {
-    include (../../../Instances/Text/Black/mark.fea);
-} mark;
+# feature mark {
+#     include (../../../Instances/Text/Black/mark.fea);
+# } mark;
 
-feature mkmk {
-    include (../../../Instances/Text/Black/mkmk.fea);
-} mkmk;
+# feature mkmk {
+#     include (../../../Instances/Text/Black/mkmk.fea);
+# } mkmk;
 
 feature kern {
     lookupflag IgnoreMarks;
@@ -20,5 +20,5 @@ feature kern {
         include (../../../Instances/Text/Black/kern.fea);
     } KERN;
 
-    include (../../../Instances/Text/Black/kern_ctxt.fea);
+    # include (../../../Instances/Text/Black/kern_ctxt.fea);
 } kern;
