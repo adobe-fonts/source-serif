@@ -8,6 +8,7 @@ from pathlib import Path
 import argparse
 import subprocess
 import shutil
+import sys
 
 FAMILY_NAME = 'SourceSerif4VFSubset'
 ROOT_DIR = Path(__file__).parent
@@ -75,38 +76,40 @@ def build_vf(args, slope=None):
     hinting_data_file = target_dir.joinpath('vf_hinting_metadata.plist')
 
     # build master OTFs
-    subprocess.call(
+    if subprocess.call(
         # --mkot to set makeotf options:
         # gs to omit glyphs not in the GOADB
         # osv 4 to write os/2 table v4
         ['buildmasterotfs', '--mkot', '-gs,-osv,4', '-d', designspace_file],
         stdout=STDOUT,
         stderr=STDERR
-    )
+    ) != 0:
+        sys.exit('buildmasterotfs problem')
 
-    # if args.hinted:
     # split combined private dicts into FDArrays
-    subprocess.call(
+    if subprocess.call(
         ['splitpsdicts', '-m', hinting_data_file, '-d', designspace_file],
         stdout=STDOUT,
         stderr=STDERR
-    )
+    ) != 0:
+        sys.exit('splitpsdicts problem')
 
     # merge OTFs into CFF2
-    subprocess.call(
+    if subprocess.call(
         # -k is for using 'post' table format 2
         ['buildcff2vf', '-k', '--omit-mac-names', '-d', designspace_file],
         stdout=STDOUT,
         stderr=STDERR
-    )
+    ) != 0:
+        sys.exit('buildcff2vf problem')
 
-    # if args.hinted:
     # hint the file
-    subprocess.call(
+    if subprocess.call(
         ['psautohint', '--no-flex', output_otf],
         stdout=STDOUT,
         stderr=STDERR
-    )
+    ) != 0:
+        sys.exit('buildcff2vf problem')
 
     # if not args.hinted:
     #     # at the moment, we don’t subroutinize the hinted fonts.
@@ -125,13 +128,14 @@ def build_vf(args, slope=None):
     #     )
 
     # build variable TTF with fontmake.
-    subprocess.call([
+    if subprocess.call([
         'fontmake', '-m', designspace_file, '-o', 'variable',
         '--production-names', '--output-path', output_ttf,
         '--feature-writer', 'None'],
         stdout=STDOUT,
         stderr=STDERR
-    )
+    ) != 0:
+        sys.exit('fontmake problem')
 
     # use DSIG, name, OS/2, MVAR, hhea, post, and STAT tables from OTFs
     tables_from_otf = (
@@ -147,7 +151,8 @@ def build_vf(args, slope=None):
     # use cmap, GDEF, GPOS, and GSUB tables from TTFs
     tables_from_ttf = (
         'cmap=/tmp/.tb_cmap,GDEF=/tmp/.tb_GDEF,'
-        'GPOS=/tmp/.tb_GPOS,GSUB=/tmp/.tb_GSUB')
+        # 'GPOS=/tmp/.tb_GPOS,GSUB=/tmp/.tb_GSUB')
+        'GSUB=/tmp/.tb_GSUB')
 
     subprocess.call([
         'sfntedit', '-x', tables_from_ttf, output_ttf])
