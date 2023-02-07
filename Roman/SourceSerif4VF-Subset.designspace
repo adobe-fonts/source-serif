@@ -1,7 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="394" maximum="1000" minimum="0" name="weight" tag="wght" />
+        <axis default="400" maximum="900" minimum="200" name="weight" tag="wght">
+            <map input="200" output="0" />   <!-- ExtraLight -->
+            <map input="300" output="145" /> <!-- Light -->
+            <map input="400" output="394" /> <!-- Regular (default) -->
+            <map input="600" output="594" /> <!-- Semibold -->
+            <map input="700" output="823" /> <!-- Bold -->
+            <map input="900" output="1000" /><!-- Black -->
+        </axis>
     </axes>
     <sources>
         <source filename="Masters/text/master_0/SourceSerif_0.ufo">
@@ -9,9 +16,8 @@
                 <dimension name="weight" xvalue="0" />
             </location>
         </source>
-        <source filename="Masters/text/master_1/SourceSerif_1.ufo">
-            <lib copy="1" />
-            <groups copy="1" />
+        <source familyname="Source Serif 4 VF Subset" filename="Masters/text/master_1/SourceSerif_1.ufo">
+            <lib copy="1"/>
             <info copy="1" />
             <location>
                 <dimension name="weight" xvalue="394" />
@@ -24,42 +30,43 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Source Serif 4" filename="Instances/Text/ExtraLight/font.ufo" postscriptfontname="SourceSerif4-ExtraLight" stylename="ExtraLight">
+        <instance postscriptfontname="SourceSerif4VFSubset-ExtraLight" stylename="ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="Instances/Text/Light/font.ufo" postscriptfontname="SourceSerif4-Light" stylename="Light">
+        <instance postscriptfontname="SourceSerif4VFSubset-Light" stylename="Light">
             <location>
                 <dimension name="weight" xvalue="145" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="Instances/Text/Regular/font.ufo" postscriptfontname="SourceSerif4-Regular" stylename="Regular">
+        <!-- default instance -->
+        <instance postscriptfontname="SourceSerif4VFSubset-Roman" stylename="Regular">
             <location>
                 <dimension name="weight" xvalue="394" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="Instances/Text/Semibold/font.ufo" postscriptfontname="SourceSerif4-Semibold" stylename="Semibold">
+        <instance postscriptfontname="SourceSerif4VFSubset-Semibold" stylename="Semibold">
             <location>
                 <dimension name="weight" xvalue="594" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="Instances/Text/Bold/font.ufo" postscriptfontname="SourceSerif4-Bold" stylename="Bold">
+        <instance postscriptfontname="SourceSerif4VFSubset-Bold" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="823" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Source Serif 4" filename="Instances/Text/Black/font.ufo" postscriptfontname="SourceSerif4-Black" stylename="Black">
+        <instance postscriptfontname="SourceSerif4VFSubset-Black" stylename="Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
             </location>

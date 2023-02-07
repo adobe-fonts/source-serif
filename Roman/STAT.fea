@@ -2,9 +2,9 @@ table STAT {
 
 	ElidedFallbackName { name "Regular"; };
 
-	DesignAxis opsz 0 { name "Optical Size"; };
-	DesignAxis wght 1 { name "Weight"; };
-	DesignAxis ital 2 { name "Italic"; };
+	# DesignAxis opsz 0 { name "Optical Size"; };
+	DesignAxis wght 0 { name "Weight"; };
+	DesignAxis ital 1 { name "Italic"; };
 
 	AxisValue {
 		location wght 200 200 250;
@@ -45,32 +45,6 @@ table STAT {
 	AxisValue {
 		location wght 900 800 900;
 		name "Black";
-	};
-
-	AxisValue {
-		location opsz 8 8 12;
-		name "Caption";
-	};
-
-	AxisValue {
-		location opsz 16 12 18;
-		name "SmallText";
-	};
-
-	AxisValue {
-		location opsz 20 18 26;
-		name "Text";
-		flag ElidableAxisValueName;
-	};
-
-	AxisValue {
-		location opsz 32 26 48;
-		name "Subhead";
-	};
-
-	AxisValue {
-		location opsz 60 48 60;
-		name "Display";
 	};
 
 	AxisValue {

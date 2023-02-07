@@ -9,7 +9,7 @@ import argparse
 import subprocess
 import shutil
 
-FAMILY_NAME = 'SourceSerif4Variable'
+FAMILY_NAME = 'SourceSerif4VFSubset'
 ROOT_DIR = Path(__file__).parent
 
 
@@ -84,13 +84,13 @@ def build_vf(args, slope=None):
         stderr=STDERR
     )
 
-    if args.hinted:
-        # split combined private dicts into FDArrays
-        subprocess.call(
-            ['splitpsdicts', '-m', hinting_data_file, '-d', designspace_file],
-            stdout=STDOUT,
-            stderr=STDERR
-        )
+    # if args.hinted:
+    # split combined private dicts into FDArrays
+    subprocess.call(
+        ['splitpsdicts', '-m', hinting_data_file, '-d', designspace_file],
+        stdout=STDOUT,
+        stderr=STDERR
+    )
 
     # merge OTFs into CFF2
     subprocess.call(
@@ -100,29 +100,29 @@ def build_vf(args, slope=None):
         stderr=STDERR
     )
 
-    if args.hinted:
-        # hint the file
-        subprocess.call(
-            ['psautohint', '--no-flex', output_otf],
-            stdout=STDOUT,
-            stderr=STDERR
-        )
+    # if args.hinted:
+    # hint the file
+    subprocess.call(
+        ['psautohint', '--no-flex', output_otf],
+        stdout=STDOUT,
+        stderr=STDERR
+    )
 
-    if not args.hinted:
-        # at the moment, we don’t subroutinize the hinted fonts.
-        # extract and subroutinize the CFF2 table
-        subprocess.call(
-            ['tx', '-cff2', '+S', '+b', '-std', output_otf, '/tmp/.tb_cff2'],
-            stdout=STDOUT,
-            stderr=STDERR
-        )
+    # if not args.hinted:
+    #     # at the moment, we don’t subroutinize the hinted fonts.
+    #     # extract and subroutinize the CFF2 table
+    #     subprocess.call(
+    #         ['tx', '-cff2', '+S', '+b', '-std', output_otf, '/tmp/.tb_cff2'],
+    #         stdout=STDOUT,
+    #         stderr=STDERR
+    #     )
 
-        # replace CFF2 table with subroutinized version
-        subprocess.call(
-            ['sfntedit', '-a', 'CFF2=/tmp/.tb_cff2', output_otf],
-            stdout=STDOUT,
-            stderr=STDERR
-        )
+    #     # replace CFF2 table with subroutinized version
+    #     subprocess.call(
+    #         ['sfntedit', '-a', 'CFF2=/tmp/.tb_cff2', output_otf],
+    #         stdout=STDOUT,
+    #         stderr=STDERR
+    #     )
 
     # build variable TTF with fontmake.
     subprocess.call([
@@ -167,12 +167,12 @@ def build_vf(args, slope=None):
 
 if __name__ == '__main__':
     args = get_args()
-    slopes = ['Roman', 'Italic']
+    slopes = ['Roman']
 
-    if args.hinted:
-        output_dir_name = 'VAR_hinted'
-    else:
-        output_dir_name = 'VAR'
+    # if args.hinted:
+    #     output_dir_name = 'VAR_hinted'
+    # else:
+    output_dir_name = 'VAR'
 
     var_dir = ROOT_DIR.joinpath('target', output_dir_name)
 

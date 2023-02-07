@@ -1,3 +1,6 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt; # Latin default
+
 include (../../../../familyTables.fea);
 
 table name {
@@ -6,5 +9,5 @@ table name {
     include (../../../nameIDs.fea);
 } name;
 
-include (../../../familyGSUB.fea);
+# include (../../../familyGSUB.fea);
 include (../../../STAT.fea);
