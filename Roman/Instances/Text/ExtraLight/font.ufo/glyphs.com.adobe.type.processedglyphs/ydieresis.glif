@@ -4,11 +4,39 @@
 	<advance width="492"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="310" y="450" type="line"/>
+			<point name="hintRef0000" x="154" y="644" type="curve"/>
+			<point x="169" y="644"/>
+			<point x="183" y="655"/>
+			<point x="183" y="674" type="curve"/>
+			<point x="183" y="692"/>
+			<point x="169" y="703"/>
+			<point x="154" y="703" type="curve"/>
+			<point x="139" y="703"/>
+			<point x="125" y="692"/>
+			<point x="125" y="674" type="curve"/>
+			<point x="125" y="655"/>
+			<point x="139" y="644"/>
+		</contour>
+		<contour>
+			<point x="342" y="644" type="curve"/>
+			<point x="357" y="644"/>
+			<point x="371" y="655"/>
+			<point x="371" y="674" type="curve"/>
+			<point x="371" y="692"/>
+			<point x="357" y="703"/>
+			<point x="342" y="703" type="curve"/>
+			<point x="327" y="703"/>
+			<point x="313" y="692"/>
+			<point x="313" y="674" type="curve"/>
+			<point x="313" y="655"/>
+			<point x="327" y="644"/>
+		</contour>
+		<contour>
+			<point name="hintRef0001" x="310" y="450" type="line"/>
 			<point x="399" y="444" type="line"/>
 			<point x="326" y="241" type="line"/>
 			<point x="248" y="27" type="line"/>
-			<point name="hintSet0004" x="93" y="445" type="line"/>
+			<point name="hintRef0002" x="93" y="445" type="line"/>
 			<point x="180" y="450" type="line"/>
 			<point x="180" y="470" type="line"/>
 			<point x="-14" y="470" type="line"/>
@@ -37,34 +65,6 @@
 			<point x="493" y="470" type="line"/>
 			<point x="310" y="470" type="line"/>
 		</contour>
-		<contour>
-			<point name="hintSet0022" x="154" y="644" type="curve"/>
-			<point x="169" y="644"/>
-			<point x="183" y="655"/>
-			<point x="183" y="674" type="curve"/>
-			<point x="183" y="692"/>
-			<point x="169" y="703"/>
-			<point x="154" y="703" type="curve"/>
-			<point x="139" y="703"/>
-			<point x="125" y="692"/>
-			<point x="125" y="674" type="curve"/>
-			<point x="125" y="655"/>
-			<point x="139" y="644"/>
-		</contour>
-		<contour>
-			<point x="342" y="644" type="curve"/>
-			<point x="357" y="644"/>
-			<point x="371" y="655"/>
-			<point x="371" y="674" type="curve"/>
-			<point x="371" y="692"/>
-			<point x="357" y="703"/>
-			<point x="342" y="703" type="curve"/>
-			<point x="327" y="703"/>
-			<point x="313" y="692"/>
-			<point x="313" y="674" type="curve"/>
-			<point x="313" y="655"/>
-			<point x="327" y="644"/>
-		</contour>
 	</outline>
 	<lib>
 		<dict>
@@ -74,31 +74,7 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -255 22</string>
-							<string>hstem 447 23</string>
-							<string>hstem 644 59</string>
-							<string>vstem -14 194</string>
-							<string>vstem 310 183</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0004</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -255 22</string>
-							<string>hstem 447.5 22.5</string>
-							<string>hstem 644 59</string>
-							<string>vstem -14 194</string>
-							<string>vstem 310 183</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0022</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -255 22</string>
@@ -108,9 +84,33 @@
 							<string>vstem 313 58</string>
 						</array>
 					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -255 22</string>
+							<string>hstem 447 23</string>
+							<string>hstem 644 59</string>
+							<string>vstem 125 58</string>
+							<string>vstem 310 183</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0002</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -255 22</string>
+							<string>hstem 447.5 22.5</string>
+							<string>hstem 644 59</string>
+							<string>vstem -14 194</string>
+							<string>vstem 310 183</string>
+						</array>
+					</dict>
 				</array>
 				<key>id</key>
-				<string>a34b8c36f121fbaf9802445747b45db1d078021649ecf12ddcfabc927ca5b6403f248beb113db30dded9696a6fdfc0dfaa667e6137329944b43581a4d11fac39</string>
+				<string>fac964e53c7ad230fe55e0a5e2c2da47ba456408a7717dfe0cad130580e59475bdd508a20560520eb77b89ce7003b2a93da77976a9d1e28cf21c1373d66244ab</string>
 			</dict>
 		</dict>
 	</lib>

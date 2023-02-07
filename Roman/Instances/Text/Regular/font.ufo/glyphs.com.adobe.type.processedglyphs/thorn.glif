@@ -4,8 +4,8 @@
 	<advance width="554"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="6" y="-240" type="line"/>
-			<point name="hintSet0001" x="263" y="-240" type="line"/>
+			<point name="hintRef0000" x="6" y="-240" type="line"/>
+			<point x="263" y="-240" type="line"/>
 			<point x="263" y="-204" type="line"/>
 			<point x="172" y="-189" type="line"/>
 			<point x="171" y="-135"/>
@@ -26,10 +26,10 @@
 			<point x="170" y="417" type="curve"/>
 			<point x="170" y="589" type="line"/>
 			<point x="174" y="732" type="line"/>
-			<point name="hintSet0012" x="160" y="740" type="line"/>
+			<point name="hintRef0001" x="160" y="740" type="line"/>
 			<point x="7" y="695" type="line"/>
 			<point x="7" y="659" type="line"/>
-			<point x="88" y="649" type="line"/>
+			<point name="hintRef0002" x="88" y="649" type="line"/>
 			<point x="88" y="-28" type="line"/>
 			<point x="88" y="-81"/>
 			<point x="87" y="-136"/>
@@ -60,20 +60,7 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -240 36</string>
-							<string>hstem -13 57</string>
-							<string>hstem 431 57</string>
-							<string>hstem 740 -20</string>
-							<string>vstem 88 85</string>
-							<string>vstem 419 90</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0001</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -240 36</string>
@@ -86,7 +73,20 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0012</string>
+						<string>hintRef0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -240 36</string>
+							<string>hstem -13 57</string>
+							<string>hstem 431 57</string>
+							<string>hstem 740 -20</string>
+							<string>vstem 88 82</string>
+							<string>vstem 419 90</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -240 36</string>

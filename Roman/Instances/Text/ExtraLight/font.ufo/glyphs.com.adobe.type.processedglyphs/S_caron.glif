@@ -4,8 +4,17 @@
 	<advance width="515"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="243" y="-13" type="curve"/>
-			<point name="hintSet0001" x="368" y="-13"/>
+			<point name="hintRef0000" x="161" y="865" type="line"/>
+			<point x="150" y="854" type="line"/>
+			<point x="261" y="740" type="line"/>
+			<point x="281" y="740" type="line"/>
+			<point x="392" y="854" type="line"/>
+			<point x="381" y="865" type="line"/>
+			<point x="271" y="772" type="line"/>
+		</contour>
+		<contour>
+			<point x="243" y="-13" type="curve"/>
+			<point x="368" y="-13"/>
 			<point x="460" y="53"/>
 			<point x="460" y="164" type="curve"/>
 			<point x="460" y="253"/>
@@ -18,7 +27,7 @@
 			<point x="107" y="623"/>
 			<point x="176" y="667"/>
 			<point x="272" y="667" type="curve"/>
-			<point name="hintSet0006" x="323" y="667"/>
+			<point name="hintRef0001" x="323" y="667"/>
 			<point x="360" y="657"/>
 			<point x="398" y="634" type="curve"/>
 			<point x="407" y="521" type="line"/>
@@ -34,7 +43,7 @@
 			<point x="128" y="389"/>
 			<point x="235" y="346" type="curve"/>
 			<point x="272" y="331" type="line"/>
-			<point name="hintSet0014" x="400" y="279"/>
+			<point name="hintRef0002" x="400" y="279"/>
 			<point x="433" y="237"/>
 			<point x="433" y="163" type="curve"/>
 			<point x="433" y="58"/>
@@ -46,17 +55,8 @@
 			<point x="79" y="167" type="line"/>
 			<point x="60" y="167" type="line"/>
 			<point x="55" y="41" type="line"/>
-			<point name="hintSet0020" x="94" y="14"/>
+			<point x="94" y="14"/>
 			<point x="164" y="-13"/>
-		</contour>
-		<contour>
-			<point x="161" y="865" type="line"/>
-			<point x="150" y="854" type="line"/>
-			<point name="hintSet0023" x="261" y="740" type="line"/>
-			<point x="281" y="740" type="line"/>
-			<point x="392" y="854" type="line"/>
-			<point x="381" y="865" type="line"/>
-			<point x="271" y="772" type="line"/>
 		</contour>
 	</outline>
 	<lib>
@@ -67,29 +67,19 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 22</string>
 							<string>hstem 667 22</string>
-							<string>vstem 80 27</string>
-							<string>vstem 402.5 28</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0001</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -13 22</string>
-							<string>hstem 667 22</string>
+							<string>hstem 740 32</string>
 							<string>vstem 80 27</string>
 							<string>vstem 433 27</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0006</string>
+						<string>hintRef0001</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 22</string>
@@ -100,7 +90,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0014</string>
+						<string>hintRef0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -13 22</string>
@@ -109,32 +99,9 @@
 							<string>vstem 433 27</string>
 						</array>
 					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0020</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -13 22</string>
-							<string>hstem 667 22</string>
-							<string>vstem 80 27</string>
-							<string>vstem 402.5 28</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0023</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -13 22</string>
-							<string>hstem 667 22</string>
-							<string>hstem 740 32</string>
-							<string>vstem 80 27</string>
-							<string>vstem 402.5 28</string>
-						</array>
-					</dict>
 				</array>
 				<key>id</key>
-				<string>3ea65c7154f363421dfc602139db2e17c831877758b6971d84b2a34e6c709cce75a05786bc5ab1d826ba0776c01e9e0a399be0c00bff3e7984f3ce1eb256dfc3</string>
+				<string>13137d0176d2992f92e341059f69de1d0d52b07b0351654290406ef6ee85b4fa1b96e2378efaa441bca66448d5e4854d414b72981fd96f0b9b5a45634aa5354b</string>
 			</dict>
 		</dict>
 	</lib>

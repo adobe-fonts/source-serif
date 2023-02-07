@@ -4,30 +4,7 @@
 	<advance width="664"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="5" y="0" type="line"/>
-			<point name="hintSet0001" x="234" y="0" type="line"/>
-			<point x="234" y="41" type="line"/>
-			<point x="137" y="54" type="line"/>
-			<point x="192" y="217" type="line"/>
-			<point x="424" y="217" type="line"/>
-			<point x="479" y="53" type="line"/>
-			<point x="381" y="41" type="line"/>
-			<point x="381" y="0" type="line"/>
-			<point x="653" y="0" type="line"/>
-			<point name="hintSet0010" x="653" y="41" type="line"/>
-			<point x="578" y="50" type="line"/>
-			<point x="365" y="675" type="line"/>
-			<point x="302" y="675" type="line"/>
-			<point name="hintSet0014" x="89" y="54" type="line"/>
-			<point x="5" y="41" type="line"/>
-		</contour>
-		<contour>
-			<point x="208" y="264" type="line"/>
-			<point x="309" y="561" type="line"/>
-			<point x="409" y="264" type="line"/>
-		</contour>
-		<contour>
-			<point name="hintSet0019" x="219" y="745" type="curve"/>
+			<point name="hintRef0000" x="219" y="745" type="curve"/>
 			<point x="251" y="745"/>
 			<point x="276" y="768"/>
 			<point x="276" y="800" type="curve"/>
@@ -54,6 +31,29 @@
 			<point x="385" y="768"/>
 			<point x="410" y="745"/>
 		</contour>
+		<contour>
+			<point name="hintRef0001" x="5" y="0" type="line"/>
+			<point x="234" y="0" type="line"/>
+			<point x="234" y="41" type="line"/>
+			<point x="137" y="54" type="line"/>
+			<point x="192" y="217" type="line"/>
+			<point x="424" y="217" type="line"/>
+			<point x="479" y="53" type="line"/>
+			<point x="381" y="41" type="line"/>
+			<point x="381" y="0" type="line"/>
+			<point x="653" y="0" type="line"/>
+			<point name="hintRef0002" x="653" y="41" type="line"/>
+			<point x="578" y="50" type="line"/>
+			<point x="365" y="675" type="line"/>
+			<point x="302" y="675" type="line"/>
+			<point x="89" y="54" type="line"/>
+			<point x="5" y="41" type="line"/>
+		</contour>
+		<contour>
+			<point x="208" y="264" type="line"/>
+			<point x="309" y="561" type="line"/>
+			<point x="409" y="264" type="line"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
@@ -63,7 +63,7 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 47</string>
@@ -76,7 +76,7 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0001</string>
+						<string>hintRef0001</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 47</string>
@@ -89,46 +89,20 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0010</string>
+						<string>hintRef0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 0 45.5</string>
 							<string>hstem 217 47</string>
 							<string>hstem 675 -20</string>
 							<string>hstem 745 110</string>
-							<string>vstem 161 115</string>
-							<string>vstem 385 115</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0014</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 0 47</string>
-							<string>hstem 217 47</string>
-							<string>hstem 675 -20</string>
-							<string>hstem 745 110</string>
 							<string>vstem 5 229</string>
-							<string>vstem 385 115</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0019</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 0 47</string>
-							<string>hstem 217 47</string>
-							<string>hstem 675 -20</string>
-							<string>hstem 745 110</string>
-							<string>vstem 161 115</string>
 							<string>vstem 385 115</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>677d30ca4984ead4cda094f95ce02d826144abad043254e8a29a67d1d587dc88b50a874497d2236cddf6df7780905cfb6d2ac9f7acf187951f46a464fc1f4505</string>
+				<string>8c15c44b953f7bec7685ad38558b900b7dc46fd64d8267d5ed24f11892e7a4e87c960547df27d0fd91145ce38ffcadb223b4f34a289b5bab91efb44cd7483395</string>
 			</dict>
 		</dict>
 	</lib>
