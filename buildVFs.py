@@ -31,6 +31,12 @@ def get_args():
         help='hint VFs')
 
     parser.add_argument(
+        '--slope',
+        choices=['Roman', 'Italic', 'both'],
+        default='both',
+        help='slope')
+
+    parser.add_argument(
         '-d', '--debug',
         action='store_true',
         default=False,
@@ -42,8 +48,7 @@ def get_args():
 def remove_source_otfs(slope=None):
     # deletes source otf files
     if slope:
-        source_directory = ROOT_DIR.joinpath(
-            f'{slope}', 'Masters')
+        source_directory = ROOT_DIR / slope / 'Masters'
     else:
         source_directory = ROOT_DIR
 
@@ -72,18 +77,16 @@ def build_vf(args, slope=None):
         STDERR = None
 
     if slope:
-        target_dir = ROOT_DIR.joinpath(f'{slope}')
-        vf_output_name = ROOT_DIR.joinpath(
-            target_dir, f'{FAMILY_NAME}-{slope}')
+        target_dir = ROOT_DIR / slope
+        vf_output_name = ROOT_DIR / target_dir / f'{FAMILY_NAME}-{slope}'
     else:
         target_dir = ROOT_DIR
-        vf_output_name = ROOT_DIR.joinpath(
-            target_dir, f'{FAMILY_NAME}')
+        vf_output_name = ROOT_DIR / target_dir / {FAMILY_NAME}
 
     output_otf = vf_output_name.with_suffix('.otf')
     output_ttf = vf_output_name.with_suffix('.ttf')
     designspace_file = vf_output_name.with_suffix('.designspace')
-    hinting_data_file = target_dir.joinpath('vf_hinting_metadata.plist')
+    hinting_data_file = target_dir / 'vf_hinting_metadata.plist'
 
     # build master OTFs
     subprocess.call(
@@ -183,14 +186,13 @@ def build_vf(args, slope=None):
 
 if __name__ == '__main__':
     args = get_args()
-    slopes = ['Roman', 'Italic']
 
     if args.hinted:
         output_dir_name = 'VAR_hinted'
     else:
         output_dir_name = 'VAR'
 
-    var_dir = ROOT_DIR.joinpath('target', output_dir_name)
+    var_dir = ROOT_DIR / 'target' / output_dir_name
 
     # clean existing target directory
     if var_dir.exists():
@@ -198,5 +200,8 @@ if __name__ == '__main__':
     # build target directory
     var_dir.mkdir(parents=True)
 
-    for slope in slopes:
-        build_vf(args, slope)
+    if args.slope == 'both':
+        build_vf(args, 'Roman')
+        build_vf(args, 'Italic')
+    else:
+        build_vf(args, args.slope)
