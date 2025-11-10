@@ -16,7 +16,10 @@ def run():
         f'# found in the _xtra folder of this repository, using {script_name}.\n'
     )
 
-    global_GOADB_path = Path(__file__).parent / 'masterGOADB'
+    script_path = Path(__file__)
+    global_GOADB_path = script_path.parent / 'masterGOADB'
+    root_path = script_path.parents[1]
+
     with open(global_GOADB_path, 'r') as goadb_blob:
         raw_mapping = goadb_blob.read().splitlines()
 
@@ -30,10 +33,10 @@ def run():
     italic_mapping = [edit_warning] + [re.sub(
         rf'{re.escape(italic_tag)} ?', '', line) for line in raw_italic_GOADB]
 
-    with open('../Roman/GlyphOrderAndAliasDB', 'w') as f:
+    with open(root_path / 'Roman/GlyphOrderAndAliasDB', 'w') as f:
         f.write('\n'.join(roman_mapping) + '\n')
 
-    with open('../Italic/GlyphOrderAndAliasDB', 'w') as f:
+    with open(root_path / 'Italic/GlyphOrderAndAliasDB', 'w') as f:
         f.write('\n'.join(italic_mapping) + '\n')
 
 
