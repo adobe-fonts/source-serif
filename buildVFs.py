@@ -47,7 +47,7 @@ def remove_source_otfs(slope=None):
         source_directory = ROOT_DIR
 
     for otf_to_delete in source_directory.rglob("master_*/*.otf"):
-        subprocess.call(['rm', otf_to_delete])
+        subprocess.check_call(['rm', otf_to_delete])
 
 
 def build_vf(args, slope=None):
@@ -75,7 +75,7 @@ def build_vf(args, slope=None):
     hinting_data_file = target_dir.joinpath('vf_hinting_metadata.plist')
 
     # build master OTFs
-    subprocess.call(
+    subprocess.check_call(
         # --mkot to set makeotf options:
         # gs to omit glyphs not in the GOADB
         # osv 4 to write os/2 table v4
@@ -86,14 +86,14 @@ def build_vf(args, slope=None):
 
     if args.hinted:
         # split combined private dicts into FDArrays
-        subprocess.call(
+        subprocess.check_call(
             ['splitpsdicts', '-m', hinting_data_file, '-d', designspace_file],
             stdout=STDOUT,
             stderr=STDERR
         )
 
     # merge OTFs into CFF2
-    subprocess.call(
+    subprocess.check_call(
         # -k is for using 'post' table format 2
         ['buildcff2vf', '-k', '--omit-mac-names', '-d', designspace_file],
         stdout=STDOUT,
@@ -102,7 +102,7 @@ def build_vf(args, slope=None):
 
     if args.hinted:
         # hint the file
-        subprocess.call(
+        subprocess.check_call(
             ['psautohint', '--no-flex', output_otf],
             stdout=STDOUT,
             stderr=STDERR
@@ -111,21 +111,21 @@ def build_vf(args, slope=None):
     if not args.hinted:
         # at the moment, we don’t subroutinize the hinted fonts.
         # extract and subroutinize the CFF2 table
-        subprocess.call(
+        subprocess.check_call(
             ['tx', '-cff2', '+S', '+b', '-std', output_otf, '/tmp/.tb_cff2'],
             stdout=STDOUT,
             stderr=STDERR
         )
 
         # replace CFF2 table with subroutinized version
-        subprocess.call(
+        subprocess.check_call(
             ['sfntedit', '-a', 'CFF2=/tmp/.tb_cff2', output_otf],
             stdout=STDOUT,
             stderr=STDERR
         )
 
     # build variable TTF with fontmake.
-    subprocess.call([
+    subprocess.check_call([
         'fontmake', '-m', designspace_file, '-o', 'variable',
         '--production-names', '--output-path', output_ttf,
         '--feature-writer', 'None'],
@@ -139,9 +139,9 @@ def build_vf(args, slope=None):
         'MVAR=/tmp/.tb_MVAR,hhea=/tmp/.tb_hhea,post=/tmp/.tb_post,'
         'STAT=/tmp/.tb_STAT,fvar=/tmp/.tb_fvar')
 
-    subprocess.call([
+    subprocess.check_call([
         'sfntedit', '-x', tables_from_otf, output_otf])
-    subprocess.call([
+    subprocess.check_call([
         'sfntedit', '-a', tables_from_otf, output_ttf])
 
     # use cmap, GDEF, GPOS, and GSUB tables from TTFs
@@ -149,9 +149,9 @@ def build_vf(args, slope=None):
         'cmap=/tmp/.tb_cmap,GDEF=/tmp/.tb_GDEF,'
         'GPOS=/tmp/.tb_GPOS,GSUB=/tmp/.tb_GSUB')
 
-    subprocess.call([
+    subprocess.check_call([
         'sfntedit', '-x', tables_from_ttf, output_ttf])
-    subprocess.call([
+    subprocess.check_call([
         'sfntedit', '-a', tables_from_ttf, output_otf])
 
     # move font files to target directory
@@ -178,7 +178,7 @@ if __name__ == '__main__':
 
     # clean existing target directory
     if var_dir.exists():
-        subprocess.call(['rm', '-rf', var_dir])
+        subprocess.check_call(['rm', '-rf', var_dir])
     # build target directory
     var_dir.mkdir(parents=True)
 
