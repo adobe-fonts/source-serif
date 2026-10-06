@@ -1,0 +1,11 @@
+# Include UFO project files in project language-stats on GitHub
+*.fea linguist-detectable
+*.glif linguist-detectable
+*.plist linguist-detectable
+
+# Fix unrecognised filetypes
+FontMenuNameDB linguist-language=INI
+
+# Exclude these directories from language stats altogether
+/demo/* linguist-documentation
+/docs/* linguist-documentation
